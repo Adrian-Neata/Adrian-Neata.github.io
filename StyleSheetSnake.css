@@ -200,3 +200,8 @@
     grid-column-start: 1;
     grid-column-end: 2;
 }
+
+.p5Canvas {
+    padding-right: 5px;
+}
+
