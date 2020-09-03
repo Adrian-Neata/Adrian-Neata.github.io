@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="StyleSheetSnake.css">
     <link rel="icon" href="SnakeIcon.png">
 
     <meta charset="UTF-8">
@@ -18,343 +19,150 @@
     <script src="main.js"></script>
     <script src="SnakeLoader.js"></script>
 
-    <style>
-
-        .container {
-            display: flex;
-        }
-
-        /* The container */
-        .containerCheckmark {
-            display: block;
-            position: relative;
-            padding-left: 35px;
-            margin-bottom: 12px;
-            cursor: pointer;
-            font-size: 18px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-            /* Hide the browser's default checkbox */
-            .containerCheckmark input {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-                height: 0;
-                width: 0;
-            }
-
-        /* Create a custom checkbox */
-        .checkmark {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 25px;
-            width: 25px;
-            background-color: #bfdcae;
-        }
-
-        /* On mouse-over, add a grey background color */
-        .containerCheckmark:hover input ~ .checkmark {
-            background-color: #81b214;
-        }
-
-        /* When the checkbox is checked, add a blue background */
-        .containerCheckmark input:checked ~ .checkmark {
-            background-color: #206a5d;
-        }
-
-        /* Create the checkmark/indicator (hidden when not checked) */
-        .checkmark:after {
-            content: "";
-            position: absolute;
-            display: none;
-        }
-
-        /* Show the checkmark when checked */
-        .containerCheckmark input:checked ~ .checkmark:after {
-            display: block;
-        }
-
-        /* Style the checkmark/indicator */
-        .containerCheckmark .checkmark:after {
-            left: 9px;
-            top: 5px;
-            width: 5px;
-            height: 10px;
-            border: solid white;
-            border-width: 0 3px 3px 0;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-        }
-
-        .slider {
-            -webkit-appearance: none;
-            width: 150px;
-            height: 15px;
-            border-radius: 5px;
-            background: #bfdcae;
-            outline: none;
-            opacity: 0.7;
-            -webkit-transition: .2s;
-            transition: opacity .2s;
-        }
-
-            .slider::-webkit-slider-thumb {
-                -webkit-appearance: none;
-                width: 25px;
-                height: 25px;
-                border-radius: 50%;
-                background: #206a5d;
-                cursor: pointer;
-            }
-
-        .glass {
-            /* background styles */
-            position: relative;
-            display: inline-block;
-            padding: 7px 10px;
-            background-color: white;
-            color: #206a5d;
-            border: 2px solid #206a5d;
-            /* text styles */
-            text-decoration: none;
-            font-size: 15px;
-            font-family: sans-serif;
-            font-weight: bold;
-            transition-duration: 0.4s;
-        }
-
-            .glass:hover {
-                background-color: #206a5d;
-                color: white;
-            }
-
-        .box {
-            /* background styles */
-            position: relative;
-            display: inline-block;
-            padding: 7px 10px;
-            background-color: #bfdcae;
-            color: #206a5d;
-            border-radius: 3px;
-            box-shadow: 0px 1px 4px -2px #333;
-            text-shadow: 0px -1px #333;
-        }
-
-        .btn {
-            background-color: green;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            outline: none;
-        }
-
-        .dropdown {
-            position: absolute;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            z-index: 1;
-        }
-
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-
-                .dropdown-content a:hover {
-                    background-color: green
-                }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .btn:hover, .dropdown:hover .btn {
-            background-color: green;
-        }
-
-        .boxSelect {
-            position: relative;
-            font-size: 18px;
-        }
-
-            .boxSelect select {
-                background-color: #bfdcae;
-                color: white;
-                padding: 12px;
-                width: 160px;
-                border: none;
-                font-size: 15px;
-                box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-                -webkit-appearance: button;
-                outline: none;
-            }
-
-
-
-            .boxSelect select option {
-                padding: 30px;
-            }
-
-    </style>
-
 </head>
 <body style="background-color:#f1f1e8;color:#206a5d">
-    <h1>Highest Score: <span id="scoreID"></span> </h1>
-    <h3>Average Score: <span id="averageScoreID"></span> </h3>
-    <h4>Press 'r' to change the size</h4>
-    <label class="containerCheckmark">
-        Rainbow Snake
-        <input type="checkbox" id="myRainbowCheck" onclick="myRainbowFunction()">
-        <span class="checkmark"></span>
-    </label>
-    <label class="containerCheckmark">
-        Auto Snake
-        <input type="checkbox" id="myAutoSnakeCheck" onclick="myAutoSnakeFunction()">
-        <span class="checkmark"></span>
-    </label>
-    <label class="containerCheckmark">
-        Powerups
-        <input type="checkbox" id="myPowerupCheck" onclick="myPowerupFunction()">
-        <span class="checkmark"></span>
-    </label>
+    <div class="grid-container">
+        <div class="itemLeft">
+            <h1>Highest Score: <span id="scoreID"></span> </h1>
+            <h3>Average Score: <span id="averageScoreID"></span> </h3>
+            <h4>Press 'r' to change the size</h4>
+            <label class="containerCheckmark">
+                Rainbow Snake
+                <input type="checkbox" id="myRainbowCheck" onclick="myRainbowFunction()">
+                <span class="checkmark"></span>
+            </label>
+            <label class="containerCheckmark">
+                Auto Snake
+                <input type="checkbox" id="myAutoSnakeCheck" onclick="myAutoSnakeFunction()">
+                <span class="checkmark"></span>
+            </label>
+            <label class="containerCheckmark">
+                Powerups
+                <input type="checkbox" id="myPowerupCheck" onclick="myPowerupFunction()">
+                <span class="checkmark"></span>
+            </label>
 
 
-    <!-- Slider from 1 to 5 to select snake starting size -->
-    Starting Snake Size <span id="startingBodySizeValue"></span>
-    <br>
-    <div class="slidecontainer">
-        <input type="range" min="1" max="5" value="1" class="slider" id="startingBodySize">
-    </div>
-    <br>
+            <!-- Slider from 1 to 5 to select snake starting size -->
+            Starting Snake Size <span id="startingBodySizeValue"></span>
+            <br>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="5" value="1" class="slider" id="startingBodySize">
+            </div>
+            <br>
 
-    <script>
-        var sliderSnakeSize = document.getElementById('startingBodySize');
-        var startingBodySizeValue = document.getElementById('startingBodySizeValue');
-        startingBodySizeValue.innerHTML = sliderSnakeSize.value; // Display the default slider value
+            <script>
+                var sliderSnakeSize = document.getElementById('startingBodySize');
+                var startingBodySizeValue = document.getElementById('startingBodySizeValue');
+                startingBodySizeValue.innerHTML = sliderSnakeSize.value; // Display the default slider value
 
-        // Update the current slider value (each time you drag the slider handle)
-        sliderSnakeSize.oninput = function () {
-            startingBodySizeValue.innerHTML = this.value;
-        }
-    </script>
+                // Update the current slider value (each time you drag the slider handle)
+                sliderSnakeSize.oninput = function () {
+                    startingBodySizeValue.innerHTML = this.value;
+                }
+            </script>
 
 
-    <!-- Slider from 1 to 100 to select the number of snakes generated -->
-    Population Size <span id="populationSizeValue"></span>
-    <br>
-    <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="populationSize">
-    </div>
-    <br>
+            <!-- Slider from 1 to 100 to select the number of snakes generated -->
+            Population Size <span id="populationSizeValue"></span>
+            <br>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="populationSize">
+            </div>
+            <br>
 
-    <div name="powerupsLayer" style="display:none">
-        Powerups Frequency <span id="powerupsFrequencyValue"></span>%
-        <br>
-        <div class="slidecontainer">
-            <input type="range" min="0%" max="100" value="0" step="10" class="slider" id="powerupsFrequency">
+            <div name="powerupsLayer" style="display:none">
+                Powerups Frequency <span id="powerupsFrequencyValue"></span>%
+                <br>
+                <div class="slidecontainer">
+                    <input type="range" min="0%" max="100" value="0" step="10" class="slider" id="powerupsFrequency">
+                </div>
+                <br>
+            </div>
+
+            <script>
+                var sliderPowerupsFrequency = document.getElementById('powerupsFrequency');
+                var powerupsFrequencyValue = document.getElementById('powerupsFrequencyValue');
+                powerupsFrequencyValue.innerHTML = sliderPowerupsFrequency.value; // Display the default slider value
+
+                // Update the current slider value (each time you drag the slider handle)
+                sliderPowerupsFrequency.oninput = function () {
+                    powerupsFrequencyValue.innerHTML = this.value;
+                }
+            </script>
+
+
+            <button onclick="startTraining()" id="TrainingButton" class="glass">Start Training</button>
+            <br><br>
+
+            <div name="noPowerupsLayer" class="boxSelect">
+                <!-- List of snakes generated from the genetic algorithm using neural networks (no powerups included) -->
+                <label for="snakesNeuralNetwork">Choose a snake:</label>
+                <select name="snakesNeuralNetwork" id="snakesFromNeuralNetwork">
+                    <option value="Allrounder18">Allrounder18</option>
+                    <option value="BellyRubber24">BellyRubber24</option>
+                    <option value="Brutus10">Brutus10</option>
+                    <option value="Brutus11">Brutus11</option>
+                    <option value="Brutus30">Brutus30</option>
+                    <option value="Spiderman37">Spiderman37</option>
+                    <option value="Spiderman46">Spiderman46</option>
+                    <option value="Spiderman48">Spiderman48</option>
+                    <option value="Spiderman49">Spiderman49</option>
+                </select>
+                <br><br>
+                <button onclick="loadSnakeFromNeuralNetwork()" class="glass">Load Snake From Neural Network</button>
+                <br><br>
+
+                <!-- List of snakes generated from the genetic algorithm using arraylists (no powerups included) -->
+                <label for="snakesArrayList">Choose a snake:</label>
+                <select name="snakesArrayList" id="snakesFromArrayList">
+                    <option value="Alphabet73">Alphabet73</option>
+                    <option value="Basic47">Basic47</option>
+                    <option value="BellyRubberxAlphabet76">BellyRubberxAlphabet76</option>
+                    <option value="BellyRubber34">BellyRubber34</option>
+                    <option value="BellyRubber50">BellyRubber50</option>
+                    <option value="Brutus40">Brutus40</option>
+                    <option value="Catalin55">Catalin55</option>
+                    <option value="Pythagoras38">Pythagoras38</option>
+                    <option value="Snail52">Snail52</option>
+                    <option value="TailRunner66">TailRunner66</option>
+                </select>
+                <br><br>
+                <button onclick="loadSnakeFromArrayList()" class="glass">Load Snake From ArrayList</button>
+                <br><br>
+            </div>
+
+            <div name="powerupsLayer" style="display:none" class="boxSelect">
+                <!-- List of snakes generated from the genetic algorithm using arraylists (powerups included) -->
+                <label for="snakesArrayListPowerups">Choose a snake:</label>
+                <select name="snakesArrayListPowerups" id="snakesFromArrayListPowerups">
+                    <option value="NeoAlphabet171">NeoAlphabet171</option>
+                    <option value="NeoBrutus103">NeoBrutus103</option>
+                    <option value="NeoTailRunner179">NeoTailRunner179</option>
+                </select>
+                <br><br>
+                <button onclick="loadSnakeFromArrayListPowerups()" class="glass">Load Snake From ArrayList</button>
+                <br><br>
+            </div>
+
+            <!-- Button for solo play -->
+            <button onclick="manualPlay()" class="glass">Play</button>
+            <br><br>
+
+            <script>
+                var sliderPopulationSize = document.getElementById('populationSize');
+                var populationSizeValue = document.getElementById('populationSizeValue');
+                populationSizeValue.innerHTML = sliderPopulationSize.value; // Display the default slider value
+
+                // Update the current slider value (each time you drag the slider handle)
+                sliderPopulationSize.oninput = function () {
+                    populationSizeValue.innerHTML = this.value;
+                }
+            </script>
         </div>
-        <br>
+        <div class="container">
+            <div class="item1"><span id="firstSpan1"></span></div>
+        </div>
     </div>
-
-    <script>
-        var sliderPowerupsFrequency = document.getElementById('powerupsFrequency');
-        var powerupsFrequencyValue = document.getElementById('powerupsFrequencyValue');
-        powerupsFrequencyValue.innerHTML = sliderPowerupsFrequency.value; // Display the default slider value
-
-        // Update the current slider value (each time you drag the slider handle)
-        sliderPowerupsFrequency.oninput = function () {
-            powerupsFrequencyValue.innerHTML = this.value;
-        }
-    </script>
-
-
-    <button onclick="startTraining()" id="TrainingButton" class="glass">Start Training</button>
-    <br><br>
-
-    <div name="noPowerupsLayer"  class="boxSelect">
-        <!-- List of snakes generated from the genetic algorithm using neural networks (no powerups included) -->
-        <label for="snakesNeuralNetwork">Choose a snake:</label>
-        <select name="snakesNeuralNetwork" id="snakesFromNeuralNetwork">
-            <option value="Allrounder18">Allrounder18</option>
-            <option value="BellyRubber24">BellyRubber24</option>
-            <option value="Brutus10">Brutus10</option>
-            <option value="Brutus11">Brutus11</option>
-            <option value="Brutus30">Brutus30</option>
-            <option value="Spiderman37">Spiderman37</option>
-            <option value="Spiderman46">Spiderman46</option>
-            <option value="Spiderman48">Spiderman48</option>
-            <option value="Spiderman49">Spiderman49</option>
-        </select>
-        <br><br>
-        <button onclick="loadSnakeFromNeuralNetwork()" class="glass">Load Snake From Neural Network</button>
-        <br><br>
-
-        <!-- List of snakes generated from the genetic algorithm using arraylists (no powerups included) -->
-        <label for="snakesArrayList">Choose a snake:</label>
-        <select name="snakesArrayList" id="snakesFromArrayList">
-            <option value="Alphabet73">Alphabet73</option>
-            <option value="Basic47">Basic47</option>
-            <option value="BellyRubberxAlphabet76">BellyRubberxAlphabet76</option>
-            <option value="BellyRubber34">BellyRubber34</option>
-            <option value="BellyRubber50">BellyRubber50</option>
-            <option value="Brutus40">Brutus40</option>
-            <option value="Catalin55">Catalin55</option>
-            <option value="Pythagoras38">Pythagoras38</option>
-            <option value="Snail52">Snail52</option>
-            <option value="TailRunner66">TailRunner66</option>
-        </select>
-        <br><br>
-        <button onclick="loadSnakeFromArrayList()" class="glass">Load Snake From ArrayList</button>
-        <br><br>
-    </div>
-
-    <div name="powerupsLayer" style="display:none"  class="boxSelect">
-        <!-- List of snakes generated from the genetic algorithm using arraylists (powerups included) -->
-        <label for="snakesArrayListPowerups">Choose a snake:</label>
-        <select name="snakesArrayListPowerups" id="snakesFromArrayListPowerups">
-            <option value="NeoAlphabet171">NeoAlphabet171</option>
-            <option value="NeoBrutus103">NeoBrutus103</option>
-            <option value="NeoTailRunner179">NeoTailRunner179</option>
-        </select>
-        <br><br>
-        <button onclick="loadSnakeFromArrayListPowerups()" class="glass">Load Snake From ArrayList</button>
-        <br><br>
-    </div>
-
-    <!-- Button for solo play -->
-    <button onclick="manualPlay()" class="glass">Play</button>
-    <br><br>
-
-    <script>
-        var sliderPopulationSize = document.getElementById('populationSize');
-        var populationSizeValue = document.getElementById('populationSizeValue');
-        populationSizeValue.innerHTML = sliderPopulationSize.value; // Display the default slider value
-
-        // Update the current slider value (each time you drag the slider handle)
-        sliderPopulationSize.oninput = function () {
-            populationSizeValue.innerHTML = this.value;
-        }
-    </script>
-
-
-    <div class="container">
-        <div class="item1"><span id="firstSpan1"></span></div>
-    </div>
-
 </body>
 </html>

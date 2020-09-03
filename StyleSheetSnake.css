@@ -1,0 +1,202 @@
+﻿
+.container {
+    display: flex;
+}
+
+/* The container */
+.containerCheckmark {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    /* Hide the browser's default checkbox */
+    .containerCheckmark input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #bfdcae;
+}
+
+/* On mouse-over, add a grey background color */
+.containerCheckmark:hover input ~ .checkmark {
+    background-color: #81b214;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerCheckmark input:checked ~ .checkmark {
+    background-color: #206a5d;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.containerCheckmark input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerCheckmark .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 15px;
+    border-radius: 5px;
+    background: #bfdcae;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #206a5d;
+        cursor: pointer;
+    }
+
+.glass {
+    /* background styles */
+    position: relative;
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: white;
+    color: #206a5d;
+    border: 2px solid #206a5d;
+    /* text styles */
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+    .glass:hover {
+        background-color: #206a5d;
+        color: white;
+    }
+
+.box {
+    /* background styles */
+    position: relative;
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #bfdcae;
+    color: #206a5d;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px -2px #333;
+    text-shadow: 0px -1px #333;
+}
+
+.btn {
+    background-color: green;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: green
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.btn:hover, .dropdown:hover .btn {
+    background-color: green;
+}
+
+.boxSelect {
+    position: relative;
+    font-size: 18px;
+}
+
+    .boxSelect select {
+        background-color: #bfdcae;
+        color: white;
+        padding: 12px;
+        width: 160px;
+        border: none;
+        font-size: 15px;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+        -webkit-appearance: button;
+        outline: none;
+    }
+
+
+
+        .boxSelect select option {
+            padding: 30px;
+        }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.itemLeft {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
