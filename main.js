@@ -77,7 +77,7 @@ function startTraining() {
                 }
 
                 if (sketches[i].brain.snakeScore > 20) {
-                    download(sketches[i].brain.genes, 'Score' + sketches[i].brain.snakeScore + '.json', 'text/plain');
+                    //download(sketches[i].brain.genes, 'Score' + sketches[i].brain.snakeScore + '.json', 'text/plain');
                 }
 
             }
