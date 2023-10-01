@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenStreetMap Overlay</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        /* Set the map container size */
+        #map {
+            width: 100%;
+            height: 98.2vh;
+        }
+        /* Style for the text overlay */
+        .text-icon{
+            color: black;
+        }
+
+        .slidecontainer {
+            bottom: 3vh;
+            width: 92vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            position: absolute;
+            z-index: 500;
+        }
+
+        .yearcontainer {
+            top: 0;
+            right: 0;
+            font-size: 200%;
+            padding-left: 2%;
+            padding-right: 2%;
+            position: absolute;
+            z-index: 500;
+        }
+
+        .slider {
+        -webkit-appearance: none;
+            width: 100%;
+            height: 15px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #04AA6D;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #04AA6D;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div id="status"></div>
+
+    <div id="map"></div>
+
+    <div class="yearcontainer">
+        <p>Year: <span id="demo"></span></p>
+    </div>
+
+    <div class="slidecontainer">
+        <input type="range" min="1300" max="2023" value="1500" class="slider" id="yearRange">
+    </div>
+
+    <script>
+        var slider = document.getElementById("yearRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+    </script>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="mentions.js">// SELECT MENTIONS.place_name, MENTIONS.place_latitude, MENTIONS.place_longitude, 
+                              // MENTIONS.place_status, RECORDS.year, MENTIONS.place_id from MENTIONS, RECORDS 
+                              // where RECORDS.id == MENTIONS.record_id</script>
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([45.1567241037536, 24.6754243860472], 12); // Replace with your desired coordinates and zoom level
+
+        var villageIcon = L.icon({
+           iconUrl: 'village.png',
+           iconSize:     [64, 64], // size of the icon
+        });
+
+        // Add the OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 14,
+            minZoom: 8,
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        
+        var markers = []
+        function addMarkers(place) {
+            if (place[1] == null || place[3] != "active") {
+                return;
+            }
+            
+            var coords = [place[1], place[2]];
+            var textIcon = L.divIcon({
+                className: 'text-icon',
+                iconSize: [100, 40],
+                html: '<p>' + place[0] + '</p>',
+                iconAnchor: [20, -20]
+            });
+
+            markers.push(L.marker(coords, {icon: textIcon}).addTo(map));
+            markers.push(L.marker(coords, {icon: villageIcon}).addTo(map));
+        }
+        var slider = document.getElementById("yearRange");
+
+        function updateMarkerPosition() {
+
+            for (marker_id in markers) {
+                map.removeLayer(markers[marker_id]);
+            }
+
+            var slider = document.getElementById("yearRange");
+            var year = slider.value;
+            var latest_mentions = {};
+            for (mention_idx in mentions) {
+                mentions[mention_idx][6] = 1;
+            }
+            console.log(mentions[3400][4]);
+            for (mention_idx in mentions) {
+                mention = mentions[mention_idx];
+                // ignore mentions that happen after the selected year
+                if (mention[4] > year) {
+                    continue;
+                }
+
+                if (!(mention[5] in latest_mentions)) {
+                    latest_mentions[mention[5]] = mention;
+                } else {
+                    if (latest_mentions[mention[5]][4] < mention[4]) {
+                        latest_mentions[mention[5]] = mention;
+                    }
+                    latest_mentions[mention[5]][6] += 1;
+                }
+            }
+            for (mention_idx in mentions) {
+                if (mentions[mention_idx][6] > 1)
+                    console.log(mentions[mention_idx]);
+            }
+            console.log(latest_mentions[5]);
+            Object.values(latest_mentions).forEach(addMarkers);
+
+        }
+
+        slider.addEventListener("change", updateMarkerPosition);
+        updateMarkerPosition();
+
+    </script>
+</body>
+</html>
