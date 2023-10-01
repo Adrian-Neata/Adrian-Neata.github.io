@@ -1,0 +1,15 @@
+<svg width="100" height="200" xmlns="http://www.w3.org/2000/svg">
+	<!-- bottom line -->
+	<line x1="10" y1="190" x2="90" y2="190" stroke="black" stroke-width="4" />
+	<!-- top line -->
+	<line x1="10" y1="120" x2="90" y2="120" stroke="black" stroke-width="4" />
+	<!-- left wall -->
+	<line x1="20" y1="120" x2="20" y2="190" stroke="black" stroke-width="4" />
+	<!-- right wall -->
+	<line x1="80" y1="120" x2="80" y2="190" stroke="black" stroke-width="4" />
+	<!-- round roof -->
+	<path d="M80 120 A30 30 0 0 0 20 120" fill="none" stroke="black" stroke-width="4"/>
+	<!-- roof cross -->
+	<line x1="50" y1="90" x2="50" y2="50" stroke="black" stroke-width="4" />
+	<line x1="40" y1="62" x2="60" y2="62" stroke="black" stroke-width="4" />
+</svg>

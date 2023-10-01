@@ -106,6 +106,14 @@
            iconUrl: 'village.png',
            iconSize:     [64, 64], // size of the icon
         });
+        var smallMonasteryIcon = L.icon({
+           iconUrl: 'SmallMonasteryIcon.svg',
+           iconSize:     [32, 64], // size of the icon
+        });
+        var largeMonasteryIcon = L.icon({
+           iconUrl: 'LargeMonasteryIcon.svg',
+           iconSize:     [64, 64], // size of the icon
+        });
 
         // Add the OpenStreetMap tile layer
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -129,7 +137,13 @@
             });
 
             markers.push(L.marker(coords, {icon: textIcon}).addTo(map));
-            markers.push(L.marker(coords, {icon: villageIcon}).addTo(map));
+            if ("Apare ca mănăstire mică." == place[6]) {
+                markers.push(L.marker(coords, {icon: smallMonasteryIcon}).addTo(map));
+            } else if ("Apare ca mănăstire mare." == place[6]) {
+                markers.push(L.marker(coords, {icon: largeMonasteryIcon}).addTo(map));
+            } else {
+                markers.push(L.marker(coords, {icon: villageIcon}).addTo(map));
+            }
         }
         var slider = document.getElementById("yearRange");
 
@@ -143,7 +157,7 @@
             var year = slider.value;
             var latest_mentions = {};
             for (mention_idx in mentions) {
-                mentions[mention_idx][6] = 1;
+                mentions[mention_idx][7] = 1;
             }
             console.log(mentions[3400][4]);
             for (mention_idx in mentions) {
@@ -159,11 +173,11 @@
                     if (latest_mentions[mention[5]][4] < mention[4]) {
                         latest_mentions[mention[5]] = mention;
                     }
-                    latest_mentions[mention[5]][6] += 1;
+                    latest_mentions[mention[5]][7] += 1;
                 }
             }
             for (mention_idx in mentions) {
-                if (mentions[mention_idx][6] > 1)
+                if (mentions[mention_idx][7] > 1)
                     console.log(mentions[mention_idx]);
             }
             console.log(latest_mentions[5]);

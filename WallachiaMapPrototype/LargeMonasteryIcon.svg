@@ -1,0 +1,38 @@
+<svg width="210" height="210" xmlns="http://www.w3.org/2000/svg">
+	<!-- bottom line -->
+	<line x1="10" y1="190" x2="210" y2="190" stroke="black" stroke-width="4" />
+	
+	<!-- top line -->
+	<line x1="10" y1="120" x2="30" y2="120" stroke="black" stroke-width="4" />
+	<!-- left wall -->
+	<line x1="20" y1="120" x2="20" y2="190" stroke="black" stroke-width="4" />
+	<!-- right wall -->
+	<line x1="80" y1="120" x2="80" y2="190" stroke="black" stroke-width="4" />
+	<!-- round roof -->
+	<path d="M80 120 A30 30 0 0 0 20 120" fill="none" stroke="black" stroke-width="4"/>
+	<!-- roof cross -->
+	<line x1="50" y1="90" x2="50" y2="50" stroke="black" stroke-width="4" />
+	<line x1="40" y1="62" x2="60" y2="62" stroke="black" stroke-width="4" />
+	
+	<!-- left roof wall -->
+	<line x1="80" y1="120" x2="110" y2="60" stroke="black" stroke-width="4" />
+	<!-- right roof wall -->
+	<line x1="140" y1="120" x2="110" y2="60" stroke="black" stroke-width="4" />
+	<!-- top line -->
+	<line x1="70" y1="120" x2="150" y2="120" stroke="black" stroke-width="4" />
+	<!-- roof cross -->
+	<line x1="110" y1="60" x2="110" y2="20" stroke="black" stroke-width="4" />
+	<line x1="100" y1="32" x2="120" y2="32" stroke="black" stroke-width="4" />
+
+	<!-- top line -->
+	<line x1="210" y1="120" x2="190" y2="120" stroke="black" stroke-width="4" />
+	<!-- left wall -->
+	<line x1="200" y1="120" x2="200" y2="190" stroke="black" stroke-width="4" />
+	<!-- right wall -->
+	<line x1="140" y1="120" x2="140" y2="190" stroke="black" stroke-width="4" />
+	<!-- round roof -->
+	<path d="M200 120 A30 30 0 0 0 140 120" fill="none" stroke="black" stroke-width="4"/>
+	<!-- roof cross -->
+	<line x1="170" y1="90" x2="170" y2="50" stroke="black" stroke-width="4" />
+	<line x1="180" y1="62" x2="160" y2="62" stroke="black" stroke-width="4" />
+</svg>
