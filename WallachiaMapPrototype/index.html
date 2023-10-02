@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,9 @@
             width: 100%;
             height: 98.2vh;
         }
+
         /* Style for the text overlay */
-        .text-icon{
+        .text-icon {
             color: black;
         }
 
@@ -36,7 +38,7 @@
         }
 
         .slider {
-        -webkit-appearance: none;
+            -webkit-appearance: none;
             width: 100%;
             height: 15px;
             border-radius: 5px;
@@ -68,11 +70,11 @@
             background: #04AA6D;
             cursor: pointer;
         }
-
     </style>
 </head>
+
 <body>
-<div id="status"></div>
+    <div id="status"></div>
 
     <div id="map"></div>
 
@@ -88,31 +90,31 @@
         var slider = document.getElementById("yearRange");
         var output = document.getElementById("demo");
         output.innerHTML = slider.value;
-        
-        slider.oninput = function() {
+
+        slider.oninput = function () {
             output.innerHTML = this.value;
         }
     </script>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="mentions.js">// SELECT MENTIONS.place_name, MENTIONS.place_latitude, MENTIONS.place_longitude, 
-                              // MENTIONS.place_status, RECORDS.year, MENTIONS.place_id from MENTIONS, RECORDS 
-                              // where RECORDS.id == MENTIONS.record_id</script>
+        // MENTIONS.place_status, RECORDS.year, MENTIONS.place_id from MENTIONS, RECORDS
+        // where RECORDS.id == MENTIONS.record_id</script>
     <script>
         // Initialize the map
-        var map = L.map('map').setView([45.1567241037536, 24.6754243860472], 12); // Replace with your desired coordinates and zoom level
+        var map = L.map('map').setView([45.1567241037536, 24.6754243860472], 8);
 
         var villageIcon = L.icon({
-           iconUrl: 'village.png',
-           iconSize:     [64, 64], // size of the icon
+            iconUrl: 'village.png',
+            iconSize: [64, 64], // size of the icon
         });
         var smallMonasteryIcon = L.icon({
-           iconUrl: 'SmallMonasteryIcon.svg',
-           iconSize:     [32, 64], // size of the icon
+            iconUrl: 'SmallMonasteryIcon.svg',
+            iconSize: [32, 64], // size of the icon
         });
         var largeMonasteryIcon = L.icon({
-           iconUrl: 'LargeMonasteryIcon.svg',
-           iconSize:     [64, 64], // size of the icon
+            iconUrl: 'LargeMonasteryIcon.svg',
+            iconSize: [64, 64], // size of the icon
         });
 
         // Add the OpenStreetMap tile layer
@@ -127,22 +129,29 @@
             if (place[1] == null || place[3] != "active") {
                 return;
             }
-            
-            var coords = [place[1], place[2]];
-            var textIcon = L.divIcon({
-                className: 'text-icon',
-                iconSize: [100, 40],
-                html: '<p>' + place[0] + '</p>',
-                iconAnchor: [20, -20]
-            });
 
-            markers.push(L.marker(coords, {icon: textIcon}).addTo(map));
-            if ("Apare ca mănăstire mică." == place[6]) {
-                markers.push(L.marker(coords, {icon: smallMonasteryIcon}).addTo(map));
-            } else if ("Apare ca mănăstire mare." == place[6]) {
-                markers.push(L.marker(coords, {icon: largeMonasteryIcon}).addTo(map));
+            var coords = [place[1], place[2]];
+            if (map.getZoom() < 12) {
+                var radiusByZoom = {8: 2, 9: 4, 10: 6, 11: 8};
+                var circle = L.circleMarker(coords).addTo(map)
+                circle.setRadius(radiusByZoom[map.getZoom()]);
+                markers.push(circle);
             } else {
-                markers.push(L.marker(coords, {icon: villageIcon}).addTo(map));
+                var textIcon = L.divIcon({
+                    className: 'text-icon',
+                    iconSize: [100, 40],
+                    html: '<p>' + place[0] + '</p>',
+                    iconAnchor: [20, -20]
+                });
+
+                markers.push(L.marker(coords, { icon: textIcon }).addTo(map));
+                if ("Apare ca mănăstire mică." == place[6]) {
+                    markers.push(L.marker(coords, { icon: smallMonasteryIcon }).addTo(map));
+                } else if ("Apare ca mănăstire mare." == place[6]) {
+                    markers.push(L.marker(coords, { icon: largeMonasteryIcon }).addTo(map));
+                } else {
+                    markers.push(L.marker(coords, { icon: villageIcon }).addTo(map));
+                }
             }
         }
         var slider = document.getElementById("yearRange");
@@ -159,7 +168,6 @@
             for (mention_idx in mentions) {
                 mentions[mention_idx][7] = 1;
             }
-            console.log(mentions[3400][4]);
             for (mention_idx in mentions) {
                 mention = mentions[mention_idx];
                 // ignore mentions that happen after the selected year
@@ -178,16 +186,22 @@
             }
             for (mention_idx in mentions) {
                 if (mentions[mention_idx][7] > 1)
-                    console.log(mentions[mention_idx]);
+                    //console.log(mentions[mention_idx]);
+                    continue;
             }
-            console.log(latest_mentions[5]);
             Object.values(latest_mentions).forEach(addMarkers);
-
         }
 
         slider.addEventListener("change", updateMarkerPosition);
         updateMarkerPosition();
 
+        // update map everytime the zoom changes
+        map.on('zoomend', function () {
+            updateMarkerPosition();
+            console.log(map.getZoom());
+        });
+
     </script>
 </body>
+
 </html>
