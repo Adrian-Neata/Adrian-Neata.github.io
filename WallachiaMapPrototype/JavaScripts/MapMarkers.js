@@ -41,6 +41,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var selected_place = null;
+
 function openSidePanel(place) {
     // open side panel
     selected_place = place;
