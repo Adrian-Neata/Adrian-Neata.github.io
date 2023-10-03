@@ -5,9 +5,16 @@ const Place = {
     Status: 3,
     Year: 4,
     Id: 5,
-    Notes: 6,
-    No_Mentions: 7,
+    Record_Id: 6,
+    Notes: 7,
+    No_Mentions: 8,
 };
+
+const Record = {
+    Id: 0,
+    Year: 1,
+    Description: 2,
+}
 
 // Initialize the map
 var map = L.map('map').setView([45.1567241037536, 24.6754243860472], 8);
@@ -53,8 +60,23 @@ function openSidePanel(place) {
             continue;
         }
         
-        placeMentions.push(mentions[idx]);
+        placeMentions.push([mentions[idx][Place.Name], mentions[idx][Place.Year], records[mentions[idx][Place.Record_Id]-1][Record.Description]]);
     }
+
+    // sort mentions by decreasing year
+    placeMentions.sort(function(a,b){return a[1] < b[1];});
+    current_year = null;
+    html_content = "";
+    for (idx in placeMentions) {
+        mention = placeMentions[idx];
+        if (mention[1] != current_year) {
+            current_year = mention[1];
+            html_content += '<h2 class="yearSubtitle">' + current_year.toString() + '</h2><hr class="separatorLineYear">';
+        }
+        html_content += '<div class="referenceContainer"><h3 class="placeName">' + mention[0] + '</h3><h4 class="recordDescription">' + mention[2] + '</h4></div>';
+    }
+    const mentionList = document.getElementById("referenceList");
+    mentionList.innerHTML = html_content;
     console.log(placeMentions);
 }
 

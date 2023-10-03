@@ -1,3 +1,7 @@
+* {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
 /* Set the map container size */
 #map {
     width: 100%;
@@ -75,12 +79,41 @@
     right: -250px; /* Initially hidden to the right */
     width: 250px;
     height: 90.2vh;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     transition: right 0.3s;
     z-index: 500;
 }
 
+#closeButton {
+    margin: 4%;
+}
 .reference {
     margin: 2%;
+}
+
+.separatorLineYear {
+    margin: 4%;
+}
+
+.yearSubtitle {
+    margin: 4%;
+}
+
+.placeName {
+    margin: 4%;
+    padding-top: 4%;
+}
+
+.recordDescription {
+    margin: 4%;
+    padding-bottom: 4%;
+    font-weight: normal;
+}
+
+.referenceContainer {
+    background-color: white;
+    color: black;
+    margin: 4%;
+    opacity: 1.0;
 }
