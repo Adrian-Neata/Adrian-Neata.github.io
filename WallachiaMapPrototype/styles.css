@@ -76,11 +76,11 @@
     overflow: auto;
     position: fixed;
     top: 0.8vh;
-    right: -250px; /* Initially hidden to the right */
-    width: 250px;
+    right: -15vw; /* Initially hidden to the right */
+    width: 15vw;
     height: 90.2vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
     transition: right 0.3s;
     z-index: 500;
 }
@@ -116,4 +116,13 @@
     color: black;
     margin: 4%;
     opacity: 1.0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.referenceContainer:hover {
+    background-image: linear-gradient(rgb(0 0 0/3%) 0 0);
+}
+
+hr {
+    border-top: 5px solid #000;
 }

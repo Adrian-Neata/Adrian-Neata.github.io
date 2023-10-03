@@ -21,15 +21,15 @@ var map = L.map('map').setView([45.1567241037536, 24.6754243860472], 8);
 
 // Load Place Icons
 var villageIcon = L.icon({
-    iconUrl: 'village.png',
+    iconUrl: 'Icons/village.png',
     iconSize: [48, 48], // size of the icon
 });
 var smallMonasteryIcon = L.icon({
-    iconUrl: 'SmallMonasteryIcon.svg',
+    iconUrl: 'Icons/SmallMonasteryIcon.svg',
     iconSize: [32, 64], // size of the icon
 });
 var largeMonasteryIcon = L.icon({
-    iconUrl: 'LargeMonasteryIcon.svg',
+    iconUrl: 'Icons/LargeMonasteryIcon.svg',
     iconSize: [64, 64], // size of the icon
 });
 
@@ -40,10 +40,12 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+var selected_place = null;
 function openSidePanel(place) {
     // open side panel
+    selected_place = place;
     const sidePanel = document.getElementById("sidePanel");
-    sidePanel.style.right = "0";
+    sidePanel.style.right = "0px";
 
     // add title the name of the place
     document.getElementById("placeName").textContent = place[Place.Name];
@@ -59,12 +61,21 @@ function openSidePanel(place) {
         if (document.getElementById("yearRange").value < mentions[idx][Place.Year]) {
             continue;
         }
-        
-        placeMentions.push([mentions[idx][Place.Name], mentions[idx][Place.Year], records[mentions[idx][Place.Record_Id]-1][Record.Description]]);
+
+        placeMentions.push([mentions[idx][Place.Name], mentions[idx][Place.Year], records[mentions[idx][Place.Record_Id] - 1][Record.Description]]);
+    }
+
+    // corner case when sidepanel is open and the year changes 
+    // close sidepanel if place hadn't previously been mentioned
+    if (placeMentions.length == 0) {
+        sidePanel.style.right = "-250px";
+        return;
     }
 
     // sort mentions by decreasing year
-    placeMentions.sort(function(a,b){return a[1] < b[1];});
+    placeMentions = placeMentions.sort(function (a, b) { return b[1] - a[1]; });
+
+    // add html code to show mentions
     current_year = null;
     html_content = "";
     for (idx in placeMentions) {
@@ -77,7 +88,6 @@ function openSidePanel(place) {
     }
     const mentionList = document.getElementById("referenceList");
     mentionList.innerHTML = html_content;
-    console.log(placeMentions);
 }
 
 var markers = []
@@ -89,10 +99,10 @@ function addMarkers(place) {
     var coords = [place[Place.Latitude], place[Place.Longitude]];
     if (map.getZoom() < 12) {
         var radiusByZoom = { 8: 2, 9: 4, 10: 6, 11: 8 };
-        var circle = L.circleMarker(coords, fill='black').addTo(map)
+        var circle = L.circleMarker(coords, fill = 'black').addTo(map)
         circle.setRadius(radiusByZoom[map.getZoom()]);
         if (place[Place.Name].includes('Mănăstirea ')) {
-            circle.setStyle({color: 'black'});
+            circle.setStyle({ color: 'black' });
         }
         circle.on('click', function () {
             openSidePanel(place);
@@ -163,7 +173,15 @@ function updateMarkerPosition() {
     Object.values(latest_mentions).forEach(addMarkers);
 }
 var slider = document.getElementById("yearRange");
-slider.addEventListener("change", updateMarkerPosition);
+slider.addEventListener("change", function () {
+    updateMarkerPosition();
+
+    // update side panel when user changes year
+    if (selected_place && sidePanel.style.right == '0px') {
+        openSidePanel(selected_place);
+    }
+});
+
 updateMarkerPosition();
 
 // update map everytime the zoom changes
