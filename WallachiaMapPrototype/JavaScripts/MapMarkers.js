@@ -63,8 +63,16 @@ function openSidePanel(place) {
             continue;
         }
 
-        placeMentions.push([mentions[idx][Place.Name], mentions[idx][Place.Year], records[mentions[idx][Place.Record_Id] - 1][Record.Description]]);
+        placeMentions.push([
+            mentions[idx][Place.Name], 
+            mentions[idx][Place.Year], 
+            records[mentions[idx][Place.Record_Id] - 1][Record.Description], 
+            mentions[idx][Place.Status],
+        ]);
     }
+
+    // sort mentions by decreasing year
+    placeMentions = placeMentions.sort(function (a, b) { return b[1] - a[1]; });
 
     // corner case when sidepanel is open and the year changes 
     // close sidepanel if place hadn't previously been mentioned
@@ -73,8 +81,12 @@ function openSidePanel(place) {
         return;
     }
 
-    // sort mentions by decreasing year
-    placeMentions = placeMentions.sort(function (a, b) { return b[1] - a[1]; });
+    // if latest mention shows place disappeared then close sidepanel
+    if (placeMentions[0][3] != "active") {
+        console.log(placeMentions[0]);
+        sidePanel.style.right = "-250px";
+        return;
+    }
 
     // add html code to show mentions
     current_year = null;
@@ -129,7 +141,8 @@ function addMarkers(place) {
         } else if ("Apare ca mănăstire mare." == place[Place.Notes]) {
             iconMarker = L.marker(coords, { icon: largeMonasteryIcon }).addTo(map);
         } else {
-            iconMarker = L.marker(coords, { icon: villageIcon }).addTo(map);
+            //iconMarker = L.marker(coords, { icon: villageIcon }).addTo(map);
+            iconMarker = L.circleMarker(coords).addTo(map);
         }
         iconMarker.on('click', function () {
             openSidePanel(place);
