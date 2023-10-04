@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" type="text/css" href="StyleSheetSnake.css">
     <link rel="icon" href="SnakeIcon.png">
@@ -18,38 +19,52 @@
     <script src="SnakeMember.js"></script>
     <script src="SnakeLoader.js"></script>
     <script src="main.js"></script>
-
 </head>
+
 <body style="background-color:#f1f1e8;color:#206a5d">
+    <button id="tutorialButton" class="glass">Show Tutorial</button>
+    <div id="overlay" class="overlay"></div>
+    <div id="tutorialPopup" class="popup">
+        <div id="popup-content">New to the site and need a <b>tutorial</b>?</div>
+        <div id="popup-buttons-container">
+            <button id="previousTutorialButton" class="tutorialButton">Previous</button>
+            <button id="nextTutorialButton" class="tutorialButton">Next</button>
+            <button id="finishTutorialButton" class="tutorialButton">Finish</button>
+        </div>
+        <span class="popup-close" id="popupCloseButton">&times;</span>
+    </div>
+    <script src="PopupTutorial.js"></script>
     <div class="grid-container">
         <div class="itemLeft">
-            <h1>Highest Score: <span id="scoreID"></span> </h1>
-            <h3>Average Score: <span id="averageScoreID"></span> </h3>
-            <h4>Press 'r' to change the size</h4>
-            <label class="containerCheckmark">
+            <h1 id="tutorialHighlight1">Highest Score: <span id="scoreID"></span> </h1>
+            <h3 id="tutorialHighlight2">Average Score: <span id="averageScoreID"></span> </h3>
+            <h4 id="tutorialHighlight3">Press 'r' to change the size</h4>
+            <label class="containerCheckmark" id="tutorialHighlight4">
                 Rainbow Snake
                 <input type="checkbox" id="myRainbowCheck" onclick="myRainbowFunction()">
                 <span class="checkmark"></span>
             </label>
-            <label class="containerCheckmark">
+            <label class="containerCheckmark" id="tutorialHighlight5">
                 Auto Snake
                 <input type="checkbox" id="myAutoSnakeCheck" onclick="myAutoSnakeFunction()">
                 <span class="checkmark"></span>
             </label>
-            <label class="containerCheckmark">
-                Powerups
+            <label class="containerCheckmark" id="tutorialHighlight6">
+                Power-ups
                 <input type="checkbox" id="myPowerupCheck" onclick="myPowerupFunction()">
                 <span class="checkmark"></span>
             </label>
 
 
             <!-- Slider from 1 to 5 to select snake starting size -->
-            Starting Snake Size <span id="startingBodySizeValue"></span>
-            <br>
-            <div class="slidecontainer">
-                <input type="range" min="1" max="5" value="1" class="slider" id="startingBodySize">
+            <div id="tutorialHighlight7">
+                Starting Snake Size <span id="startingBodySizeValue"></span>
+                <br>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="5" value="1" class="slider" id="startingBodySize">
+                </div>
+                <br>
             </div>
-            <br>
 
             <script>
                 var sliderSnakeSize = document.getElementById('startingBodySize');
@@ -64,20 +79,24 @@
 
 
             <!-- Slider from 1 to 100 to select the number of snakes generated -->
-            Population Size <span id="populationSizeValue"></span>
-            <br>
-            <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="50" class="slider" id="populationSize">
-            </div>
-            <br>
-
-            <div name="powerupsLayer" style="display:none">
-                Powerups Frequency <span id="powerupsFrequencyValue"></span>%
+            <div id="tutorialHighlight8">
+                Population Size <span id="populationSizeValue"></span>
                 <br>
                 <div class="slidecontainer">
-                    <input type="range" min="0%" max="100" value="0" step="10" class="slider" id="powerupsFrequency">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="populationSize">
                 </div>
                 <br>
+            </div>
+            <div name="powerupsLayer" style="display:none">
+                <div id="tutorialHighlight9">
+                    Power-ups Frequency <span id="powerupsFrequencyValue"></span>%
+                    <br>
+                    <div class="slidecontainer">
+                        <input type="range" min="0%" max="100" value="0" step="10" class="slider"
+                            id="powerupsFrequency">
+                    </div>
+                    <br>
+                </div>
             </div>
 
             <script>
@@ -91,47 +110,48 @@
                 }
             </script>
 
-
-            <button onclick="startTraining()" id="TrainingButton" class="glass">Start Training</button>
-            <br><br>
-
-            <div name="noPowerupsLayer" class="boxSelect">
-                <!-- List of snakes generated from the genetic algorithm using neural networks (no powerups included) -->
-                <label for="snakesNeuralNetwork">Choose a snake:</label>
-                <select name="snakesNeuralNetwork" id="snakesFromNeuralNetwork">
-                    <option value="Allrounder18">Allrounder18</option>
-                    <option value="BellyRubber24">BellyRubber24</option>
-                    <option value="Brutus10">Brutus10</option>
-                    <option value="Brutus11">Brutus11</option>
-                    <option value="Brutus30">Brutus30</option>
-                    <option value="Spiderman37">Spiderman37</option>
-                    <option value="Spiderman46">Spiderman46</option>
-                    <option value="Spiderman48">Spiderman48</option>
-                    <option value="Spiderman49">Spiderman49</option>
-                </select>
-                <br><br>
-                <button onclick="loadSnakeFromNeuralNetwork()" class="glass">Load Snake From Neural Network</button>
-                <br><br>
-
-                <!-- List of snakes generated from the genetic algorithm using arraylists (no powerups included) -->
-                <label for="snakesArrayList">Choose a snake:</label>
-                <select name="snakesArrayList" id="snakesFromArrayList">
-                    <option value="Alphabet73">Alphabet73</option>
-                    <option value="Basic47">Basic47</option>
-                    <option value="BellyRubberxAlphabet76">BellyRubberxAlphabet76</option>
-                    <option value="BellyRubber34">BellyRubber34</option>
-                    <option value="BellyRubber50">BellyRubber50</option>
-                    <option value="Brutus40">Brutus40</option>
-                    <option value="Catalin55">Catalin55</option>
-                    <option value="Pythagoras38">Pythagoras38</option>
-                    <option value="Snail52">Snail52</option>
-                    <option value="TailRunner66">TailRunner66</option>
-                </select>
-                <br><br>
-                <button onclick="loadSnakeFromArrayList()" class="glass">Load Snake From ArrayList</button>
+            <div id="tutorialHighlight10">
+                <button onclick="startTraining()" id="TrainingButton" class="glass">Start Training</button>
                 <br><br>
             </div>
+            <div name="noPowerupsLayer" class="boxSelect">
+                <div id="tutorialHighlight11">
+                    <!-- List of snakes generated from the genetic algorithm using neural networks (no powerups included) -->
+                    <label for="snakesNeuralNetwork">Choose a snake:</label>
+                    <select name="snakesNeuralNetwork" id="snakesFromNeuralNetwork">
+                        <option value="Allrounder18">Allrounder18</option>
+                        <option value="BellyRubber24">BellyRubber24</option>
+                        <option value="Brutus10">Brutus10</option>
+                        <option value="Brutus11">Brutus11</option>
+                        <option value="Brutus30">Brutus30</option>
+                        <option value="Spiderman37">Spiderman37</option>
+                        <option value="Spiderman46">Spiderman46</option>
+                        <option value="Spiderman48">Spiderman48</option>
+                        <option value="Spiderman49">Spiderman49</option>
+                    </select>
+                    <br><br>
+                    <button onclick="loadSnakeFromNeuralNetwork()" class="glass">Load Snake From Neural Network</button>
+                    <br><br>
 
+                    <!-- List of snakes generated from the genetic algorithm using arraylists (no powerups included) -->
+                    <label for="snakesArrayList">Choose a snake:</label>
+                    <select name="snakesArrayList" id="snakesFromArrayList">
+                        <option value="Alphabet73">Alphabet73</option>
+                        <option value="Basic47">Basic47</option>
+                        <option value="BellyRubberxAlphabet76">BellyRubberxAlphabet76</option>
+                        <option value="BellyRubber34">BellyRubber34</option>
+                        <option value="BellyRubber50">BellyRubber50</option>
+                        <option value="Brutus40">Brutus40</option>
+                        <option value="Catalin55">Catalin55</option>
+                        <option value="Pythagoras38">Pythagoras38</option>
+                        <option value="Snail52">Snail52</option>
+                        <option value="TailRunner66">TailRunner66</option>
+                    </select>
+                    <br><br>
+                    <button onclick="loadSnakeFromArrayList()" class="glass">Load Snake From ArrayList</button>
+                    <br><br>
+                </div>
+            </div>
             <div name="powerupsLayer" style="display:none" class="boxSelect">
                 <!-- List of snakes generated from the genetic algorithm using arraylists (powerups included) -->
                 <label for="snakesArrayListPowerups">Choose a snake:</label>
@@ -146,8 +166,10 @@
             </div>
 
             <!-- Button for solo play -->
-            <button onclick="manualPlay()" class="glass">Play</button>
-            <br><br>
+            <div id="tutorialHighlight12">
+                <button onclick="manualPlay()" class="glass">Play</button>
+                <br><br>
+            </div>
 
             <script>
                 var sliderPopulationSize = document.getElementById('populationSize');
@@ -165,4 +187,5 @@
         </div>
     </div>
 </body>
+
 </html>

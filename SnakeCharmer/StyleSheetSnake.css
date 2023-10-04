@@ -1,5 +1,4 @@
-﻿
-.container {
+﻿.container {
     display: flex;
 }
 
@@ -17,14 +16,14 @@
     user-select: none;
 }
 
-    /* Hide the browser's default checkbox */
-    .containerCheckmark input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-    }
+/* Hide the browser's default checkbox */
+.containerCheckmark input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
 
 /* Create a custom checkbox */
 .checkmark {
@@ -37,12 +36,12 @@
 }
 
 /* On mouse-over, add a grey background color */
-.containerCheckmark:hover input ~ .checkmark {
+.containerCheckmark:hover input~.checkmark {
     background-color: #81b214;
 }
 
 /* When the checkbox is checked, add a blue background */
-.containerCheckmark input:checked ~ .checkmark {
+.containerCheckmark input:checked~.checkmark {
     background-color: #206a5d;
 }
 
@@ -54,7 +53,7 @@
 }
 
 /* Show the checkmark when checked */
-.containerCheckmark input:checked ~ .checkmark:after {
+.containerCheckmark input:checked~.checkmark:after {
     display: block;
 }
 
@@ -83,14 +82,14 @@
     transition: opacity .2s;
 }
 
-    .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background: #206a5d;
-        cursor: pointer;
-    }
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #206a5d;
+    cursor: pointer;
+}
 
 .glass {
     /* background styles */
@@ -108,10 +107,10 @@
     transition-duration: 0.4s;
 }
 
-    .glass:hover {
-        background-color: #206a5d;
-        color: white;
-    }
+.glass:hover {
+    background-color: #206a5d;
+    color: white;
+}
 
 .box {
     /* background styles */
@@ -147,22 +146,23 @@
     z-index: 1;
 }
 
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
-        .dropdown-content a:hover {
-            background-color: green
-        }
+.dropdown-content a:hover {
+    background-color: green
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.btn:hover, .dropdown:hover .btn {
+.btn:hover,
+.dropdown:hover .btn {
     background-color: green;
 }
 
@@ -171,21 +171,21 @@
     font-size: 18px;
 }
 
-    .boxSelect select {
-        background-color: #bfdcae;
-        color: white;
-        padding: 12px;
-        width: 160px;
-        border: none;
-        font-size: 15px;
-        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-        -webkit-appearance: button;
-        outline: none;
-    }
+.boxSelect select {
+    background-color: #bfdcae;
+    color: white;
+    padding: 12px;
+    width: 160px;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    outline: none;
+}
 
-        .boxSelect select option {
-            padding: 30px;
-        }
+.boxSelect select option {
+    padding: 30px;
+}
 
 .grid-container {
     display: grid;
@@ -203,3 +203,152 @@
     padding-right: 5px;
 }
 
+/* styles.css */
+.overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black overlay */
+    z-index: 9998;
+    /* Lower z-index than the pop-up */
+}
+
+/* styles.css */
+.popup {
+    width: 250px;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#popup-content {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+#popup-buttons-container {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.tutorialButton {
+    margin-left: 10px;
+    margin-right: 10px;
+    /* background styles */
+    padding: 7px 10px;
+    background-color: white;
+    color: #206a5d;
+    border: 2px solid #206a5d;
+    /* text styles */
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.tutorialButton:hover {
+    background-color: #206a5d;
+    color: white;
+}
+
+#tutorialHighlight1 {
+    width: 300px;
+    border-width: 3px;
+    border-color: red;
+}
+
+#tutorialHighlight2 {
+    width: 300px;
+    border-width: 3px;
+    border-color: red;
+}
+
+#tutorialHighlight3 {
+    width: 300px;
+    border-width: 3px;
+    border-color: red;
+}
+
+#tutorialHighlight4 {
+    width: 250px;
+    height: 30px;
+    border-width: 3px;
+    border-color: red;
+}
+
+#tutorialHighlight5 {
+    width: 250px;
+    height: 30px;
+    border-width: 3px;
+    border-color: red;
+}
+
+#tutorialHighlight6 {
+    width: 250px;
+    height: 30px;
+    border-width: 3px;
+    border-color: red;
+}
+
+#tutorialHighlight7 {
+    width: 250px;
+    height: 50px;
+    border-width: 3px;
+    border-color: red;
+}
+
+#tutorialHighlight8 {
+    width: 250px;
+    height: 50px;
+    border-width: 3px;
+    border-color: red;
+}
+
+#tutorialHighlight9 {
+    width: 250px;
+    height: 50px;
+    border-width: 3px;
+    border-color: red;
+}
+
+#tutorialHighlight10 {
+    width: 250px;
+    height: 50px;
+    border-width: 3px;
+    border-color: red;
+}
+
+#tutorialHighlight11 {
+    width: 200px;
+    height: 340px;
+    border-width: 3px;
+    border-color: red;
+}
+
+#tutorialHighlight12 {
+    width: 70px;
+    height: 40px;
+    border-width: 3px;
+    border-color: red;
+}
