@@ -41,24 +41,39 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var selected_place = null;
+var markers = []
+
+// Function to check marker visibility and hide/show markers accordingly
+function updateMarkerVisibility() {
+    var bounds = map.getBounds();
+    
+    for (idx in markers) {
+        var marker = markers[idx];
+        if (bounds.contains(marker.getLatLng())) {
+            map.addLayer(marker);
+        } else {
+            map.removeLayer(marker);
+        }
+    }
+}
 
 function openSidePanel(place) {
-    // open side panel
+    // Open side panel
     selected_place = place;
     const sidePanel = document.getElementById("sidePanel");
     sidePanel.style.right = "0px";
 
-    // add title the name of the place
+    // Add title the name of the place
     document.getElementById("placeName").textContent = place[Place.Name];
 
-    // get all mentions of the place before the given year
+    // Get all mentions of the place before the given year
     placeMentions = [];
     for (idx in mentions) {
-        // confirm place id for mention
+        // Confirm place id for mention
         if (mentions[idx][Place.Id] != place[Place.Id]) {
             continue;
         }
-        // ignore mentions after the given year
+        // Ignore mentions after the given year
         if (document.getElementById("yearRange").value < mentions[idx][Place.Year]) {
             continue;
         }
@@ -71,24 +86,24 @@ function openSidePanel(place) {
         ]);
     }
 
-    // sort mentions by decreasing year
+    // Sort mentions by decreasing year
     placeMentions = placeMentions.sort(function (a, b) { return b[1] - a[1]; });
 
-    // corner case when sidepanel is open and the year changes 
-    // close sidepanel if place hadn't previously been mentioned
+    // Corner case when sidepanel is open and the year changes 
+    // Close sidepanel if place hadn't previously been mentioned
     if (placeMentions.length == 0) {
         sidePanel.style.right = "-250px";
         return;
     }
 
-    // if latest mention shows place disappeared then close sidepanel
+    // If latest mention shows place disappeared then close sidepanel
     if (placeMentions[0][3] != "active") {
         console.log(placeMentions[0]);
         sidePanel.style.right = "-250px";
         return;
     }
 
-    // add html code to show mentions
+    // Add html code to show mentions
     current_year = null;
     html_content = "";
     for (idx in placeMentions) {
@@ -103,7 +118,6 @@ function openSidePanel(place) {
     mentionList.innerHTML = html_content;
 }
 
-var markers = []
 function addMarkers(place) {
     if (place[Place.Latitude] == null || place[Place.Status] != "active") {
         return;
@@ -156,6 +170,7 @@ function updateMarkerPosition() {
     for (marker_id in markers) {
         map.removeLayer(markers[marker_id]);
     }
+    markers = []
 
     var slider = document.getElementById("yearRange");
     var year = slider.value;
@@ -165,7 +180,7 @@ function updateMarkerPosition() {
     }
     for (mention_idx in mentions) {
         mention = mentions[mention_idx];
-        // ignore mentions that happen after the selected year
+        // Ignore mentions that happen after the selected year
         if (mention[Place.Year] > year) {
             continue;
         }
@@ -186,20 +201,28 @@ function updateMarkerPosition() {
     }
     Object.values(latest_mentions).forEach(addMarkers);
 }
+
+// Update side panel and markers when user changes year
 var slider = document.getElementById("yearRange");
 slider.addEventListener("change", function () {
     updateMarkerPosition();
 
-    // update side panel when user changes year
     if (selected_place && sidePanel.style.right == '0px') {
         openSidePanel(selected_place);
     }
 });
 
+// Initial loading of the markers
 updateMarkerPosition();
 
-// update map everytime the zoom changes
+// Update map everytime the zoom changes
 map.on('zoomend', function () {
     updateMarkerPosition();
     console.log(map.getZoom());
 });
+
+// Listen for map move and zoom events to update marker visibility
+map.on('moveend', updateMarkerVisibility);
+
+// Initial check to display markers within the current viewport
+updateMarkerVisibility();
