@@ -14,28 +14,21 @@
     <div id="map"></div>
 
     <div class="slideContainer">
-        <input type="range" min="1300" max="2023" value="1750" class="slider" id="yearRange"></input>
+        <input type="range" min="1300" max="2023" value="1718" class="slider" id="yearRange"></input>
     </div>
-    <p id="yearContainer"></p>
+    <p id="yearContainer">1718</p>
     <div id="sidePanel" class="closed">
         <div id="placeName"></div>
         <div id="referenceList"></div>
         <button id="closeButton">Close Panel</button>
     </div>
-    <script>
-        var slider = document.getElementById("yearRange");
-        var output = document.getElementById("yearContainer");
-        output.textContent = slider.value;
-
-        slider.oninput = function () {
-            output.textContent = this.value;
-        }
-    </script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="JavaScripts/constants.js"></script>
     <script src="JavaScripts/mentions.js"></script>
     <script src="JavaScripts//records.js"></script> 
     <script src="JavaScripts/SidePanel.js"></script>
     <script src="JavaScripts/MapMarkers.js"></script>
+    <script src="JavaScripts/Slider.js"></script>
 </body>
 
 </html>

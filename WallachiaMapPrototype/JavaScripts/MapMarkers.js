@@ -128,7 +128,7 @@ function addMarkers(place) {
         var radiusByZoom = { 8: 2, 9: 4, 10: 6, 11: 8 };
         var circle = L.circleMarker(coords, fill = 'black').addTo(map)
         circle.setRadius(radiusByZoom[map.getZoom()]);
-        if (place[Place.Name].includes('Mănăstirea ')) {
+        if (place[Place.Name].includes('Mănăstirea ') || place[Place.Name].includes('Schitul ')) {
             circle.setStyle({ color: 'black' });
         }
         circle.on('click', function () {
@@ -172,7 +172,6 @@ function updateMarkerPosition() {
     }
     markers = []
 
-    var slider = document.getElementById("yearRange");
     var year = slider.value;
     var latest_mentions = {};
     for (mention_idx in mentions) {
@@ -203,7 +202,6 @@ function updateMarkerPosition() {
 }
 
 // Update side panel and markers when user changes year
-var slider = document.getElementById("yearRange");
 slider.addEventListener("change", function () {
     updateMarkerPosition();
 
