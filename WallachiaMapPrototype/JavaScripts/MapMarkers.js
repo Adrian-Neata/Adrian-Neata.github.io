@@ -157,6 +157,9 @@ function addMarkers(place) {
         } else {
             //iconMarker = L.marker(coords, { icon: villageIcon }).addTo(map);
             iconMarker = L.circleMarker(coords).addTo(map);
+            if (place[Place.Name].includes('Mănăstirea ') || place[Place.Name].includes('Schitul ')) {
+                iconMarker.setStyle({ color: 'black' });
+            }
         }
         iconMarker.on('click', function () {
             openSidePanel(place);
