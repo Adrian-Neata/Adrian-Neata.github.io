@@ -27,10 +27,12 @@ var villageIcon = L.icon({
 var smallMonasteryIcon = L.icon({
     iconUrl: 'Icons/SmallMonasteryIcon.svg',
     iconSize: [32, 64], // size of the icon
+    iconAnchor: [16, 50]
 });
 var largeMonasteryIcon = L.icon({
     iconUrl: 'Icons/LargeMonasteryIcon.svg',
     iconSize: [64, 64], // size of the icon
+    iconAnchor: [32, 50]
 });
 
 // Add the OpenStreetMap tile layer
@@ -63,9 +65,6 @@ function openSidePanel(place) {
     const sidePanel = document.getElementById("sidePanel");
     sidePanel.style.right = "0px";
 
-    // Add title the name of the place
-    document.getElementById("placeName").textContent = place[Place.Name];
-
     // Get all mentions of the place before the given year
     placeMentions = [];
     for (idx in mentions) {
@@ -95,6 +94,9 @@ function openSidePanel(place) {
         sidePanel.style.right = "-250px";
         return;
     }
+
+    // Add title the name of the place that is most recent to the selected year
+    document.getElementById("placeName").textContent = placeMentions[0][Place.Name];
 
     // If latest mention shows place disappeared then close sidepanel
     if (placeMentions[0][3] != "active") {
@@ -138,9 +140,9 @@ function addMarkers(place) {
     } else {
         var textIcon = L.divIcon({
             className: 'text-icon',
-            iconSize: [100, 40],
+            iconSize: [64, 24],
             html: '<p>' + place[Place.Name] + '</p>',
-            iconAnchor: [20, -20]
+            iconAnchor: [32, 0]
         });
 
         var textMarker = L.marker(coords, { icon: textIcon }).addTo(map);
