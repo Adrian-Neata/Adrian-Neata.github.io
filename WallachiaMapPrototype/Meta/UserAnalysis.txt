@@ -10,4 +10,7 @@ Historians and Researchers:
 -> Add references for the data so that they can reference that instead and maybe correct me if I misinterpreted something or just made a mistake.
 -> Add search bar that lists all places that have been referenced with the given name before the selected year.
 -> Add clickable place icons that list all mentions of a place before the selected year and the sources for those (maybe even links to the documents if available).
+-> Add special table for golden bull.
+-> Make it so that you can select the mentions from a specific ruler or within a timeframe.
+-> Add numbers to every place representing the number of mentions.
 
