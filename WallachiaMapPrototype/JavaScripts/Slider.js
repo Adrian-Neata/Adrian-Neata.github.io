@@ -1,8 +1,12 @@
 // Define the checkpoint values
 var checkpoints = new Set();
-for (idx in mentions) {
-    checkpoints.add(mentions[idx][Place.Year]);
+for (idx in mentions_places) {
+    checkpoints.add(mentions_places[idx][Place.Year]);
 }
+for (idx in mentions_monasteries) {
+    checkpoints.add(mentions_monasteries[idx][Place.Year]);
+}
+
 checkpoints = Array.from(checkpoints);
 checkpoints = checkpoints.sort(function (a, b) { return a - b; });
 console.log(checkpoints);

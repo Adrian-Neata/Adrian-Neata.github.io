@@ -7,13 +7,19 @@ const Place = {
     Id: 5,
     Record_Id: 6,
     Notes: 7,
-    No_Mentions: 8,
+    Place_Type: 8,
+    No_Mentions: 9,
 };
 
 const Record = {
     Id: 0,
     Year: 1,
     Description: 2,
+}
+
+const Place_Type = {
+    Settlement: 0,
+    Monastery: 1,
 }
 
 // Initialize the map
@@ -45,7 +51,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var selected_place = null;
 var markers = []
 
-// Function to check marker visibility and hide/show markers accordingly
+// Function to check marker visibility and hide/show markers according to the window view
 function updateMarkerVisibility() {
     var bounds = map.getBounds();
     
@@ -65,6 +71,11 @@ function openSidePanel(place) {
     const sidePanel = document.getElementById("sidePanel");
     sidePanel.style.right = "0px";
 
+    var mentions = mentions_places;
+
+    if (place[Place.Place_Type] == Place_Type.Monastery) {
+        mentions = mentions_monasteries;
+    }
     // Get all mentions of the place before the given year
     placeMentions = [];
     for (idx in mentions) {
@@ -126,48 +137,52 @@ function addMarkers(place) {
     }
 
     var coords = [place[Place.Latitude], place[Place.Longitude]];
+
+    // if small zoom show only colored circles
     if (map.getZoom() < 12) {
         var radiusByZoom = { 8: 2, 9: 4, 10: 6, 11: 8 };
         var circle = L.circleMarker(coords, fill = 'black').addTo(map)
         circle.setRadius(radiusByZoom[map.getZoom()]);
-        if (place[Place.Name].includes('Mănăstirea ') || place[Place.Name].includes('Schitul ')) {
+        if (place[Place.Place_Type] == Place_Type.Monastery) {
             circle.setStyle({ color: 'black' });
         }
         circle.on('click', function () {
             openSidePanel(place);
         });
         markers.push(circle);
-    } else {
-        var textIcon = L.divIcon({
-            className: 'text-icon',
-            iconSize: [64, 24],
-            html: '<p>' + place[Place.Name] + '</p>',
-            iconAnchor: [32, 0]
-        });
-
-        var textMarker = L.marker(coords, { icon: textIcon }).addTo(map);
-        textMarker.on('click', function () {
-            openSidePanel(place);
-        });
-        markers.push(textMarker);
-
-        var iconMarker = null;
-        if ("Apare ca mănăstire mică." == place[Place.Notes]) {
-            iconMarker = L.marker(coords, { icon: smallMonasteryIcon }).addTo(map);
-        } else if ("Apare ca mănăstire mare." == place[Place.Notes]) {
-            iconMarker = L.marker(coords, { icon: largeMonasteryIcon }).addTo(map);
-        } else {
-            //iconMarker = L.marker(coords, { icon: villageIcon }).addTo(map);
-            iconMarker = L.circleMarker(coords).addTo(map);
-            if (place[Place.Name].includes('Mănăstirea ') || place[Place.Name].includes('Schitul ')) {
-                iconMarker.setStyle({ color: 'black' });
-            }
-        }
-        iconMarker.on('click', function () {
-            openSidePanel(place);
-        });
-        markers.push(iconMarker);
+        return
     }
+
+    // if large zoom show icons if possible
+    var textIcon = L.divIcon({
+        className: 'text-icon',
+        iconSize: [64, 24],
+        html: '<p>' + place[Place.Name] + '</p>',
+        iconAnchor: [32, 0]
+    });
+
+    var textMarker = L.marker(coords, { icon: textIcon }).addTo(map);
+    textMarker.on('click', function () {
+        openSidePanel(place);
+    });
+    markers.push(textMarker);
+
+    //iconMarker = L.marker(coords, { icon: villageIcon }).addTo(map);
+    var iconMarker = L.circleMarker(coords);
+
+    if (place[Place.Place_Type] == Place_Type.Monastery) {
+        iconMarker.setStyle({ color: 'black' });
+        // if ("Apare ca mănăstire mică." == place[Place.Notes]) {
+        //     iconMarker = L.marker(coords, { icon: smallMonasteryIcon });
+        // } else if ("Apare ca mănăstire mare." == place[Place.Notes]) {
+        //     iconMarker = L.marker(coords, { icon: largeMonasteryIcon });
+        // }
+    }
+    iconMarker = iconMarker.addTo(map);
+    iconMarker.on('click', function () {
+        openSidePanel(place);
+    });
+    markers.push(iconMarker);
 }
 
 function updateMarkerPosition() {
@@ -178,32 +193,39 @@ function updateMarkerPosition() {
     markers = []
 
     var year = slider.value;
-    var latest_mentions = {};
-    for (mention_idx in mentions) {
-        mentions[mention_idx][Place.No_Mentions] = 1;
-    }
-    for (mention_idx in mentions) {
-        mention = mentions[mention_idx];
-        // Ignore mentions that happen after the selected year
-        if (mention[Place.Year] > year) {
-            continue;
-        }
 
-        if (!(mention[Place.Id] in latest_mentions)) {
-            latest_mentions[mention[Place.Id]] = mention;
-        } else {
-            if (latest_mentions[mention[Place.Id]][Place.Year] < mention[Place.Year]) {
-                latest_mentions[mention[Place.Id]] = mention;
-            }
-            latest_mentions[mention[Place.Id]][Place.No_Mentions] += 1;
+    mentions_list = [mentions_places, mentions_monasteries];
+    for (var i = 0; i < 2; i++) {
+        var latest_mentions = {};
+        mentions = mentions_list[i];
+        for (mention_idx in mentions) {
+            mentions[mention_idx][Place.No_Mentions] = 1;
         }
+        for (mention_idx in mentions) {
+            mention = mentions[mention_idx];
+            // Ignore mentions that happen after the selected year
+            if (mention[Place.Year] > year) {
+                continue;
+            }
+
+            if (!(mention[Place.Id] in latest_mentions)) {
+                latest_mentions[mention[Place.Id]] = mention;
+            } else {
+                if (latest_mentions[mention[Place.Id]][Place.Year] < mention[Place.Year]) {
+                    latest_mentions[mention[Place.Id]] = mention;
+                }
+                latest_mentions[mention[Place.Id]][Place.No_Mentions] += 1;
+            }
+        }
+        for (mention_idx in mentions) {
+            if (mentions[mention_idx][Place.No_Mentions] > 1)
+                //console.log(mentions[mention_idx]);
+                continue;
+        }
+        Object.values(latest_mentions).forEach(element => {
+            addMarkers(element, i);
+        });
     }
-    for (mention_idx in mentions) {
-        if (mentions[mention_idx][Place.No_Mentions] > 1)
-            //console.log(mentions[mention_idx]);
-            continue;
-    }
-    Object.values(latest_mentions).forEach(addMarkers);
 }
 
 // Update side panel and markers when user changes year
