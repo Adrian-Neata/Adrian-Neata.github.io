@@ -13,21 +13,23 @@
     color: black;
 }
 
-.slideContainer {
-    bottom: 3vh;
-    width: 92vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    position: absolute;
-    z-index: 500;
-}
-
 #yearContainer {
     bottom: 4vh;
     width: 98vw;
     text-align: center;
     font-size: 250%;
     font-weight: bold;
+    position: absolute;
+    z-index: 500;
+}
+
+/* year slider css */
+
+.slideContainer {
+    bottom: 3vh;
+    width: 92vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
     position: absolute;
     z-index: 500;
 }
@@ -66,6 +68,8 @@
     cursor: pointer;
 }
 
+/* side panel for place information css */
+
 #placeName {
     margin: 5%;
     font-size: 200%;
@@ -78,7 +82,7 @@
     top: 0.8vh;
     right: -250px; /* Initially hidden to the right */
     width: 250px;
-    height: 90.2vh;
+    height: 88.2vh;
     background-color: rgba(255, 255, 255, 0.8);
     color: #000;
     transition: right 0.3s;
@@ -115,6 +119,7 @@
     background-color: white;
     color: black;
     margin: 4%;
+    width: 93%;
     opacity: 1.0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     -webkit-transition: background-color 0.5s;
@@ -130,4 +135,64 @@
 
 hr {
     border-top: 5px solid #000;
+}
+
+
+/* search menu css */
+#searchMenu {
+    top: 3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    position: absolute;
+    z-index: 500;
+}
+
+#searchMenu input[type=text] {
+    font-size: 17px;
+}
+
+#searchPanel {
+    overflow: auto;
+    position: fixed;
+    left: 3.5vw;
+    width: 230px;
+    height: 80.2vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    transition: right 0.3s;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searchPanelContainer {
+    overflow: auto;
+    position: fixed;
+    display: none;
+    padding: 5px;
+    top: 7vh;
+    left: 2.5vw;
+    width: 250px;
+    height: 86.2vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    transition: right 0.3s;
+    z-index: 500;
+}
+
+#resultsCloseButton {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 8px 100px;
+}
+
+#searchPanelLabel {
+    position: relative;
+    display: inline-block;
+    margin: 5px 0 0 10px;
+}
+
+#moreResultsButton {
+    margin-bottom: 10px;
 }

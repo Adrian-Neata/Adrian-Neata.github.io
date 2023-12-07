@@ -13,23 +13,47 @@
     <div id="status"></div>
     <div id="map"></div>
 
+    <div id="searchMenu">
+        <input id="searchBar" type="text" onkeypress="handleKeyPressSearch(event)" placeholder="Căutare..">
+    </div>
+
     <div class="slideContainer">
         <input type="range" min="1300" max="2023" value="1718" class="slider" id="yearRange"></input>
     </div>
+
     <p id="yearContainer">1718</p>
-    <div id="sidePanel" class="closed">
+
+    <div id="sidePanel">
         <div id="placeName"></div>
         <div id="referenceList"></div>
         <button id="closeButton">Close Panel</button>
     </div>
+
+    <div id="searchPanelContainer">
+        <h2 id="searchPanelLabel">Rezultate</h2>
+        <button id="resultsCloseButton" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div id="searchPanel">
+            <div id="searchResultsList"></div>
+            <button id="moreResultsButton" type="button">
+                Mai multe
+            </button>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="JavaScripts/constants.js"></script>
+    <script src="JavaScripts/remove_diacritics.js"></script>
+    <script src="JavaScripts/places.js"></script>
     <script src="JavaScripts/mentions_places.js"></script>
     <script src="JavaScripts/mentions_monasteries.js"></script>
-    <script src="JavaScripts//records.js"></script> 
-    <script src="JavaScripts/SidePanel.js"></script>
-    <script src="JavaScripts/MapMarkers.js"></script>
-    <script src="JavaScripts/Slider.js"></script>
+    <script src="JavaScripts//records.js"></script>
+    <script src="JavaScripts/info_side_panel.js"></script>
+    <script src="JavaScripts/map_markers_generator.js"></script>
+    <script src="JavaScripts/year_slider.js"></script>
+    <script src="JavaScripts/search_menu_interactions.js"></script>
+    <script src="JavaScripts/search_panel_buttons.js"></script>
 </body>
 
 </html>
