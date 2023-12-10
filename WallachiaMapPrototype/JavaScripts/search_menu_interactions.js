@@ -29,7 +29,7 @@ function sortSearchResults(a, b) {
         return -1;
     }
 
-    if (mentions_places[a[1]][Place.Name].length > mentions_places[b[1]][Place.Name].length) {
+    if (mentions_places[a[1]][Mention.Name].length > mentions_places[b[1]][Mention.Name].length) {
         return 1;
     }
 
@@ -77,15 +77,15 @@ function computeQueryScore(query_ngrams, query, name) {
 
 function create_result_template(last_mention, old_name, reference_id) {
     html_content = '';
-    html_content += '<div style = "cursor: pointer; margin-bottom: 10%; margin-left: 2%; width: 180px;" class="referenceContainer" id="' + reference_id + '"><h3 class="placeName">' + last_mention[Place.Name] + '</h3>';
+    html_content += '<div style = "cursor: pointer; margin-bottom: 10%; margin-left: 2%; width: 180px;" class="referenceContainer" id="' + reference_id + '"><h3 class="placeName">' + last_mention[Mention.Name] + '</h3>';
     if (old_name != null) {
         html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Denumire veche:</b> ' + old_name + '</h4>';
     }
-    html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Comună:</b> ' + places[last_mention[Place.Id]][Place1.Commune] + '</h4>';
-    html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Județ:</b> ' + places[last_mention[Place.Id]][Place1.County] + '</h4>';
+    html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Comună:</b> ' + places[last_mention[Mention.Place_Id]][Place.Commune] + '</h4>';
+    html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Județ:</b> ' + places[last_mention[Mention.Place_Id]][Place.County] + '</h4>';
 
     // show current status
-    switch(last_mention[Place.Status]) {
+    switch(last_mention[Mention.Place_Status]) {
         case "disbanded": 
             html_content += '<h4 style = "margin: 4%; font-weight: normal;">Localitate dispărută.</h4>';
             break;
@@ -95,7 +95,7 @@ function create_result_template(last_mention, old_name, reference_id) {
     }
 
     // exact location not found
-    if (last_mention[Place.Latitude] === null) {
+    if (last_mention[Mention.Latitude] === null) {
         html_content += '<h4 style = "margin: 4%; padding-bottom: 4%; font-weight: normal;" >Locația exactă nu a putut fi identificată.</h4>';
     } else {
         html_content += '<h5 style = "margin: 4%; padding-bottom: 2%; font-weight: normal;" ></h5>';
@@ -113,7 +113,6 @@ function showSearchResults(query) {
     query_ngrams = generateNGrams(query);
 
     html_content = mentionList.innerHTML;
-    references = [];
 
     for (idx in results) {
         mention = mentions_places[results[idx][1]];
@@ -121,14 +120,14 @@ function showSearchResults(query) {
         // get all mentions of the place
         all_place_mentions = []
         for (mention_idx in mentions_places) {
-            if (mentions_places[mention_idx][Place.Id] === mention[Place.Id]) {
+            if (mentions_places[mention_idx][Mention.Place_Id] === mention[Mention.Place_Id]) {
                 all_place_mentions.push(mentions_places[mention_idx]);
             }
         }
 
         // sort them with the latest mention as first in the list
-        all_place_mentions.sort((a,b) => b[Place.Year] - a[Place.Year]);
-        all_place_mentions = all_place_mentions.map((x) => [x, computeQueryScore(query_ngrams, query, x[Place.Name])]);
+        all_place_mentions.sort((a,b) => b[Mention.Year] - a[Mention.Year]);
+        all_place_mentions = all_place_mentions.map((x) => [x, computeQueryScore(query_ngrams, query, x[Mention.Name])]);
 
         // check if any old name matches the query better than the current one
         old_name = [null, 0.1];
@@ -137,42 +136,64 @@ function showSearchResults(query) {
                 continue;
             }
             if (all_place_mentions[mention_idx][1] - all_place_mentions[0][1] > old_name[1]) {
-                old_name = [all_place_mentions[mention_idx][0][Place.Name], all_place_mentions[mention_idx][1] - all_place_mentions[0][1]];
+                old_name = [all_place_mentions[mention_idx][0][Mention.Name], all_place_mentions[mention_idx][1] - all_place_mentions[0][1]];
             } 
         }
         all_place_mentions = all_place_mentions.map((x) => x[0]);
 
         // generate html template
         reference_id = "reference" + results[idx][1];
-        references.push(reference_id);
         html_content += create_result_template(all_place_mentions[0], old_name[0], reference_id);
     }
 
     // update results list
     mentionList.innerHTML = html_content;
-    
+
+    // get all ids for the results
+    references = [];
+    elements = document.querySelectorAll(`[id^=${"reference"}]`);
+    for (idx in elements) {
+        if (elements[idx].id != null && elements[idx].id != "referenceList") {
+            references.push(elements[idx].id);
+        }
+    }
+
+    // give each result a clickable function that pans the map to the place location
     for (idx in references) {
         reference_id = references[idx];
 
         document.getElementById(reference_id).onclick = function(event) {
             idx = parseInt(event.currentTarget.id.slice(9));
             mention = mentions_places[idx];
-            if (mention[Place.Latitude] === null) {
+            // if place has no coordinates search for another village in the same commune with coordinates
+            if (mention[Mention.Latitude] === null) {
+                another_option_found = false;
                 for (p_key in places) {
-                    if (places[p_key][Place1.Commune] === places[mention[Place.Id]][Place1.Commune] && places[p_key][Place1.County] === places[mention[Place.Id]][Place1.County] && p_key != mention[Place.Id]) {
-                        console.log(places[p_key]);
-                        console.log(places[mention[Place.Id]]);
+                    if (places[p_key][Place.Commune] === places[mention[Mention.Place_Id]][Place.Commune] && 
+                        places[p_key][Place.County] === places[mention[Mention.Place_Id]][Place.County] && 
+                        places[p_key][Place.Latitude] != null) {
+
+                        //console.log(places[p_key]);
+                        //console.log(places[mention[Mention.Place_Id]]);
+                        another_option_found = true;
                         break;
                     }
                 }
-                panToCoordinates(places[p_key][Place1.Latitude], places[p_key][Place1.Longitude]); 
+                if (another_option_found) {
+                    panToCoordinates(places[p_key][Place.Latitude], places[p_key][Place.Longitude]);
+                }
             } else {
-                panToCoordinates(mention[Place.Latitude], mention[Place.Longitude]); 
+                panToCoordinates(mention[Mention.Latitude], mention[Mention.Longitude]); 
             }
         }
     }
 
     document.getElementById("searchPanelContainer").style.display = "block";
+
+    // make button for more results invisible if reached end of results
+    if (SEARCH_RESULTS.length === mentionList.childNodes.length) {
+        MORE_RESULTS_BUTTON.style.display = "none";
+    }
 }
 
 function searchPlaces(query) {
@@ -187,7 +208,7 @@ function searchPlaces(query) {
 
     search_list = [];
     for (idx = 0; idx < mentions_places.length; idx++) {
-        place_name = mentions_places[idx][Place.Name];
+        place_name = mentions_places[idx][Mention.Name];
         match_score = computeQueryScore(query_ngrams, query, place_name);
         search_list.push([match_score, idx]);
     }
@@ -202,7 +223,7 @@ function searchPlaces(query) {
     }
 
     for (idx in search_list) {
-        place_id = mentions_places[search_list[idx][1]][Place.Id]
+        place_id = mentions_places[search_list[idx][1]][Mention.Place_Id]
         if (place_id_set.has(place_id)) {
             continue
         } else {
@@ -211,7 +232,6 @@ function searchPlaces(query) {
         }
     }
     //console.log(results);
-
     document.getElementById("searchPanel").scrollTop = 0;
     document.getElementById("searchResultsList").innerHTML = "";
 

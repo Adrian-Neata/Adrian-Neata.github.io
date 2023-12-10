@@ -1,10 +1,10 @@
 // Define the checkpoint values
 var checkpoints = new Set();
 for (idx in mentions_places) {
-    checkpoints.add(mentions_places[idx][Place.Year]);
+    checkpoints.add(mentions_places[idx][Mention.Year]);
 }
 for (idx in mentions_monasteries) {
-    checkpoints.add(mentions_monasteries[idx][Place.Year]);
+    checkpoints.add(mentions_monasteries[idx][Mention.Year]);
 }
 
 checkpoints = Array.from(checkpoints);

@@ -1,37 +1,3 @@
-const Place = {
-    Name: 0,
-    Latitude: 1,
-    Longitude: 2,
-    Status: 3,
-    Year: 4,
-    Id: 5,
-    Record_Id: 6,
-    Notes: 7,
-    Place_Type: 8,
-    No_Mentions: 9,
-};
-
-const Place1 = {
-    Id: 0,
-    Name: 1,
-    Commune: 2,
-    County: 3,
-    Country: 4,
-    Latitude: 5,
-    Longitude: 6,
-}
-
-const Record = {
-    Id: 0,
-    Year: 1,
-    Description: 2,
-}
-
-const Place_Type = {
-    Settlement: 0,
-    Monastery: 1,
-}
-
 // Initialize the map
 var map = L.map('map',{ zoomControl: false }).setView([45.1567241037536, 24.6754243860472], 8);
 new L.Control.Zoom({ position: 'bottomright' }).addTo(map);
@@ -76,85 +42,19 @@ function updateMarkerVisibility() {
     }
 }
 
-function openSidePanel(place) {
-    // Open side panel
-    selected_place = place;
-    const sidePanel = document.getElementById("sidePanel");
-    sidePanel.style.right = "0px";
-
-    var mentions = mentions_places;
-
-    if (place[Place.Place_Type] == Place_Type.Monastery) {
-        mentions = mentions_monasteries;
-    }
-    // Get all mentions of the place before the given year
-    placeMentions = [];
-    for (idx in mentions) {
-        // Confirm place id for mention
-        if (mentions[idx][Place.Id] != place[Place.Id]) {
-            continue;
-        }
-        // Ignore mentions after the given year
-        if (document.getElementById("yearRange").value < mentions[idx][Place.Year]) {
-            continue;
-        }
-
-        placeMentions.push([
-            mentions[idx][Place.Name], 
-            mentions[idx][Place.Year], 
-            records[mentions[idx][Place.Record_Id] - 1][Record.Description], 
-            mentions[idx][Place.Status],
-        ]);
-    }
-
-    // Sort mentions by decreasing year
-    placeMentions = placeMentions.sort(function (a, b) { return b[1] - a[1]; });
-
-    // Corner case when sidepanel is open and the year changes 
-    // Close sidepanel if place hadn't previously been mentioned
-    if (placeMentions.length == 0) {
-        sidePanel.style.right = "-250px";
-        return;
-    }
-
-    // Add title the name of the place that is most recent to the selected year
-    document.getElementById("placeName").textContent = placeMentions[0][Place.Name];
-
-    // If latest mention shows place disappeared then close sidepanel
-    if (placeMentions[0][3] != "active") {
-        console.log(placeMentions[0]);
-        sidePanel.style.right = "-250px";
-        return;
-    }
-
-    // Add html code to show mentions
-    current_year = null;
-    html_content = "";
-    for (idx in placeMentions) {
-        mention = placeMentions[idx];
-        if (mention[1] != current_year) {
-            current_year = mention[1];
-            html_content += '<h2 class="yearSubtitle">' + current_year.toString() + '</h2><hr class="separatorLineYear">';
-        }
-        html_content += '<div class="referenceContainer"><h3 class="placeName">' + mention[0] + '</h3><h4 class="recordDescription">' + mention[2] + '</h4></div>';
-    }
-    const mentionList = document.getElementById("referenceList");
-    mentionList.innerHTML = html_content;
-}
-
 function addMarkers(place) {
-    if (place[Place.Latitude] == null || place[Place.Status] != "active") {
+    if (place[Mention.Latitude] == null || place[Mention.Place_Status] != "active") {
         return;
     }
 
-    var coords = [place[Place.Latitude], place[Place.Longitude]];
+    var coords = [place[Mention.Latitude], place[Mention.Longitude]];
 
     // if small zoom show only colored circles
     if (map.getZoom() < 12) {
         var radiusByZoom = { 8: 2, 9: 4, 10: 6, 11: 8 };
         var circle = L.circleMarker(coords, fill = 'black').addTo(map)
         circle.setRadius(radiusByZoom[map.getZoom()]);
-        if (place[Place.Place_Type] == Place_Type.Monastery) {
+        if (place[Mention.Place_Type] == Place_Type.Monastery) {
             circle.setStyle({ color: 'black' });
         }
         circle.on('click', function () {
@@ -168,7 +68,7 @@ function addMarkers(place) {
     var textIcon = L.divIcon({
         className: 'text-icon',
         iconSize: [64, 24],
-        html: '<p>' + place[Place.Name] + '</p>',
+        html: '<p>' + place[Mention.Name] + '</p>',
         iconAnchor: [32, 0]
     });
 
@@ -181,11 +81,11 @@ function addMarkers(place) {
     //iconMarker = L.marker(coords, { icon: villageIcon }).addTo(map);
     var iconMarker = L.circleMarker(coords);
 
-    if (place[Place.Place_Type] == Place_Type.Monastery) {
+    if (place[Mention.Place_Type] == Place_Type.Monastery) {
         iconMarker.setStyle({ color: 'black' });
-        // if ("Apare ca mănăstire mică." == place[Place.Notes]) {
+        // if ("Apare ca mănăstire mică." == place[Mention.Notes]) {
         //     iconMarker = L.marker(coords, { icon: smallMonasteryIcon });
-        // } else if ("Apare ca mănăstire mare." == place[Place.Notes]) {
+        // } else if ("Apare ca mănăstire mare." == place[Mention.Notes]) {
         //     iconMarker = L.marker(coords, { icon: largeMonasteryIcon });
         // }
     }
@@ -210,26 +110,27 @@ function updateMarkerPosition() {
         var latest_mentions = {};
         mentions = mentions_list[i];
         for (mention_idx in mentions) {
-            mentions[mention_idx][Place.No_Mentions] = 1;
+            mentions[mention_idx][Mention.No_Mentions] = 1;
         }
         for (mention_idx in mentions) {
             mention = mentions[mention_idx];
+
             // Ignore mentions that happen after the selected year
-            if (mention[Place.Year] > year) {
+            if (mention[Mention.Year] > year) {
                 continue;
             }
 
-            if (!(mention[Place.Id] in latest_mentions)) {
-                latest_mentions[mention[Place.Id]] = mention;
+            if (!(mention[Mention.Place_Id] in latest_mentions)) {
+                latest_mentions[mention[Mention.Place_Id]] = mention;
             } else {
-                if (latest_mentions[mention[Place.Id]][Place.Year] < mention[Place.Year]) {
-                    latest_mentions[mention[Place.Id]] = mention;
+                if (latest_mentions[mention[Mention.Place_Id]][Mention.Year] < mention[Mention.Year]) {
+                    latest_mentions[mention[Mention.Place_Id]] = mention;
                 }
-                latest_mentions[mention[Place.Id]][Place.No_Mentions] += 1;
+                latest_mentions[mention[Mention.Place_Id]][Mention.No_Mentions] += 1;
             }
         }
         for (mention_idx in mentions) {
-            if (mentions[mention_idx][Place.No_Mentions] > 1)
+            if (mentions[mention_idx][Mention.No_Mentions] > 1)
                 //console.log(mentions[mention_idx]);
                 continue;
         }

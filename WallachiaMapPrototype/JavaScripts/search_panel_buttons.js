@@ -1,10 +1,10 @@
-const closeSearchResultsButton = document.getElementById("resultsCloseButton");
-const moreResultsButton = document.getElementById("moreResultsButton");
-const searchResultsPanel = document.getElementById("searchPanelContainer");
+const CLOSE_SEARCH_RESULTS_BUTTON = document.getElementById("resultsCloseButton");
+const MORE_RESULTS_BUTTON = document.getElementById("moreResultsButton");
+const SEARCH_RESULTS_PANEL = document.getElementById("searchPanelContainer");
 
 // Function to close the search panel
 function closeSearchPanel() {
-    searchResultsPanel.style.display = "none";
+    SEARCH_RESULTS_PANEL.style.display = "none";
 }
 
 // Function to load another 10 search results
@@ -13,5 +13,5 @@ function showMoreResults() {
 }
 
 // Attach click event listeners to open and close buttons
-closeSearchResultsButton.addEventListener("click", closeSearchPanel);
-moreResultsButton.addEventListener("click", showMoreResults);
+CLOSE_SEARCH_RESULTS_BUTTON.addEventListener("click", closeSearchPanel);
+MORE_RESULTS_BUTTON.addEventListener("click", showMoreResults);
