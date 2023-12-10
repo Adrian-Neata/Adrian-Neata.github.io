@@ -77,7 +77,7 @@ function openSidePanel(place) {
 
         }
         if (mention[Mention.County] != null) {
-            if (![5, 25].includes(mention[Mention.Record_Id])) {
+            if (![5, 8].includes(mention[Mention.Record_Id])) {
                 html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Județ:</b> ' + mention[Mention.County] + '</h4>';
             } else {
                 html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Raion:</b> ' + mention[Mention.County] + '</h4>';
