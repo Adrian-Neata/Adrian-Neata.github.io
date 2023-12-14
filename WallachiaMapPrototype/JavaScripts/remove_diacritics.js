@@ -92,6 +92,8 @@ function removeDiacritics(str) {
 
   str = str.replaceAll('-', ' ');
   str = str.replaceAll('.', ' ');
+  str = str.replaceAll('(', ' ');
+  str = str.replaceAll(')', ' ');
   str = str.replaceAll('  ', ' ');
   str = str.replaceAll('  ', ' ');
   return str.toLowerCase();

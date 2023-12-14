@@ -2,8 +2,8 @@ const slider = document.getElementById("yearRange");
 const yearOutput = document.getElementById("yearContainer");
 
 const Mention = {
-    Place_Id: 0,
-    Record_Id: 1,
+    Record_Id: 0,
+    Place_Id: 1,
     Name: 2,
     Commune: 3,
     County: 4,
