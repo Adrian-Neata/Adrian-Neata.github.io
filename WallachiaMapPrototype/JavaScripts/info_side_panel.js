@@ -38,8 +38,7 @@ function openSidePanel(place) {
         if (document.getElementById("yearRange").value < mentions[idx][Mention.Year]) {
             continue;
         }
-
-        placeMentions.push([mentions[idx], records[mentions[idx][Mention.Record_Id] - 1][Record.Description]]);
+        placeMentions.push([mentions[idx], records[mentions[idx][Mention.Record_Id]][Record.Description]]);
     }
 
     // Sort mentions by decreasing year

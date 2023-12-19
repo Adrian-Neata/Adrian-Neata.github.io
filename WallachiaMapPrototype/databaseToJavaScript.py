@@ -18,9 +18,12 @@ f.write('var mentions_monasteries = ' + json.dumps(res))
 f.close()
 
 res = cur.execute("SELECT RECORDS.id, RECORDS.year, RECORDS.description from RECORDS").fetchall()
+res_dict = {}
+for record in res:
+    res_dict[int(record[0])] = record
 
 f = open("JavaScripts/records.js", 'w')
-f.write('var records = ' + json.dumps(res))
+f.write('var records = ' + json.dumps(res_dict))
 f.close()
 
 res = cur.execute("SELECT PLACES.* FROM PLACES JOIN MENTIONS ON PLACES.id = MENTIONS.place_id WHERE MENTIONS.mention_status == 'finished'").fetchall()
