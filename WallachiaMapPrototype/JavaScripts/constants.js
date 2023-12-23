@@ -1,6 +1,8 @@
 const slider = document.getElementById("yearRange");
 const yearOutput = document.getElementById("yearContainer");
 
+const RADIUS_BY_ZOOM = { 8: 2, 9: 4, 10: 6, 11: 8, 12: 10, 13: 10, 14: 10};
+
 const Mention = {
     Record_Id: 0,
     Place_Id: 1,

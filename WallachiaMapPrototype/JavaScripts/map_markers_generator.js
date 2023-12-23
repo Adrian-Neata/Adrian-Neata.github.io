@@ -26,14 +26,18 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var selected_place = null;
-var markers = []
+var MARKERS = [];
+var CHANGED_MARKERS = [];
+var MARKERS_TO_BE_REMOVED = [];
+var PREV_SLIDER_VALUE = 1718;
+var SLIDER_VALUE = 1718;
 
 // Function to check marker visibility and hide/show markers according to the window view
 function updateMarkerVisibility() {
     var bounds = map.getBounds();
     
-    for (idx in markers) {
-        var marker = markers[idx];
+    for (idx in MARKERS) {
+        var marker = MARKERS[idx];
         if (bounds.contains(marker.getLatLng())) {
             map.addLayer(marker);
         } else {
@@ -42,66 +46,128 @@ function updateMarkerVisibility() {
     }
 }
 
-function addMarkers(place) {
-    if (place[Mention.Latitude] == null || place[Mention.Place_Status] != "active") {
+function removeDisbandedPlaces() {
+    for (idx in MARKERS_TO_BE_REMOVED) {
+        [circle, textMarker] = MARKERS_TO_BE_REMOVED[idx];
+        map.removeLayer(circle);
+        MARKERS = MARKERS.filter(function(e) { return e !== circle })
+        if (textMarker) {
+            map.removeLayer(textMarker);
+            MARKERS = MARKERS.filter(function(e) { return e !== textMarker })
+        }
+    }
+    MARKERS_TO_BE_REMOVED = [];
+}
+
+function highlightMarkers() {
+    orig_colors = {0: {}, 1: {}};
+    wait_time_animation = 2500;
+
+    // increase the radius and change color to red or green
+    setTimeout(function() {
+        for (idx in MARKERS_TO_BE_REMOVED) {
+            [circle, textMarker] = MARKERS_TO_BE_REMOVED[idx];
+            orig_colors[0][idx] = circle.options.color;
+
+            circle.setRadius(RADIUS_BY_ZOOM[map.getZoom()]*3);
+            circle.setStyle({ color: 'red' });
+        }
+
+        for (idx in CHANGED_MARKERS) {
+            circle = CHANGED_MARKERS[idx];
+            orig_colors[1][idx] = circle.options.color;
+
+            circle.setRadius(RADIUS_BY_ZOOM[map.getZoom()]*3);
+            circle.setStyle({ color: 'green' });
+        }
+    }, 500);
+
+
+    // wait for a short time before decreasing the radius and changing back to original color
+    setTimeout(function() {
+        // decrease marker radius back to the original value
+        for (idx in MARKERS_TO_BE_REMOVED) {
+            [circle, textMarker] = MARKERS_TO_BE_REMOVED[idx];
+            circle.setRadius(0);
+            circle.setStyle({ color: orig_colors[0][idx] });
+        }
+
+        for (idx in CHANGED_MARKERS) {
+            circle = CHANGED_MARKERS[idx];
+            circle.setRadius(RADIUS_BY_ZOOM[map.getZoom()]);
+            circle.setStyle({ color: orig_colors[1][idx] });
+        }
+        CHANGED_MARKERS = [];
+
+    }, 500 + wait_time_animation); // Adjust the delay as needed
+    
+    // wait for animation to finish and then remove markers
+    setTimeout(removeDisbandedPlaces, 500 + 2 * wait_time_animation);
+}
+
+function addMarkers(last_mention, year_changed) {
+    var textMarker = null;
+
+    // skip because we don't know where to put the marker
+    if (last_mention[Mention.Latitude] == null) {
         return;
     }
 
-    var coords = [place[Mention.Latitude], place[Mention.Longitude]];
+    if (last_mention[Mention.Place_Status] != "active" && !year_changed) {
+        return;
+    }
+    
+    // last_mention[Mention.Place_Status] != "active"
 
-    // if small zoom show only colored circles
-    if (map.getZoom() < 12) {
-        var radiusByZoom = { 8: 2, 9: 4, 10: 6, 11: 8 };
-        var circle = L.circleMarker(coords, fill = 'black').addTo(map)
-        circle.setRadius(radiusByZoom[map.getZoom()]);
-        if (place[Mention.Place_Type] == Place_Type.Monastery) {
-            circle.setStyle({ color: 'black' });
-        }
+    var coords = [last_mention[Mention.Latitude], last_mention[Mention.Longitude]];
+    var circle = L.circleMarker(coords, {radius: RADIUS_BY_ZOOM[map.getZoom()], className: 'custom-marker'}).addTo(map);
+
+    // if monastery make circle black otherwise default blue
+    if (last_mention[Mention.Place_Type] == Place_Type.Monastery) {
+        circle.setStyle({ color: 'black' });
+    }
+
+    if (last_mention[Mention.Place_Status] === "active") {
         circle.on('click', function () {
-            openSidePanel(place);
+            openSidePanel(last_mention);
         });
-        markers.push(circle);
-        return
     }
 
-    // if large zoom show icons if possible
-    var textIcon = L.divIcon({
-        className: 'text-icon',
-        iconSize: [64, 24],
-        html: '<p>' + place[Mention.Name] + '</p>',
-        iconAnchor: [32, 0]
-    });
+    MARKERS.push(circle);
 
-    var textMarker = L.marker(coords, { icon: textIcon }).addTo(map);
-    textMarker.on('click', function () {
-        openSidePanel(place);
-    });
-    markers.push(textMarker);
+    // if zoom big enough show place names
+    if (map.getZoom() >= 12) {
+        // show icons if possible
+        var textIcon = L.divIcon({
+            className: 'text-icon',
+            iconSize: [64, 24],
+            html: '<p>' + last_mention[Mention.Name] + '</p>',
+            iconAnchor: [32, 0]
+        });
 
-    //iconMarker = L.marker(coords, { icon: villageIcon }).addTo(map);
-    var iconMarker = L.circleMarker(coords);
-
-    if (place[Mention.Place_Type] == Place_Type.Monastery) {
-        iconMarker.setStyle({ color: 'black' });
-        // if ("Apare ca mănăstire mică." == place[Mention.Notes]) {
-        //     iconMarker = L.marker(coords, { icon: smallMonasteryIcon });
-        // } else if ("Apare ca mănăstire mare." == place[Mention.Notes]) {
-        //     iconMarker = L.marker(coords, { icon: largeMonasteryIcon });
-        // }
+        // show place names
+        textMarker = L.marker(coords, { icon: textIcon }).addTo(map);
+        textMarker.on('click', function () {
+            openSidePanel(last_mention);
+        });
+        MARKERS.push(textMarker);
     }
-    iconMarker = iconMarker.addTo(map);
-    iconMarker.on('click', function () {
-        openSidePanel(place);
-    });
-    markers.push(iconMarker);
+
+    if (year_changed) {
+        if (last_mention[Mention.Place_Status] != "active") {
+            MARKERS_TO_BE_REMOVED.push([circle, textMarker]);
+        } else if (last_mention[Mention.Year] > PREV_SLIDER_VALUE && last_mention[Mention.No_Mentions] === 1) {
+            CHANGED_MARKERS.push(circle);
+        }
+    }
 }
 
-function updateMarkerPosition() {
+function updateMarkerPosition(year_changed) {
 
-    for (marker_id in markers) {
-        map.removeLayer(markers[marker_id]);
+    for (marker_id in MARKERS) {
+        map.removeLayer(MARKERS[marker_id]);
     }
-    markers = []
+    MARKERS = []
 
     var year = slider.value;
 
@@ -135,18 +201,32 @@ function updateMarkerPosition() {
                 continue;
         }
         Object.values(latest_mentions).forEach(element => {
-            addMarkers(element);
+            addMarkers(element, year_changed);
         });
     }
 }
 
 // Update side panel and markers when user changes year
 slider.addEventListener("change", function () {
-    updateMarkerPosition();
+    var year_changed = false;
+    PREV_SLIDER_VALUE = SLIDER_VALUE;
+    SLIDER_VALUE = slider.value;
+
+    if (SLIDER_VALUE > PREV_SLIDER_VALUE) {
+        year_changed = true;
+    }
+
+    updateMarkerPosition(year_changed);
 
     if (selected_place && sidePanel.style.right == '0px') {
         openSidePanel(selected_place);
     }
+
+    if (year_changed) {
+        highlightMarkers();
+    }
+
+    
 });
 
 // Initial loading of the markers
