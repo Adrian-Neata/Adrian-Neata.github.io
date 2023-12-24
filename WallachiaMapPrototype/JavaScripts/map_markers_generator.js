@@ -31,6 +31,7 @@ var CHANGED_MARKERS = [];
 var MARKERS_TO_BE_REMOVED = [];
 var PREV_SLIDER_VALUE = 1718;
 var SLIDER_VALUE = 1718;
+var PLACE_NAMES = {};
 
 // Function to check marker visibility and hide/show markers according to the window view
 function updateMarkerVisibility() {
@@ -66,11 +67,16 @@ function highlightMarkers() {
     // increase the radius and change color to red or green
     setTimeout(function() {
         for (idx in MARKERS_TO_BE_REMOVED) {
-            [circle, textMarker] = MARKERS_TO_BE_REMOVED[idx];
+            [circle, textMarker, placeStatus] = MARKERS_TO_BE_REMOVED[idx];
             orig_colors[0][idx] = circle.options.color;
 
             circle.setRadius(RADIUS_BY_ZOOM[map.getZoom()]*3);
-            circle.setStyle({ color: 'red' });
+            if (placeStatus === "disbanded" || placeStatus === "unknown") {
+                circle.setStyle({ color: 'red' });
+            }
+            if (placeStatus === "united") {
+                circle.setStyle({ color: 'purple' });
+            }
         }
 
         for (idx in CHANGED_MARKERS) {
@@ -116,6 +122,10 @@ function addMarkers(last_mention, year_changed) {
     if (last_mention[Mention.Place_Status] != "active" && !year_changed) {
         return;
     }
+
+    if (last_mention[Mention.Place_Status] != "active" && last_mention[Mention.Year] <= PREV_SLIDER_VALUE) {
+        return;
+    }
     
     // last_mention[Mention.Place_Status] != "active"
 
@@ -155,7 +165,7 @@ function addMarkers(last_mention, year_changed) {
 
     if (year_changed) {
         if (last_mention[Mention.Place_Status] != "active") {
-            MARKERS_TO_BE_REMOVED.push([circle, textMarker]);
+            MARKERS_TO_BE_REMOVED.push([circle, textMarker, last_mention[Mention.Place_Status]]);
         } else if (last_mention[Mention.Year] > PREV_SLIDER_VALUE && last_mention[Mention.No_Mentions] === 1) {
             CHANGED_MARKERS.push(circle);
         }
@@ -169,8 +179,6 @@ function updateMarkerPosition(year_changed) {
     }
     MARKERS = []
 
-    var year = slider.value;
-
     mentions_list = [mentions_places, mentions_monasteries];
     for (var i = 0; i < 2; i++) {
         var latest_mentions = {};
@@ -182,7 +190,7 @@ function updateMarkerPosition(year_changed) {
             mention = mentions[mention_idx];
 
             // Ignore mentions that happen after the selected year
-            if (mention[Mention.Year] > year) {
+            if (mention[Mention.Year] > SLIDER_VALUE) {
                 continue;
             }
 
@@ -190,16 +198,17 @@ function updateMarkerPosition(year_changed) {
                 latest_mentions[mention[Mention.Place_Id]] = mention;
             } else {
                 if (latest_mentions[mention[Mention.Place_Id]][Mention.Year] < mention[Mention.Year]) {
+                    mention[Mention.No_Mentions] = latest_mentions[mention[Mention.Place_Id]][Mention.No_Mentions];
                     latest_mentions[mention[Mention.Place_Id]] = mention;
                 }
                 latest_mentions[mention[Mention.Place_Id]][Mention.No_Mentions] += 1;
             }
         }
-        for (mention_idx in mentions) {
-            if (mentions[mention_idx][Mention.No_Mentions] > 1)
-                //console.log(mentions[mention_idx]);
-                continue;
-        }
+        // for (mention_idx in mentions) {
+        //     if (mentions[mention_idx][Mention.No_Mentions] > 1)
+        //         console.log(mentions[mention_idx][Mention.No_Mentions]);
+        //         continue;
+        // }
         Object.values(latest_mentions).forEach(element => {
             addMarkers(element, year_changed);
         });
