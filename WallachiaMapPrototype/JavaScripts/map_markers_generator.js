@@ -164,7 +164,7 @@ function addMarkers(last_mention, year_changed) {
     }
 
     if (year_changed) {
-        if (last_mention[Mention.Place_Status] != "active") {
+        if (last_mention[Mention.Place_Status] != "active" && last_mention[Mention.Place_Status] != "founded") {
             MARKERS_TO_BE_REMOVED.push([circle, textMarker, last_mention[Mention.Place_Status]]);
         } else if (last_mention[Mention.Year] > PREV_SLIDER_VALUE && last_mention[Mention.No_Mentions] === 1) {
             CHANGED_MARKERS.push(circle);

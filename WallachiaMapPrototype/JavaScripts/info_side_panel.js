@@ -55,7 +55,7 @@ function openSidePanel(place) {
     document.getElementById("placeName").textContent = placeMentions[0][0][Mention.Name];
 
     // If latest mention shows place disappeared then close sidepanel
-    if (placeMentions[0][0][Mention.Place_Status] != "active") {
+    if (placeMentions[0][0][Mention.Place_Status] != "active" && placeMentions[0][0][Mention.Place_Status] != "founded") {
         sidePanel.style.right = "-250px";
         return;
     }
