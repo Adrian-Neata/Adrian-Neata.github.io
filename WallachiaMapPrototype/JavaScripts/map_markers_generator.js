@@ -1,5 +1,5 @@
 // Initialize the map
-var map = L.map('map',{ zoomControl: false }).setView([45.1567241037536, 24.6754243860472], 8);
+var map = L.map('map', { zoomControl: false }).setView([45.1567241037536, 24.6754243860472], 8);
 new L.Control.Zoom({ position: 'bottomright' }).addTo(map);
 
 // Load Place Icons
@@ -27,8 +27,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var selected_place = null;
 var MARKERS = [];
-var CHANGED_MARKERS = [];
+var NEW_PLACE_MARKERS = [];
 var MARKERS_TO_BE_REMOVED = [];
+var NAME_CHANGE_MARKERS = {};
 var PREV_SLIDER_VALUE = 1718;
 var SLIDER_VALUE = 1718;
 var PLACE_NAMES = {};
@@ -36,7 +37,7 @@ var PLACE_NAMES = {};
 // Function to check marker visibility and hide/show markers according to the window view
 function updateMarkerVisibility() {
     var bounds = map.getBounds();
-    
+
     for (idx in MARKERS) {
         var marker = MARKERS[idx];
         if (bounds.contains(marker.getLatLng())) {
@@ -51,26 +52,26 @@ function removeDisbandedPlaces() {
     for (idx in MARKERS_TO_BE_REMOVED) {
         [circle, textMarker] = MARKERS_TO_BE_REMOVED[idx];
         map.removeLayer(circle);
-        MARKERS = MARKERS.filter(function(e) { return e !== circle })
+        MARKERS = MARKERS.filter(function (e) { return e !== circle })
         if (textMarker) {
             map.removeLayer(textMarker);
-            MARKERS = MARKERS.filter(function(e) { return e !== textMarker })
+            MARKERS = MARKERS.filter(function (e) { return e !== textMarker })
         }
     }
     MARKERS_TO_BE_REMOVED = [];
 }
 
 function highlightMarkers() {
-    orig_colors = {0: {}, 1: {}};
+    orig_colors = { 0: {}, 1: {}, 2: {} };
     wait_time_animation = 2500;
 
     // increase the radius and change color to red or green
-    setTimeout(function() {
+    setTimeout(function () {
         for (idx in MARKERS_TO_BE_REMOVED) {
             [circle, textMarker, placeStatus] = MARKERS_TO_BE_REMOVED[idx];
             orig_colors[0][idx] = circle.options.color;
 
-            circle.setRadius(RADIUS_BY_ZOOM[map.getZoom()]*3);
+            circle.setRadius(RADIUS_BY_ZOOM[map.getZoom()] * 3);
             if (placeStatus === "disbanded" || placeStatus === "unknown") {
                 circle.setStyle({ color: 'red' });
             }
@@ -79,18 +80,27 @@ function highlightMarkers() {
             }
         }
 
-        for (idx in CHANGED_MARKERS) {
-            circle = CHANGED_MARKERS[idx];
+        for (idx in NEW_PLACE_MARKERS) {
+            circle = NEW_PLACE_MARKERS[idx];
             orig_colors[1][idx] = circle.options.color;
 
-            circle.setRadius(RADIUS_BY_ZOOM[map.getZoom()]*3);
+            circle.setRadius(RADIUS_BY_ZOOM[map.getZoom()] * 3);
             circle.setStyle({ color: 'green' });
+        }
+
+        for (idx in NAME_CHANGE_MARKERS) {
+            circle = NAME_CHANGE_MARKERS[idx];
+            orig_colors[2][idx] = circle.options.color;
+
+            circle.setRadius(RADIUS_BY_ZOOM[map.getZoom()] * 3);
+            circle.setStyle({ color: 'yellow' });
         }
     }, 500);
 
 
     // wait for a short time before decreasing the radius and changing back to original color
-    setTimeout(function() {
+    setTimeout(function () {
+
         // decrease marker radius back to the original value
         for (idx in MARKERS_TO_BE_REMOVED) {
             [circle, textMarker] = MARKERS_TO_BE_REMOVED[idx];
@@ -98,17 +108,41 @@ function highlightMarkers() {
             circle.setStyle({ color: orig_colors[0][idx] });
         }
 
-        for (idx in CHANGED_MARKERS) {
-            circle = CHANGED_MARKERS[idx];
+        for (idx in NEW_PLACE_MARKERS) {
+            circle = NEW_PLACE_MARKERS[idx];
             circle.setRadius(RADIUS_BY_ZOOM[map.getZoom()]);
             circle.setStyle({ color: orig_colors[1][idx] });
         }
-        CHANGED_MARKERS = [];
+
+        for (idx in NAME_CHANGE_MARKERS) {
+            circle = NAME_CHANGE_MARKERS[idx];
+            circle.setRadius(RADIUS_BY_ZOOM[map.getZoom()]);
+            circle.setStyle({ color: orig_colors[2][idx] });
+        }
+
+        NEW_PLACE_MARKERS = [];
+        NAME_CHANGE_MARKERS = [];
 
     }, 500 + wait_time_animation); // Adjust the delay as needed
-    
+
     // wait for animation to finish and then remove markers
     setTimeout(removeDisbandedPlaces, 500 + 2 * wait_time_animation);
+}
+
+function addMarkersToHighlights(last_mention, circle, textMarker) {
+    if (last_mention[Mention.Place_Status] != "active" && last_mention[Mention.Place_Status] != "founded") {
+        MARKERS_TO_BE_REMOVED.push([circle, textMarker, last_mention[Mention.Place_Status]]);
+        if (last_mention[Mention.Place_Id] in NAME_CHANGE_MARKERS) {
+            delete NAME_CHANGE_MARKERS[last_mention[Mention.Place_Id]];
+        }
+    } else if (last_mention[Mention.Year] > PREV_SLIDER_VALUE && last_mention[Mention.No_Mentions] === 1) {
+        NEW_PLACE_MARKERS.push(circle);
+        if (last_mention[Mention.Place_Id] in NAME_CHANGE_MARKERS) {
+            delete NAME_CHANGE_MARKERS[last_mention[Mention.Place_Id]];
+        }
+    } else if (last_mention[Mention.Place_Id] in NAME_CHANGE_MARKERS) {
+        NAME_CHANGE_MARKERS[last_mention[Mention.Place_Id]] = circle;
+    }
 }
 
 function addMarkers(last_mention, year_changed) {
@@ -126,11 +160,9 @@ function addMarkers(last_mention, year_changed) {
     if (last_mention[Mention.Place_Status] != "active" && last_mention[Mention.Year] <= PREV_SLIDER_VALUE) {
         return;
     }
-    
-    // last_mention[Mention.Place_Status] != "active"
 
     var coords = [last_mention[Mention.Latitude], last_mention[Mention.Longitude]];
-    var circle = L.circleMarker(coords, {radius: RADIUS_BY_ZOOM[map.getZoom()], className: 'custom-marker'}).addTo(map);
+    var circle = L.circleMarker(coords, { radius: RADIUS_BY_ZOOM[map.getZoom()], className: 'custom-marker' }).addTo(map);
 
     // if monastery make circle black otherwise default blue
     if (last_mention[Mention.Place_Type] == Place_Type.Monastery) {
@@ -164,11 +196,57 @@ function addMarkers(last_mention, year_changed) {
     }
 
     if (year_changed) {
-        if (last_mention[Mention.Place_Status] != "active" && last_mention[Mention.Place_Status] != "founded") {
-            MARKERS_TO_BE_REMOVED.push([circle, textMarker, last_mention[Mention.Place_Status]]);
-        } else if (last_mention[Mention.Year] > PREV_SLIDER_VALUE && last_mention[Mention.No_Mentions] === 1) {
-            CHANGED_MARKERS.push(circle);
+        addMarkersToHighlights(last_mention, circle, textMarker);
+    }
+}
+
+console.log(levenshteinDistance("manastirea ciorogarla", "ciorogarla manastirea"));
+console.log(levenshteinDistance("targul fierbinti", "targ fierbinti"));
+
+function compareStrings(str1, str2) {
+    avg_length = (str1.length + str2.length) / 2;
+    bonus_length = Math.abs(str1.length - str2.length) / avg_length / 2;
+    disimilarity_score1 = levenshteinDistance(str1, str2) / avg_length + bonus_length;
+
+    str1 = str1.split(" ").reverse().join(' ');
+
+    disimilarity_score2 = levenshteinDistance(str1, str2) / avg_length + bonus_length;
+
+    if (disimilarity_score1 > disimilarity_score2) {
+        return disimilarity_score2;
+    }
+    return disimilarity_score1;
+}
+
+function checkForNameChanges(mentions, latest_mentions) {
+    for (mention_idx in mentions) {
+        mention = mentions[mention_idx];
+        place_id = mention[Mention.Place_Id];
+
+        // Ignore mentions that involve places that don't show up as markers
+        if (!(place_id in latest_mentions) || mention[Mention.Latitude] == null) {
+            continue;
         }
+
+        // Ignore mentions that happen after the selected year or before the previous selected year
+        if (mention[Mention.Year] > SLIDER_VALUE || mention[Mention.Year] < PREV_SLIDER_VALUE) {
+            continue;
+        }
+
+        // Ignore mentions if already in the list of name changes
+        if (place_id in NAME_CHANGE_MARKERS) {
+            continue;
+        }
+
+        latest_mention_name = removeDiacritics(latest_mentions[place_id][Mention.Name]);
+        current_mention_name = removeDiacritics(mention[Mention.Name]);
+        score = compareStrings(latest_mention_name, current_mention_name);
+
+        if (score > 0.5) {
+            // mark the entries which will be filled at the next step
+            NAME_CHANGE_MARKERS[place_id] = place_id;
+        }
+
     }
 }
 
@@ -203,7 +281,15 @@ function updateMarkerPosition(year_changed) {
                 }
                 latest_mentions[mention[Mention.Place_Id]][Mention.No_Mentions] += 1;
             }
+
+
         }
+
+        if (year_changed) {
+            // Check for name changes
+            checkForNameChanges(mentions, latest_mentions);
+        }
+
         // for (mention_idx in mentions) {
         //     if (mentions[mention_idx][Mention.No_Mentions] > 1)
         //         console.log(mentions[mention_idx][Mention.No_Mentions]);
@@ -235,7 +321,7 @@ slider.addEventListener("change", function () {
         highlightMarkers();
     }
 
-    
+
 });
 
 // Initial loading of the markers

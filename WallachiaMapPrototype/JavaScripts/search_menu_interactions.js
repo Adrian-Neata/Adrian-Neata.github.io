@@ -2,21 +2,21 @@ const SEARCH_RESULTS = [];
 
 function handleKeyPressSearch(e) {
     // check if Enter key was pressed to proceed with the search
-    if(e.keyCode === 13){
-    	searchPlaces(document.getElementById("searchBar").value);
+    if (e.keyCode === 13) {
+        searchPlaces(document.getElementById("searchBar").value);
     }
-	return false;
+    return false;
 }
 
 function generateNGrams(text) {
     ngrams = [];
 
-    for (i=text.length; i > 0; i--) {
+    for (i = text.length; i > 0; i--) {
         for (j = 0; j < text.length - i; j++) {
-            ngrams.push(text.slice(j, j+i+1));
+            ngrams.push(text.slice(j, j + i + 1));
         }
     }
-  
+
     return ngrams;
 }
 
@@ -85,8 +85,8 @@ function create_result_template(last_mention, old_name, reference_id) {
     html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Județ:</b> ' + places[last_mention[Mention.Place_Id]][Place.County] + '</h4>';
 
     // show current status
-    switch(last_mention[Mention.Place_Status]) {
-        case "disbanded": 
+    switch (last_mention[Mention.Place_Status]) {
+        case "disbanded":
             html_content += '<h4 style = "margin: 4%; font-weight: normal;">Localitate dispărută.</h4>';
             break;
         case "united":
@@ -126,7 +126,7 @@ function showSearchResults(query) {
         }
 
         // sort them with the latest mention as first in the list
-        all_place_mentions.sort((a,b) => b[Mention.Year] - a[Mention.Year]);
+        all_place_mentions.sort((a, b) => b[Mention.Year] - a[Mention.Year]);
         all_place_mentions = all_place_mentions.map((x) => [x, computeQueryScore(query_ngrams, query, x[Mention.Name])]);
 
         // check if any old name matches the query better than the current one
@@ -137,7 +137,7 @@ function showSearchResults(query) {
             }
             if (all_place_mentions[mention_idx][1] - all_place_mentions[0][1] > old_name[1]) {
                 old_name = [all_place_mentions[mention_idx][0][Mention.Name], all_place_mentions[mention_idx][1] - all_place_mentions[0][1]];
-            } 
+            }
         }
         all_place_mentions = all_place_mentions.map((x) => x[0]);
 
@@ -162,15 +162,15 @@ function showSearchResults(query) {
     for (idx in references) {
         reference_id = references[idx];
 
-        document.getElementById(reference_id).onclick = function(event) {
+        document.getElementById(reference_id).onclick = function (event) {
             idx = parseInt(event.currentTarget.id.slice(9));
             mention = mentions_places[idx];
             // if place has no coordinates search for another village in the same commune with coordinates
             if (mention[Mention.Latitude] === null) {
                 another_option_found = false;
                 for (p_key in places) {
-                    if (places[p_key][Place.Commune] === places[mention[Mention.Place_Id]][Place.Commune] && 
-                        places[p_key][Place.County] === places[mention[Mention.Place_Id]][Place.County] && 
+                    if (places[p_key][Place.Commune] === places[mention[Mention.Place_Id]][Place.Commune] &&
+                        places[p_key][Place.County] === places[mention[Mention.Place_Id]][Place.County] &&
                         places[p_key][Place.Latitude] != null) {
 
                         //console.log(places[p_key]);
@@ -183,7 +183,7 @@ function showSearchResults(query) {
                     panToCoordinates(places[p_key][Place.Latitude], places[p_key][Place.Longitude]);
                 }
             } else {
-                panToCoordinates(mention[Mention.Latitude], mention[Mention.Longitude]); 
+                panToCoordinates(mention[Mention.Latitude], mention[Mention.Longitude]);
             }
         }
     }
@@ -218,7 +218,7 @@ function searchPlaces(query) {
     place_id_set = new Set();
 
     // empty search result list from last time
-    while(SEARCH_RESULTS.length > 0) {
+    while (SEARCH_RESULTS.length > 0) {
         SEARCH_RESULTS.pop();
     }
 
