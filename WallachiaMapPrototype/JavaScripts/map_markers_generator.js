@@ -219,6 +219,8 @@ function compareStrings(str1, str2) {
 }
 
 function checkForNameChanges(mentions, latest_mentions) {
+    var prev_latest_mentions = {}
+
     for (mention_idx in mentions) {
         mention = mentions[mention_idx];
         place_id = mention[Mention.Place_Id];
@@ -228,13 +230,27 @@ function checkForNameChanges(mentions, latest_mentions) {
             continue;
         }
 
-        // Ignore mentions that happen after the selected year or before the previous selected year
-        if (mention[Mention.Year] > SLIDER_VALUE || mention[Mention.Year] < PREV_SLIDER_VALUE) {
+
+        // Ignore mentions that happen after the selected year
+        if (mention[Mention.Year] > SLIDER_VALUE) {
             continue;
         }
 
-        // Ignore mentions if already in the list of name changes
-        if (place_id in NAME_CHANGE_MARKERS) {
+        // Ignore mentions if already in the list of name changes or part of harta cailor de comunicatii (this record isn't the best source for names)
+        if (place_id in NAME_CHANGE_MARKERS || [40, 41, 54, 63, 64, 65].includes(latest_mentions[place_id][Mention.Record_Id])) {
+            continue;
+        }
+
+        // Ignore mentions that happen before the previous selected year
+        if  (mention[Mention.Year] < PREV_SLIDER_VALUE) {
+            // find latest mention previously used to get place name
+            if (place_id in prev_latest_mentions) {
+                if (prev_latest_mentions[place_id][Mention.Year] < mention[Mention.Year]) {
+                    prev_latest_mentions[place_id] = mention;
+                }
+            } else {
+                prev_latest_mentions[place_id] = mention;
+            }
             continue;
         }
 
@@ -242,6 +258,18 @@ function checkForNameChanges(mentions, latest_mentions) {
         current_mention_name = removeDiacritics(mention[Mention.Name]);
         score = compareStrings(latest_mention_name, current_mention_name);
 
+        if (score > 0.5) {
+            // mark the entries which will be filled at the next step
+            NAME_CHANGE_MARKERS[place_id] = place_id;
+        }
+
+    }
+
+    // check case for latest mention previously used to get place name
+    for (place_id in prev_latest_mentions) {
+        latest_mention_name = removeDiacritics(latest_mentions[place_id][Mention.Name]);
+        current_mention_name = removeDiacritics(prev_latest_mentions[place_id][Mention.Name]);
+        score = compareStrings(latest_mention_name, current_mention_name);
         if (score > 0.5) {
             // mark the entries which will be filled at the next step
             NAME_CHANGE_MARKERS[place_id] = place_id;
