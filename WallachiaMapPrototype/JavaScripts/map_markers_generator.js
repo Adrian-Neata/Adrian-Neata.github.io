@@ -1,6 +1,14 @@
 // Initialize the map
 var map = L.map('map', { zoomControl: false }).setView([45.1567241037536, 24.6754243860472], 8);
 new L.Control.Zoom({ position: 'bottomright' }).addTo(map);
+var groupByCounty_Checkbox = document.getElementById("groupByCounty");
+var colorByCounty = {};
+
+groupByCounty_Checkbox.addEventListener('change', () => {
+    //console.log(colorByCounty);
+    colorByCounty = {};
+    updateMarkerPosition();
+});
 
 // Load Place Icons
 var villageIcon = L.icon({
@@ -167,6 +175,13 @@ function addMarkers(last_mention, year_changed) {
     // if monastery make circle black otherwise default blue
     if (last_mention[Mention.Place_Type] == Place_Type.Monastery) {
         circle.setStyle({ color: 'black' });
+    } else if (groupByCounty_Checkbox.checked) {
+        
+        if (!(last_mention[Mention.County] in colorByCounty)) {
+            colorByCounty[last_mention[Mention.County]] = fashionableColors[Object.keys(colorByCounty).length % fashionableColors.length];
+        }
+
+        circle.setStyle({ color: colorByCounty[last_mention[Mention.County]] });
     }
 
     if (last_mention[Mention.Place_Status] === "active") {
@@ -199,9 +214,6 @@ function addMarkers(last_mention, year_changed) {
         addMarkersToHighlights(last_mention, circle, textMarker);
     }
 }
-
-console.log(levenshteinDistance("manastirea ciorogarla", "ciorogarla manastirea"));
-console.log(levenshteinDistance("targul fierbinti", "targ fierbinti"));
 
 function compareStrings(str1, str2) {
     avg_length = (str1.length + str2.length) / 2;

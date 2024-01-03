@@ -34,3 +34,9 @@ for place in res:
 f = open("JavaScripts/places.js", 'w')
 f.write('var places = ' + json.dumps(res_dict))
 f.close()
+
+# res = cur.execute("SELECT DISTINCT place_county FROM MENTIONS").fetchall()
+# res_dict = {}
+# for county in res:
+#     res_dict[county[0]] = ''
+# print(res_dict)

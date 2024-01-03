@@ -2,8 +2,27 @@
     font-family: Roboto, Helvetica, sans-serif;
 }
 
+/* Make scrollbar invisible */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+/* Make a smooth transition of the markers' highlight */
 .custom-marker {
-    transition: all 2.5s ease-out; /* Customize the duration and easing function */
+    transition: all 2.5s ease-out;
 }
 
 /* Set the map container size */
