@@ -176,7 +176,7 @@ function addMarkers(last_mention, year_changed) {
     if (last_mention[Mention.Place_Type] == Place_Type.Monastery) {
         circle.setStyle({ color: 'black' });
     } else if (groupByCounty_Checkbox.checked) {
-        
+
         if (!(last_mention[Mention.County] in colorByCounty)) {
             colorByCounty[last_mention[Mention.County]] = fashionableColors[Object.keys(colorByCounty).length % fashionableColors.length];
         }
@@ -253,8 +253,8 @@ function checkForNameChanges(mentions, latest_mentions) {
             continue;
         }
 
-        // Ignore mentions that happen before the previous selected year
-        if  (mention[Mention.Year] < PREV_SLIDER_VALUE) {
+        
+        if (mention[Mention.Year] <= PREV_SLIDER_VALUE) {
             // find latest mention previously used to get place name
             if (place_id in prev_latest_mentions) {
                 if (prev_latest_mentions[place_id][Mention.Year] < mention[Mention.Year]) {
@@ -263,6 +263,10 @@ function checkForNameChanges(mentions, latest_mentions) {
             } else {
                 prev_latest_mentions[place_id] = mention;
             }
+        }
+
+        // Ignore mentions that happen before the previous selected year
+        if (mention[Mention.Year] < PREV_SLIDER_VALUE) {
             continue;
         }
 
@@ -279,6 +283,10 @@ function checkForNameChanges(mentions, latest_mentions) {
 
     // check case for latest mention previously used to get place name
     for (place_id in prev_latest_mentions) {
+        // Ignore prev_latest_mentions if we have a record right on PREV_SLIDER_VALUE
+        if (prev_latest_mentions[place_id][Mention.Year] == PREV_SLIDER_VALUE) {
+            continue;
+        }
         latest_mention_name = removeDiacritics(latest_mentions[place_id][Mention.Name]);
         current_mention_name = removeDiacritics(prev_latest_mentions[place_id][Mention.Name]);
         score = compareStrings(latest_mention_name, current_mention_name);

@@ -270,7 +270,6 @@ const fashionableColors = [
     '#8A2BE2', // Blue Violet
     '#3CB371', // Medium Sea Green
     '#F08080', // Light Coral
-    '#20B2AA', // Light Sea Green
     '#FFA07A', // Light Salmon
     '#696969', // Dim Gray
   ];
