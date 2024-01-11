@@ -252,24 +252,20 @@ const Rayons_To_Region_1956 = {
 };
 
 const fashionableColors = [
-    '#77DD77', // Pastel Green
     '#66B2FF', // Periwinkle
+    '#77DD77', // Pastel Green
     '#9370DB', // Medium Purple
     '#DAA520', // Goldenrod
     '#FFD700', // Gold
-    '#C71585', // Medium Violet Red
     '#4682B4', // Steel Blue
     '#20B2AA', // Light Sea Green
-    '#FF6347', // Tomato
     '#6A5ACD', // Slate Blue
     '#32CD32', // Lime Green
     '#9932CC', // Dark Orchid
     '#87CEEB', // Sky Blue
     '#FF4500', // Orange Red
     '#FF6F61', // Melon
-    '#8A2BE2', // Blue Violet
     '#3CB371', // Medium Sea Green
-    '#F08080', // Light Coral
     '#FFA07A', // Light Salmon
-    '#696969', // Dim Gray
+    '#C71585', // Medium Violet Red
   ];
