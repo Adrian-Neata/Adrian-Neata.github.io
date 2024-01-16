@@ -178,7 +178,14 @@ function addMarkers(last_mention, year_changed) {
     } else if (groupByCounty_Checkbox.checked) {
 
         if (!(last_mention[Mention.County] in colorByCounty)) {
-            colorByCounty[last_mention[Mention.County]] = fashionableColors[Object.keys(colorByCounty).length % fashionableColors.length];
+            if (SLIDER_VALUE < 2021) {
+                colorByCounty[last_mention[Mention.County]] = fashionableColors[Object.keys(colorByCounty).length % fashionableColors.length];
+            } else {
+                colorByCounty[last_mention[Mention.County]] = fashionableColors1965[last_mention[Mention.County]];
+                // if (! (last_mention[Mention.County] in fashionableColors1965)) {
+                //     console.log(last_mention);
+                // }
+            }
         }
 
         circle.setStyle({ color: colorByCounty[last_mention[Mention.County]] });

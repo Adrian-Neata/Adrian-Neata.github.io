@@ -269,3 +269,26 @@ const fashionableColors = [
     '#FFA07A', // Light Salmon
     '#C71585', // Medium Violet Red
   ];
+
+  const fashionableColors1965 = {
+    'Vrancea': '#66B2FF', // Periwinkle
+    'Ilfov': '#66B2FF', // Periwinkle
+    'Olt': '#66B2FF', // Periwinkle
+    'Brăila': '#77DD77', // Pastel Green
+    'Giurgiu': '#77DD77', // Pastel Green
+    'Tulcea': '#9370DB', // Medium Purple
+    'Brașov': '#9370DB', // Medium Purple
+    'Gorj': '#9370DB', // Medium Purple
+    'Călărași': '#4682B4', // Steel Blue
+    'Galați': '#4682B4', // Steel Blue
+    'Prahova': '#20B2AA', // Light Sea Green
+    'Vâlcea': '#DAA520', // Goldenrod
+    'Argeș': '#32CD32', // Lime Green
+    'Dâmbovița': '#9932CC', // Dark Orchid
+    'Constanța': '#FF4500', // Orange Red
+    'București': '#32CD32', // Orange Red
+    'Teleorman': '#FF6F61', // Melon
+    'Buzău': '#FFA07A', // Light Salmon
+    'Dolj': '#FFA07A', // Light Salmon
+    'Ialomița': '#C71585', // Medium Violet Red
+  };
