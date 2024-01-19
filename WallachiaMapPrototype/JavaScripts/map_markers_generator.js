@@ -6,7 +6,6 @@ var colorByCounty = {};
 
 groupByCounty_Checkbox.addEventListener('change', () => {
     //console.log(colorByCounty);
-    colorByCounty = {};
     updateMarkerPosition();
 });
 
@@ -180,6 +179,7 @@ function addMarkers(last_mention, year_changed) {
         if (!(last_mention[Mention.County] in colorByCounty)) {
             if (SLIDER_VALUE < 2021) {
                 colorByCounty[last_mention[Mention.County]] = fashionableColors[Object.keys(colorByCounty).length % fashionableColors.length];
+                //console.log(SLIDER_VALUE);
             } else {
                 colorByCounty[last_mention[Mention.County]] = fashionableColors1965[last_mention[Mention.County]];
                 // if (! (last_mention[Mention.County] in fashionableColors1965)) {
@@ -306,7 +306,7 @@ function checkForNameChanges(mentions, latest_mentions) {
 }
 
 function updateMarkerPosition(year_changed) {
-
+    colorByCounty = {};
     for (marker_id in MARKERS) {
         map.removeLayer(MARKERS[marker_id]);
     }
