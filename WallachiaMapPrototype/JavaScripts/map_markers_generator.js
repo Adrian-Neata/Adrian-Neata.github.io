@@ -9,6 +9,15 @@ groupByCounty_Checkbox.addEventListener('change', () => {
     updateMarkerPosition();
 });
 
+// test if all rayons are found in the dictionary
+// for (idx in mentions_places) {
+//     if (mentions_places[idx][Mention.Record_Id] === 5) {
+//         if (!(mentions_places[idx][Mention.County] in Rayons_To_Region_1956)) {
+//             console.log(mentions_places[idx][Mention.County]);
+//         }
+//     }
+// }
+
 // Load Place Icons
 var villageIcon = L.icon({
     iconUrl: 'Icons/village.png',
@@ -177,14 +186,18 @@ function addMarkers(last_mention, year_changed) {
     } else if (groupByCounty_Checkbox.checked) {
 
         if (!(last_mention[Mention.County] in colorByCounty)) {
-            if (SLIDER_VALUE < 2021) {
-                colorByCounty[last_mention[Mention.County]] = fashionableColors[Object.keys(colorByCounty).length % fashionableColors.length];
-                //console.log(SLIDER_VALUE);
-            } else {
+            if (SLIDER_VALUE >= 2021) {
                 colorByCounty[last_mention[Mention.County]] = fashionableColors1965[last_mention[Mention.County]];
                 // if (! (last_mention[Mention.County] in fashionableColors1965)) {
                 //     console.log(last_mention);
                 // }
+            } else if (SLIDER_VALUE > 1850 && SLIDER_VALUE < 1950) {
+                colorByCounty[last_mention[Mention.County]] = fashionableColors1925[last_mention[Mention.County]];
+                // if (! (last_mention[Mention.County] in fashionableColors1925)) {
+                //     console.log(last_mention);
+                // }
+            } else {
+                colorByCounty[last_mention[Mention.County]] = fashionableColors[Object.keys(colorByCounty).length % fashionableColors.length];
             }
         }
 

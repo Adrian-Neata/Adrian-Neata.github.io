@@ -125,11 +125,14 @@ const Rayons_To_Region_1956 = {
     "Roșiori de Vede": "București",
     "Slobozia": "București",
     "Snagov": "București",
+    "Titu": "București",
     "Turnu Măgurele": "București",
     "Urziceni": "București",
     "Vârtoapele": "București",
+    "Videle": "București",
     "Vida": "București",
     "Vidra": "București",
+    "V. I. Lenin": "București",
     "Zimnicea": "București",
 
     "Aiud": "Cluj",
@@ -279,7 +282,7 @@ const fashionableColors = [
     'Tulcea': '#9370DB', // Medium Purple
     'Brașov': '#9370DB', // Medium Purple
     'Gorj': '#9370DB', // Medium Purple
-    'Călărași': '#4682B4', // Steel Blue
+    'Călărași': '#FFD700', // Gold
     'Galați': '#4682B4', // Steel Blue
     'Prahova': '#20B2AA', // Light Sea Green
     'Vâlcea': '#DAA520', // Goldenrod
@@ -292,3 +295,27 @@ const fashionableColors = [
     'Dolj': '#FFA07A', // Light Salmon
     'Ialomița': '#C71585', // Medium Violet Red
   };
+
+  const fashionableColors1925 = {
+    'Tecuci': '#9370DB', // Medium Purple
+    'Putna': '#FF6F61', // Melon
+    'Râmnicu Sărat': '#FFD700', // Gold
+    'Brăila': '#66B2FF', // Periwinkle
+    'Tulcea': '#DAA520', // Goldenrod
+    'Constanța': '#C71585', // Medium Violet Red
+    'Ialomița': '#FFA07A', // Light Salmon
+    'Buzău': '#32CD32', // Lime Green
+    'Ilfov': '#20B2AA', // Light Sea Green
+    'Prahova': '#9932CC', // Dark Orchid
+    'Dâmbovița': '#66B2FF', // Periwinkle
+    'Vlașca': '#DAA520', // Goldenrod
+    'Teleorman': '#FF6F61', // Melon
+    'Romanați': '#32CD32', // Lime Green
+    'Argeș': '#FFD700', // Gold
+    'Muscel': '#C71585', // Medium Violet Red
+    'Olt': '#9370DB', // Medium Purple
+    'Dolj': '#66B2FF', // Periwinkle
+    'Vâlcea': '#20B2AA', // Light Sea Green
+    'București': '#9932CC', // Dark Orchid
+    'Durostor': '#32CD32', // Lime Green
+  }
