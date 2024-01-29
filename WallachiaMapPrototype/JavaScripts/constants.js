@@ -294,6 +294,7 @@ const fashionableColors = [
     'Buzău': '#FFA07A', // Light Salmon
     'Dolj': '#FFA07A', // Light Salmon
     'Ialomița': '#C71585', // Medium Violet Red
+    'Mehedinți': '#FFD700', // Gold
   };
 
   const fashionableColors1925 = {
