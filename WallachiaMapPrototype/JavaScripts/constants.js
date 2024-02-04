@@ -319,4 +319,5 @@ const fashionableColors = [
     'Vâlcea': '#20B2AA', // Light Sea Green
     'București': '#9932CC', // Dark Orchid
     'Durostor': '#32CD32', // Lime Green
+    'Gorj': '#DAA520', // Goldenrod
   }
