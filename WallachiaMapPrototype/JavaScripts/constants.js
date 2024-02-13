@@ -1,5 +1,6 @@
 const YEAR_SLIDER = document.getElementById("yearRange");
 const YEAR_CONTAINER = document.getElementById("yearContainer");
+const HIGHLIGHTS_CHECKBOX = document.getElementById("highlightsCheckbox");
 var PREV_YEAR_SLIDER_VALUE = 1718;
 var YEAR_SLIDER_VALUE = 1718;
 var SIDEPANEL_PLACE = null;

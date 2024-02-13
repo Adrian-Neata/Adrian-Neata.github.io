@@ -155,7 +155,7 @@ function updateMarkerPosition() {
             }
 
             // check if place is disbanded or united and thus shouldn't be shown
-            if (!YEAR_INCREASED && check_inactive_place(latest_mentions)) {
+            if (check_inactive_place(latest_mentions) && (HIGHLIGHTS_CHECKBOX.checked === false || !YEAR_INCREASED)) {
                 continue;
             }
 

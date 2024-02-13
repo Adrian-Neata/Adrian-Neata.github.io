@@ -1,4 +1,3 @@
-const HIGHLIGHTS_CHECKBOX = document.getElementById("highlightsCheckbox");
 
 function set_highlighted_markers(highlights, orig_colors) {
     for (place_id in highlights) {
