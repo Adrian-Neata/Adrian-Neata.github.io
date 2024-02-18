@@ -10,7 +10,7 @@ res_dict = {}
 for record in res:
     res_dict[int(record[0])] = record
 
-f = open("JavaScripts/records.js", 'w')
+f = open("JavaScripts/data/records.js", 'w')
 f.write('const RECORDS = ' + json.dumps(res_dict))
 f.close()
 
@@ -20,7 +20,7 @@ res_dict = {}
 for place in res:
     res_dict[int(place[0])] = place
 
-f = open("JavaScripts/settlements.js", 'w')
+f = open("JavaScripts/data/settlements.js", 'w')
 f.write('const SETTLEMENTS = ' + json.dumps(res_dict))
 f.close()
 
@@ -32,7 +32,7 @@ for mention in res:
         res_dict[mention[1]] = {}
     res_dict[mention[1]][mention[0]] = mention
 
-f = open("JavaScripts/mentions_settlements.js", 'w')
+f = open("JavaScripts/data/mentions_settlements.js", 'w')
 f.write('const MENTIONS_SETTLEMENTS = ' + json.dumps(res_dict))
 f.close()
 
@@ -46,7 +46,7 @@ for place in res:
     place = tuple(place)
     res_dict[place[0]] = place
 
-f = open("JavaScripts/monasteries.js", 'w')
+f = open("JavaScripts/data/monasteries.js", 'w')
 f.write('const MONASTERIES = ' + json.dumps(res_dict))
 f.close()
 
@@ -62,7 +62,7 @@ for mention in res:
         res_dict[mention[1]] = {}
     res_dict[mention[1]][mention[0]] = mention
 
-f = open("JavaScripts/mentions_monasteries.js", 'w')
+f = open("JavaScripts/data/mentions_monasteries.js", 'w')
 f.write('const MENTIONS_MONASTERIES = ' + json.dumps(res_dict))
 f.close()
 

@@ -410,4 +410,5 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Durostor': '#32CD32', // Lime Green
   'Gorj': '#DAA520', // Goldenrod
   'Mehedinți': '#C71585', // Medium Violet Red
+  'Caraș-Severin': '#FFA07A', // Light Salmon
 }
