@@ -411,4 +411,5 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Gorj': '#DAA520', // Goldenrod
   'Mehedinți': '#C71585', // Medium Violet Red
   'Caraș-Severin': '#FFA07A', // Light Salmon
+  'Severin': '#FFA07A', // Light Salmon
 }
