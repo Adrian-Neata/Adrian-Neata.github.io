@@ -412,4 +412,5 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Mehedinți': '#C71585', // Medium Violet Red
   'Caraș-Severin': '#FFA07A', // Light Salmon
   'Severin': '#FFA07A', // Light Salmon
+  'Tutova': '#20B2AA', // Light Sea Green
 }
