@@ -1,0 +1,1022 @@
+* -> mention added with no issues
++ -> mention added but currently there's no old name mention
+? -> something seems wrong
+
+REGIUNEA ARGES
+ 	 
+ 	a. Comune
+ 	 	 	 
+ 	*- com. Slobozia-Traznitu	Costesti	Slobozia
+ 	*- com. Basesti	Draganesti-Olt	Calmatuiul
+ 	*- com. Timpeni	Slatina	Movilenii
+ 	*- com. Calugaru	Vedea	Magura
+ 	*- com. Rijletu-Vierosi	Vedea	Salistea
+ 	 	 	 
+ 	b. Sate
+ 	 	 	 
+ 	*- satul Vierosi, com. Colibasi	Or. Pitesti	Fagetul
+ 	*- satul Ciumesti, com. Maracineni	Or. Pitesti	Argeselul
+ 	+- satul Partizanii, com. Stefanesti	Or. Pitesti	Stefanestii-Noi
+ 	*- satul Baseni, com. Costesti	Costesti	Zorile
+ 	*- satul Cacarezeni, com. Filfani	Costesti	Cotmeana
+ 	*- satul Slobozia-Traznitu, com. Slobozia-Traznitu	Costesti	Slobozia
+ 	*- satul Valea Rea, com. Baiculesti	Curtea de Arges	Stejarii
+ 	- satul Seci, com. Bradulet	Curtea de Arges	Salcioara
+ 	*- satul Secaturi, com. Nucsoara	Curtea de Arges	Gruiul
+ 	*- satul Valea Porcului, com. Tutana	Curtea de Arges	Alunisul
+ 	- satul Secaturile, com. Valea Iasului	Curtea de Arges	Badila
+ 	*- satul Fripti, com. Radomiresti	Draganesti-Olt	Radomirestii-de-Sus
+ 	*- satul Jarcaleti, com. Serbanesti	Draganesti-Olt	Strugurelul
+ 	*- satul Basesti, com. Basesti	Draganesti-Olt	Calmatuiul
+ 	*- satul Tacaliile, com. Ionesti	Dragasani	Dealul-Mare
+ 	*- satul Gusoianca-Cataleni, com. Amarasti	Dragasani	Teiul
+ 	- satul Lahovari, com. Scundu	Dragasani	Cringul
+ 	*- satul Vrajitoru, com. Fumureni	Dragasani	Dumbrava
+ 	*- satul Valea Vai de Ei, com. Urluiasca	Dragasani	Livezile
+ 	*- satul Puricei, com. Gradinari	Dragasani	Satul-Nou
+ 	*- satul Episcopia, com. Gusoeni	Dragasani	Gusoianca
+ 	*- satul Rascaeti, com. Ionesti	Dragasani	Delurenii
+ 	*- satul Surdeni, com. Launele de Jos	Dragasani	Ciresul
+ 	*- satul Bou, com. Mitrofani	Dragasani	Izvorasul
+ 	*- satul Calugarita, com. Glimbocata	Gaesti	Glimbocata-Deal
+ 	*- satul Strimbu, com. Hulubesti	Gaesti	Magura
+ 	*- satul Rudari, com. Ludesti	Gaesti	Potocelul
+ 	*- satul Cacova, com. Morteni	Gaesti	Neajlovul
+ 	?- satul Strimbu, com. Suseni	Gaesti	Dumbrava
+ 	*- satul Basesti, com. Valea Mare	Gaesti	Livezile
+ 	*- satul Gusati, com. Putul cu Salcie	Gaesti	Salcioara
+ 	*- satul Lagar, com. Ciupea	Gaesti	Nejlovelul
+ 	*- satul Gura Porcului, com. Cobia de Jos	Gaesti	Cobiuta
+ 	*- satul Zavoiu Orbului, com. Mogosani	Gaesti	Zavoiul
+ 	*- satul Strimba, com. Berbesti	Horezu	Dealul-Alunis
+ 	*- satul Fistigoi, com. Lapusata	Horezu	Scorusul
+ 	*- satul Fometesti, com. Slatioara	Horezu	Rugetul
+ 	*- satul Zeama Rece, com. Cateasca	Pitesti	Recea
+ 	*- satul Grajduri, com. Bascoavele	Pitesti	Bascovele
+ 	*- satul Dealu Boului, com. Cotmeana	Pitesti	Dealul Padurii
+ 	+- satul Rudarii din Deal, com. Rincaciov	Pitesti	Valea-Corbului
+ 	*- satul Baloiu, com. Stoilesti	Rm. Vilcea	Izvorul-Rece
+ 	*- satul Socariciu, com. Balcesti	Rm. Vilcea	Tufanii
+ 	*- satul Flaminda, com. Galicea	Rm. Vilcea	Valea-Riului
+ 	*- satul Saracinesti, com. Pausesti-Maglasi	Rm. Vilcea	Valea-Cheii
+ 	*- satul Saracinesti, com. Racovita	Rm. Vilcea	Balota
+ 	*- satul Dosu, com. Vladesti	Rm. Vilcea	Priporul
+ 	*- satul Ovreiesti, com. Zmeuratu	Rm. Vilcea	Delenii
+ 	*- satul Cacova, com. Zmeuratu	Rm. Vilcea	Piscul-Mare
+ 	*- satul Malaetu, com. Frincesti-Minastireni	Rm. Vilcea	Viisoara
+ 	- satul Valea Raii, com. Riureni	Rm. Vilcea	Bravita
+ 	*- satul Flaminda, com. Cremenari	Rm. Vilcea	Dealul-Mare
+ 	*- satul Rudaru, com. Voineasa	Rm. Vilcea	Valea-Macesului
+ 	*- satul Broscari, com. Potcoava	Slatina	Fintinele
+ 	*- satul Timpeni, com. Timpeni	Slatina	Movilenii
+ 	*- satul Puturoasa, com. Brebeni	Slatina	Teiusul
+ 	*- satul Saracesti, com. Cireasov	Slatina	Satul-din-Deal
+ 	*- satul Spurcati, com. Ganeasa	Slatina	Oltisorul
+ 	*- satul Ciuciu,com. Icoana	Slatina	Plopenii
+ 	*- satul Prooroci, com. Milcov	Slatina	Ulmii
+ 	*- satul Rijletu-Vierosi, com. Rijletu-Vierosi	Vedea	Salistea
+ 	*- satul Calugaru, com. Calugaru	Vedea	Magura
+ 	*- satul Turbati, com.Calugaru	Vedea	Lunca
+ 	*- satul Girbaciu, com.Poboru	Vedea	Plapcica
+ 	*- satul Badarani, com. Topana	Vedea	Cungrisoara
+ 	*- satul Pacala, com. Fagetelu	Vedea	Plapcea
+ 	*- satul Setrari, com. Uda	Vedea	Romana
+ 	*- satul Gura Boului, com. Vedea	Vedea	Vedea
+ 	 
+ 	REGIUNEA BACAU
+ 	 
+ 	a. Comune
+ 	 	 	 
+ 	- com. Fataciuni	Adjud	Fintinele
+ 	- com. Calugara	Bacau	Magura
+ 	- com. Catelesti	Bacau	Siretul
+ 	- com. Leca	Bacau	Ungurenii
+ 	- com. Racila	Buhusi	Girlenii-de-Sus
+ 	- com. Calu	Buhusi	Piatra Soimului
+ 	- com. Ruptura	Buhusi	Izvoarele
+ 	- com. Bodesti-Precista	Piabra Neamt	Bodestii
+ 	- com. Porcesti	Roman	Moldovenii
+ 	- com. Averesti	Roman	Delenii
+ 	- com. Valea Rea	Tg. Ocna	Livezile
+ 	- com. Gropile	Tg. Ocna	Dumbrava
+ 	- com. Ripile	Tg. Ocna	Gura-Vaii
+ 	 
+ 	b. Sate
+ 	 
+ 	- satul Fundu lui Bogdan, com. Letea Veche	Or. Bacau	Siretul
+ 	- satul Secatura, com. Margineni	Or. Bacau	Padurenii
+ 	- localitatea componenta Robu	Or. Onesti	Stejarul
+ 	- satul Raspochi, com. Blaga	Adjud	Livezile
+ 	- satul Seaca, com. Cociu	Adjud	Prisaca
+ 	- satul Alexandru Juganaru, com. Fataciuni	Adjud	Rotaria
+ 	*- satul Valea Rea de Sus, com. Tanasoaia	Adjud	Costisa-de-Sus
+ 	*- satul Valea Rea de Jos, com. Tanasoaia	Adjud	Costisa
+ 	- satul Mohoriti, com. Ursa Motoseni	Adjud	Cornatelul
+ 	- satul Cirna, com. Burdusaci	Adjud	Lunca
+ 	- satul Gunoaia de Jos, com. Burdusaci	Adjud	Movilita
+ 	- satul Porcaret, com. Corbasca	Adjud	Vilcelele
+ 	*- satul Bou Ros, com. Corbita	Adjud	Izvoarele
+ 	*- satul Strimba, com. Corbita	Adjud	Vilcelele
+ 	*- satul Bou, com. Paunesti	Adjud	Viisoara
+ 	- satul Bihnita Gunoaia, com. Rachitoasa	Adjud	Dumbrava
+ 	- satul Valea Boului, com. Stranisesti	Adjud	Valenii
+ 	- satul Fataciuni, com. Fataciuni	Adjud	Fintinele
+ 	- satul Tiganime, com. Calugara	Bacau	Dealul-Mare
+ 	- satul Salahoru, com. Colonesti	Bacau	Salcia
+ 	- satul Lingurari, com. Luncani	Bacau	Poiana
+ 	- satul Catelusa, com. Parincea	Bacau	Iazul
+ 	- satul Pirlituri, com. Parincea	Bacau	Satul Nou
+ 	- satul Calugara, com. Calugara	Bacau	Magura
+ 	- satul Moara lui Conachi, com. Filipeni	Bacau	Padurenii
+ 	- satul Slobozia-Leca, com. Leca	Bacau	Slobozia
+ 	- satul Leca-Ungureni, com. Leca	Bacau	Ungurenii
+ 	- satul Poiana-Iurascu, com. Negri	Bacau	Poiana
+ 	- satul Cotu lui Iurascu, com. Negri	Bacau	Cotul-Siretului
+ 	- satul Valea Rea, com. Cleja	Bacau	Valea-Mica
+ 	- satul Catelesti, com. Catelesti	Bacau	Siretul
+ 	- satul Tigira, com. Plopana	Bacau	Tigira de Jos
+ 	- satul Ruptura, com. Ruptura	Buhusi	Izvoarele
+ 	- satul Cotreanta, com. Cindesti	Buhusi	Dragova
+ 	- satul Puricei, com. Borlesti	Buhusi	Poiana-Marului
+ 	- satul Iapa, com. Calu	Buhusi	Luminisul
+ 	- satul Calu, com. Calu	Buhusi	Piatra-Soimului
+ 	- satul Racila, com. Racila	Buhusi	Girlenii-de-Sus
+ 	- satul Buha, com. Ghimes-Faget	Moinesti	Fagetul-de-Sus
+ 	- satul Surdu, com. Brusturoasa	Moinesti	Hinganestii
+ 	- satul Secatura, com. Bucsesti	Moinesti	Rusenii
+ 	- satul Ripa Iepii, com. Grigoreni	Moinesti	Bogdanesti
+ 	- satul Nasoesti, com. Strugari	Moinesti	Strugarii-de-Sus
+ 	- satul Lunca Strimbului, com. Tarcau	Piatra Neamt	Lunca
+ 	- satul Tiganca, com. Gircina	Piatra Neamt	Poienile
+ 	- satul Schitu, com. Ceahlau	Piatra Neamt	Ceahlaul
+ 	- satul Lunca Gainarilor, com. Bicaz-Chei	Piatra Neamt	Lunca-Bicazului
+ 	- satul Galbezeni, com. Poiana Teiului	Piatra Neamt	Valenii
+ 	- satul Minjesti, com. Stefan cel Mare	Piatra Neamt	Delenii
+ 	- satul Lunca Gistei, com. Borca	Piatra Neamt	Lunca
+ 	- localitatea componenta Ciungi, oras Bicaz	Piatra Neamt	Cartierul-Nou
+ 	- satul Calugarita-Negresti, com. Bira	Roman	Negrestii
+ 	- satul I. C. Frimu, com. Rachiteni	Roman	Izvoarele
+ 	- satul Porcesti, com. Porcesti	Roman	Moldovenii
+ 	- satul Strimba, com. Rosiori	Roman	Valea Mica
+ 	- satul Averestii de Sus, com. Averesti	Roman	Delenii
+ 	- satul Averestii de Jos, com. Averesti	Roman	Stejarul
+ 	- satul Gheorghe Doja, com. Gheraesti	Roman	Gheraestii-Noi
+ 	- satul Lingurari, com. Pastraveni	Tg. Neamt	Radenii-de-Sus
+ 	- satul Buzati, com. Pastraveni	Tg. Neamt	Lunca-Moldovei
+ 	- satul Grasi, com. Timisesti	Tg. Neamt	Dumbrava
+ 	- satul Tonti, com. Draganesti	Tg. Neamt	Risca
+ 	- satul Timpesti, com. Razboeni	Tg. Neamt	Valea Mare
+ 	- satul Uscati, com. Razboeni	Tg. Neamt	Razboenii-de-Jos
+ 	- satul Valea Rea-Sat, com. Valea Rea	Tg. Ocna	Livezi-Vale
+ 	- satul Valea Rea-Tirg, com. Valea Rea	Tg. Ocna	Livezi-Deal
+ 	- satul Gropile, com. Gropile	Tg. Ocna	Dumbrava
+ 	- satul Ripile, com. Ripile	Tg Ocna	Gura-Vaii
+ 	- satul Jevreni, com. Stefan cel Mare	Tg. Ocna	Viisoara
+ 	- satul Flocesti, com. Caiuti	Tg. Ocna	Florestii
+ 	- localitatea componenta Biserica-Slanic, oras Slanic	Tg. Ocna	Ciresoaia
+ 	 	 	 
+ 	REGIUNEA BANAT
+ 	 
+ 	a. Comune
+ 	 	 	 
+ 	- com. Crijma	Caransebes	Magura
+ 	- com. Valea Boului	Caransebes	Paltinisul
+ 	- com. Tolvadia	Deta	Livezile
+ 	- com. Chizdia	Lipava	Cosarii
+ 	- com. Coronini	Moldova Noua	Pescarii
+ 	- com. Cacova	Oravita	Gradinarii
+ 	- com. Maidan	Oravita	Bradisorul-de-Jos
+ 	- com. Besenova Veche	Sinnicolaul Mare	Dudestii-Vechi
+ 	- com. Besenova Noua	Timisoara	Dudestii-Noi
+ 	 
+ 	b. Sate
+ 	 
+ 	- satul Cirpa, com. Buchin	Caransebes	Valea-Timisului
+ 	- satul Crijma, com. Crijma	Caransebes	Magura
+ 	- satul Strimba, com. Bautar	Caransebes	Cornisorul
+ 	- satul Valea Boului, com. Valea Boului	Caransebes	Paltinisul
+ 	- satul Omor, com. Brestea	Deta	Rovinita-Mare
+ 	- satul Omoru Mic, com. Brestea	Deta	Rovinita-Mica
+ 	- satul Tolvadia, com. Tolvadia	Deta	Livezile
+ 	- satul Basesti, com. Dumbrava	Faget	Begheiul-Mic
+ 	- satul Chizdia, com. Chizdia	Lipova	Cosarii
+ 	- satul Dulau, com. Visag	Lugoj	Duleul
+ 	- satul Coronini, com. Coronini	Moldova Noua	Pescarii
+ 	- satul Cacova, com. Cacova	Oravita	Gradinarii
+ 	- satul Maidan, com. Maidan	Oravita	Bradisorul-de-Jos
+ 	- satul Besenova Veche, com. Besenova Veche	Sinnicolaul Mare	Dudestii-Vechi
+ 	- satul Ciavos, com. Cruceni	Timisoara	Granicerii
+ 	- satul Besenova Noua, com. Besenova Noua	Timisoara	Dudestii-Noi
+ 	- satul Jadani, com. Carani	Timisoara	Cornestii
+ 	 
+ 	REGIUNEA BRASOV
+ 	 
+ 	a. Comune
+ 	 
+ 	- com. Hendorf	Agnita	Bradenii
+ 	- com. Tintari	Fagaras	Dumbravita
+ 	- com. Prostea Mare	Medias	Tirnava
+ 	- com. Vorumloc	Medias	Valea-Viilor
+ 	- com. Porcesti	Sibiu	Turnul-Rosu
+ 	- com. Hundorf	Sighisoara	Viisoara
+ 	 
+ 	b. Sate
+ 	 
+ 	- satul Prostea, com. Iacobeni	Agnita	Stejarisul
+ 	- satul Hendorf, com. Hendorf	Agnita	Bradenii
+ 	- satul Telechi-Recea, com. Vaida Recea	Fagaras	Recea-Noua
+ 	- satul Netotu, com. Vaida Recea	Fagaras	Gura-Vaii
+ 	- satul Gainari, com. Cirta	Fagaras	Poenita
+ 	- satul Tintari, com. Tintari	Fagaras	Dumbravita
+ 	- satul Dealul Cioara, com. Buia	Medias	Ulmenii
+ 	- satul Prostea Mare, com. Prostea Mare	Medias	Tirnava
+ 	- satul Malai Petis, com. Buia	Medias	Petisul-de-Jos
+ 	- satul Vorumloc, com. Vorumloc	Medias	Valea-Viilor
+ 	- localitatea componenta Prostea Mica; oras Copsa Mica	Medias	Tirnavioara
+ 	- localitatea componenta Ciufud, oras Blaj	Medias	Izvoarele
+ 	- satul Colibi, com. Cornatel	Sibiu	Ramurenii
+ 	- satul Dupa Dos, com. Slimnic	Sibiu	Stejarestii
+ 	- satul Porcesti, com. Porcesti	Sibiu	Turnul-Rosu
+ 	- satul Cacova Sibiului, com. Sibiel	Sibiu	Fintinele
+ 	- satul Hundorf, com. Hundorf	Sighisoara	Viisoara
+ 	- satul Besa, com. Cris	Sighisoara	Stejarenii
+ 	- satul Gilma, com. Sita Buzaului	Tg. Secuiesc	Valea-Bradetului
+ 	- satul Piriu Boului, com. Sita Buzaului	Tg. Secuiesc	Piriiasul
+ 	- satul Ciangai, com. Estelnic	Tg. Secuiesc	Carpinenii
+ 	- satul Beseneu, com. Moacsa	Tg Secuiesc	Padurenii
+ 	- localitatea componenta Santuri, oras Sacele	Or. Brasov	Bradetul
+ 	 
+ 	REGIUNEA BUCURESTI
+ 	 
+ 	a. Comune
+ 	 
+ 	*- com. Turbatu	Or. Giurgiu	Cetatea
+ 	*- com. Pielea	Alexandria	Teleormanul
+ 	*- com. Grosu	Alexandria	Silistea
+ 	*- com. Pirlita	Alexandria	Urluiul
+ 	*- com. Atirnati	Alexandria	Cernetul
+ 	*- com. Bivolita	Alexandria	Izvoarele
+ 	*- com. Calugarita	Alexandria	Merisanii
+ 	*- com. Cacomeanca	Calarasi	Gradistea
+ 	*- com. Crucea	Calarasi	Vilcelele
+ 	*- com. Balaria	Draganesti-Vlasca	Valea-Plopilor
+ 	*- com. Ciolanu	Draganesti-Vlasca	Valea-Eujorului
+ 	*- com. Beiu	Draganesti-Vlasca	Izvoarele
+ 	*- com. Flaminda	Draganesti-Vlasca	Mostenii
+ 	*- com. Rusii lui Asan	Draganesti-Vlasca	Milcovatul
+ 	*- com. Asan Aga	Draganesti-Vlasca	Bujorenii
+ 	*- com. Calugaru	Draganesti-Vlasca	Stejarul
+ 	*- com. Chioara	Fetesti	Lunca
+ 	*- com. Cocargeaua	Fetesti	Borcea
+ 	*- com. Socariciu	Fetesti	Unirea
+ 	+- com. Vasile Roaita	Fetesti	Movila
+ 	*- com. Arsache	Giurgiu	Vedea
+ 	*- com. Cacaleti	Giurgiu	Izvorul
+ 	*- com. Strimba	Giurgiu	Hulubestii
+ 	*- com. Pirlita	Lehliu	Magurenii
+ 	*- com. I. C. Frimu	Lehliu	Valea-Argovei
+ 	*- com. Turbati	Racari	Silistea-Snagovului
+ 	*- com. Baltati	Rosiori de Vede	Stejarul
+ 	*- com. Belitori	Rosiori de Vede	Troianul
+ 	*- com. Goala	Rosiori de Vede	Vedea
+ 	*- com. Silistea Gumesti	Rosiori de Vede	Silistea
+ 	*- com. Besteloaia	Titu	Salcioara
+ 	*- com. Cirligati	Tr. Magurele	Calmatuiul
+ 	*- com. Riioasa	Tr. Magurele	Lunca
+ 	*- com. Ologi	Tr. Magurele	Cringul
+ 	*- com. Eliza Stoienesti	Urziceni	Pelinul
+ 	*- com. Radulesti-Filitis	Urziceni	Brazii
+ 	*- com. Radulesti	Urziceni	Malul-Rosu
+ 	*- com. Girbovi	Urziceni	Satul-Mare
+ 	*- com. Deparati-Hirlesti	Videle	Schela
+ 	*- com. Gistesti	Videle	Padurenii
+ 	*- com. Babele	Videle	Neajlovul
+ 	*- com. Gauriciu	Zimnicea	Izvoarele
+ 	 
+ 	b. Sate
+ 	 
+ 	*- satul Turbatu, com. Turbatu	Or. Giurgiu	Cetatea
+ 	*- satul Pielea, com. Pielea	Alexandria	Teleormanul
+ 	*- satul Grosu, com. Grosu	Alexandria	Silistea
+ 	*- satul Pirlita, com. Pirlita	Alexandria	Urluiul
+ 	*- satul Putinteiu, com. Atirnati	Alexandria	Valea-Parului
+ 	*- satul Atirnati, com. Atirnati	Alexandria	Cernetul
+ 	*- satul Bivolita, com. Bivolita	Alexandria	Izvoarele
+ 	*- satul Mitropolia, com. Frasinet	Alexandria	Clanita
+ 	*- satul Calugarita, com. Calugarita	Alexandria	Merisanii
+ 	*- satul Cacomeanca, com. Cacomeanca	Calarasi	Gradistea
+ 	*- satul Crucea, com. Crucea	Calarasi	Vilcelele
+ 	*- satul Fleva, com. Independenta	Calarasi	Visinii
+ 	*- satul Gaunosi, com. N. Balcescu	Calarasi	Galatuiul
+ 	*- satul Beiu. com. Beiu	Draganesti-Vlasca	Izvoarele
+ 	*- satul Ghimpati, com. Crovu	Draganesti-Vlasca	Salcioara
+ 	*- satul Balaria, com. Balaria	Draganesti-Vlasca	Valea-Plopilor
+ 	*- satul Flaminda, com. Flaminda	Draganesti-Vlasca	Mostenii
+ 	*- satul Rusii lui Asan, com. Rusii lui Asan	Draganesti-Vlasca	Milcovatul
+ 	*- satul Calugaru, com. Calugaru	Draganesti-Vlasca	Stejarul
+ 	*- satul Ciolanu, com. Ciolanu	Draganesti-Vlasca	Valea-Bujorului
+ 	*- satul Asan Aga, com. Asan Aga	Draganesti-Vlasca	Bujorenii
+ 	*- satul Vasile Epurescu, com. Epuresti	Draganesti-Vlasca	Cumpana
+ 	*- satul Gaureni, com. Bulbucata	Draganesti-Vlasca	Teisorii
+ 	*- satul Chioara, com. Chioara	Fetesti	Lunca
+ 	*- satul Cocargeaua, com. Cocargeaua	Fetesti	Borcea
+ 	*- satul Socariciu, com. Socariciu	Fetesti	Unirea
+ 	+- satul Vasile Roaita, com. Vasile Roaita	Fetesti	Movila
+ 	*- satul Beilic, com. Jegalia	Fetesti	Iezerul
+ 	*- satul Arsache, com. Arsache	Giurgiu	Vedea
+ 	*- satul Cacaleti, com. Cacaleti	Giurgiu	Izvorul
+ 	*- satul Strimba, com. Strimba	Giurgiu	Hulubestii
+ 	*- satul Pirlita, com. Adunati Copaceni	Giurgiu	Argesul
+ 	*- satul Manciu, com. Pirlita	Lehliu	Satucul
+ 	*- satul Pirlita, com. Pirlita	Lehliu	Magurenii
+ 	*- satul I. C. Frimu, com. I. C. Frimu	Lehliu	Valea-Argovei
+ 	*- satul Valea Capitanului, com. I. C. Frimu	Lehliu	Ostrovul
+ 	*- satul Rainic, com. Dor Marunt	Lehliu	Ogorul
+ 	*- satul Noua Vacareasca, com. Frasinet	Lehliu	Frasinetul-de-Jos
+ 	*- satul Cair, com. Stefanesti	Lehliu	Rasurile
+ 	+- satul Odaia Protopopului, com. Stefanesti	Lehliu	Satul-Nou
+ 	*- satul Bratasani, com. Tamadau	Lehliu	Sacele
+ 	*- satul Papadopol, com. Ileana	Lehliu	Florenii
+ 	*- satul Bordeele, com. Ileana	Lehliu	Florenii-de-Jos
+ 	*- satul Pirlitu, com. Axintele	Lehliu	Pandurii-de-Sus
+ 	*- satul Sulimanu, com. Sarulesti	Lehliu	Sarulestii-de-Jos
+ 	*- satul Ciumati, com. Mironesti	Oltenita	Teiusul
+ 	*- satul Pirlita, com. Vasilati	Oltenita	Nucii
+ 	*- satul Tatina, com. Spantov	Oltenita	Cetatea-Veche
+ 	*- satul Filistache, com. Stiubei-Orasti	Oltenita	Padurisul
+ 	*- satul Surlari, com. Chiselet	Oltenita	Dunarea
+ 	*- satul Fundu, com. Turbati	Racari	Pescarii
+ 	*- satul Turbati, com. Turbati	Racari	Silistea-Snagovului
+ 	*- satul I. Lahovari, com. Balotesti	Racari	Dumbravenii
+ 	*- satul Flaminzeni, com. Buftea	Racari	Bucovenii
+ 	*- satul Secaturile, com. Poiana	Racari	Poienita
+ 	*- satul Falcoianu, com. Crevedia	Racari	Crevedia-Lac
+ 	*- satul Mitropolia, com. Ciofliceni	Racari	Tufanul
+ 	*- satul Baltati, com. Baltati	Rosiori de Vede	Stejarul
+ 	*- satul Belitori, com. Belitori	Rosiori de Vede	Troianul
+ 	*- satul Goala, com. Goala	Rosiori de Vede	Vedea
+ 	*- satul Tigania, com. Goala	Rosiori de Vede	Cosotenii
+ 	*- satul Silistea-Gumesti, com. Silistea-Gumesti	Rosiori de Vede	Silistea
+ 	*- satul Catelesti, com. Balaci	Rosiori de Vede	Burdenii
+ 	*- satul Papa, com. Cucueti	Rosiori de Vede	Brebina
+ 	*- satul Natarai, com. Didesti	Rosiori de Vede	Satul-Nou
+ 	*- satul Rasfirati, com. Didesti	Rosiori de Vede	Ceretul
+ 	*- satul Muti, com. Dracsani	Rosiori de Vede	Satul-Vechi
+ 	- satul Golasei, com. Garagau	Rosiori de Vede	Cerbarul
+ 	*- satul Atirnati, com. Draganesti de Vede	Rosiori de Vede	Magura-cu-Liliac
+ 	*- satul Cioc, com. Scrioastea	Rosiori de Vede	Viile
+ 	+- satul Netoti, com. Perieti	Slobozia	Paltinisul
+ 	*- satul Pribegi, com. Perieti	Slobozia	Stejarul
+ 	*- satul Besteloaia, com. Besteloaia	Titu	Salcioara
+ 	*- satul Golasei, com. Crevedia Mare	Titu	Dealul
+ 	*- satul Cocosu, com. Cornatelu	Titu	Alunisul
+ 	*- satul Circiuma lui Visan, com. Ghinesti	Titu	Catunul
+ 	*- satul Strimbeanu,com. Pitaru	Titu	Nucestii
+ 	*- satul Florescu, com. Poenari	Titu	Tufenii
+ 	*- satul Atirnati-Regie, com. Salcuta	Titu	Padurenii
+ 	*- satul Corbii Ciungi, com. Vinatorii Mici	Titu	Izvorul
+ 	*- satul Belimoaica, com. Vinatarii Mici	Titu	Vilcelele
+ 	+- satul Rudari, com. Riioasa	Tr. Magurele	Prundul
+ 	*- satul Riioasa, com. Riioasa	Tr. Magurele	Lunca
+ 	*- satul Cirligati, com. Cirligati	Tr. Magurele	Calmatuiul
+ 	*- satul Ologi, com. Ologi	Tr. Magurele	Cringul
+ 	*- satul Cioara, com. Seaca	Tr. Magurele	Navodarii
+ 	*- satul Flaminda, com. Ciuperceni	Tr. Magurele	Poiana
+ 	*- satul Fundu Vornicului, com. Giuvarasti	Tr. Magurele	Gradinarii
+ 	*- satul Eliza Stoienesti, com. Eliza Stoienesti	Urziceni	Pelinul
+ 	*- satul Radulesti-Filitis, com. Radulesti-Filitis	Urziceni	Brazii
+ 	*- satul Radulesti, com. Radulesti	Urziceni	Malul-Rosu
+ 	*- satul Girbovi, com. Girbovi	Urziceni	Satul-Mare
+ 	*- satul N. T. Filitis, com. Fierbinti Tirg	Urziceni	Satul-Nou
+ 	*- satul Fundu Danciului, com. Fierbinti Tirg	Urziceni	Mircestii
+ 	*- satul Cacaleti, com. Armasesti	Urziceni	Nenisorii
+ 	*- satul Balamuci, com. Gradistea	Urziceni	Sitarul
+ 	*- satul Cioara, com. Ion Roata	Urziceni	Colinele
+ 	*- satul Deparati-Hirlesti, com. Deparati-Hirlesti	Videle	Schela
+ 	*- satul Gistesti, com. Gistesti	Videle	Padurenii
+ 	*- satul Podu Gistei, com. Gistesti	Videle	Podul-Ilfovatului
+ 	*- satul Babele, com. Babele	Videle	Neajlovul
+ 	*- satul Talpeni-Netoti, com. Bratasani	Videle	Talpenii
+ 	*- satul Falcoianu, com. Gradinari	Videle	Zorile
+ 	*- satul Sopirlesti, com. Silistea	Videle	Silistea-Mica
+ 	*- satul Soricesti, com. Galateni	Videle	Clanita-de-Jos
+ 	*- satul Zgaia, com. Roata	Videle	Roata-Mica
+ 	*- satul Gauriciu, com. Gauriciu	Zimnicea	Izvoarele
+ 	 
+ 	REGIUNEA CLUJ
+ 	 
+ 	a. Comune
+ 	 	 	 
+ 	- com. Cacova	Aiud	Livezile
+ 	- com. Iad	Bistrita	Livezile
+ 	- com. Sacatura	Cimpeni	Vadul-Motilor
+ 	- com. Catalusa	Zalau	Mesesenii-de-Jos
+ 	 	 	 
+ 	b. Sate
+ 	 
+ 	- satul Cacova, com. Cacova	Aiud	Livezile
+ 	- satul Ciuciu, com. Noslac	Aiud	Stina-de-Mures
+ 	- satul Valea Sacaturii, com. Rimet	Aiud	Valea-Fagetului
+ 	- localitatea componenta Ciunga, oras Ocna-Mures	Aiud	Uioara-de-Jos
+ 	- satul Iad, com. Iad	Bistrita	Livezile
+ 	- satul Iuda, com. Teaca	Bistrita	Viile-Tecii
+ 	- satul Bureauca, com. Dorolea	Bistrita	Valea-Poenii
+ 	- satul Pirciu, com. Arada	Cimpeni	Pietroasa
+ 	- satul Flocosi, com. Arieseni	Cimpeni	Izlazul
+ 	- satul Bolundesti, com. Bucium	Cimpeni	Valea-Poenii
+ 	- satul Picesti, com. Lupsa	Cimpeni	Lunca
+ 	- satul Sularesti, com. Mogos	Cimpeni	Poienile-Mogos
+ 	- satul Belestii de Jos, com. Neagra	Cimpeni	Fagetul-de-Jos
+ 	- satul Belestii de Sus, com. Neagra	Cimpeni	Fagetul-de-Sus
+ 	- satul Iapa, com. Girda de Sus	Cimpeni	Dealul-Frumos
+ 	- satul Sacatura, com. Sacatura	Cimpeni	Vadul-Motilor
+ 	- localitatea componenta Flocesti, oras Cimpeni	Cimpeni	Florestii
+ 	- satul Canciu, com. Ciceu Giurgesti	Dej	Dumbravenii
+ 	- satul Ciumeni, com. Ileanda	Dej	Podisul
+ 	- satul Sacatura, com. Ileanda	Dej	Luminisul
+ 	- satul Budus, com. Bobilna	Dej	Vilcelele
+ 	- satul Valea Rea, com. Cozla	Dej	Valisoara
+ 	- satul Iapa, com. Rus	Dej	Fintinele
+ 	- satul Top, com. Mintiu Gherlii	Gherla	Padurenii
+ 	- satul Strimba, com. Sinpetru Almasului	Huedin	Stupinii
+ 	- satul Gaureni, com. Poienile Zagrii	Nasaud	Alunisul
+ 	- satul Schiopi, com. Craesti	Turda	Livada
+ 	- satul Catalusa, com. Catalusa	Zalau	Mesesenii-de-Jos
+ 	- satul Catalu, com. Catalusa	Zalau	Mesesenii-de-Sus
+ 	- satul Valea Vacilor, com. Cristolt	Zalau	Valea-Cristoltului
+ 	- satul Mocirla, com. Samsud	Zalau	Valea-Pomilor
+ 	- satul Cioara, com. Dobrin	Zalau	Delenii
+ 	 	 	 
+ 	REGIUNEA CRISANA
+ 	 
+ 	a. Comune
+ 	 
+ 	- com. Beznea	Alesd	Delurenii
+ 	- com. Saturau	Gurahont	Brazii
+ 	- com. Patal	Marghita	Viisoara
+ 	- com. Niuved	Oradea	Tamaseu
+ 	 
+ 	b. Sate
+ 	 
+ 	- satul Beznea, com. Beznea	Alesd	Delurenii
+ 	- satul Valea Neagra de Cris, com. Beznea	Alesd	Valea-Crisului
+ 	- satul Saracel, com. Bulz	Alesd	Muntenii
+ 	- satul Secatura, com. Grosi	Alesd	Codrisorul
+ 	- satul Broaste, com. Dumbravani	Beius	Stincestii
+ 	- satul Valea Neagra de Jos, com. Dumbravani	Beius	Valea-de-Jos
+ 	- satul Calugari, com. Carpinet	Beius	Ponoarele
+ 	- satul Valea Neagra de Sus, com. Chiscau	Beius	Valea-de-Sus
+ 	- satul Rituri, com. Mizies	Beius	Livada-Beiusului
+ 	- satul Negru, com. Draganesti	Beius	Gradinarii
+ 	- satul Cirpestii Mari, com. Hidisel	Beius	Cornisestii
+ 	- satul Cirpestii Mici, com. Simbata	Beius	Zavoiul
+ 	- satul Sic, com. Carand	Gurahont	Selistea
+ 	- satul Saturau, com. Saturau	Gurahont	Brazii
+ 	- satul Paulian, com. Buteni	Gurahont	Livada
+ 	- satul Mocirla, com. Chislaca	Ineu	Lunca-Teuzului
+ 	- satul Patal, com. Patal	Marghita	Viisoara
+ 	- satul Patalusa, com. Patal	Marghita	Izvoarele
+ 	- satul Satu de Necaz, com. Patal	Marghita	Padurenii
+ 	- satul Ritu Blaghii, com. Suplacu de Barcau	Marghita	Vilcelele
+ 	- satul Ferma Veid, com. Buduslau	Marghita	Nucestii
+ 	- satul Spurcani, com. Popesti	Marghita	Bistra
+ 	- satul Moara de Rituri, com. Tauteu	Marghita	Poiana
+ 	- satul Mociar, com. Ripa	Salonta	Dumbrava
+ 	- satul Valea Ungurului, com. Plopis	Simleu	Fagetul
+ 	 
+ 	REGIUNEA DOBROGEA
+ 	 
+ 	a. Comune
+ 	 	 	 
+ 	*- com. Beilic	Adamclisi	Viile
+ 	+- com. Valea Rea	Adamclisi	Vizienii
+ 	*- com. Pisica	Macin	Grindul
+ 	*- com. Basarabi	Medgidia	Murfatlar
+ 	+- com. Valea Neagra	Medgidia	Lumina
+ 	+- com. Filimon Sirbu	Negru Voda	Movilita
+ 	*- com. Meidanchioi	Tulcea	Valea-Teilor
+ 	*- com. Ada Marinescu	Tulcea	Nufarul
+ 	+- com. Filimon Sirbu	Tulcea	Izvoarele
+ 	 	 	 
+ 	b. Sate
+ 	 
+ 	*- satul Beilic, com. Beilic	Adamclisi	Viile
+ 	*- satul Valea Rea, com. Valea Rea	Adamclisi	Valenii
+ 	*- satul Cocargea, com. Deleni	Adamclisi	Pietrenii
+ 	*- satul Balaceanu, com. Saraiu	Hirsova	Miorita
+ 	*- satul Mahomencea, com. Rahman	Hirsova	Stinca
+ 	*- satul Ramazanchioi, com. Rahinan	Hirsova	Cismeaua-Noua
+ 	*- satul Elena Pavel, com. Topolog	Hirsova	Luminita
+ 	*- satul Rata, com. Ciobanu	Hirsova	Plopii
+ 	*- satul Strimba, com. Marasu	Hirsova	Magurenii
+ 	*- satul Pasa Cisla, com. Jurilovca	Istria	Visina
+ 	*- satul Baspunar, com. Slava Cercheza	Istria	Fintina-Mare
+ 	*- satul Canat Calfa, com. Dorobantu	Macin	Mesterul
+ 	*- satul Coiumpunar, com. Dorobantu	Macin	Fintina-Oilor
+ 	*- satul Geaferca Rusa, com. Hamcearca	Macin	Caprioara
+ 	*- satul Islam Geaferca, com. Horia	Macin	Floresti
+ 	*- satul Pisica, com. Pisica	Macin	Grindul
+ 	*- satul Valea Neagra, com. Valea Neagra	Medgidia	Lumina
+ 	*- satul Galesu, com. Poarta Alba	Medgidia	Nazarcea
+ 	+- satul Filimon Sirbu, com. Filimon Sirbu	Negru Voda	Movilita
+ 	*- satul Maior Chiriacescu, com. General Scarisoreanu	Negru Voda	Casicea
+ 	*- satul Meidanchioi, com. Meidanchioi	Tulcea	Valea-Teilor
+ 	*- satul Ada Marinescu, com. Ada Marinescu	Tulcea	Nufarul
+ 	*- satul Pirlita, com. Ada Marinescu	Tulcea	Victoria
+ 	+- satul Filimon Sirbu, com. Filimon Sirbu	Tulcea	Izvoarele
+ 	*- satul Calica, com. Valea Nucarilor	Tulcea	Iazurile
+ 	*- satul Lascar Catargiu, com. Ceatalchioi	Tulcea	Plaurul
+ 	*- satul Carasuhatu de Sus, com. Bestepe	Tulcea	Baltenii-de-Sus
+ 	*- satul Carasuhatu de Jos, com. Bestepe	Tulcea	Baltenii-de-Jos
+ 	*- satul Congaz, com. Mihail Kogalniceanu	Tulcea	Rindunica
+ 	*- satul Hagilar, com. Mihail Kogalniceanu	Tulcea	Lastunii
+ 	*- satul Beibugeac, com. Sarinasuf	Tulcea	Plopul
+ 	*- satul Caraibil, com. Sarinasuf	Tulcea	Colina
+ 	*- satul Cisla, com. Somova	Tulcea	Minerii
+ 	*- localitatea componenta Stefan Gheorghiu oras Isaccea	Tulcea	Revarsarea
+ 	 
+ 	Oras Constanta
+ 	 
+ 	*- satul Cocosu, com. Ovidiu	Or. Constanta	Poiana
+ 	 
+ 	REGIUNEA GALATI
+ 	 
+ 	a. Comune
+ 	 
+ 	*- com. Golasei	Braila	Lanurile
+ 	*- com. Naziru	Braila	Silistea
+ 	*- com. Osmanu	Braila	Unirea
+ 	*- com. Cioara-Doicesti	Braila	Baraganul
+ 	*- com. Strimbu	Faurei	Lunca
+ 	*- com. General Poetas	Faurei	Ulmul
+ 	*- com. Niculesti Jianu	Faurei	Dudestii
+ 	*- com. Risipiti	Focsani	Milcovul
+ 	*- com. Patesti	Focsani	Unirea
+ 	+- com. Generalisimul Suvorov	Focsani	Dumbravenii
+ 	- com. Oasele	Galati	Rediul
+ 	- com. Lascar Catargiu	Galati	Schela
+ 	*- com. Gauri	Panciu	Livezile
+ 	- com. Puleni	Tecuci	Valea-Marului
+ 	 	 	 
+ 	b. Sate
+ 	 
+ 	*- satul Golasei, com. Golasei	Braila	Lanurile
+ 	*- satul Naziru, com. Naziru	Braila	Silistea
+ 	*- satul Osmanu, com. Osmanu	Braila	Unirea
+ 	*- satul Cioara-Doicesti, com. Cioara-Doicesti	Braila	Baraganul
+ 	+- satul Serban Raducanu, com. Cioara-Doicesti	Braila	Spicul
+ 	*- satul Cioara Radu Voda, com. Cioara-Doicesti	Braila	Radu-Voda
+ 	*- satul Ciucea, com. Tichilesti	Braila	Albina
+ 	- satul Ignatesti, com. Firtanesti	Bujor	Viile
+ 	- satul Golasei, com. Bujor	Bujor	Bujor-Sat
+ 	*- satul Strimbu, com. Strimbu	Faurei	Lunca
+ 	*- satul General Poetas, com. General Poetas	Faurei	Ulmul
+ 	*- satul Niculesti Jianu, com. Niculesti Jianu	Faurei	Dudestii
+ 	*- satul Colonel A. Grigorescu, com. Ciresu	Faurei	Vulturenii
+ 	- satul Rudari, com. Dealu Lung	Focsani	Frasinul
+ 	*- satul Valea Rea, com. Mera	Focsani	Rosioara
+ 	*- satul Valea Boului, com. Reghiu	Focsani	Piscul-Reghiului
+ 	*- satul Risipiti, com. Risipiti	Focsani	Milcovul
+ 	*- satul Patesti, com. Patesti	Focsani	Unirea
+ 	+- satul Generalisimul Suvorov, com. Generalisimul Suvorov	Focsani	Dumbravenii
+ 	*- satul Sluti, com. Cotesti	Focsani	Valea-Cotesti
+ 	+- satul Vacaria, com. Herastrau	Focsani	Bradetul
+ 	*- satul Gainari, com. Nistoresti	Focsani	Fagetul
+ 	*- satul Calicu, com. Odobasca	Focsani	Dumbrava
+ 	- satul Dosu Tojanului, com. Spulber	Focsani	Tojanii
+ 	*- satul Parosu, com. Tichiris	Focsani	Viisoara
+ 	- satul Oasele, com. Oasele	Galati	Rediu1
+ 	- satul Lascar Catargiu, com. Lascar Catargiu	Galati	Schela
+ 	*- satul Gauri, com. Gauri	Panciu	Livezile
+ 	*- satul Purcei, com. Gauri	Panciu	Mesteacanul
+ 	*- satul Ciuruc, com. Cimpuri	Panciu	Teii
+ 	- satul Sperieti-Chitcani, com. Movilita	Panciu	Zabrautii
+ 	*- satul Purcelesti, com. Bolotesti	Panciu	Putna
+ 	- localitatea componenta Lingurari, oras Marasesti	Panciu	Siretul
+ 	- satul Puteni, com. Puteni	Tecuci	Valea-Marului
+ 	- satul Diaconi, com. Poiana	Tecuci	Visina
+ 	- localitatea componenta Catusa,	Or. Galati	Barbosii-Cartier
+ 	*- satul Pintecesti, com. Cimpineanca	Or. Focsani	Pietroasa
+ 	 	 	 
+ 	REGIUNEA HUNEDOARA
+ 	 
+ 	a. Comune
+ 	 
+ 	- com. Valea Dosului	Alba	Izvorul-Ampoiului
+ 	- com. Berthelot	Hateg	Unirea
+ 	- com. Buruene	Ilia	Paulisul
+ 	- com. Cioara	Orastie	Salistea
+ 	 	 	 
+ 	b. Sate
+ 	 	 	 
+ 	- satul Valea Dosului, com. Valea Dosului	Alba	Izvorul-Ampoiului
+ 	- satul Dealu Gaurenilor, com. Metes	Alba	Poiana-Ursului
+ 	- satul Gaureni, com. Metes	Alba	Valenii
+ 	- satul Jidovina, com. Inuri	Alba	Poenita
+ 	- satul Limba, com. Ciugud	Alba	Dumbrava
+ 	- satul Fagadaele Galzii, com. Galda de Jos	Alba	Galdisoara
+ 	- satul Dosu, com. Bucuresci	Brad	Merisorul
+ 	- satul Buha, com. Baia de Cris	Brad	Valenii
+ 	- satul Juncu de Jos, com. Ribita	Brad	Dumbrava-de-Jo s
+ 	- satul Juncu de Sus, com. Ribita	Brad	Dumbrava-de-Sus
+ 	- satul Strimba, com. Tomesti	Brad	Livada
+ 	- satul Gaureni, com. Riu de Mori	Hateg	Brazii
+ 	- satul Berthelot, com. Berthelot	Hateg	Unirea
+ 	- satul Gauricea, com. Berthelot	Hateg	Livezile
+ 	- satul Vaideii de Munte, com. Riu Alb	Hateg	Riul-Mic
+ 	- satul Matesti, com. Riu Alb	Hateg	Zavoiul
+ 	- satul Vilcelele Rele, com. Bretea Romina	Hateg	Vilcelele
+ 	- satul Buruene, com. Buruene	Ilia	Paulisul
+ 	- satul Nevoes, com. Buruene	Ilia	Lunca
+ 	- satul Bicau, com. Branisca	Ilia	Rovina
+ 	- satul Strigoanea, com. Lapusnic	Ilia	Bujorul
+ 	- satul Bagara, com. Visca	Ilia	Valea-Poenii
+ 	- satul Filimon Sirbu, com. Vetel	Ilia	Herepea
+ 	- satul Cioara, com. Cioara	Orastie	Salistea
+ 	- satul Cioara-Deal, com. Cioara	Orastie	Salistea-Deal
+ 	- satul Ciungi, com. Ceru Bacainti	Orastie	Fintinele
+ 	- satul Porcurea, com. Almas	Orastie	Valisoara
+ 	- satul Valea Iepii, com. Almas	Orastie	Poenita
+ 	- satul Cacovita, com. Sasciori	Sebes	Marga
+ 	- satul Gaunoasa, com. Pestis	Or. Hunedoara	Dumbrava
+ 	- satul Lingina, com. Teliuc	Or. Hunedoara	Izvoarele
+ 	- satul Paroasa, com. Toplita	Or. Hunedoara	Dealul-Mic
+ 	- localitatea componenta Jupinese	Or. Petroseni	Pestera
+ 	 
+ 	REGIUNEA IASI
+ 	 
+ 	a. Comune
+ 	 
+ 	- com. Basesti	Birlad	Viisoara
+ 	- com. Cirligati	Husi	Padurenii
+ 	- com. Schiopeni	Husi	Valenii
+ 	- com. Cirpiti	Iasi	Victoria
+ 	- com. Stolniceni-Ghitescu	Pascani	Vinatorii
+ 	- com. Valea Rea	Vaslui	Valenii
+ 	 
+ 	b. Sate
+ 	 
+ 	- satul Basesti, com. Basesti	Birlad	Viisoara
+ 	- satul Valea Mitei, com. Ciocani	Birlad	Cringul-Nou
+ 	- satul Strimba, com. Puiesti	Birlad	Cetatuia
+ 	- satul Burlaci, com. Gherghesti	Birlad	Dealul-Soci
+ 	- satul Leonte Filipescu, com. Gherghesti	Birlad	Studinetul
+ 	- satul Politeni, com. Iana	Birlad	Vadurile
+ 	- satul Minzati-Boieresti, com. Ibanesti	Birlad	Minzatii-de-Sus
+ 	- satul Minzati-Razesi, com. Ibanesti	Birlad	Minzatii-de-Jos
+ 	- satul Rai, com. Murgeni	Birlad	Vadenii
+ 	- satul Voinesti-Boieresti, com. Obirseni	Birlad	Cirtibasul
+ 	- satul Voinesti-Razesi, com. Obirseni	Birlad	Voinesti
+ 	- satul Toader Enache, com. Bacani	Birlad	Baltatenii
+ 	- satul Sterian Dumbrava, com. Dragalina	Birlad	Baltenii
+ 	- satul Ion Arghirescu, com. Sirbi	Birlad	Satul-Nou
+ 	- satul Niculaie Hobjila, com. Sirbi	Birlad	Salcioara
+ 	- satul Viriti, com. Ceplenita	Hirlau	Poiana-Marului
+ 	- satul Vacaria, com. Cotnari	Hirlau	Ciresenii
+ 	- satul Moara Prefectului, com. Cotnari	Hirlau	Bahluiul
+ 	- satul Latai, com. Prajeni	Hirlau	Cimpenii
+ 	- satul Schiopeni, com. Schiopeni	Husi	Valenii
+ 	- satul Cirligati, com. Cirligati	Husi	Padurenii
+ 	- satul Golosei, com. Deleni	Husi	Delenii-de-Jos
+ 	- satul Taetura-Bagau, com. Deleni	Husi	Rediul
+ 	- satul Porciseni, com. Botesti	Husi	Viisoara
+ 	- satul Sperieti, com. Grajduri	Iasi	Padurenii
+ 	- satul Satrareni, com. Tiganasi	Iasi	Stejarii
+ 	- satul Raiu Blindesti, com. Tiganasi	Iasi	Blindestii
+ 	- satul Gaureni, com. Vladeni	Iasi	Vilcelele
+ 	- satul Cirpiti, com. Cirpiti	Iasi	Victoria
+ 	- satul Damachi, com. Trifesti	Iasi	Plopii
+ 	- satul Marhonda, com. Bosia	Iasi	Jijia
+ 	- satul Chisarai, com. Golaesti	Iasi	Gradinarii
+ 	- satul Secatura, com. Oniceni	Negresti	Gorunul
+ 	- satul Gaureni, com. Tibanesti	Negresti	Valenii
+ 	- satul Golani, com. Valea Ursului	Negresti	Zorile
+ 	- satul Fundu Sistarului, com. Valea Ursului	Negresti	Izvoarele
+ 	- satul Cioara, com. Vulturesti	Negresti	Podenii
+ 	- satul Secaturi, com Tibana	Negresti	Livada-Noua
+ 	- satul Gaunoasa, com. Scheia	Negresti	Poiana-Schei
+ 	- satul Lingurari-Ursari, com. Dagita	Negresti	Poenile
+ 	- satul Lingurari, com. Mironeasa	Negresti	Frunzisul
+ 	- satul Gaureana, com. Strunga	Pascani	Gura-Vaii
+ 	- satul Tintirim, com. Stolniceni-Ghitescu	Pascani	Poenita
+ 	- satul Stolniceni-Ghitescu, com. Stolniceni-Ghitescu	Pascani	Vinatorii
+ 	- satul Fotin Enescu, com. Lespezi	Pascani	Dumbrava
+ 	- satul Facuti, com. Baltati	Pascani	Podisul
+ 	- satul Valea Rea, com. Valea Rea	Vaslui	Valenii
+ 	- satul Poenesti-Strajescu, com. Poenesti	Vaslui	Frasinul
+ 	- satul Talharesti, com. Rosiesti	Vaslui	Codrenii
+ 	- satul Ursari, com. Bogdana	Vaslui	Plopenii
+ 	- satul Lingurari, com. Laza	Vaslui	Teisorul
+ 	- satul Porcaret, com. Pungesti	Vaslui	Stejarul
+ 	- satul B. Zaharescu, com. Fruntiseni	Or. Birlad	Dealul-Mare
+ 	- satul Stroe Beloiescu, com. Grivita	Or. Birlad	Trestiana
+ 	 	 	 
+ 	REGIUNEA MARAMURES
+ 	 
+ 	a. Orase
+ 	 
+ 	- orasul Sighet	Sighet	Sighetul Marmatiei
+ 	 
+ 	b. Sate
+ 	 
+ 	- satul Moara Banfi, com. Tasnad	Carei	Valea-Morii
+ 	- satul Ponivas, com. Ciumesti	Carei	Viisoara
+ 	- satul Cioara Mica, com. Cehu Silvaniei	Cehu Silvaniei	Poiana
+ 	- satul Boereni, com. Rohia	Lapus	Dumbrava-Noua
+ 	- satul Poiana Porcului, com. Rohia	Lapus	Fintinele
+ 	- satul Bloaja, com. Ciocotis	Lapus	Izvoarele
+ 	- satul Paulian, com. Doba	Satu Mare	Porumbenii
+ 	- satul Cracesti, com. Desesti	Sighet	Mara
+ 	- satul Valea Porcului, com. Vad	Sighet	Valea-Stejarului
+ 	- satul Virismort, com. Bocicoiu Mare	Sighet	Tisa
+ 	 
+ 	REGIUNEA MURES-AUTONOMA MAGHIARA
+ 	 
+ 	a. Comune
+ 	 
+ 	- com. Porcesti	Reghin	Valenii-de-Mures
+ 	- com. Iedu	Tg. Mures	Livezenii
+ 	- com. Oaia	Tg. Mures	Valenii
+ 	- com. Saros	Tirnaveni	Delenii
+ 	 
+ 	b. Sate
+ 	 
+ 	- satul Santatelec, com. Lunca de Sus	Ciuc	Izvorul-Trotusului
+ 	- satul Girciu, com. Racu	Ciuc	Satul-Nou
+ 	- satul Ludfarca, com. Remetea	Gheorghieni	Brazii
+ 	- satul Singeroasa, com. Tulghes	Gheorghieni	Valea-Frumoasa
+ 	- satul Valea Iepii, com. Papiu Ilarian	Ludus	Merisorul
+ 	- satul Dosu Tagului, com. Sopteriu	Ludus	Podenii
+ 	- satul Gloduri, com. Chimitelnic	Ludus	Valisoara
+ 	- satul Tigareni, com. Taureni	Ludus	Padurenii
+ 	- satul Tau Boilor, com. Pogaceaua	Ludus	Delenii
+ 	- satul Besineu, com. Sinpaul	Ludus	Valea-Izvoarelor
+ 	- satul Iobai, com. Silivasu de Cimpie	Ludus	Porumbenii
+ 	- satul Uzinele Gabor Aron, com. Vlahita	Odorhei	Vlahita-Noua
+ 	- satul Porcesti, com. Porcesti	Reghin	Valenii-de-Mures
+ 	- satul Mures-Mort, com. Alunis	Reghin	Lunca-Muresului
+ 	- satul Seci, com. Gurghiu	Reghin	Orsova-Padure
+ 	- satul Piriul Porcului, com. Ibanesti-Padure	Reghin	Bradetelul
+ 	- satul Baloasa, com. Cozma	Reghin	Mestecanisul
+ 	- satul Iedu, com. Iedu	Tg. Mures	Livezenii
+ 	- satul Ogari, com. Iedu	Tg. Mures	Poienita
+ 	- satul Oaia, com. Oaia	Tg. Mures	Valenii
+ 	- satul Buza, com. Vargata	Tg. Mures	Griusorul
+ 	- satul Iobageni, com. Vargata	Tg. Mures	Valea
+ 	- satul Tiucolos, com. Ghindari	Tg. Mures	Ciresenii
+ 	- satul Surda-Dumitresti, com. Miercurea Nirajului	Tg. Mures	Dumitrestii
+ 	- satul Temletbuche, com. Sarateni	Tg. Mures	Valea-Bradului
+ 	- satul Saros, com. Saros	Tirnaveni	Delenii
+ 	- satul Spini, com. Sona	Tirnaveni	Lunca-Tirnavei
+ 	- satul Cocos, com. Cristesti	Or. Tg. Mures	Valurenii
+ 	- localitatea componenta Besa	Or. Tg. Mures	Remetea
+ 	 
+ 	REGIUNEA OLTENIA
+ 	 
+ 	a. Raioane
+ 	 
+ 	- raionul Tirgu Jiu	Gorj
+ 	 
+ 	a. Comune
+ 	 
+ 	*- com. Rudari	Bailesti	Izvoarele
+ 	*- com. Risipiti	Calafat	Unirea
+ 	*- com. Bosoteni	Caracal	Tesluiul
+ 	- com. Valea Boului	Filiasi	Stejarul
+ 	*- com. Valea lui Ciine	Filiasi	Gilortul
+ 	*- com. Turbati	Gilort	Dumbravenii
+ 	*- com. Cordesti-Hurezani	Oltelu	Stejarul-Hurezani
+ 	*- com. Cirna	Segarcea	Dunarenii
+ 	*- com. Baltati	Strehaia	Dumbrava
+ 	*- com. Borascu	Strehaia	Livada
+ 	*- com. Degerati	Tr. Severin	Cervenita
+ 	*- com. Broscari	Vinju Mare	Livezile
+ 	*- com. Flaminda	Vinju Mare	Jiana
+ 	 	 	 
+ 	b. Sate
+ 	 
+ 	*- satul Laturoasa, com. Bala	Baia de Arama	Bratesul
+ 	*- satul Riieni, com. Ponoarele	Baia de Arama	Delurenii
+ 	*- satul Bisici, com. Floresti	Baia de Arama	Livezile
+ 	*- satul Porcasa, com. Plostina	Baia de Arama	Dealul-Pomilor
+ 	*- satul Bizgarei, com. Vulpeni	Bals	Plopsorelul
+ 	*- satul Dosu Sandii, com. Ungureni	Bals	Ungurenii Mici
+ 	*- satul Viisoara-Clacasi, com. Dragotesti	Bals	Viisoara
+ 	*- satul Strimba, com. Gavanesti	Bals	Dimburile
+ 	*- satul Atirnati, com. Greci	Bals	Peretul
+ 	*- satul Rudari, com. Rudari	Bailesti	Izvoarele
+ 	*- satul Orman, com. Urzicuta	Bailesti	Urzicuta-de-Sus
+ 	*- satul Amzulesti, com. Afumati	Bailesti	Satul-Vechi
+ 	*- satul Circota, com. Plosca	Bailesti	Brindusa
+ 	*- localitatea componenta Nadejdea, oras Bailesti	Bailesti	Balasanul
+ 	*- satul Risipiti, com. Risipiti	Calafat	Unirea
+ 	*- satul Nebuna, com. Piscu Vechi	Calafat	Pisculetul
+ 	*- satul Bosoteni, com. Bosoteni	Caracal	Tesluiul
+ 	*- satul Strimba, com. Bosoteni	Caracal	Fintinele
+ 	*- satul Atirnati, com. Preajba de Padure	Caracal	Preajba-de-Jos
+ 	*- satul Babiciu-Episcopiei., com. Babiciu	Caracal	Babiciul
+ 	*- satul Burtoiu, com. Brabova	Craiova	Voita
+ 	*- satul Constanta, com. Breasta	Craiova	Fagetul
+ 	+- satul Mahalaua, com. Breasta	Craiova	Rosienii
+ 	+- satul Marioara, com. Breasta	Craiova	Valea-Lungului
+ 	*- satul Crucile, com. Goesti	Craiova	Gruita
+ 	*- satul Minastiricea, com. Sopotu	Craiova	Cernatul
+ 	*- satul Adunatii de Geormane, com. Bratovoesti	Craiova	Prunetul
+ 	*- satul Cioroi, com. Izvoru	Craiova	Delenii
+ 	*- satul Ruptura, com. Virvoru	Craiova	Virvorul-de-Jos
+ 	*- satul Dia, com. Predesti	Craiova	Predestii-Mici
+ 	*- satul Viriti, com. Suglui	Craiova	Jiul
+ 	*- satul Bousoru, com. Valea Boului	Filiasi	Stejerelul
+ 	*- satul Valea lui Ciine, com. Valea lui Ciine	Filiasi	Gilortul
+ 	*- satul Atirnatii Balacesti, com. Argetoaia	Filiasi	Poiana-Fintinii
+ 	*- satul Purcaresti, com. Bralostita	Filiasi	Valea-Fintinilor
+ 	*- satul Atirnati, com. Ceplea	Filiasi	Brostenii-de-Sus
+ 	*- satul Valea Rea, com. Ceplea	Filiasi	Valenii-de-Sus
+ 	*- satul Strimba Jiu, com. Girbovu	Filiasi	Girbovul-de-Sus
+ 	*- satul Strimba, com. Plopsoru	Filiasi	Sardanestii-de-Sus
+ 	*- satul Valea Calului, com. Turburea	Filiasi	Sipotelul
+ 	*- satul Turbati, com. Turbati	Gilort	Dumbravenii
+ 	+- satul Calugaru, com. Capreni	Gilort	Cetatea
+ 	*- satul Tindalesti, com. Tirgu Logresti	Gilort	Frunza
+ 	*- satul Murdari, com. Sacelu	Gilort	Jeristea
+ 	*- satul Surupati, com. Sacelu	Gilort	Blahnita-de-Sus
+ 	*- satul Vieresti, com. Logresti-Mosteni	Gilort	Cetatea
+ 	*- satul Strimba, com. Pojaru	Gilort	Valea-Pojarului
+ 	*- satul Purceleni, com. Pojogeni	Gilort	Blahnita-de-Jos
+ 	*- satul Cordesti, com. Cordesti-Hurezani	Oltetu	Stejarul
+ 	*- satul Risipiti, com. Lacusteni	Oltetu	Lacustenii-de-Jos
+ 	*- satul Biserica, com. Lacusteni	Oltetu	Lacustenii-de-Sus
+ 	*- satul Pradatoru, com. Fratila	Oltetu	Infratirea
+ 	*- satul Omoricea, com. Giulesti	Oltetu	Giulestii-de-Sus
+ 	*- satul Cirna, com. Cirna	Segarcea	Dunarenii
+ 	*- satul Popoviceni, com. Goicea	Segarcea	Satul Nou
+ 	*- satul Baltatii de Sus, com. Baltati	Strehaia	Dumbrava-de-Sus
+ 	*- satul Baltatii de Mijloc, com. Baltati	Strehaia	Dumbrava-de-Mijloc
+ 	*- satul Baltatii de Jos, com. Baltati	Strehaia	Dumbrava-de-Jos
+ 	*- satul Borascu, com. Borascu	Strehaia	Livada
+ 	*- satul Tiuleni, com. Secu	Strehaia	Comanicea
+ 	*- satul Socolesti, com. Deleni	Strehaia	Satul-Mare
+ 	*- satul Birzescu, com. Lupsa	Strehaia	Luncsoara
+ 	*- satul Pirlita, com. Breznita-Motru	Strehaia	Valea-Teiului
+ 	*- satul Vargati, com. Greci	Strehaia	Visina
+ 	+- satul Conace, com. Bolbosi	Strehaia	Valea
+ 	*- satul Robesti, com. Menti	Strehaia	Motrulenii
+ 	*- satul Strimba, com. Raci	Strehaia	Nucetul
+ 	*- satul Valea Rea, com. Vagiulesti	Strehaia	Valea-Motrului
+ 	*- satul Porceni Birnici, com. Simbotinu	Tg. Jiu	Plesa
+ 	*- satul Porceni Mosteni, com. Simbotinu	Tg. Jiu	Gornacelul
+ 	*- satul Fometesti, com. Ciuperceni	Tg. Jiu	Ciupercenii-de-Sus
+ 	*- satul Vai de Ei, com. Valari	Tg. Jiu	Merisorii
+ 	*- satul Rudaria, com. Cilnicu	Tg. Jiu	Cilnicul-de-Sus
+ 	*- satul Degerati, com. Degerati	Tr. Severin	Cervenita
+ 	*- satul Basesti, com. Bilvanesti	Tr. Severin	Bilvanestii-de-Jos
+ 	*- satul Cacoti, com. Izvoralu	Tr. Severin	Izvoralul-de-Jos
+ 	*- satul Valea Hotului, com. Izvoru Anestilor	Tr. Severin	Valea-Izvorului
+ 	*- satul Porcesti, com. Ghelmegioaia	Tr. Severin	Prunarul
+ 	*- satul Ciolani, com. Perii	Tr. Severin	Alunisul
+ 	*- satul Valea Rea, com. Cazanesti	Tr. Severin	Valea-Cosustei
+ 	*- satul Broscari, com. Broscari	Vinju Mare	Livezile
+ 	*- satul Flaminda, com. Flaminda	Vinju Mare	Jiana
+ 	*- satul Atirnati, com. Batoti	Vinju Mare	Dunarea-Mica
+ 	*- satul Poiana Ciorii, com. Gruia	Vinju Mare	Poiana-Gruii
+ 	*- satul Atirnati, com. Cernele	Or. Craiova	Izvorul-Rece
+ 	*- localitatea componenta Lascar Catargiu	Or. Craiova	Lunca-Jiului
+ 	 
+ 	REGIUNEA PLOIESTI
+ 	 
+ 	a. Comune
+ 	 
+ 	*- com. Valea Rea	Buzau	Padurenii
+ 	*- com. Viperesti	Cislau	Plaiurile
+ 	+- com. Badeni-Miluiti	Mizil	Cimpenii
+ 	*- com. Ciumati	Ploiesti	Olarii Vechi
+ 	*- com. Putreda	Rm. Sarat	Livada
+ 	*- com. Jideni	Rm. Sarat	Podgoria
+ 	*- com. Obiditi	Rm. Sarat	Rimnicelul
+ 	*- com. Baltati	Rm. Sarat	Valea Rimnicului
+ 	*- com. Rincezi	Teleajen	Nucsoara de Jos
+ 	*- com. Scaiosi	Teleajen	Fagetul
+ 	 
+ 	b. Sate
+ 	 
+ 	*- satul Poponeti, com. Aldeni	Buzau	Fulga
+ 	*- satul Valea Ciomegii, com. Beslii	Buzau	Satul Vechi
+ 	*- satul Atirnati, com. Izvoru Dulce	Buzau	Dealul-Viei
+ 	*- satul Calugari, com. Posta	Buzau	Scarisoara
+ 	*- satul Haimanale, com. Posta	Buzau	Viisoara
+ 	*- satul Gura Papii, com. Vintila Voda	Buzau	Plopii
+ 	*- satul Izvoru Boului, com. Vintila Voda	Buzau	Izvorul
+ 	*- satul Fundu Papii, com. Vintila Voda	Buzau	Poenita
+ 	*- satul Posircesti, com. Niscov	Buzau	Livezile
+ 	*- satul Urlatori, com. Plescoi	Buzau	Valea-Nucului
+ 	*- satul Schitu, com. Scortoasa	Buzau	Dealul-Frumos
+ 	*- satul Linia Ciolanului, com. Valea Rea	Buzau	Izvorul
+ 	*- satul Valea Rea, com. Valea Rea	Buzau	Padurenii
+ 	*- satul Baligosi, com. Balta Tocila	Buzau	Delenii
+ 	*- satul Miluiti, com. Grajdana	Buzau	Valea-Salciilor
+ 	*- satul Paroasa, com. Magureni	Cimpina	Lunca-Prahovei
+ 	*- satul Vrajitoarea, com. Poiana Cimpina	Cimpina	Pietrisul
+ 	*- satul Strimbu, com. Valea Lunga Gorgota	Cimpina	Izvorul
+ 	*- satul Ciocoiesti, com. Ederile	Cimpina	Cricovul-Dulce
+ 	*- satul Fricoasa, com. Provita de Sus	Cimpina	Izvorul
+ 	*- satul Secaturi, com. Provita de Sus	Cimpina	Plaiul
+ 	*- satul Gheboasa, com. Valea Lunga Cricov	Cimpina	Valea-Mare
+ 	*- localitatea componenta Cotoiu-oras Baicoi	Cimpina	Schela
+ 	*- satul Viperesti, com. Viperesti	Cislau	Plaiurile
+ 	*- satul Broasca, com. Siriu	Cislau	Lunca-Jaristei
+ 	*- satul Inselata, com. Siriu	Cislau	Coltul-Pietrii
+ 	*- satul Dosu, com. Braesti	Cislau	Pirscovelul
+ 	*- satul Benga, com. Maruntisu	Cislau	Lunca.
+ 	*- satul Valea Iepei, com. Balanesti	Cislau	Aninii
+ 	*- satul Geambasu, com. Riu	Cislau	Izvoarele
+ 	*- satul Muscelu-Tiganu, com. Rusavat	Cislau	Muscelul
+ 	*- satul Ochiu Boului, com. Pietroasele	Mizil	Pietroasa Mica
+ 	*- satul Mirosi, com. Badeni-Miluiti	Mizil	Lunca
+ 	+- satul Badeni-Miluiti, com. Badeni-Miluiti	Mizil	Cimpenii
+ 	*- satul Degerati, com. Colceag	Mizil	Vilcelele
+ 	*- satul Vai de Ei, com. Tataru	Mizil	Podgoria
+ 	*- satul Schiopoaia; com. Cireseanu	Mizil	Satul-Nou
+ 	- satul Maracini, com. Cireseanu	Mizil	Cringurile
+ 	*- satul Atirnati, com. Clondiru	Mizil	Sarata
+ 	*- satul Mitropolia, com. Smirdan	Mizil	Smirdanul-Mic
+ 	*- satul Ochiu Boului, com. Catunu	Ploiesti	Crivatul
+ 	*- satul Ciumati, com. Ciumati	Ploiesti	Olarii-Vechi
+ 	*- satul Tigania, com. Cocorasti-Colt	Ploiesti	Satul-de-Sus
+ 	*- satul Dosurile, com. Valea Calugareasca	Ploiesti	Virfurile
+ 	+- satul Rudari, com. Cojasca	Ploiesti	Iazul
+ 	- Colonia Ilie Pintilie, com. Plopeni	Ploiesti	Stejarul
+ 	*- satul Putreda Mare, com. Putreda	Rm. Sarat	Livada
+ 	*- satul Putreda Mica, com. Putreda	Rm. Sarat	Livada-Mica
+ 	*- satul Schiopeni, com. Margaritesti	Rm. Sarat	Fintinele
+ 	*- satul Maracini, com. Timboesti	Rm. Sarat	Padurenii
+ 	- satul Robescu, com. Cochirleanca	Rm. Sarat	Cimpia
+ 	*- satul N. Fleva, com. Ziduri	Rm. Sarat	Lanurile
+ 	*- satul Darimati, com. Baltati	Rm. Sarat	Oreavul
+ 	+- satul Coita, com. Bisoca	Rm. Sarat	Lacurile
+ 	*- satul Hoinari, com. Macrina	Rm. Sarat	Lunca
+ 	*- satul Clociti, com. Vadu Soresti	Rm. Sarat	Prunenii
+ 	+- satul Baltatii Vechi, com. Baltati	Rm. Sarat	Valea-Rimnicului
+ 	- satul Baltatii Noi, com. Baltati	Rm. Sarat	Satul-Nou
+ 	*- satul Jideni, com. Jideni	Rm. Sarat	Podgoria
+ 	+- satul Strimba, com. Poenita	Rm. Sarat	Valea Mica
+ 	*- satul Obiditi, com. Obiditi	Rm. Sarat	Rimnicelul
+ 	*- localitatea componenta Flaminda, oras Rm. Sarat	Rm. Sarat	Zidarii
+ 	*- satul Rincezi, com. Rincezi	Teleajen	Nucsoara de Jos
+ 	*- satul Scaiosi; com. Scaiosi	Teleajen	Fagetul
+ 	*- satul Strimbeni, com. Alunis	Teleajen	Ostrovul
+ 	*- satul Valea Boului, com. Apostolache	Teleajen	Valea-Cricovului
+ 	*- satul Pacaloaia, com. Mehedinta	Teleajen	Salcioara
+ 	*- satul Protosinghelu, com. Magurele	Teleajen	Iazul
+ 	*- satul Opariti, com. Predeal-Sarari	Teleajen	Poienile
+ 	*- satul Atirnati, com. Matita	Teleajen	Magura
+ 	+- satul Rudari, com. Singeru	Teleajen	Piatra-Mica
+ 	*- satul Tita, com. Buciumeni	Tirgoviste	Dealul-Mare
+ 	*- satul Tigania, com. Gura Ocnitei	Tirgoviste	Capul-Plaiului
+ 	*- satul Valea Titii, com. Pietrosita	Tirgoviste	Dealul-Frumos
+ 	*- satul Rimata, com. Bezdead	Tirgoviste	Bezdeadul-de-Sus
+ 	+- satul Malu Orbului, com. Glodeni	Tirgoviste	Livezile
+ 	*- satul Strimba, com. Pietrari	Tirgoviste	Valea
+ 	*- satul Piatra Epii, com. Runcu	Tirgoviste	Piatra
+ 	*- satul Strimbu, com. Virfuri	Tirgoviste	Ulmetul
+ 	*- satul Valea Rea, com. Virfuri	Tirgoviste	Merisorul
+ 	*- satul Degerati, com. Paulesti	Or. Ploiesti	Paulestii-Noi
+ 	 
+ 	REGIUNEA SUCEAVA
+ 	 
+ 	a. Comune
+ 	 
+ 	- com. Valea Boului	Cimpulung	Paltinul
+ 	- com. Bivol	Saveni	Viisoara
+ 	 
+ 	b. Sate
+ 	 
+ 	- satul Fotin Enescu, com. Ringhilesti	Botosani	Ringhilestii-Deal
+ 	- satul Pirlita, com. Baluseni	Botosani	Balusenii-Noi
+ 	- satul Cucuteni-Tufescu, com. Durnesti	Botosani	Cucutenii
+ 	- satul Lingurari, com. Cosula	Botosani	Padurenii
+ 	- satul Satrareni, com. Albesti	Botosani	Jijia
+ 	- satul Valea Boului, com. Valea Boului	Cimpulung	Paltinul
+ 	- satul Porcescu, com. Breaza	Cimpulung	Breaza-de-Sus
+ 	- satul Hapai, com. Virfu Cimpului	Dorohoi	Alunisul
+ 	- satul Gaureana, com. Braesti	Dorohoi	Vilcelele
+ 	- satul Puhai, com. Sendriceni	Dorohoi	Padurenii
+ 	- localitatea componenta Putreda, oras Dorohoi	Dorohoi	Progresul
+ 	- satul Poiana Raftivanului, com. Dolhasca	Falticeni	Poiana
+ 	- satul Lingurari, com. Probota	Falticeni	Poienarii
+ 	- localitatea componenta Timpesti, oras Falticeni	Falticeni	Gradinile
+ 	- satul Strigoaia, com. Partestii de Jos	Gura Humorului	Virful-Dealului
+ 	- satul Gropi, com. Stroiesti	Gura Humorului	Vilcelele
+ 	- satul Calinesti-Enache, com. Maritei	Radauti	Calinestii
+ 	- satul Calinesti-Cuparencu, com. Serbauti	Radauti	Arinii
+ 	- satul Gaureni, com. Granicesti	Radauti	Dumbrava
+ 	- satul Slobozia Pruncului, com. Iacobesti	Radauti	Slobozia-Sucevei
+ 	- localitatea componenta Verpole, oras Siret	Radauti	Padurenii
+ 	- satul Bivolu Mare, com. Bivolu	Saveni	Viisoara
+ 	- satul Bivolu Mic, com. Bivolu	Saveni	Viisoara-Mica
+ 	- satul Filipesti, com. Stauceni	Or. Botosani	Victoria
+ 	 	 	 
+ 	 	 	 
+ 	ORASUL BUCURESTI
+ 	 
+ 	*- satul Filipescu, com. Magurele	V. I. Lenin	Alunisul
+ 	*- satul Gherman, com. Magurele	V. I. Lenin	Ciocirlia
