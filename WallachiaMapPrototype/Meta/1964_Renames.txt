@@ -564,7 +564,7 @@ REGIUNEA ARGES
  	*- satul Naziru, com. Naziru	Braila	Silistea
  	*- satul Osmanu, com. Osmanu	Braila	Unirea
  	*- satul Cioara-Doicesti, com. Cioara-Doicesti	Braila	Baraganul
- 	+- satul Serban Raducanu, com. Cioara-Doicesti	Braila	Spicul
+ 	*- satul Serban Raducanu, com. Cioara-Doicesti	Braila	Spicul
  	*- satul Cioara Radu Voda, com. Cioara-Doicesti	Braila	Radu-Voda
  	*- satul Ciucea, com. Tichilesti	Braila	Albina
  	- satul Ignatesti, com. Firtanesti	Bujor	Viile
@@ -580,7 +580,7 @@ REGIUNEA ARGES
  	*- satul Patesti, com. Patesti	Focsani	Unirea
  	+- satul Generalisimul Suvorov, com. Generalisimul Suvorov	Focsani	Dumbravenii
  	*- satul Sluti, com. Cotesti	Focsani	Valea-Cotesti
- 	+- satul Vacaria, com. Herastrau	Focsani	Bradetul
+ 	*- satul Vacaria, com. Herastrau	Focsani	Bradetul
  	*- satul Gainari, com. Nistoresti	Focsani	Fagetul
  	*- satul Calicu, com. Odobasca	Focsani	Dumbrava
  	- satul Dosu Tojanului, com. Spulber	Focsani	Tojanii
