@@ -63,26 +63,34 @@ function get_highlighted_markers() {
             continue;
         }
 
-        var prev_mention_year = null;
         var earlier_mentions = get_latest_mentions(place_id, null, PREV_YEAR_SLIDER_VALUE);
-        var mentions_inbetween = get_place_mentions(place_id, prev_mention_year, YEAR_SLIDER_VALUE);
+
+        var earlier_year = PREV_YEAR_SLIDER_VALUE;
+        if (earlier_mentions.length != 0) {
+            earlier_year = earlier_mentions[0][Mention.Year];
+        }
+        var mentions_inbetween = get_place_mentions(place_id, earlier_year, YEAR_SLIDER_VALUE);
+        mentions_inbetween.sort(function (a, b) { return a[Mention.Year] - b[Mention.Year]; });
+
         if (earlier_mentions.length === 0) {
             if (mentions_inbetween.length === 1) {
+                // only one mention
+                highlights[place_id] = "green";
+            } else if (mentions_inbetween[0][Mention.Year] === mentions_inbetween[mentions_inbetween.length-1][Mention.Year]) {
+                // only mentions from the same year
                 highlights[place_id] = "green";
             }
-        } else {
-            prev_mention_year = earlier_mentions[0][Mention.Year];
-        }
 
+        }
         
-        var min_name_change_score = null;
         // ignore mentions from "Harta Căilor de Comunicație din Județul ..." because they are unreliable
         for (idx in mentions_inbetween) {
-            if ([40, 41, 54, 63, 64, 65, 94, 120, 121, 122].includes(mentions_inbetween[idx][Mention.Record_Id])) {
+            if ([40, 41, 54, 63, 64, 65, 94, 120, 121, 122, 123].includes(mentions_inbetween[idx][Mention.Record_Id])) {
                 mentions_inbetween.splice(idx, 1);
             }
         }
 
+        var min_name_change_score = null;
         for (var i = 0; i < mentions_inbetween.length - 1; i++) {
             mention_name = removeDiacritics(mentions_inbetween[i][Mention.Name]);
             next_mention_name = removeDiacritics(mentions_inbetween[i+1][Mention.Name]);

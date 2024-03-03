@@ -49,3 +49,13 @@ for (place_id in MENTIONS_SETTLEMENTS) {
         }
     }
 }
+
+// test if any mention doesn't have a valid record id
+for (place_id in MENTIONS_SETTLEMENTS) {
+    mentions_dict = MENTIONS_SETTLEMENTS[place_id];
+    for (record_id in mentions_dict) {
+        if (!(record_id) in RECORDS) {
+            console.log(mentions_dict[record_id]);
+        }
+    }
+}

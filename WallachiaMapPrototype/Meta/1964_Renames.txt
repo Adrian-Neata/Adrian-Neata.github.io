@@ -21,10 +21,10 @@ REGIUNEA ARGES
  	*- satul Cacarezeni, com. Filfani	Costesti	Cotmeana
  	*- satul Slobozia-Traznitu, com. Slobozia-Traznitu	Costesti	Slobozia
  	*- satul Valea Rea, com. Baiculesti	Curtea de Arges	Stejarii
- 	- satul Seci, com. Bradulet	Curtea de Arges	Salcioara
+ 	*- satul Seci, com. Bradulet	Curtea de Arges	Salcioara
  	*- satul Secaturi, com. Nucsoara	Curtea de Arges	Gruiul
  	*- satul Valea Porcului, com. Tutana	Curtea de Arges	Alunisul
- 	- satul Secaturile, com. Valea Iasului	Curtea de Arges	Badila
+ 	*- satul Secaturile, com. Valea Iasului	Curtea de Arges	Badila
  	*- satul Fripti, com. Radomiresti	Draganesti-Olt	Radomirestii-de-Sus
  	*- satul Jarcaleti, com. Serbanesti	Draganesti-Olt	Strugurelul
  	*- satul Basesti, com. Basesti	Draganesti-Olt	Calmatuiul
@@ -936,7 +936,7 @@ REGIUNEA ARGES
  	*- satul Degerati, com. Colceag	Mizil	Vilcelele
  	*- satul Vai de Ei, com. Tataru	Mizil	Podgoria
  	*- satul Schiopoaia; com. Cireseanu	Mizil	Satul-Nou
- 	- satul Maracini, com. Cireseanu	Mizil	Cringurile
+ 	*- satul Maracini, com. Cireseanu	Mizil	Cringurile
  	*- satul Atirnati, com. Clondiru	Mizil	Sarata
  	*- satul Mitropolia, com. Smirdan	Mizil	Smirdanul-Mic
  	*- satul Ochiu Boului, com. Catunu	Ploiesti	Crivatul
