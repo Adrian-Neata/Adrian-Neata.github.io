@@ -75,7 +75,7 @@ function get_text_marker(latest_mention) {
 
     // show place names
     var textMarker = L.marker(coords, { icon: textIcon }).addTo(map);
-    if (latest_mention[Mention.Place_Status] === "active") {
+    if (latest_mention[Mention.Place_Status] === "active" || latest_mention[Mention.Place_Status] === "founded") {
         textMarker.on('click', function () {
             openSidePanel(latest_mention[Mention.Place_Id]);
         });
@@ -105,7 +105,7 @@ function addMarkers(latest_mention) {
     }
 
     // make marker clickable if place is still active
-    if (latest_mention[Mention.Place_Status] === "active") {
+    if (latest_mention[Mention.Place_Status] === "active" || latest_mention[Mention.Place_Status] === "founded") {
         circle.on('click', function () {
             openSidePanel(place_id);
         });

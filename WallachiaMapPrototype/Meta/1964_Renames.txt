@@ -30,7 +30,7 @@ REGIUNEA ARGES
  	*- satul Basesti, com. Basesti	Draganesti-Olt	Calmatuiul
  	*- satul Tacaliile, com. Ionesti	Dragasani	Dealul-Mare
  	*- satul Gusoianca-Cataleni, com. Amarasti	Dragasani	Teiul
- 	- satul Lahovari, com. Scundu	Dragasani	Cringul
+ 	*- satul Lahovari, com. Scundu	Dragasani	Cringul
  	*- satul Vrajitoru, com. Fumureni	Dragasani	Dumbrava
  	*- satul Valea Vai de Ei, com. Urluiasca	Dragasani	Livezile
  	*- satul Puricei, com. Gradinari	Dragasani	Satul-Nou
@@ -64,7 +64,7 @@ REGIUNEA ARGES
  	*- satul Ovreiesti, com. Zmeuratu	Rm. Vilcea	Delenii
  	*- satul Cacova, com. Zmeuratu	Rm. Vilcea	Piscul-Mare
  	*- satul Malaetu, com. Frincesti-Minastireni	Rm. Vilcea	Viisoara
- 	- satul Valea Raii, com. Riureni	Rm. Vilcea	Bravita
+ 	*- satul Valea Raii, com. Riureni	Rm. Vilcea	Bravita
  	*- satul Flaminda, com. Cremenari	Rm. Vilcea	Dealul-Mare
  	*- satul Rudaru, com. Voineasa	Rm. Vilcea	Valea-Macesului
  	*- satul Broscari, com. Potcoava	Slatina	Fintinele
