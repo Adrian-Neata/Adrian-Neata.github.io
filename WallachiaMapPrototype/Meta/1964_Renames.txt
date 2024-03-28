@@ -573,7 +573,7 @@ REGIUNEA ARGES
  	*- satul General Poetas, com. General Poetas	Faurei	Ulmul
  	*- satul Niculesti Jianu, com. Niculesti Jianu	Faurei	Dudestii
  	*- satul Colonel A. Grigorescu, com. Ciresu	Faurei	Vulturenii
- 	- satul Rudari, com. Dealu Lung	Focsani	Frasinul
+ 	+- satul Rudari, com. Dealu Lung	Focsani	Frasinul
  	*- satul Valea Rea, com. Mera	Focsani	Rosioara
  	*- satul Valea Boului, com. Reghiu	Focsani	Piscul-Reghiului
  	*- satul Risipiti, com. Risipiti	Focsani	Milcovul
@@ -585,14 +585,14 @@ REGIUNEA ARGES
  	*- satul Calicu, com. Odobasca	Focsani	Dumbrava
  	- satul Dosu Tojanului, com. Spulber	Focsani	Tojanii
  	*- satul Parosu, com. Tichiris	Focsani	Viisoara
- 	- satul Oasele, com. Oasele	Galati	Rediu1
+ 	- satul Oasele, com. Oasele	Galati	Rediu
  	- satul Lascar Catargiu, com. Lascar Catargiu	Galati	Schela
  	*- satul Gauri, com. Gauri	Panciu	Livezile
  	*- satul Purcei, com. Gauri	Panciu	Mesteacanul
  	*- satul Ciuruc, com. Cimpuri	Panciu	Teii
- 	- satul Sperieti-Chitcani, com. Movilita	Panciu	Zabrautii
+ 	+- satul Sperieti-Chitcani, com. Movilita	Panciu	Zabrautii
  	*- satul Purcelesti, com. Bolotesti	Panciu	Putna
- 	- localitatea componenta Lingurari, oras Marasesti	Panciu	Siretul
+ 	+- localitatea componenta Lingurari, oras Marasesti	Panciu	Siretul
  	- satul Puteni, com. Puteni	Tecuci	Valea-Marului
  	- satul Diaconi, com. Poiana	Tecuci	Visina
  	- localitatea componenta Catusa,	Or. Galati	Barbosii-Cartier
@@ -944,7 +944,7 @@ REGIUNEA ARGES
  	*- satul Tigania, com. Cocorasti-Colt	Ploiesti	Satul-de-Sus
  	*- satul Dosurile, com. Valea Calugareasca	Ploiesti	Virfurile
  	+- satul Rudari, com. Cojasca	Ploiesti	Iazul
- 	- Colonia Ilie Pintilie, com. Plopeni	Ploiesti	Stejarul
+ 	+- Colonia Ilie Pintilie, com. Plopeni	Ploiesti	Stejarul
  	*- satul Putreda Mare, com. Putreda	Rm. Sarat	Livada
  	*- satul Putreda Mica, com. Putreda	Rm. Sarat	Livada-Mica
  	*- satul Schiopeni, com. Margaritesti	Rm. Sarat	Fintinele

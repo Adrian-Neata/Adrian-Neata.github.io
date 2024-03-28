@@ -25,7 +25,7 @@ f.write('const SETTLEMENTS = ' + json.dumps(res_dict))
 f.close()
 
 # add MENTIONS table to .json file
-res = cur.execute("SELECT MENTIONS.*, RECORDS.year, 0 from MENTIONS, RECORDS where RECORDS.id == MENTIONS.record_id AND MENTIONS.mention_status == 'finished'").fetchall()
+res = cur.execute("SELECT MENTIONS.*, RECORDS.year, 0 from MENTIONS, RECORDS where RECORDS.id == MENTIONS.record_id AND MENTIONS.mention_status == 'finished' AND MENTIONS.record_id != '6'").fetchall()
 res_dict = {}
 for mention in res:
     if mention[1] not in res_dict:
