@@ -362,7 +362,7 @@ REGIUNEA ARGES
  	*- satul Natarai, com. Didesti	Rosiori de Vede	Satul-Nou
  	*- satul Rasfirati, com. Didesti	Rosiori de Vede	Ceretul
  	*- satul Muti, com. Dracsani	Rosiori de Vede	Satul-Vechi
- 	- satul Golasei, com. Garagau	Rosiori de Vede	Cerbarul
+ 	*- satul Golasei, com. Garagau	Rosiori de Vede	Cerbarul
  	*- satul Atirnati, com. Draganesti de Vede	Rosiori de Vede	Magura-cu-Liliac
  	*- satul Cioc, com. Scrioastea	Rosiori de Vede	Viile
  	+- satul Netoti, com. Perieti	Slobozia	Paltinisul

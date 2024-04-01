@@ -1248,7 +1248,7 @@ Situat în partea de nord-vest a municipiului, cuprins între sectoarele 7 şi 1
                                                           Sate componente ale
  Denumirea municipiului   Comune suburbane                 comunei suburbane
  ──────────────────────   ────────────────                ───────────────────
- I. PITESTI                1. BASCOV                       1. BASCOV
+ *I. PITESTI                *1. BASCOV                       1. BASCOV
                                                            2. Braileni
                                                            3. Glambocu
                                                            4. Mica
@@ -1257,19 +1257,19 @@ Situat în partea de nord-vest a municipiului, cuprins între sectoarele 7 şi 1
                                                            7. Uiasca
                                                            8. Valea Ursului
 
-                           2. BRADU                        1. BRADU
+                           *2. BRADU                        1. BRADU
                                                            2. Geamana
 
-                           3. COLIBASI                     1. Mioveni
+                           *3. COLIBASI                     1. Mioveni
                                                            2. Clucereasa
                                                            3. Colibasi
                                                            4. Fagetu
                                                            5. Racovita
 
-                           4. MARACINENI                   1. MARACINENI
+                           *4. MARACINENI                   1. MARACINENI
                                                            2. Argeselu
 
-                           5. STEFANESTI                   1. STEFANESTI
+                           *5. STEFANESTI                   1. STEFANESTI
                                                            2. Enculesti
                                                            3. Golesti
                                                            4. Izvorani
@@ -1286,13 +1286,13 @@ Situat în partea de nord-vest a municipiului, cuprins între sectoarele 7 şi 1
                                           Localitãţi componente
 Denumirea oraşului                            ale oraşului
 ──────────────────                        ─────────────────────
-1. CIMPULUNG                               1. CIMPULUNG
+*1. CIMPULUNG                               1. CIMPULUNG
                                            2. Valea Rumanestilor
 
                                                             Sate componente ale
                          Comune suburbane                    comunei suburbane
                          ────────────────                   ───────────────────
-                          1. VALEA MARE-                      1. VALEA MARE-
+                          *1. VALEA MARE-                      1. VALEA MARE-
                              PRAVAT                               PRAVAT
                                                               2. Bilcesti
                                                               3. Colnic
@@ -1301,20 +1301,20 @@ Denumirea oraşului                            ale oraşului
                                                               6. Namaesti
                                                               7. Pietroasa
                                                               8. Selari
-2. CURTEA DE ARGES                         1. CURTEA DE ARGES
+*2. CURTEA DE ARGES                         1. CURTEA DE ARGES
                                            2. Noaptes
 
                                                                Sate ce aparţin
                                                                   oraşului
                                                              ──────────────────
-3. COSTESTI                                                   1. Brosteni
+*3. COSTESTI                                                   1. Brosteni
                                                               2. Laceni
                                                               3. Parvu Roşu
                                                               4. Podu Brosteni
                                                               5. Smei
                                                               6. Starci
 
-4. TOPOLOVENI                                                 1. Botarcani
+*4. TOPOLOVENI                                                 1. Botarcani
                                                               2. Crintesti
                                                               3. Goranesti
                                                               4. Tiganesti
@@ -1326,36 +1326,36 @@ crt.    Denumirea comunei        Satele componente
 ───────────────────────────────────────────────────────────
  0            1                         2
 ───────────────────────────────────────────────────────────
- 1. ALBESTII DE ARGES             1. ALBESTII PAMINTENI
+ *1. ALBESTII DE ARGES             1. ALBESTII PAMINTENI
                                   2. Albestii Ungureni
                                   3. Bratesti
                                   4. Doblea
                                   5. Dobrotu
                                   6. Dumiresti
                                   7. Florieni
- 2. ALBESTII DE MUSCEL            1. BUGHEA DE SUS
+ *2. ALBESTII DE MUSCEL            1. BUGHEA DE SUS
                                   2. Albesti
                                   3. Candesti
- 3. ALBOTA                        1. ALBOTA
+ *3. ALBOTA                        1. ALBOTA
                                   2. Cerbu
                                   3. Fratesti
                                   4. Gura Vaii
                                   5. Mares
- 4. ANINOASA                      1. ANINOASA
+ *4. ANINOASA                      1. ANINOASA
                                   2. Brosteni
                                   3. Slanic
                                   4. Valea Silistii
- 5. AREFU                         1. CAPATINENII PAMINTENI
+ *5. AREFU                         1. CAPATINENII PAMINTENI
                                   2. Arefu
                                   3. Capatanenii Ungureni
- 6. BABANA                        1. BABANA
+ *6. BABANA                        1. BABANA
                                   2. Bajanesti
                                   3. Ciobanesti
                                   4. Cotmenita
                                   5. Grosi
                                   6. Lupueni
                                   7. Slatioarele
- 7. BAICULESTI                    1. BAICULESTI
+ *7. BAICULESTI                    1. BAICULESTI
                                   2. Alunisu
                                   3. Anghinesti
                                   4. Argesani
@@ -1365,22 +1365,22 @@ crt.    Denumirea comunei        Satele componente
                                   8. Valea Brazilor
                                   9. Valea lui Enache
                                  10. Zigoneni
- 8. BALILESTI                     1. BALILESTI
+ *8. BALILESTI                     1. BALILESTI
                                   2. Bajesti
                                   3. Golesti
                                   4. Poienita
                                   5. Priboaia
                                   6. Ulita
                                   7. Valea Mare-Bratia
- 9. BELETI-NEGRESTI               1. ZGRIPCESTI
+ *9. BELETI-NEGRESTI               1. ZGRIPCESTI
                                   2. Beleti
                                   3. Lentea
                                   4. Negresti
-10. BEREVOESTI                    1. BEREVOESTI
+*10. BEREVOESTI                    1. BEREVOESTI
                                   2. Bratia
                                   3. Gamacesti
                                   4. Otelu
-11. BIRLA                         1. BIRLA
+*11. BIRLA                         1. BIRLA
                                   2. Afrimesti
                                   3. Badesti
                                   4. Brabeti
@@ -1392,7 +1392,7 @@ crt.    Denumirea comunei        Satele componente
                                  10. Selareasca
                                  11. Urlueni
                                  12. Zuvelcati
-12. BOGATI                        1. BOGATI
+*12. BOGATI                        1. BOGATI
                                   2. Barloi
                                   3. Bujoi
                                   4. Chitesti
@@ -1400,13 +1400,13 @@ crt.    Denumirea comunei        Satele componente
                                   6. Glambocel
                                   7. Glambocelu
                                   8. Suseni
-13. BOTENI                        1. BOTENI
+*13. BOTENI                        1. BOTENI
                                   2. Balabani
                                   3. Lunca
                                   4. Muscel
-14. BOTESTI                       1. BOTESTI
+*14. BOTESTI                       1. BOTESTI
                                   2. Moşteni-Greci
-15. BRADULET                      1. BRADULET
+*15. BRADULET                      1. BRADULET
                                   2. Alunisu
                                   3. Bradetu
                                   4. Cosaci
@@ -1415,14 +1415,14 @@ crt.    Denumirea comunei        Satele componente
                                   7. Slamnesti
                                   8. Uleni
                                   9. Ungureni
-16. BUDEASA                       1. BUDEASA MARE
+*16. BUDEASA                       1. BUDEASA MARE
                                   2. Budeasa Mica
                                   3. Calotesti
                                   4. Galasesti
                                   5. Rogojina
                                   6. Valea Marului
-17. BUGHEA DE JOS                 1. BUGHEA DE JOS
-18. BUZOESTI                      1. VULPESTI
+*17. BUGHEA DE JOS                 1. BUGHEA DE JOS
+*18. BUZOESTI                      1. VULPESTI
                                   2. Bujoreni
                                   3. Buzoesti
                                   4. Cornatel
@@ -1433,10 +1433,10 @@ crt.    Denumirea comunei        Satele componente
                                   9. Serboeni
                                  10. Tomsanca
                                  11. Vladuta
-19. CALDARARU                     1. CALDARARU
+*19. CALDARARU                     1. CALDARARU
                                   2. Burdea
                                   3. Strambeni
-20. CALINESTI                     1. VRANESTI
+*20. CALINESTI                     1. VRANESTI
                                   2. Calinesti
                                   3. Ciocanesti
                                   4. Carstieni
@@ -1448,14 +1448,14 @@ crt.    Denumirea comunei        Satele componente
                                  10. Urlucea
                                  11. Valea Corbului
                                  12. Valeni-Podgoria
-21. CATEASCA                      1. CATEASCA
+*21. CATEASCA                      1. CATEASCA
                                   2. Catanele
                                   3. Ciresu
                                   4. Coseri
                                   5. Gruiu
                                   6. Recea
                                   7. Silistea
-22. CEPARI                        1. CEPARII PAMINTENI
+*22. CEPARI                        1. CEPARII PAMINTENI
                                   2. Carpenis
                                   3. Ceparii Ungureni
                                   4. Morasti
@@ -1463,19 +1463,19 @@ crt.    Denumirea comunei        Satele componente
                                   6. Urluiesti
                                   7. Valea Magurei
                                   8. Zamfiresti
-23. CETĂŢENI                      1. CETĂŢENI
+*23. CETĂŢENI                      1. CETĂŢENI
                                   2. Laicai
                                   3. Valea Cetatuia
-24. CICANESTI                     1. CICANESTI
+*24. CICANESTI                     1. CICANESTI
                                   2. Barasti
                                   3. Mioarele
                                   4. Urechesti
-25. CIOFRINGENI                   1. CIOFRINGENI
+*25. CIOFRINGENI                   1. CIOFRINGENI
                                   2. Burlusi
                                   3. Lacurile
                                   4. Piatra
                                   5. Schitu-Matei
-26. CIOMAGESTI                    1. RADUTESTI
+*26. CIOMAGESTI                    1. RADUTESTI
                                   2. Beculesti
                                   3. Bratia
                                   4. Ciomagesti
@@ -1484,7 +1484,7 @@ crt.    Denumirea comunei        Satele componente
                                   7. Fedelesoiu
                                   8. Giuclani
                                   9. Paunesti
-27. COCU                          1. RACHITELE DE JOS
+*27. COCU                          1. RACHITELE DE JOS
                                   2. Barbatesti
                                   3. Cocu
                                   4. Crucisoara
@@ -1492,7 +1492,7 @@ crt.    Denumirea comunei        Satele componente
                                   6. Greabanu
                                   7. Popesti
                                   8. Rachitele de Sus
-28. CORBENI                       1. CORBENI
+*28. CORBENI                       1. CORBENI
                                   2. Berindesti
                                   3. Bucsenesti
                                   4. Oestii Pamanteni
@@ -1500,20 +1500,20 @@ crt.    Denumirea comunei        Satele componente
                                   6. Poienari
                                   7. Rotunda
                                   8. Turburea
-29. CORBI                         1. CORBI
+*29. CORBI                         1. CORBI
                                   2. Corbsori
                                   3. Jgheaburi
                                   4. Poduri
                                   5. Poienarei
                                   6. Stanesti
-30. COSESTI                       1. COSESTI
+*30. COSESTI                       1. COSESTI
                                   2. Jupanesti
                                   3. Lapusani
                                   4. Leicesti
                                   5. Pacioiu
                                   6. Petresti
                                   7. Priseaca
-31. COTMEANA                      1. COTMEANA
+*31. COTMEANA                      1. COTMEANA
                                   2. Bascovele
                                   3. Bunesti
                                   4. Costesti
@@ -1527,7 +1527,7 @@ crt.    Denumirea comunei        Satele componente
                                  12. Ursoaia
                                  13. Varloveni
                                  14. Zamfiresti
-32. CUCA                          1. CUCA
+*32. CUCA                          1. CUCA
                                   2. Baltata
                                   3. Barbalani
                                   4. Carcesti
@@ -1541,43 +1541,43 @@ crt.    Denumirea comunei        Satele componente
                                  12. Teodoresti
                                  13. Valea Cucii
                                  14. Vonigeasa
-33. DAVIDESTI                     1. DAVIDESTI
+*33. DAVIDESTI                     1. DAVIDESTI
                                   2. Contesti
                                   3. Voroveni
-34. DIMBOVICIOARA                 1. DIMBOVICIOARA
+*34. DIMBOVICIOARA                 1. DIMBOVICIOARA
                                   2. Ciocanu
                                   3. Podu Dambovitei
-35. DIRMANESTI                    1. DIRMANESTI
+*35. DIRMANESTI                    1. DIRMANESTI
                                   2. Negreni
                                   3. Piscani
                                   4. Valea Nandrii
                                   5. Valea Rizii
-36. DOBRESTI                      1. DOBRESTI
+*36. DOBRESTI                      1. DOBRESTI
                                   2. Furesti
-37. DOMNEŞTI                      1. DOMNEŞTI
-38. DRAGOSLAVELE                  1. DRAGOSLAVELE
+*37. DOMNEŞTI                      1. DOMNEŞTI
+*38. DRAGOSLAVELE                  1. DRAGOSLAVELE
                                   2. Valea Hotarului
-39. DRAGANU                       1. DRAGANU-OLTENI
+*39. DRAGANU                       1. DRAGANU-OLTENI
                                   2. Bacesti
                                   3. Dumbravesti
                                   4. Prislopu Mare
-40. GODENI                        1. GODENI
+*40. GODENI                        1. GODENI
                                   2. Bordeieni
                                   3. Capu Piscului
                                   4. Cotesti
                                   5. Malu
-41. HIRSESTI                      1. HIRSESTI
+*41. HIRSESTI                      1. HIRSESTI
                                   2. Ciobani
                                   3. Martalogi
-42. HIRTIESTI                     1. HaRTIESTI
+*42. HIRTIESTI                     1. HaRTIESTI
                                   2. Barzesti
                                   3. Dealu
                                   4. Huluba
                                   5. Lespezi
                                   6. Lucieni
                                   7. Vulturesti
-43. IZVORU                        1. IZVORU
-44. LEORDENI                      1. LEORDENI
+*43. IZVORU                        1. IZVORU
+*44. LEORDENI                      1. LEORDENI
                                   2. Baloteasca
                                   3. Baila
                                   4. Bantau
@@ -1591,10 +1591,10 @@ crt.    Denumirea comunei        Satele componente
                                  12. Glodu
                                  13. Moara Mocanului
                                  14. Schitu Scoicesti
-45. LERESTI                       1. LERESTI
+*45. LERESTI                       1. LERESTI
                                   2. Pojorata
                                   3. Voinesti
-46. LUNCA CORBULUI                1. LUNCA CORBULUI
+*46. LUNCA CORBULUI                1. LUNCA CORBULUI
                                   2. Bumbueni
                                   3. Catane
                                   4. Ciesti
@@ -1603,12 +1603,12 @@ crt.    Denumirea comunei        Satele componente
                                   7. Marghia de Sus
                                   8. Padureti
                                   9. Silisteni
-47. MALURENI                      1. MALURENI
+*47. MALURENI                      1. MALURENI
                                   2. Bunesti
                                   3. Pauleasca
                                   4. Toplita
                                   5. Zarnesti
-48. MERISANI                      1. MERISANI
+*48. MERISANI                      1. MERISANI
                                   2. Borlesti
                                   3. Brateasca
                                   4. Capu Piscului
@@ -1617,41 +1617,41 @@ crt.    Denumirea comunei        Satele componente
                                   7. Malu Vanat
                                   8. Varzaru
                                   9. Valcelele
-49. MICESTI                       1. MICESTI
+*49. MICESTI                       1. MICESTI
                                   2. Branzari
                                   3. Pauleasca
                                   4. Purcareni
-50. MIHAESTI                      1. MIHAESTI
+*50. MIHAESTI                      1. MIHAESTI
                                   2. Draghici
                                   3. Furnicosi
                                   4. Rudeni
                                   5. Valea Bradului
                                   6. Valea Popii
                                   7. Vacarea
-51. MIOARELE                      1. MATAU
+*51. MIOARELE                      1. MATAU
                                   2. Alunis
                                   3. Chilii
                                   4. Cocenesti
                                   5. Suslanesti
-52. MIROSI                        1. MIROSI
+*52. MIROSI                        1. MIROSI
                                   2. Surdulesti
-53. MORARESTI                     1. MORARESTI
+*53. MORARESTI                     1. MORARESTI
                                   2. Dedulesti
                                   3. Dealu Obejdeanului
                                   4. Luminile
                                   5. Mancioiu
                                   6. Sapunari
-54. MOSOAIA                       1. MOSOAIA
+*54. MOSOAIA                       1. MOSOAIA
                                   2. Bãtrâni
                                   3. Ciocanai
                                   4. Dealu Viilor
                                   5. Hintesti
                                   6. Lazaresti
                                   7. Smeura
-55. MOZACENI                      1. MOZACENI
+*55. MOZACENI                      1. MOZACENI
                                   2. Babaroaga
                                   3. Zidurile
-56. MUSATESTI                     1. VILSANESTI
+*56. MUSATESTI                     1. VILSANESTI
                                   2. Bolovanesti
                                   3. Costesti-Valsan
                                   4. Musatesti
@@ -1661,31 +1661,31 @@ crt.    Denumirea comunei        Satele componente
                                   8. Valea Faurului
                                   9. Valea lui Mas
                                  10. Valea Muscelului
-57. NEGRASI                       1. NEGRASI
+*57. NEGRASI                       1. NEGRASI
                                   2. Barlogu
                                   3. Buta
                                   4. Mozacu
-58. NUCSOARA                      1. NUCSOARA
+*58. NUCSOARA                      1. NUCSOARA
                                   2. Gruiu
                                   3. Sboghitesti
                                   4. Slatina
-59. OARJA                         1. OARJA
+*59. OARJA                         1. OARJA
                                   2. Ceausesti
-60. PIETROSANI                    1. PIETROSANI
+*60. PIETROSANI                    1. PIETROSANI
                                   2. Badesti
                                   3. Ganesti
                                   4. Retevoiesti
                                   5. Varzaroaia
-61. POIENARII DE ARGES            1. POIENARI
+*61. POIENARII DE ARGES            1. POIENARI
                                   2. Ceauresti
                                   3. Ioanicesti
                                   4. Tomulesti
-62. POIENARII DE MUSCEL           1. POIENARI
+*62. POIENARII DE MUSCEL           1. POIENARI
                                   2. Grosani
                                   3. Jugur
                                   4. Serbanesti
                                   5. Valea Indarat
-63. POIANA LACULUI                1. POIANA LACULUI
+*63. POIANA LACULUI                1. POIANA LACULUI
                                   2. Catunasi
                                   3. Cepari
                                   4. Dealu Oraşului
@@ -1698,14 +1698,14 @@ crt.    Denumirea comunei        Satele componente
                                  11. Paduroiu din Deal
                                  12. Paduroiu din Vale
                                  13. Samara
-64. POPESTI                       1. POPESTI
+*64. POPESTI                       1. POPESTI
                                   2. Adunaţi
                                   3. Bucov
                                   4. Palanga
                                   5. Purcareni
                                   6. Raca
                                   7. Slobozia
-65. PRIBOIENI                     1. PRIBOIENI
+*65. PRIBOIENI                     1. PRIBOIENI
                                   2. Albotele
                                   3. Paraschivesti
                                   4. Samaila
@@ -1713,27 +1713,27 @@ crt.    Denumirea comunei        Satele componente
                                   6. Valea Mare
                                   7. Valea Nenii
                                   8. Valea Popii
-66. RATESTI                       1. RATESTI
+*66. RATESTI                       1. RATESTI
                                   2. Ciupa-Manciulescu
                                   3. Furduesti
                                   4. Mavrodolu
                                   5. Nejlovelu
                                   6. Patuleni
                                   7. Tigveni
-67. RECEA                         1. RECEA
+*67. RECEA                         1. RECEA
                                   2. Deagu de Jos
                                   3. Deagu de Sus
                                   4. Goleasca
                                   5. Orodel
-68. ROCIU                         1. ROCIU
+*68. ROCIU                         1. ROCIU
                                   2. Gliganu de Jos
                                   3. Gliganu de Sus
                                   4. Serbanesti
-69. RUCAR                         1. RUCAR
+*69. RUCAR                         1. RUCAR
                                   2. Satic
-70. SALATRUCU                     1. SALATRUCU
+*70. SALATRUCU                     1. SALATRUCU
                                   2. Valeni
-71. SAPATA                        1. MIRTESTI
+*71. SAPATA                        1. MIRTESTI
                                   2. Banaresti
                                   3. Dealu Bradului
                                   4. Draghicesti
@@ -1741,35 +1741,35 @@ crt.    Denumirea comunei        Satele componente
                                   6. Lipia
                                   7. Popesti
                                   8. Turcesti
-72. SCHITU GOLESTI                1. SCHITU GOLESTI
+*72. SCHITU GOLESTI                1. SCHITU GOLESTI
                                   2. Burnesti
                                   3. Costita
                                   4. Lazaresti
                                   5. Loturi
                                   6. Valea Pechii
-73. SLOBOZIA                      1. SLOBOZIA
+*73. SLOBOZIA                      1. SLOBOZIA
                                   2. Nigrisoara
-74. STILPENI                      1. STILPENI
+*74. STILPENI                      1. STILPENI
                                   2. Dealu Frumos
                                   3. Livezeni
                                   4. Ogrezea
                                   5. Opresti
                                   6. Pitigaia
                                   7. Radesti
-75. STOENESTI                     1. STOENESTI
+*75. STOENESTI                     1. STOENESTI
                                   2. Badeni
                                   3. Cotenesti
                                   4. Lunca Gartii
                                   5. Piatra
                                   6. Slobozia
                                   7. Valea Badenilor
-76. STOLNICI                      1. STOLNICI
+*76. STOLNICI                      1. STOLNICI
                                   2. Cochinesti
                                   3. Cotmeana
                                   4. Falfani
                                   5. Izbasesti
                                   6. Vlascuta
-77. SUSENI                        1. SUSENI
+*77. SUSENI                        1. SUSENI
                                   2. Burdesti
                                   3. Cersani
                                   4. Chiritesti
@@ -1779,17 +1779,17 @@ crt.    Denumirea comunei        Satele componente
                                   8. Strambeni
                                   9. Stefanesti
                                  10. Tutulesti
-78. ŞTEFAN CEL MARE               1. ŞTEFAN CEL MARE
+*78. ŞTEFAN CEL MARE               1. ŞTEFAN CEL MARE
                                   2. Glavacioc
-79. SUICI                         1. SUICI
+*79. SUICI                         1. SUICI
                                   2. Ianculesti
                                   3. Paltenu
                                   4. Pauleni
                                   5. Rudeni
                                   6. Valea Calului
-80. TEIU                          1. TEIU
+*80. TEIU                          1. TEIU
                                   2. Lesile
-81. TIGVENI                       1. TIGVENI
+*81. TIGVENI                       1. TIGVENI
                                   2. Badislava
                                   3. Balilesti
                                   4. Balteni
@@ -1797,12 +1797,12 @@ crt.    Denumirea comunei        Satele componente
                                   6. Barsestii de Sus
                                   7. Blaju
                                   8. Vladesti
-82. TITESTI                       1. TITESTI
+*82. TITESTI                       1. TITESTI
                                   2. Bucsenesti-Lotasi
                                   3. Cismea
                                   4. Valea Manastirii
                                   5. Valea Stanii
-83. UDA                           1. UDA
+*83. UDA                           1. UDA
                                   2. Badulesti
                                   3. Baranesti
                                   4. Branistea
@@ -1818,18 +1818,18 @@ crt.    Denumirea comunei        Satele componente
                                  14. Rajletu-Govora
                                  15. Romana
                                  16. Salistea
-84. UNGHENI                       1. UNGHENI
+*84. UNGHENI                       1. UNGHENI
                                   2. Coltu
                                   3. Gaujani
                                   4. Goia
                                   5. Humele
                                   6. Satu Nou
-85. VALEA DANULUI                 1. VALEA DANULUI
+*85. VALEA DANULUI                 1. VALEA DANULUI
                                   2. Banicesti
                                   3. Bolculesti
                                   4. Borobanesti
                                   5. Vernesti
-86. VALEA IASULUI                 1. VALEA IASULUI
+*86. VALEA IASULUI                 1. VALEA IASULUI
                                   2. Badila
                                   3. Barbalatesti
                                   4. Borovinesti
@@ -1838,7 +1838,7 @@ crt.    Denumirea comunei        Satele componente
                                   7. Ruginoasa
                                   8. Ungureni
                                   9. Valea Uleiului
-87. VEDEA                         1. VEDEA
+*87. VEDEA                         1. VEDEA
                                   2. Badicea
                                   3. Blejani
                                   4. Buretesti
@@ -1857,7 +1857,7 @@ crt.    Denumirea comunei        Satele componente
                                  17. Vata
                                  18. Vetisoara
                                  19. Varsesti
-88. VLADESTI                      1. VLADESTI
+*88. VLADESTI                      1. VLADESTI
                                   2. Coteasca
                                   3. Draghescu
                                   4. Putina
@@ -11008,26 +11008,26 @@ crt.
 Denumirea oraşului                        Localitãţi componente
 ──────────────────                            ale oraşului
                                           ─────────────────────
-1. SLATINA                                 1. SLATINA
+*1. SLATINA                                 1. SLATINA
                                            2. Cireasov
 
                          Comune suburbane               Sate componente ale
                          ────────────────                comunei suburbane
                                                         ───────────────────
-                          1. SLATIOARA                      1. SLATIOARA
+                          *1. SLATIOARA                      1. SLATIOARA
                                                             2. Salcia
 
                                                             Sate ce aparţin
                                                                oraşului
                                                             ───────────────
-2. BALS                                    1. BALS               1. Teis
+*2. BALS                                    1. BALS               1. Teis
                                            2. Corbeni
                                            3. Romana
 
                                                           Sate componente ale
                                                            comunei suburbane
                                                           ───────────────────
-3. CARACAL                1. DRAGHICENI                       1. DRAGHICENI
+*3. CARACAL                *1. DRAGHICENI                       1. DRAGHICENI
                                                               2. Grozavesti
                                                               3. Liiceni
 
@@ -11035,19 +11035,19 @@ Denumirea oraşului                        Localitãţi componente
                                                                    oraşului
                                                                 ───────────────
 
-4. CORABIA                                 1. CORABIA            1. Vartopu
+*4. CORABIA                                 1. CORABIA            1. Vartopu
                                            2. Tudor Vladimirescu
 
                                                             Sate componente ale
                                                              comunei suburbane
                                                             ───────────────────
-                          1. GIRCOV                              1. GIRCOV
+                          *1. GIRCOV                              1. GIRCOV
                                                                  2. Ursa
 
                                                                 Sate ce aparţin
                                                                    oraşului
                                                                 ───────────────
-5. DRAGANESTI-OLT                                                1. Comani
+*5. DRAGANESTI-OLT                                                1. Comani
 
  C. COMUNE
 ──────────────────────────────────────────────────────
@@ -11056,15 +11056,15 @@ crt.
 ──────────────────────────────────────────────────────
  0               1                        2
 ──────────────────────────────────────────────────────
- 1. BABICIU                     1. BABICIU
- 2. BALDOVINESTI                1. BALEASA
+ *1. BABICIU                     1. BABICIU
+ *2. BALDOVINESTI                1. BALEASA
                                 2. Baldovinesti
                                 3. Brosteni
                                 4. Damburile
                                 5. Gavanesti
                                 6. Gubandru
                                 7. Pietriş
- 3. BARASTI                     1. BARASTII DE VEDE
+ *3. BARASTI                     1. BARASTII DE VEDE
                                 2. Barastii de Cepturi
                                 3. Boroesti
                                 4. Ciocanesti
@@ -11072,9 +11072,9 @@ crt.
                                 6. Mereni
                                 7. Motoesti
                                 8. Popesti
- 4. BIRZA                       1. BIRZA
+ *4. BIRZA                       1. BIRZA
                                 2. Branet
- 5. BOBICESTI                   1. BOBICESTI
+ *5. BOBICESTI                   1. BOBICESTI
                                 2. Bechet
                                 3. Belgun
                                 4. Chintesti
@@ -11082,26 +11082,26 @@ crt.
                                 6. Govora
                                 7. Leotesti
                                 8. Mirila
- 6. BRASTAVATU                  1. BRASTAVATU
+ *6. BRASTAVATU                  1. BRASTAVATU
                                 2. Crusovu
- 7. BREBENI                     1. BREBENI
+ *7. BREBENI                     1. BREBENI
                                 2. Teiusu
- 8. BRINCOVENI                  1. BRINCOVENI
+ *8. BRINCOVENI                  1. BRINCOVENI
                                 2. Margheni
                                 3. Ociogi
                                 4. Valeni
- 9. BUCINISU                    1. BUCINISU
+ *9. BUCINISU                    1. BUCINISU
                                 2. Bucinisu Mic
-10. CEZIENI                     1. CEZIENI
+*10. CEZIENI                     1. CEZIENI
                                 2. Bondrea
                                 3. Corlatesti
-11. CILIENI                     1. CILIENI
-12. CIRLOGANI                   1. CIRLOGANI
+*11. CILIENI                     1. CILIENI
+*12. CIRLOGANI                   1. CIRLOGANI
                                 2. Beculesti
                                 3. Cepari
                                 4. Scorbura
                                 5. Stupina
-13. COLONESTI                   1. COLONESTI
+*13. COLONESTI                   1. COLONESTI
                                 2. Barasti
                                 3. Batareni
                                 4. Chelbesti
@@ -11110,196 +11110,196 @@ crt.
                                 7. Maruntei
                                 8. Navargeni
                                 9. Vlaici
-14. CORBU                       1. CORBU
+*14. CORBU                       1. CORBU
                                 2. Burdulesti
                                 3. Buzesti
                                 4. Ciuresti
                                 5. Milcoveni
-15. COTEANA                     1. COTEANA
-16. CRIMPOIA                    1. CRIMPOIA
+*15. COTEANA                     1. COTEANA
+*16. CRIMPOIA                    1. CRIMPOIA
                                 2. Buta
-17. CURTISOARA                  1. CURTISOARA
+*17. CURTISOARA                  1. CURTISOARA
                                 2. Dobrotinet
                                 3. Linia din Vale
                                 4. Pietrisu
                                 5. Proaspeţi
                                 6. Raitiu
-18. CUNGREA                     1. CUNGREA
+*18. CUNGREA                     1. CUNGREA
                                 2. Cepesti
                                 3. Ibanesti
                                 4. Miesti
                                 5. Otestii de Jos
                                 6. Otestii de Sus
                                 7. Spataru
-19. DANEASA                     1. DANEASA
+*19. DANEASA                     1. DANEASA
                                 2. Berindei
                                 3. Cioflanu
                                 4. Pestra
                                 5. Zanoaga
-20. DEVESELU                    1. DEVESELU
+*20. DEVESELU                    1. DEVESELU
                                 2. Comanca
-21. DOBRETU                     1. DOBRETU
+*21. DOBRETU                     1. DOBRETU
                                 2. Curtisoara
                                 3. Horezu
-22. DOBROSLOVENI                1. DOBROSLOVENI
+*22. DOBROSLOVENI                1. DOBROSLOVENI
                                 2. Frasinetu
                                 3. Potopinu
                                 4. Resca
                                 5. Rescuta
-23. DOBROTEASA                  1. DOBROTEASA
+*23. DOBROTEASA                  1. DOBROTEASA
                                 2. Batia
                                 3. Campu Mare
                                 4. Vulpesti
-24. DOBRUN                      1. OSICA DE JOS
+*24. DOBRUN                      1. OSICA DE JOS
                                 2. Bobu
                                 3. Chilii
                                 4. Dobrun
                                 5. Rosienii Mari
                                 6. Rosienii Mici
                                 7. Ulmet
-25. FAGETELU                    1. FAGETELU
+*25. FAGETELU                    1. FAGETELU
                                 2. Bagesti
                                 3. Chilia
                                 4. Gruiu
                                 5. Isaci
                                 6. Pielcani
-26. FALCOIU                     1. FALCOIU
+*26. FALCOIU                     1. FALCOIU
                                 2. Cioroiasu
                                 3. Cioroiu
-27. FARCASELE                   1. FARCASELE
+*27. FARCASELE                   1. FARCASELE
                                 2. Farcasu de Jos
                                 3. Ghimpati
                                 4. Hotarani
-28. GANEASA                     1. GANEASA
+*28. GANEASA                     1. GANEASA
                                 2. Dranovatu
                                 3. Gradistea
                                 4. Izvoru
                                 5. Oltisoru
-29. GIUVARASTI                  1. GIUVARASTI
-30. GOSTAVATU                   1. GOSTAVATU
+*29. GIUVARASTI                  1. GIUVARASTI
+*30. GOSTAVATU                   1. GOSTAVATU
                                 2. Slaveni
-31. GRADINARI                   1. GRADINARI
+*31. GRADINARI                   1. GRADINARI
                                 2. Petculesti
                                 3. Runcu Mare
                                 4. Satu Nou
-32. GROJDIBODU                  1. GROJDIBODU
+*32. GROJDIBODU                  1. GROJDIBODU
                                 2. Hotaru
-33. IANCA                       1. IANCA
+*33. IANCA                       1. IANCA
                                 2. Potelu
-34. IANCU JIANU                 1. IANCU JIANU
+*34. IANCU JIANU                 1. IANCU JIANU
                                 2. Dobriceni
                                 3. Preotesti
-35. ICOANA                      1. ICOANA
+*35. ICOANA                      1. ICOANA
                                 2. Floru
                                 3. Ursoaia
-36. IZBICENI                    1. IZBICENI
-37. IZVOARELE                   1. IZVOARELE
+*36. IZBICENI                    1. IZBICENI
+*37. IZVOARELE                   1. IZVOARELE
                                 2. Alimanesti
-38. LELEASCA                    1. LELEASCA
+*38. LELEASCA                    1. LELEASCA
                                 2. Afumati
                                 3. Greeresti
                                 4. Mierlicesti
                                 5. Tonesti
                                 6. Tufaru
                                 7. Ursi
-39. MARUNTEI                    1. MARUNTEI
+*39. MARUNTEI                    1. MARUNTEI
                                 2. Balanesti
                                 3. Malu Roşu
-40. MIHAESTI                    1. MIHAESTI
+*40. MIHAESTI                    1. MIHAESTI
                                 2. Busca
-41. MILCOV                      1. ULMI
+*41. MILCOV                      1. ULMI
                                 2. Ipotesti
                                 3. Milcovu din Deal
                                 4. Milcovu din Vale
                                 5. Stejaru
-42. MORUNGLAV                   1. MORUNGLAV
+*42. MORUNGLAV                   1. MORUNGLAV
                                 2. Barasti
                                 3. Ghiosani
                                 4. Morunesti
                                 5. Poiana Mare
-43. MOVILENI                    1. MOVILENI
+*43. MOVILENI                    1. MOVILENI
                                 2. Bacea
-44. NICOLAE TITULESCU           1. NICOLAE TITULESCU
+*44. NICOLAE TITULESCU           1. NICOLAE TITULESCU
                                 2. Ghimpeteni
                                 3. Ghimpetenii Noi
-45. OBIRSIA                     1. OBIRSIA
+*45. OBIRSIA                     1. OBIRSIA
                                 2. Campu Parului
                                 3. Coteni
                                 4. Obarsia Noua
                                 5. Tabonu
-46. OBOGA                       1. OBOGA
+*46. OBOGA                       1. OBOGA
                                 2. Calui
                                 3. Gura Caluiu
-47. OPORELU                     1. OPORELU
+*47. OPORELU                     1. OPORELU
                                 2. Beria de Jos
                                 3. Beria de Sus
                                 4. Radesti
-48. OPTASI-MAGURA               1. OPTASI
+*48. OPTASI-MAGURA               1. OPTASI
                                 2. Vitanesti
-49. ORLEA                       1. ORLEA
+*49. ORLEA                       1. ORLEA
                                 2. Gura Padinii
                                 3. Orlea Noua
                                 4. Satu Nou
-50. OSICA DE SUS                1. VLADULENI
+*50. OSICA DE SUS                1. VLADULENI
                                 2. Greci
                                 3. Osica de Sus
                                 4. Ostrov
                                 5. Peretu
                                 6. Tomeni
-51. PERIETI                     1. PERIETI
+*51. PERIETI                     1. PERIETI
                                 2. Balteni
                                 3. Magura
                                 4. Mierlestii de Sus
-52. PIATRA-OLT                  1. PIATRA-OLT
+*52. PIATRA-OLT                  1. PIATRA-OLT
                                 2. Bistrita Noua
                                 3. Criva de Jos
                                 4. Criva de Sus
                                 5. Enosesti
                                 6. Piatra
-53. PIRSCOVENI                  1. PIRSCOVENI
+*53. PIRSCOVENI                  1. PIRSCOVENI
                                 2. Butoi
                                 3. Olari
                                 4. Soparlita
-54. PLESOIU                     1. PLESOIU
+*54. PLESOIU                     1. PLESOIU
                                 2. Arcesti
                                 3. Arcesti-Cot
                                 4. Cocorasti
                                 5. Doba
                                 6. Schitu din Deal
                                 7. Schitu din Vale
-55. POBORU                      1. POBORU
+*55. POBORU                      1. POBORU
                                 2. Albesti
                                 3. Cornatelu
                                 4. Creti
                                 5. Seaca
                                 6. Surpeni
-56. POTCOAVA                    1. POTCOAVA
+*56. POTCOAVA                    1. POTCOAVA
                                 2. Potcoava-Falcoeni
                                 3. Sinesti
                                 4. Trufinesti
                                 5. Valea Merilor
-57. PRISEACA                    1. PRISEACA
+*57. PRISEACA                    1. PRISEACA
                                 2. Buicesti
                                 3. Saltanesti
-58. RADOMIRESTI                 1. RADOMIRESTI
+*58. RADOMIRESTI                 1. RADOMIRESTI
                                 2. Calinesti
                                 3. Craciunei
                                 4. Poiana
-59. REDEA                       1. REDEA
+*59. REDEA                       1. REDEA
                                 2. Redisoara
                                 3. Valea Soarelui
-60. ROTUNDA                     1. ROTUNDA
-61. RUSANESTI                   1. RUSANESTI
+*60. ROTUNDA                     1. ROTUNDA
+*61. RUSANESTI                   1. RUSANESTI
                                 2. Jieni
-62. SCARISOARA                  1. SCARISOARA
+*62. SCARISOARA                  1. SCARISOARA
                                 2. Plaviceni
                                 3. Rudari
-63. SCHITU                      1. SCHITU
+*63. SCHITU                      1. SCHITU
                                 2. Catanele
                                 3. Greci
                                 4. Lisa
                                 5. Moşteni
-64. SCORNICESTI                 1. SCORNICESTI
+*64. SCORNICESTI                 1. SCORNICESTI
                                 2. Baltati
                                 3. Bircii
                                 4. Chiteasca
@@ -11313,106 +11313,106 @@ crt.
                                12. Rusciori
                                13. Suica
                                14. Teius
-65. SEACA                       1. SEACA
-65. SIMBURESTI                  1. SIMBURESTI
+*65. SEACA                       1. SEACA
+*65. SIMBURESTI                  1. SIMBURESTI
                                 2. Cerbeni
                                 3. Ionicesti
                                 4. Launele
                                 5. Manulesti
                                 6. Stanuleasa
                                 7. Tonesti
-67. SPINENI                     1. ALUNISU
+*67. SPINENI                     1. ALUNISU
                                 2. Cuza Voda
                                 3. Davidesti
                                 4. Optasani
                                 5. Profa
                                 6. Spineni
                                 7. Vineti
-68. SPRINCENATA                 1. SPRINCENATA
+*68. SPRINCENATA                 1. SPRINCENATA
                                 2. Barsestii de Sus
                                 3. Frunzaru
                                 4. Uria
-69. STOENESTI                   1. STOENESTI
-70. STOICANESTI                 1. STOICANESTI
-71. STREJESTI                   1. STREJESTI
+*69. STOENESTI                   1. STOENESTI
+*70. STOICANESTI                 1. STOICANESTI
+*71. STREJESTI                   1. STREJESTI
                                 2. Colibasi
                                 3. Mamura
                                 4. Strejestii de Sus
-72. STUDINA                     1. STUDINA
+*72. STUDINA                     1. STUDINA
                                 2. Arvateasca
                                 3. Grãdinile
                                 4. Plaviceanca
                                 5. Studinita
-73. SERBANESTI                  1. SERBANESTI
+*73. SERBANESTI                  1. SERBANESTI
                                 2. Strugurelu
                                 3. Serbanestii de Sus
-74. ŞTEFAN CEL MARE             1. ŞTEFAN CEL MARE
+*74. ŞTEFAN CEL MARE             1. ŞTEFAN CEL MARE
                                 2. Ianca Noua
-75. TATULESTI                   1. TATULESTI
+*75. TATULESTI                   1. TATULESTI
                                 2. Barbalai
                                 3. Lunca
                                 4. Magura
                                 5. Mircesti
                                 6. Momaiu
-76. TESLUI                      1. TESLUI
+*76. TESLUI                      1. TESLUI
                                 2. Cherlestii din Deal
                                 3. Cherlestii Moşteni
                                 4. Comanita
                                 5. Corbu
                                 6. Deleni
                                 7. Schitu Deleni
-77. TIA MARE                    1. TIA MARE
+*77. TIA MARE                    1. TIA MARE
                                 2. Doanca
                                 3. Potlogeni
-78. TOPANA                      1. TOPANA
+*78. TOPANA                      1. TOPANA
                                 2. Cioraca
                                 3. Candelesti
                                 4. Cojgarei
                                 5. Ungureni
-79. TRAIAN                      1. TRAIAN
-80. TUFENI                      1. TUFENI
+*79. TRAIAN                      1. TRAIAN
+*80. TUFENI                      1. TUFENI
                                 2. Barza
                                 3. Stoborasti
-81. URZICA                      1. URZICA
+*81. URZICA                      1. URZICA
                                 2. Stavaru
-82. VALEA MARE                  1. VALEA MARE
+*82. VALEA MARE                  1. VALEA MARE
                                 2. Barca
                                 3. Recea
                                 4. Turia
                                 5. Zorleasca
-83. VADASTRA                    1. VISINA NOUA
+*83. VADASTRA                    1. VISINA NOUA
                                 2. Vadastra
-84. VADASTRITA                  1. VADASTRITA
-85. VALENI                      1. VALENI
+*84. VADASTRITA                  1. VADASTRITA
+*85. VALENI                      1. VALENI
                                 2. Mandra
                                 3. Popesti
                                 4. Tirisneag
-86. VERGULEASA                  1. VERGULEASA
+*86. VERGULEASA                  1. VERGULEASA
                                 2. Cazanesti
                                 3. Cucueti
                                 4. Dumitresti
                                 5. Poganu
                                 6. Valea Fetei
                                 7. Vanesti
-87. VISINA                      1. VISINA
-88. VITOMIRESTI                 1. VITOMIRESTI
+*87. VISINA                      1. VISINA
+*88. VITOMIRESTI                 1. VITOMIRESTI
                                 2. Bulimanu
                                 3. Dejesti
                                 4. Donesti
                                 5. Stanuleasa
                                 6. Trepteni
-89. VILCELE                     1. VILCELE
+*89. VILCELE                     1. VILCELE
                                 2. Barcanesti
                                 3. Valcelele de Sus
-90. VLADILA                     1. VLADILA
+*90. VLADILA                     1. VLADILA
                                 2. Frasinet-Gara
                                 3. Vladila Noua
-91. VOINEASA                    1. VOINEASA
+*91. VOINEASA                    1. VOINEASA
                                 2. Blaj
                                 3. Margaritesti
                                 4. Racovita
                                 5. Rusanestii de Sus
-92. VULPENI                     1. VULPENI
+*92. VULPENI                     1. VULPENI
                                 2. Cotorbesti
                                 3. Gropsani
                                 4. Mardale
@@ -11422,7 +11422,7 @@ crt.
                                 8. Simniceni
                                 9. Tabaci
                                10. Valea Satului
-93. VULTURESTI                  1. VULTURESTI
+*93. VULTURESTI                  1. VULTURESTI
                                 2. Dienci
                                 3. Valea lui Alb
                                 4. Vlangaresti
@@ -13234,33 +13234,33 @@ crt.
                                                           Sate componente ale
 Denumirea municipiului   Comune suburbane                   comunei suburbane
 ──────────────────────   ────────────────                 ───────────────────
-I. TURNU MAGURELE         1. CIUPERCENI                       1. CIUPERCENI
+*I. TURNU MAGURELE         *1. CIUPERCENI                       1. CIUPERCENI
                                                               2. Poiana
-                          2. ISLAZ                            1. ISLAZ
+                          *2. ISLAZ                            1. ISLAZ
                                                               2. Moldoveni
-                          3. LITA                             1. LITA
+                          *3. LITA                             1. LITA
 
                                     B. ORAŞE
                                     ────────
                                                            Sate componente ale
 Denumirea oraşului       Comune suburbane                   comunei suburbane
 ──────────────────       ────────────────                 ───────────────────
-1. ALEXANDRIA             1. NANOV                            1. NANOV
-                          2. POROSCHIA                        1. POROSCHIA
+*1. ALEXANDRIA             *1. NANOV                            1. NANOV
+                          *2. POROSCHIA                        1. POROSCHIA
                                                               2. Calomfiresti
-2. ROSIORI DE VEDE
+*2. ROSIORI DE VEDE
 
                                                              Sate ce aparţin
                                                                 oraşului
                                                              ───────────────
-3. VIDELE                                                     1. Cosoaia
+*3. VIDELE                                                     1. Cosoaia
 
                                                             Sate componente ale
                                                              comunei suburbane
                                                             ───────────────────
-                          1. CREVENICU                        1. CREVENICU
+                          *1. CREVENICU                        1. CREVENICU
                                                               2. Radulesti
-4. ZIMNICEA
+*4. ZIMNICEA
 
  C. COMUNE
 ───────────────────────────────────────────────────────
@@ -13269,228 +13269,228 @@ crt.
 ───────────────────────────────────────────────────────
  0               1                        2
 ───────────────────────────────────────────────────────
- 1. BALACI                      1. BALACI
+ *1. BALACI                      1. BALACI
                                 2. Burdeni
                                 3. Tecuci
- 2. BABAITA                     1. BABAITA
+ *2. BABAITA                     1. BABAITA
                                 2. Clanita
                                 3. Frasinet
                                 4. Merisani
- 3. BLEJESTI                    1. BLEJESTI
+ *3. BLEJESTI                    1. BLEJESTI
                                 2. Baciu
                                 3. Sericu
- 4. BOGDANA                     1. BOGDANA
+ *4. BOGDANA                     1. BOGDANA
                                 2. Brosteanca
                                 3. Ulmeni
                                 4. Urluiu
- 5. BOTOROAGA                   1. BOTORUAGA
+ *5. BOTOROAGA                   1. BOTORUAGA
                                 2. Stejaru
                                 3. Tarnava
                                 4. Tunari
                                 5. Valea Ciresului
- 6. BRAGADIRU                   1. BRAGADIRU
- 7. BRINCENI                    1. BRINCENI
- 8. BUJORENI                    1. BUJORENI
+ *6. BRAGADIRU                   1. BRAGADIRU
+ *7. BRINCENI                    1. BRINCENI
+ *8. BUJORENI                    1. BUJORENI
                                 2. Darvas
                                 3. Prunaru
- 9. BUJORU                      1. BUJORU
-10. BUZESCU                     1. BUZESCU
-11. CALINESTI                   1. CALINESTI
+ *9. BUJORU                      1. BUJORU
+*10. BUZESCU                     1. BUZESCU
+*11. CALINESTI                   1. CALINESTI
                                 2. Antonesti
                                 3. Izvoarele
                                 4. Licuriciu
                                 5. Marita
-12. CALMATUIU                   1. CALMATUIU
+*12. CALMATUIU                   1. CALMATUIU
                                 2. Bujoru
                                 3. Caravaneti
                                 4. Nicolae Balcescu
-13. CALMATUIU DE SUS            1. CALMATUIU DE SUS
+*13. CALMATUIU DE SUS            1. CALMATUIU DE SUS
                                 2. Bacalesti
                                 3. Ionascu
-14. CERVENIA                    1. CERVENIA
-15. CIOLANESTI                  1. CIOLANESTII DIN DEAL
+*14. CERVENIA                    1. CERVENIA
+*15. CIOLANESTI                  1. CIOLANESTII DIN DEAL
                                 2. Baldovinesti
                                 3. Ciolanestii din Vale
-16. CONTESTI                    1. CONTESTI
-17. COSMESTI                    1. COSMESTI
+*16. CONTESTI                    1. CONTESTI
+*17. COSMESTI                    1. COSMESTI
                                 2. Ciuperceni
-18. CRINGENI                    1. CRINGENI
+*18. CRINGENI                    1. CRINGENI
                                 2. Balta Sarata
                                 3. Dorobantu
                                 4. Stejaru
-19. CRINGU                      1. CRINGU
+*19. CRINGU                      1. CRINGU
                                 2. Dracea
                                 3. Florica
                                 4. Secara
                                 5. Zlata
-20. DIDESTI                     1. DIDESTI
+*20. DIDESTI                     1. DIDESTI
                                 2. Insuratei
                                 3. Satu Nou
-21. DOBROTESTI                  1. DOBROTESTI
+*21. DOBROTESTI                  1. DOBROTESTI
                                 2. Merisani
-22. DRACSENEI                   1. DRACSENEI
+*22. DRACSENEI                   1. DRACSENEI
                                 2. Beuca
                                 3. Dracsani
                                 4. Odobeasca
                                 6. Plopi
                                 6. Satul Vechi
-23. DRAGANESTI DE VEDE          1. DRAGANESTI DE VEDE
+*23. DRAGANESTI DE VEDE          1. DRAGANESTI DE VEDE
                                 2. Magura cu Liliac
                                 3. Vacaresti
-24. DRAGANESTI VLASCA           1. DRAGANESTI-VLASCA
+*24. DRAGANESTI VLASCA           1. DRAGANESTI-VLASCA
                                 2. Comoara
                                 3. Vaceni
-25. FURCULESTI                  1. FURCULESTI
+*25. FURCULESTI                  1. FURCULESTI
                                 2. Moşteni
                                 3. Spatarei
                                 4. Voievoda
-26. FRUMOASA                    1. FRUMOASA
+*26. FRUMOASA                    1. FRUMOASA
                                 2. Pauleasca
-27. GALATENI                    1. GALATENI
+*27. GALATENI                    1. GALATENI
                                 2. Bascoveni
                                 3. Gradisteanca
-28. GRATIA                      1. GRATIA
+*28. GRATIA                      1. GRATIA
                                 2. Ciurari-Deal
                                 3. Draghinesti
-29. IZVOARELE                   1. IZVOARELE
-30. LISA                        1. LISA
+*29. IZVOARELE                   1. IZVOARELE
+*30. LISA                        1. LISA
                                 2. Vanatori
-31. LUNCA                       1. LUNCA
+*31. LUNCA                       1. LUNCA
                                 2. Pleasov
                                 3. Prundu
                                 4. Saelele
-32. MAVRODIN                    1. MAVRODIN
+*32. MAVRODIN                    1. MAVRODIN
                                 2. Nenciulesti
                                 3. Paru Rotund
-33. MAGURA                      1. MAGURA
+*33. MAGURA                      1. MAGURA
                                 2. Guruieni
-34. MALDAENI                    1. MALDAENI
-35. MERENI                      1. MERENII DE JOS
+*34. MALDAENI                    1. MALDAENI
+*35. MERENI                      1. MERENII DE JOS
                                 2. Merenii de Sus
                                 3. Stefeni
-36. MIRZANESTI                  1. MIRZANESTI
+*36. MIRZANESTI                  1. MIRZANESTI
                                 2. Cernetu
                                 3. Teleormanu
                                 4. Valea Parului
-37. MOŞTENI                     1. MOŞTENI
-38. NASTURELU                   1. NASTURELU
+*37. MOŞTENI                     1. MOŞTENI
+*38. NASTURELU                   1. NASTURELU
                                 2. Zimnicele
-39. NECSESTI                    1. NECSESTI
+*39. NECSESTI                    1. NECSESTI
                                 2. Belciug
                                 3. Gardesti
-40. OLTENI                      1. OLTENI
+*40. OLTENI                      1. OLTENI
                                 2. Perii Brosteni
-41. ORBEASCA                    1. ORBEASCA DE JOS
+*41. ORBEASCA                    1. ORBEASCA DE JOS
                                 2. Laceni
                                 3. Orbeasca de Sus
-42. PERETU                      1. PEPETU
-43. PIATRA                      1. PIATRA
-44. PIETROSANI                  1. PIETROSANI
-45. PLOSCA                      1. PLOSCA
-46. PLOPII-SLAVITESTI           1. PLOPII-SLAVITESTI
+*42. PERETU                      1. PEPETU
+*43. PIATRA                      1. PIATRA
+*44. PIETROSANI                  1. PIETROSANI
+*45. PLOSCA                      1. PLOSCA
+*46. PLOPII-SLAVITESTI           1. PLOPII-SLAVITESTI
                                 2. Beciu
                                 3. Barsestii de Jos
                                 4. Brancoveanca
                                 5. Dudu
                                 6. Smardan
-47. POENI                       1. POENI
+*47. POENI                       1. POENI
                                 2. Banov
                                 3. Bratesti
                                 4. Catunu
                                 5. Preajba
                                 6. Tavarlau
                                 7. Vatasi
-48. PURANI                      1. PURANI
+*48. PURANI                      1. PURANI
                                 2. Schitu Poienari
                                 3. Silistea
                                 4. Vitanesti
-49. PUTINEIU                    1. PUTINEIU
+*49. PUTINEIU                    1. PUTINEIU
                                 2. Baduleasa
                                 3. Carlomanu
-50. RADOIESTI                   1. RADOIESTI-VALE
+*50. RADOIESTI                   1. RADOIESTI-VALE
                                 2. Cetatea
                                 3. Radoiesti-Deal
-51. RASMIRESTI                  1. RASMIRESTI
+*51. RASMIRESTI                  1. RASMIRESTI
                                 2. Ludaneasca
-52. SALCIA                      1. SALCIA
+*52. SALCIA                      1. SALCIA
                                 2. Baneasa
                                 3. Tudor Vladimirescu
-53. SACENI                      1. SACENI
+*53. SACENI                      1. SACENI
                                 2. Butculesti
                                 3. Ciurari
-54. SCRIOASTEA                  1. SCRIOASTEA
+*54. SCRIOASTEA                  1. SCRIOASTEA
                                 2. Brebina
                                 3. Cucueti
                                 4. Viile
-55. SCURTU MARE                 1. SCURTU MARE
+*55. SCURTU MARE                 1. SCURTU MARE
                                 2. Albeni
                                 3. Dracesti
                                 4. Negrilesti
                                 5. Scurtu-Slavesti
                                 6. Valea Poştei
-56. SEACA                       1. SEACA
+*56. SEACA                       1. SEACA
                                 2. Navodari
-57. SFINTESTI                   1. SFINTESTI
-58. SEGARCEA-VALE               1. SEGARCEA-VALE
+*57. SFINTESTI                   1. SFINTESTI
+*58. SEGARCEA-VALE               1. SEGARCEA-VALE
                                 2. Olteanca
                                 3. Segarcea-Deal
-59. SILISTEA                    1. SILISTEA
+*59. SILISTEA                    1. SILISTEA
                                 2. Butesti
                                 3. Purani
                                 4. Puranii de Sus
                                 5. Silistea Mica
-60. SILISTEA NOUA               1. SILISTEA NOUA
-61. SIRBENI                     1. SIRBENII DE JOS
+*60. SILISTEA NOUA               1. SILISTEA NOUA
+*61. SIRBENI                     1. SIRBENII DE JOS
                                 2. Sarbeni
                                 3. Udeni
-62. SLOBOZIA MINDRA             1. SLOBOZIA MINDRA
+*62. SLOBOZIA MINDRA             1. SLOBOZIA MINDRA
                                 2. Uda-Clocociov
                                 3. Uda-Paciurea
-63. SMIRDIOASA                  1. SMIRDIOASA
+*63. SMIRDIOASA                  1. SMIRDIOASA
                                 2. Soimu
-64. STEJARU                     1. STEJARU
+*64. STEJARU                     1. STEJARU
                                 2. Bratcovu
                                 3. Gresia
                                 4. Socetu
-65. SUHAIA                      1. SUHAIA
+*65. SUHAIA                      1. SUHAIA
                                 2. Fantanele
-66. STOROBANEASA                1. STOROBANEASA
+*66. STOROBANEASA                1. STOROBANEASA
                                 2. Beiu
-67. TALPA                       1. TALPA-OGRAZILE
+*67. TALPA                       1. TALPA-OGRAZILE
                                 2. Linia Costii
                                 3. Rotaresti
                                 4. Talpa-Bascoveni
                                 5. Talpa Poştei
-68. TATARASTII DE JOS           1. TATARASTII DE JOS
+*68. TATARASTII DE JOS           1. TATARASTII DE JOS
                                 2. Lada
                                 3. Negreni
                                 4. Negrenii de Sus
                                 5. Negrenii-Osebiti
                                 6. Obartu
                                 7. Slavesti
-69. TATARASTII DE SUS           1. TATARASTII DE SUS
+*69. TATARASTII DE SUS           1. TATARASTII DE SUS
                                 2. Dobreni
                                 3. Udupu
-70. TOPORU                      1. TOPORU
+*70. TOPORU                      1. TOPORU
                                 2. Tomulesti
-71. TRAIAN                      1. TRAIAN
-72. TRIVALEA-MOŞTENI            1. TRIVALEA-MOŞTENI
+*71. TRAIAN                      1. TRAIAN
+*72. TRIVALEA-MOŞTENI            1. TRIVALEA-MOŞTENI
                                 2. Bratasani
                                 3. Schela
-73. TROIANUL                    1. TROIANUL
+*73. TROIANUL                    1. TROIANUL
                                 2. Dulceni
                                 3. Vatra
-74. TIGANESTI                   1. TIGANESTI
-75. VEDEA                       1. VEDEA
+*74. TIGANESTI                   1. TIGANESTI
+*75. VEDEA                       1. VEDEA
                                 2. Albesti
                                 3. Cosoteni
                                 4. Dulceanca
                                 5. Meri
-76. VIISOARA                    1. VIISOARA
-77. VIRTOAPE                    1. VIRTOAPELE DE SUS
+*76. VIISOARA                    1. VIISOARA
+*77. VIRTOAPE                    1. VIRTOAPELE DE SUS
                                 2. Garagau
                                 3. Vartoapele de Jos
-78. ZIMBREASCA                  1. ZIMBREASCA
+*78. ZIMBREASCA                  1. ZIMBREASCA
 
 
     JUDEŢUL TIMIS
@@ -14561,7 +14561,7 @@ crt.
                                           Localitãţi componente
 Denumirea municipiului                      ale municipiului
 ──────────────────────                    ─────────────────────
-1. RIMNICU VILCEA                          1. RIMNICU VILCEA
+*1. RIMNICU VILCEA                          1. RIMNICU VILCEA
                                            2. Aranghel
                                            3. Cazanesti
                                            4. Copacelu
@@ -14575,7 +14575,7 @@ Denumirea municipiului                      ale municipiului
                                                            Sate componente ale
                          Comune suburbane                   comunei suburbane
                          ────────────────                  ───────────────────
-                          1. GORANU                              1. GORANU
+                          *1. GORANU                              1. GORANU
                                                                  2. Feteni
                                                                  3. Lespezi
                                                                  4. Salistea
@@ -14586,10 +14586,10 @@ Denumirea municipiului                      ale municipiului
 Denumirea oraşului                        Localitãţi componente
 ──────────────────                            ate oraşului
                                           ─────────────────────
-1. BAILE GOVORA                            1. Curaturile
+*1. BAILE GOVORA                            1. Curaturile
                                            2. Gatejesti
                                            3. Prajila
-2. BAILE OLANESTI                          1. Cheia
+*2. BAILE OLANESTI                          1. Cheia
                                            2. Comanca
                                            3. Gurguiata
                                            4. Livadia
@@ -14601,7 +14601,7 @@ Denumirea oraşului                        Localitãţi componente
 Denumirea oraşului                                             Sate ce aparţin
 ──────────────────                                                 oraşului
                                                              ──────────────────
-3. BREZOI                                                     1. Calinesti
+*3. BREZOI                                                     1. Calinesti
                                                               2. Corbu
                                                               3. Draganesti
                                                               4. Golotreni
@@ -14613,23 +14613,23 @@ Denumirea oraşului                                             Sate ce aparţin
                                           Localitãţi componente
                                               ale oraşului
                                           ─────────────────────
-4. CALIMANESTI                             1. CALIMANESTI
+*4. CALIMANESTI                             1. CALIMANESTI
                                            2. Caciulata
                                            3. Jiblea Noua
                                            4. Jiblea Veche
                                            5. Pausa
                                            6. Seaca
-5. DRAGASANI                               1. DRAGASANI
+*5. DRAGASANI                               1. DRAGASANI
                                            2. Valea Caselor
                                            3. Zarneni
                                            4. Zlatarei
-6. HOREZU                                                     1. Ifrimesti
+*6. HOREZU                                                     1. Ifrimesti
                                                               2. Ramesti
                                                               3. Romanii de Jos
                                                               4. Romanii de Sus
                                                               5. Tanasesti
                                                               6. Ursani
-7. OCNELE MARI                             1. Buda
+*7. OCNELE MARI                             1. Buda
                                            2. Cosota
                                            3. Facai
                                            4. Gura Suhasului
@@ -14645,27 +14645,27 @@ crt.
 ──────────────────────────────────────────────────────
  0               1                        2
 ──────────────────────────────────────────────────────
- 1. ALUNU                       1. ALUNU
+ *1. ALUNU                       1. ALUNU
                                 2. Bodesti
                                 3. Coltesti
                                 4. Igoiu
                                 5. Ilaciu
                                 6. Ocracu
                                 7. Rosia
- 2. AMARASTI                    1. AMARASTI
+ *2. AMARASTI                    1. AMARASTI
                                 2. Meresesti
                                 3. Nemoiu
                                 4. Padina
                                 5. Palanga
                                 6. Teiul
- 3. BABENI                      1. BABENI
+ *3. BABENI                      1. BABENI
                                 2. Bonciu
                                 3. Capu Dealului
                                 4. Paduretu
                                 5. Romani
                                 6. Tatarani
                                 7. Valea Mare
- 4. BALCESTI                    1. BALCESTI
+ *4. BALCESTI                    1. BALCESTI
                                 2. Benesti
                                 3. Chirculesti
                                 4. Carlogani
@@ -14674,27 +14674,27 @@ crt.
                                 7. Otetelisu
                                 8. Preotesti
                                 9. Satu Poieni
- 5. BARBATESTI                  1. BODESTI
+ *5. BARBATESTI                  1. BODESTI
                                 2. Barbatesti
                                 3. Barzesti
                                 4. Negrulesti
- 6. BERBESTI                    1. BERBESTI
+ *6. BERBESTI                    1. BERBESTI
                                 2. Damteni
                                 3. Dealu Alunis
                                 4. Rosioara
                                 5. Targu Gangulesti
                                 6. Valea Mare
- 7. BERISLAVESTI                1. STOENESTI
+ *7. BERISLAVESTI                1. STOENESTI
                                 2. Berislavesti
                                 3. Bradisor
                                 4. Dangesti
                                 5. Radacinesti
                                 6. Robaia
                                 7. Scaueni
- 8. BOISOARA                    1. BOISOARA
+ *8. BOISOARA                    1. BOISOARA
                                 2. Bumbuesti
                                 3. Gaujani
- 9. BUDESTI                     1. BUDESTI
+ *9. BUDESTI                     1. BUDESTI
                                 2. Barza
                                 3. Bercioiu
                                 4. Barsesti
@@ -14702,51 +14702,51 @@ crt.
                                 6. Piscu Pietrei
                                 7. Racovita
                                 8. Ruda
-10. BUJORENI                    1. OLTENI
+*10. BUJORENI                    1. OLTENI
                                 2. Bogdanesti
                                 3. Bujoreni
                                 4. Gura Vaii
                                 5. Lunca
                                 6. Malu Alb
                                 7. Malu Vartop
-11. BUNESTI                     1. BUNESTI
+*11. BUNESTI                     1. BUNESTI
                                 2. Coasta Mare
                                 3. Fireşti
                                 4. Rapanesti
                                 5. Teiusu
                                 6. Titireci
-12. CERNISOARA                  1. ARMASESTI
+*12. CERNISOARA                  1. ARMASESTI
                                 2. Cernisoara
                                 3. Grosi
                                 4. Madulari
                                 5. Modoia
                                 6. Obarsia
                                 7. Sarsanesti
-13. CIINENI                     1. CIINENII MICI
+*13. CIINENI                     1. CIINENII MICI
                                 2. Cainenii Mari
                                 3. Greblesti
                                 4. Priloage
                                 5. Rau Vadului
                                 6. Robesti
-14. COPACENI                    1. ULMETU
+*14. COPACENI                    1. ULMETU
                                 2. Balteni
                                 3. Bondoci
                                 4. Copaceni
                                 5. Hotarasa
                                 6. Vetelu
-15. COSTESTI                    1. COSTESTI
+*15. COSTESTI                    1. COSTESTI
                                 2. Bistrita
                                 3. Pietreni
                                 4. Varatici
-16. CRETENI                     1. CRETENI
+*16. CRETENI                     1. CRETENI
                                 2. Izvoru
                                 3. Mrenesti
                                 4. Streminoasa
-17. DAESTI                      1. DAESTI
+*17. DAESTI                      1. DAESTI
                                 2. Babuesti
                                 3. Fedelesoiu
                                 4. Sanbotin
-18. DANICEI                     1. DEALU LAUNELE
+*18. DANICEI                     1. DEALU LAUNELE
                                 2. Badeni
                                 3. Ceretu
                                 4. Ciresul
@@ -14759,10 +14759,10 @@ crt.
                                11. Linia pe Vale
                                12. Udresti
                                13. Valea Scheiului
-19. DRAGOESTI                   1. DRAGOESTI
+*19. DRAGOESTI                   1. DRAGOESTI
                                 2. Buciumeni
                                 3. Geamana
-20. FAURESTI                    1. MILESTI
+*20. FAURESTI                    1. MILESTI
                                 2. Babeni-Oltetu
                                 3. Budesti
                                 4. Bungetani
@@ -14771,7 +14771,7 @@ crt.
                                 7. Fauresti
                                 8. Gainesti
                                 9. Marcusu
-21. FIRTATESTI                  1. FIRTATESTI
+*21. FIRTATESTI                  1. FIRTATESTI
                                 2. Afanata
                                 3. Becsani
                                 4. Catetu
@@ -14791,7 +14791,7 @@ crt.
                                18. Sotani
                                19. Tanislavi
                                20. Valea Ursului
-22. FRINCESTI                   1. FRINCESTI
+*22. FRINCESTI                   1. FRINCESTI
                                 2. Balutoaia
                                 3. Cosani
                                 4. Dezrobiti
@@ -14800,7 +14800,7 @@ crt.
                                 7. Moşteni
                                 8. Surpatele
                                 9. Viisoara
-23. GALICEA                     1. GALICEA
+*23. GALICEA                     1. GALICEA
                                 2. Bratia dm Deal
                                 3. Bratia din Vale
                                 4. Cocoru
@@ -14809,18 +14809,18 @@ crt.
                                 7. Ostroveni
                                 8. Teiu
                                 9. Valea Raului
-24. GHIOROIU                    1. GHIOROIU
+*24. GHIOROIU                    1. GHIOROIU
                                 2. Cazanesti
                                 3. Herasti
                                 4. Mierea
                                 5. Poienari
                                 6. Stirbesti
-25. GLAVILE                     1. GLAVILE
+*25. GLAVILE                     1. GLAVILE
                                 2. Aninoasa
                                 3. Jarostea
                                 4. Olteanca
                                 5. Voiculeasa
-26. GOLESTI                     1. POPESTI
+*26. GOLESTI                     1. POPESTI
                                 2. Aldesti
                                 3. Blidari
                                 4. Coasta
@@ -14831,7 +14831,7 @@ crt.
                                 9. Poenita
                                10. Tulei-Campenl
                                11. Vatasesti
-27. GRADISTEA                   1. GRADISTEA
+*27. GRADISTEA                   1. GRADISTEA
                                 2. Diaconesti
                                 3. Dobricea
                                 4. Linia
@@ -14840,13 +14840,13 @@ crt.
                                 7. Turburea
                                 8. Tuturu
                                 9. Valea Gradistei
-28. GUSOENI                     1. GUSOENI
+*28. GUSOENI                     1. GUSOENI
                                 2. Burdalesti
                                 3. Dealu Mare
                                 4. Gusoianca
                                 5. Magureni
                                 6. Sparleni
-29. IONESTI                     1. IONESTI
+*29. IONESTI                     1. IONESTI
                                 2. Bucsani
                                 3. Dealu Mare
                                 4. Delureni
@@ -14855,13 +14855,13 @@ crt.
                                 7. Guguianca
                                 8. Marcea
                                 9. Prodanesti
-30. LALOSU                      1. LALOSU
+*30. LALOSU                      1. LALOSU
                                 2. Berbesti
                                 3. Ghindari
                                 4. Mologesti
                                 5. Oltetani
                                 6. Portaresti
-31. LADESTI                     1. LADESTI
+*31. LADESTI                     1. LADESTI
                                 2. Cermegesti
                                 3. Chiricesti
                                 4. Ciumagi
@@ -14871,33 +14871,33 @@ crt.
                                 8. Olteanca
                                 9. Pasculesti
                                10. Popesti
-32. LAPUSATA                    1. SARULESTI
+*32. LAPUSATA                    1. SARULESTI
                                 2. Beresti
                                 3. Brosteni
                                 4. Mijati
                                 5. Scorusu
                                 6. Serbanesti
                                 7. Zarnesti
-33. LIVEZI                      1. LIVEZI
+*33. LIVEZI                      1. LIVEZI
                                 2. Parausani
                                 3. Paraienii de Jos
                                 4. Paraienii de Mijloc
                                 5. Paraienii de Sus
                                 6. Plesoiu
                                 7. Ţinã
-34. LUNGESTI                    1. LUNGESTI
+*34. LUNGESTI                    1. LUNGESTI
                                 2. Carcadiesti
                                 3. Dumbrava
                                 4. Fumureni
                                 5. Gantulei
                                 6. Stanesti-Lunca
-35. MALAIA                      1. MALAIA
+*35. MALAIA                      1. MALAIA
                                 2. Ciungetu
                                 3. Salistea
-36. MATEESTI                    1. MATEESTI
+*36. MATEESTI                    1. MATEESTI
                                 2. Greci
                                 3. Turcesti
-37. MACIUCA                     1. OVESELU
+*37. MACIUCA                     1. OVESELU
                                 2. Bocsa
                                 3. Botorani
                                 4. Ciocanari
@@ -14906,17 +14906,17 @@ crt.
                                 7. Popesti
                                 8. Stefanesti
                                 9. Zavoieni
-38. MADULARI                    1. MADULARI
+*38. MADULARI                    1. MADULARI
                                 2. Balsoara
                                 3. Bantesti
                                 4. Dimulesti
                                 5. Iacovile
                                 6. Mamu
-39. MALDARESTI                  1. MALDARESTI
+*39. MALDARESTI                  1. MALDARESTI
                                 2. Maldarestii de Jos
                                 3. Rosoveni
                                 4. Telechesti
-40. MIHAESTI                    1. BULETA
+*40. MIHAESTI                    1. BULETA
                                 2. Arsanca
                                 3. Barsesti
                                 4. Govora
@@ -14929,13 +14929,13 @@ crt.
                                11. Scarisoara
                                12. Stuparei
                                13. Vulpuesti
-41. MILCOIU                     1. MILCOIU
+*41. MILCOIU                     1. MILCOIU
                                 2. Cazanesti
                                 3. Ciutesti
                                 4. Izbasesti
                                 5. Suricaru
                                 6. Tepsenari
-42. MUEREASCA                   1. MUEREASCA
+*42. MUEREASCA                   1. MUEREASCA
                                 2. Andreiesti
                                 3. Francesti-Coasta
                                 4. Gavanesti
@@ -14943,7 +14943,7 @@ crt.
                                 6. Muereasca de Sus
                                 7. Pripoara
                                 8. Suta
-43. NICOLAE BALCESCU            1. ROTARASTI
+*43. NICOLAE BALCESCU            1. ROTARASTI
                                 2. Bãneşti
                                 3. Corbii din Vale
                                 4. Dosu Raului
@@ -14960,23 +14960,23 @@ crt.
                                15. Tufanii
                                16. Valea Balceasca
                                17. Valea Viei
-44. OLANU                       1. OLANU
+*44. OLANU                       1. OLANU
                                 2. Casa Veche
                                 3. Cioboti
                                 4. Dragioiu
                                 5. Nicolesti
                                 6. Stoicanesti
-45. ORLESTI                     1. ORLESTI
+*45. ORLESTI                     1. ORLESTI
                                 2. Auresti
                                 3. Procopoaia
                                 4. Scaiosi
                                 5. Silea
-46. OTESANI                     1. OTESANI
+*46. OTESANI                     1. OTESANI
                                 2. Bogdanesti
                                 3. Carstanesti
                                 4. Cucesti
                                 5. Sub Deal
-47. PAUSESTI                    1. PAUSESTI
+*47. PAUSESTI                    1. PAUSESTI
                                 2. Barcanele
                                 3. Buzdugan
                                 4. Cernelele
@@ -14984,13 +14984,13 @@ crt.
                                 6. Serbanesti
                                 7. Solicesti
                                 8. Valeni
-48. PAUSESTI-MAGLASI            1. PAUSESTI-MAGLASI
+*48. PAUSESTI-MAGLASI            1. PAUSESTI-MAGLASI
                                 2. Coasta
                                 3. Pietrari
                                 4. Ulmetel
                                 5. Valea Cheii
                                 6. Vladuceni
-49. PERISANI                    1. PERISANI
+*49. PERISANI                    1. PERISANI
                                 2. Baiasu
                                 3. Bratovesti
                                 4. Cucoiu
@@ -15001,33 +15001,33 @@ crt.
                                 9. Spinu
                                10. Surdoiu
                                11. Titesti
-50. PESCEANA                    1. PESCEANA
+*50. PESCEANA                    1. PESCEANA
                                 2. Cermegesti
                                 3. Lupoaia
                                 4. Negraia
                                 5. Roesti
                                 6. Ursoaia
-51. PIETRARI                    1. PIETRARI
+*51. PIETRARI                    1. PIETRARI
                                 2. Pietrarii de Sus
-52. POPESTI                     1. POPESTI
+*52. POPESTI                     1. POPESTI
                                 2. Curtea
                                 3. Daesti
                                 4. Firijba
                                 5. Meieni
                                 6. Ursi
                                 7. Valea Caselor
-53. PRUNDENI                    1. PRUNDENI
+*53. PRUNDENI                    1. PRUNDENI
                                 2. Barbuceni
                                 3. Calina
                                 4. Zavideni
-54. RACOVITA                    1. RACOVITA
+*54. RACOVITA                    1. RACOVITA
                                 2. Balota
                                 3. Blanoiu
                                 4. Bradu-Clocotici
                                 5. Copaceni
                                 6. Gruiu Lupului
                                 7. Tutulesti
-55. ROESTI                      1. ROESTI
+*55. ROESTI                      1. ROESTI
                                 2. Baiasa
                                 3. Bajenari
                                 4. Barbarigeni
@@ -15037,7 +15037,7 @@ crt.
                                 8. Piscu Scoartei
                                 9. Rapa Caramizii
                                10. Saioci
-56. ROSIILE                     1. ROSIILE
+*56. ROSIILE                     1. ROSIILE
                                 2. Balaciu
                                 3. Cherasti
                                 4. Hotaroaia
@@ -15048,34 +15048,34 @@ crt.
                                 9. Ratalesti
                                10. Româneşti
                                11. Zgubea
-57. RUNCU                       1. RUNCU
+*57. RUNCU                       1. RUNCU
                                 2. Caligi
                                 3. Gropeni
                                 4. Snamana
                                 5. Surpati
                                 6. Valea Babei
                                 7. Varateci
-58. SALATRUCEL                  1. SALATRUCEL
+*58. SALATRUCEL                  1. SALATRUCEL
                                 2. Patesti
                                 3. Seaca
                                 4. Serbanesti
-59. SCUNDU                      1. SCUNDU
+*59. SCUNDU                      1. SCUNDU
                                 2. Avramesti
                                 3. Blejani
                                 4. Crangu
-60. SINESTI                     1. SINESTI
+*60. SINESTI                     1. SINESTI
                                 2. Ciucheti
                                 3. Dealu Bisericii
                                 4. Mijlocu
                                 5. Popesti
                                 6. Urzica
-61. SLATIOARA                   1. SLATIOARA
+*61. SLATIOARA                   1. SLATIOARA
                                 2. Coasta Cerbului
                                 3. Gorunesti
                                 4. Milostea
                                 5. Mogesti
                                 6. Rugetu
-62. STANESTI                    1. STANESTI
+*62. STANESTI                    1. STANESTI
                                 2. Barcanesti
                                 3. Cioponesti
                                 4. Cuculesti
@@ -15084,7 +15084,7 @@ crt.
                                 7. Suiesti
                                 8. Valea Lungã
                                 9. Varleni
-63. STOENESTI                   1. STOENESTI
+*63. STOENESTI                   1. STOENESTI
                                 2. Barlogu
                                 3. Budurasti
                                 4. Deleni
@@ -15097,7 +15097,7 @@ crt.
                                11. Popesti
                                12. Suseni
                                13. Zmeuratu
-64. STOILESTI                   1. STOILESTI
+*64. STOILESTI                   1. STOILESTI
                                 2. Balomireasa
                                 3. Barsoiu
                                 4. Bulagei
@@ -15112,12 +15112,12 @@ crt.
                                13. Stanesti
                                14. Ursi
                                15. Vladulesti
-65. STROESTI                    1. STROESTI
+*65. STROESTI                    1. STROESTI
                                 2. Ciresu
                                 3. Dianu
                                 4. Obrocesti
                                 5. Pojogi-Cerna
-66. SUTESTI                     1. SUTESTI
+*66. SUTESTI                     1. SUTESTI
                                 2. Borosesti
                                 3. Cetateaua
                                 4. Izvorasu
@@ -15125,28 +15125,28 @@ crt.
                                 6. Mitrofani
                                 7. Racu
                                 8. Verdea
-67. SIRINEASA                   1. SIRINEASA
+*67. SIRINEASA                   1. SIRINEASA
                                 2. Aricioaia
                                 3. Ciorasti
                                 4. Slavitesti
                                 5. Valea Alunisului
-68. STEFANESTI                  1. STEFANESTI
+*68. STEFANESTI                  1. STEFANESTI
                                 2. Condoiesti
                                 3. Dobrusa
                                 4. Serbanesti
-69. SUSANI                      1. SUSANI
+*69. SUSANI                      1. SUSANI
                                 2. Ramesti
                                 3. Sarbi
                                 4. Stoiculesti
                                 5. Usurei
-70. TETOIU                      1. TETOIU
+*70. TETOIU                      1. TETOIU
                                 2. Baroiu
                                 3. Budele
                                 4. Maneasa
                                 5. Nenciulesti
                                 6. Popesti
                                 7. Tepesti
-71. TOMSANI                     1. TOMSANI
+*71. TOMSANI                     1. TOMSANI
                                 2. Baltateni
                                 3. Bogdanesti
                                 4. Chiceni
@@ -15154,29 +15154,29 @@ crt.
                                 6. Folestii de Jos
                                 7. Folestii de Sus
                                 8. Miresti
-72. VAIDEENI                    1. VAIDEENI
+*72. VAIDEENI                    1. VAIDEENI
                                 2. Cerna
                                 3. Cornet
                                 4. Izvoru Rece
                                 5. Marita
-73. VALEA MARE                  1. VALEA MARE
+*73. VALEA MARE                  1. VALEA MARE
                                 2. Batasani
                                 3. Delureni
                                 4. Draganu
                                 5. Margineni
                                 6. Pietroasa
-74. VLADESTI                    1. VLADESTI
+*74. VLADESTI                    1. VLADESTI
                                 2. Fundatura
                                 3. Pleasa
                                 4. Priporu
                                 5. Trundin
-75. VOICESTI                    1. VOICESTI
+*75. VOICESTI                    1. VOICESTI
                                 2. Tighina
                                 3. Voicestii din Vale
-76. VOINEASA                    1. VOINEASA
+*76. VOINEASA                    1. VOINEASA
                                 2. Valea Macesului
                                 3. Voinesita
-77. ZATRENI                     1. ZATRENI
+*77. ZATRENI                     1. ZATRENI
                                 2. Butanu
                                 3. Ciortesti
                                 4. Contea
@@ -15970,17 +15970,17 @@ ARAD              Chisineu-Cris          1. Chisineu-Cris        Chisineu-Cris
                   Curtici                1. Curtici              Curtici
                   Nadlac                 1. Nadlac               Nadlac
                   Pancota                1. Pancota              Pancota
-ARGES             Topoloveni             1. Topoloveni           Topoloveni
-                                         2. Dealu Viilor         Topoloveni
-                                         3. Golestii-Badii       Topoloveni
-                                         4. Inuri                Topoloveni
-                                         5. Tiganesti-Linie      Topoloveni
-                                         6. Vitichesti           Topoloveni
-                  Costesti               1. Costesti             Costesti
-                                         2. Telesti              Costesti
-                                         3. Datcu                Costesti
-                                         4. Tarlesti             Costesti
-                                         5. Zorile               Costesti
+ARGES             *Topoloveni             *1. Topoloveni           Topoloveni
+                                         *2. Dealu Viilor         Topoloveni
+                                         *3. Golestii-Badii       Topoloveni
+                                         *4. Inuri                Topoloveni
+                                         *5. Tiganesti-Linie      Topoloveni
+                                         *6. Vitichesti           Topoloveni
+                  *Costesti               *1. Costesti             Costesti
+                                         *2. Telesti              Costesti
+                                         *3. Datcu                Costesti
+                                         *4. Tarlesti             Costesti
+                                         *5. Zorile               Costesti
 BIHOR             Alesd                  1. Alesd                Alesd             Padurea           Alesd
                                                                                    Neagra
                                                                                    Pestis            Alesd
@@ -16039,7 +16039,7 @@ MARAMURES         Borsa                  1. Borsa                Borsa          
 MEHEDINTI         Baia de Arama          1. Baia de Arama        Baia de Arama
                                          2. Tarnita              Baia de Arama
                   Vanju Mare             1. Vanju Mare           Vanju Mare
-OLT               Draganesti-Olt         1. Draganesti-Olt       Draganesti-Olt
+OLT               *Draganesti-Olt         1. Draganesti-Olt       Draganesti-Olt
 PRAHOVA           *Boldesti-Scaeni        1. Boldesti             Boldesti          Seciu             Boldesti
                                          2. Scaeni               Scaeni
                                          3. Colonia Boldesti     Boldesti
@@ -16055,23 +16055,23 @@ SALAJ             Cehu Silvaniei         1. Cehu Silvaniei       Cehu Silvaniei
                                          2. Poiana               Cehu Silvaniei
                   Jibou                  1. Jibou                Jibou
 SIBIU             Ocna Sibiului          1. Ocna Sibiului        Ocna Sibiului
-TELEORMAN         Videle                 1. Cartojanca           Videle
-                                         2. Cuza Voda            Videle
-                                         3. Fotachesti           Videle
-                                         4. Furculesti           Videle
-                                         5. Parisesti            Videle
-                                         6. Spanesti             Videle
-                                         7. Stanceasca           Videle
-                                         8. Tamasesti            Videle
+TELEORMAN         *Videle                 *1. Cartojanca           Videle
+                                         *2. Cuza Voda            Videle
+                                         *3. Fotachesti           Videle
+                                         *4. Furculesti           Videle
+                                         *5. Parisesti            Videle
+                                         *6. Spanesti             Videle
+                                         *7. Stanceasca           Videle
+                                         *8. Tamasesti            Videle
                                          9. Videle               Videle
 TIMIS             Deta                   1. Deta                 Deta
 VASLUI            Negresti               1. Negresti             Negresti
-VILCEA            Horezu                 1. Horezu               Horezu
-                                         2. Birzoteni            Horezu
-                                         3. Olari                Horezu
-                                         4. Lunca                Horezu
-                  Brezoiu                1. Brezoiu              Brezoiu
-                                         2. Vasilatu             Brezoiu
+VILCEA            Horezu                 *1. Horezu               Horezu
+                                         *2. Birzoteni            Horezu
+                                         *3. Olari                Horezu
+                                         *4. Lunca                Horezu
+                  Brezoiu                *1. Brezoiu              Brezoiu
+                                         *2. Vasilatu             Brezoiu
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -16130,7 +16130,7 @@ MEHEDINTI         1. Ada-Kaleh           Ada-Kaleh            Turnu Severin
 NEAMT             1. Ciritei                                  Piatra-Neamt
                   2. Doamna                                   Piatra-Neamt
                   3. Valeni                                   Piatra-Neamt
-OLT               1. Cireasov            Cireasov             Slatina
+OLT               *1. Cireasov            Cireasov             Slatina
 PRAHOVA           *1. Dambu               Tintea               Baicoi
                   *2. Liliesti            Tintea               Baicoi
                   *3. Tintea              Tintea               Baicoi
@@ -16138,13 +16138,13 @@ PRAHOVA           *1. Dambu               Tintea               Baicoi
                   *5. Podu Vadului        Podu Vadului         Breaza
 SATU MARE         1. Satmarel            Satmarel             Satu Mare
 SIBIU             1. Paltinis            Rasinari             Sibiu
-VILCEA            1. Cazanesti           Raureni              Ramnicu Valcea
-                  2. Copacelu            Raureni              Ramnicu Valcea
-                  3. Raureni             Raureni              Ramnicu Valcea
-                  4. Stolniceni          Raureni              Ramnicu Valcea
-                  5. Valea Caselon       Zlatarei             Dragasani
-                  6. Zarneni             Zlatarei             Dragasani
-                  7. Zlatarei            Zlatarei             Dragasani
+VILCEA            *1. Cazanesti           Raureni              Ramnicu Valcea
+                  *2. Copacelu            Raureni              Ramnicu Valcea
+                  *3. Raureni             Raureni              Ramnicu Valcea
+                  *4. Stolniceni          Raureni              Ramnicu Valcea
+                  *5. Valea Caselon       Zlatarei             Dragasani
+                  *6. Zarneni             Zlatarei             Dragasani
+                  *7. Zlatarei            Zlatarei             Dragasani
 ────────────────────────────────────────────────────────────────────────────────
 
 
@@ -16278,11 +16278,11 @@ MURES             1. Bendorf             Sighisoara              Sighisoara
                   4. Dupã Deal           Tarnaveni               Tarnaveni
 NEAMT             1. Cartierul Nou       Bicaz                   Bicaz
                   2. Marceni             Bicaz                   Bicaz
-OLT               1. Gorganasu           Bals                    Bals
-                  2. Mainesti            Bals                    Bals
-                  3. Spineni             Bals                    Bals
-                  4. Vartina             Bals                    Bals
-                  5. Silistioara         Corabia                 Corabia
+OLT               *1. Gorganasu           Bals                    Bals
+                  *2. Mainesti            Bals                    Bals
+                  *3. Spineni             Bals                    Bals
+                  *4. Vartina             Bals                    Bals
+                  *5. Silistioara         Corabia                 Corabia
 PRAHOVA           *1. Valea Iarului       Urlati                  Urlati
                   *2. Valea Humei         Urlati                  Arionestii Vechi
 SIBIU             1. Colonia Copsa Mica  Copsa Mica              Copsa Mica
@@ -16293,12 +16293,12 @@ SUCEAVA           1. Buciumeni           Falticeni               Falticeni
                   3. Opriseni            Falticeni               Falticeni
                   4. Tarna Mica          Falticeni               Tarna Mara
                   5. Cotu Iazului        Falticeni               Falticeni
-TELEORMAN         1. Magurele            Turnu Magurele          Turnu Magurele
-                  2. Odaia               Turnu Magurele          Turnu Magurele
-VILCEA            1. Argintari           Ramnicu Valcea          Ramnicu Valcea
-                  2. Cetatuia            Ramnicu Valcea          Ramnicu Valcea
-                  3. Inatesti            Ramnicu Valcea          Ramnicu Valcea
-                  4. Ostroveni           Ramnicu Valcea          Ramnicu Valcea
+TELEORMAN         *1. Magurele            Turnu Magurele          Turnu Magurele
+                  *2. Odaia               Turnu Magurele          Turnu Magurele
+VILCEA            *1. Argintari           Ramnicu Valcea          Ramnicu Valcea
+                  *2. Cetatuia            Ramnicu Valcea          Ramnicu Valcea
+                  *3. Inatesti            Ramnicu Valcea          Ramnicu Valcea
+                  *4. Ostroveni           Ramnicu Valcea          Ramnicu Valcea
 ─────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -16331,7 +16331,7 @@ crt.   nou anfiintat            aparţine
  *3. Coca-Niculesti            Vintila Voda         Buzau
  *4. Valea Salciei Catun       Valea Salciei        Buzau
  5. Sesuri                    Carlibaba            Suceava
- 6. Vatra                     Troianul             Teleorman
+ *6. Vatra                     Troianul             Teleorman
  7. Cioatele                  Negresti             Vaslui
  8. Padureni                  Osesti               Vaslui
  *9. Precistanu                Garoafa              Vrancea
@@ -16420,30 +16420,30 @@ ARAD             1. Crisana           Zerind              Zerind             Zer
                  2. Iosasel           Gurahont            Gurahont           Gurahont
                  3. Rovine            Pecica              Pecica             Pecica
                  4. Vinesti           Savarsin            Savarsin           Savarsin
-ARGES            1. Albota de Jos     Albota              Albota de Sus      Albota
-                 2. Badiceni          Malureni            Malureni           Malureni
-                 3. Berevoesti-       Berevoesti          Berevoesti-        Berevoesti
+ARGES            *1. Albota de Jos     Albota              Albota de Sus      Albota
+                 *2. Badiceni          Malureni            Malureni           Malureni
+                 *3. Berevoesti-       Berevoesti          Berevoesti-        Berevoesti
                     Pamanteni                             Ungureni
-                 4. Bagesti           Uda                 Cioraca            Uda
-                 5. Boeresti          Suseni              Suseni             Suseni
-                 6. Bradu de Sus      Bradu               Bradu de Jos       Bradu
-                 7. Cetãţeni-Vale     Cetãţeni            Cetãţeni-Deal      Cetãţeni
-                 8. Ciuresti          Valea Danului       Radesti            Valea Danului
-                 9. Cumpana           Arefu               Arefu              Arefu
-                10. Dumbraveni        Mozaceni            Mozaceni           Mozaceni
-                11. Herisani          Valea Danului       Radesti            Valea Danului
-                12. Izvoru de Jos     Izvoru              Izvoru de Sus      Izvoru
-                13. Luncsoara         Gliganu de Sus      Serbanesti         Rociu
-                14. Popesti           Cateasca            Cateasca           Cateasca
-                15. Recea de Jos      Recea               Recea de Sus       Recea
-                16. Raca Noua         Raca                Raca Veche         Popesti
-                17. Salatrucu de Jos  Salatrucu           Salatrucu de Sus   Salatrucu
-                18. Salcioara         Bradulet            Slamnesti          Bradulet
-                19. Schitu Duculesti  Ciofrangeni         Ciofrangeni        Ciofrangeni
-                20. Slobozia de Jos   Slobozia            Slobozia de Sus    Slobozia
-                21. Stanislavesti     Oarja               Oarja              Oarja
-                22. Teiu din Vale     Teiu                Teiu din Deal      Teiu
-                23. Vladestii de Jos  Vladesti            Vladestii de Sus   Vladesti
+                 *4. Bagesti           Uda                 Cioraca            Uda
+                 *5. Boeresti          Suseni              Suseni             Suseni
+                 *6. Bradu de Sus      Bradu               Bradu de Jos       Bradu
+                 *7. Cetãţeni-Vale     Cetãţeni            Cetãţeni-Deal      Cetãţeni
+                 *8. Ciuresti          Valea Danului       Radesti            Valea Danului
+                 *9. Cumpana           Arefu               Arefu              Arefu
+                *10. Dumbraveni        Mozaceni            Mozaceni           Mozaceni
+                *11. Herisani          Valea Danului       Radesti            Valea Danului
+                *12. Izvoru de Jos     Izvoru              Izvoru de Sus      Izvoru
+                *13. Luncsoara         Gliganu de Sus      Serbanesti         Rociu
+                *14. Popesti           Cateasca            Cateasca           Cateasca
+                *15. Recea de Jos      Recea               Recea de Sus       Recea
+                *16. Raca Noua         Raca                Raca Veche         Popesti
+                *17. Salatrucu de Jos  Salatrucu           Salatrucu de Sus   Salatrucu
+                *18. Salcioara         Bradulet            Slamnesti          Bradulet
+                *19. Schitu Duculesti  Ciofrangeni         Ciofrangeni        Ciofrangeni
+                *20. Slobozia de Jos   Slobozia            Slobozia de Sus    Slobozia
+                *21. Stanislavesti     Oarja               Oarja              Oarja
+                *22. Teiu din Vale     Teiu                Teiu din Deal      Teiu
+                *23. Vladestii de Jos  Vladesti            Vladestii de Sus   Vladesti
 BACAU            1. Afumati           Fantanele           Fundatura          Motoseni
                  2. Agastin           Apa Asau            Apa Asau           Asau
                  3. Albeni            Valea Seaca         Valea Seaca        Nicolae Balcescu
@@ -17688,104 +17688,104 @@ NEAMT            1. Aprodu Purice     Raucesti            Raucesti           Rau
                 96. Vadu              Bozieni             Iucsa              Bozieni
                 97. Zberesti          Costisa             Costisa            Costisa
                 98. Zorile            Valea Ursului       Muncelu de Jos     Valea Ursului
-OLT              1. Aldesti           Otesti              Cepesti            Cungrea
-                 2. Alunisu de Jos    Alunisu             Alunisu de Sus     Spineni
-                 3. Arpadia           Calinesti           Calinesti          Radomiresti
-                 4. Babiciul          Babiciu             Babiciu            Babiciu
+OLT              *1. Aldesti           Otesti              Cepesti            Cungrea
+                 *2. Alunisu de Jos    Alunisu             Alunisu de Sus     Spineni
+                 *3. Arpadia           Calinesti           Calinesti          Radomiresti
+                 *4. Babiciul          Babiciu             Babiciu            Babiciu
                     Moştenesc
-                 5. Baceni            Icoana              Ursoaia            Icoana
-                 6. Barlesti          Corbu               Burdulesti         Corbu
-                 7. Barzuica          Barza               Barza              Barza
-                 8. Boba              Fagetelu            Fagetelu           Fagetelu
-                 9. Boboci            Barastii de Cepturi Barastii           Barasti
+                 *5. Baceni            Icoana              Ursoaia            Icoana
+                 *6. Barlesti          Corbu               Burdulesti         Corbu
+                 *7. Barzuica          Barza               Barza              Barza
+                 *8. Boba              Fagetelu            Fagetelu           Fagetelu
+                 *9. Boboci            Barastii de Cepturi Barastii           Barasti
                                                           de Cepturi
-                10. Branistea         Sarbii Magura       Vitanesti          Optasi-Magura
-                11. Brebeni-Romani    Brebeni             Brebeni-Sarbi      Brebeni
-                12. Brezuica          Gostavatu           Gostavatu          Gostavatu
-                13. Calugareasca      Icoana              Icoana             Icoana
-                14. Celeiu            Celeliu             Corabia            Corabia
-                15. Cerbeni           Otesti              Otestii de Sus     Cungrea
-                16. Cherlestii        Teslui              Teslui             Teslui
+                *10. Branistea         Sarbii Magura       Vitanesti          Optasi-Magura
+                *11. Brebeni-Romani    Brebeni             Brebeni-Sarbi      Brebeni
+                *12. Brezuica          Gostavatu           Gostavatu          Gostavatu
+                *13. Calugareasca      Icoana              Icoana             Icoana
+                *14. Celeiu            Celeliu             Corabia            Corabia
+                *15. Cerbeni           Otesti              Otestii de Sus     Cungrea
+                *16. Cherlestii        Teslui              Teslui             Teslui
                     din Vale              -
-                17. Chiliile          Falcoiu             Falcoiu            Falcoiu
-                18. Cioraca           Chilia              Chilia             Fagetelu
-                19. Ciuresti          Alunisu             Profeni            Spineni
-                20. Candeni           Babiciu             Babiciu            Babiciu
-                21. Corbuletu         Corbu               Corbu              Corbu
-                22. Cornesti          Barastii de Vede    Popesti            Barasti
-                23. Cornesu           Ganeasa             Ganeasa            Ganeasa
-                24. Cosereni          Sarbii Magura       Vitanesti          Optasi-Magura
-                25. Cotorga           Crampoia            Ghioca             Crampoia
-                26. Cungrisoara       Topana              Topana             Topana
-                27. Dealu Mare        Valcele             Valcelele de Sus   Valcele
-                28. Delureni          Alunisu             Profeni            Spineni
-                29. Diconesti         Corbu               Corbu              Corbu
-                30. Dobrinesti        Ursi                Mierlicesti        Leleasca
-                31. Fantanele         Gostavatu           Slaveni            Gostavatu
-                32. Fantanele         Potcoava            Potcoava-Carstesti Potcoava
-                33. Gabera            Ganeasa             Ganeasa            Ganeasa
-                34. Ganesuica         Ganeasa             Ganeasa            Ganeasa
-                35. Gherasesti        Topana              Candelesti         Topana
-                36. Gigartu           Maruntei            Maruntei           Maruntei
-                37. Galdaele          Maruntei            Maruntei           Maruntei
-                38. Galmeele          Sprancenata         Sprancenata        Sprancenata
-                39. Gradinari         Giuvarasti          Giuvarasti         Giuvarasti
-                40. Horezu Vechi      Gropsani            Horezu Nou         Dobretu
-                41. Isaresti          Scornicesti         Rusciori           Scornicesti
-                42. Jugaru            Optasi              Optasi             Optasi-Magura
-                43. Leleasca          Leleasca            Tonesti-Vatasesti  Leleasca
-                44. Leresti-          Chilia              Chilia             Fagetelu
+                *17. Chiliile          Falcoiu             Falcoiu            Falcoiu
+                *18. Cioraca           Chilia              Chilia             Fagetelu
+                *19. Ciuresti          Alunisu             Profeni            Spineni
+                *20. Candeni           Babiciu             Babiciu            Babiciu
+                *21. Corbuletu         Corbu               Corbu              Corbu
+                *22. Cornesti          Barastii de Vede    Popesti            Barasti
+                *23. Cornesu           Ganeasa             Ganeasa            Ganeasa
+                *24. Cosereni          Sarbii Magura       Vitanesti          Optasi-Magura
+                *25. Cotorga           Crampoia            Ghioca             Crampoia
+                *26. Cungrisoara       Topana              Topana             Topana
+                *27. Dealu Mare        Valcele             Valcelele de Sus   Valcele
+                *28. Delureni          Alunisu             Profeni            Spineni
+                *29. Diconesti         Corbu               Corbu              Corbu
+                *30. Dobrinesti        Ursi                Mierlicesti        Leleasca
+                *31. Fantanele         Gostavatu           Slaveni            Gostavatu
+                *32. Fantanele         Potcoava            Potcoava-Carstesti Potcoava
+                *33. Gabera            Ganeasa             Ganeasa            Ganeasa
+                *34. Ganesuica         Ganeasa             Ganeasa            Ganeasa
+                *35. Gherasesti        Topana              Candelesti         Topana
+                *36. Gigartu           Maruntei            Maruntei           Maruntei
+                *37. Galdaele          Maruntei            Maruntei           Maruntei
+                *38. Galmeele          Sprancenata         Sprancenata        Sprancenata
+                *39. Gradinari         Giuvarasti          Giuvarasti         Giuvarasti
+                *40. Horezu Vechi      Gropsani            Horezu Nou         Dobretu
+                *41. Isaresti          Scornicesti         Rusciori           Scornicesti
+                *42. Jugaru            Optasi              Optasi             Optasi-Magura
+                *43. Leleasca          Leleasca            Tonesti-Vatasesti  Leleasca
+                *44. Leresti-          Chilia              Chilia             Fagetelu
                     Purcaresti
-                45. Licesti           Valcele             Valcelele de Sus   Valcele
-                46. Linesti           Vulturesti          Vulturesti         Vulturesti
-                47. Linia Mare        Albesti             Albesti            Poboru
-                48. Livezile          Urluiasca           Spataru            Cungrea
-                49. Mandinesti        Valcele             Valcelele de Sus   Valcele
-                50. Maruntei          Barastii de Cepturi Barastii           Barasti
+                *45. Licesti           Valcele             Valcelele de Sus   Valcele
+                *46. Linesti           Vulturesti          Vulturesti         Vulturesti
+                *47. Linia Mare        Albesti             Albesti            Poboru
+                *48. Livezile          Urluiasca           Spataru            Cungrea
+                *49. Mandinesti        Valcele             Valcelele de Sus   Valcele
+                *50. Maruntei          Barastii de Cepturi Barastii           Barasti
                                                           de Cepturi
-                51. Mesinesti         Potcoava            Valea Merilor      Potcoava
-                52. Mijlocu           Leleasca            Stefanesti         Leleasca
-                53. Mijlocu           Potcoava            Potcoava Carstesti Potcoava
-                54. Morlovesti        Leleasca            Stefanesti         Leleasca
-                55. Murgesti          Dobroteasa          Dobroteasa         Dobroteasa
-                56. Oboga de Jos      Oboga               Oboga de Mijloc    Oboga
-                57. Oboga de Sus      Oboga               Oboga de Mijloc    Oboga
-                58. Oncesti           Alunisu             Profeni            Spineni
-                59. Orodoresti        Brebeni             Brebeni-Sarbi      Brebeni
-                60. Perietii de Sus   Perieti             Perietii de Mijloc Perieti
-                61. Pitigoiesti       Icoana              Ursoaia            Icoana
-                62. Plapcea           Fagetelu            Fagetelu           Fagetelu
-                63. Plapcica          Poboru              Poboru             Poboru
-                64. Plopenii          Icoana              Ursoaia            Icoana
-                65. Popesti           Otesti              Spataru            Cungrea
-                66. Preajba de Camp   Babiciul            Babiciu            Babiciu
-                67. Prodani           Barastii de Cepturi Lazaresti          Barasti
-                68. Purcaresti        Alunisu             Profeni            Spineni
-                69. Radomirestii      Radomiresti         Radomiresti        Radomiresti
+                *51. Mesinesti         Potcoava            Valea Merilor      Potcoava
+                *52. Mijlocu           Leleasca            Stefanesti         Leleasca
+                *53. Mijlocu           Potcoava            Potcoava Carstesti Potcoava
+                *54. Morlovesti        Leleasca            Stefanesti         Leleasca
+                *55. Murgesti          Dobroteasa          Dobroteasa         Dobroteasa
+                *56. Oboga de Jos      Oboga               Oboga de Mijloc    Oboga
+                *57. Oboga de Sus      Oboga               Oboga de Mijloc    Oboga
+                *58. Oncesti           Alunisu             Profeni            Spineni
+                *59. Orodoresti        Brebeni             Brebeni-Sarbi      Brebeni
+                *60. Perietii de Sus   Perieti             Perietii de Mijloc Perieti
+                *61. Pitigoiesti       Icoana              Ursoaia            Icoana
+                *62. Plapcea           Fagetelu            Fagetelu           Fagetelu
+                *63. Plapcica          Poboru              Poboru             Poboru
+                *64. Plopenii          Icoana              Ursoaia            Icoana
+                *65. Popesti           Otesti              Spataru            Cungrea
+                *66. Preajba de Camp   Babiciul            Babiciu            Babiciu
+                *67. Prodani           Barastii de Cepturi Lazaresti          Barasti
+                *68. Purcaresti        Alunisu             Profeni            Spineni
+                *69. Radomirestii      Radomiresti         Radomiresti        Radomiresti
                     de Sus
-                70. Rachicioara       Barastii de Cepturi Mereni             Barasti
-                71. Richiteni         Poboru              Poboru             Poboru
-                72. Segarcea          Dranovatu           Dranovatu          Ganeasa
-                73. Siberia           Calinesti           Calinesti          Radomiresti
-                74. Sarbii-Magura     Sarbii-Magura       Vitanesti          Optasi-Magura
-                75. Stanislavesti     Icoana              Ursoaia            Icoana
-                76. Suica de Sus      Scornicesti         Suica de Jos       Scornicesti
-                77. Tatarai           Scornicesti         Scornicesti        Scornicesti
-                78. Telesman          Chilia              Bagesti            Fagetelu
-                79. Tufenii din Deal  Tufenii din Vale    Tufenii din Vale   Tufeni
-                80. Ungheni           Sarbii-Magura       Vitanesti          Optasi-Magura
-                81. Ungurei           Titulesti           Titulesti          Nicolae Titulescu
-                82. Urluiasca         Urluiasca           Cungrea            Cungrea
-                83. Valea Mare Veche  Valea Mare          Valea Mare Noua    Valea Mare
-                84. Valea Secii       Albesti             Albesti            Poboru
-                85. Vatasi            Crampoia            Ghioca             Crampoia
-                86. Viespesti         Sprancenata         Sprancenata        Sprancenata
-                87. Viisoara          Maruntei            Maruntei           Maruntei
-                88. Varsesti          Barastii de Cepturi Barastii           Barasti
+                *70. Rachicioara       Barastii de Cepturi Mereni             Barasti
+                *71. Richiteni         Poboru              Poboru             Poboru
+                *72. Segarcea          Dranovatu           Dranovatu          Ganeasa
+                *73. Siberia           Calinesti           Calinesti          Radomiresti
+                *74. Sarbii-Magura     Sarbii-Magura       Vitanesti          Optasi-Magura
+                *75. Stanislavesti     Icoana              Ursoaia            Icoana
+                *76. Suica de Sus      Scornicesti         Suica de Jos       Scornicesti
+                *77. Tatarai           Scornicesti         Scornicesti        Scornicesti
+                *78. Telesman          Chilia              Bagesti            Fagetelu
+                *79. Tufenii din Deal  Tufenii din Vale    Tufenii din Vale   Tufeni
+                *80. Ungheni           Sarbii-Magura       Vitanesti          Optasi-Magura
+                *81. Ungurei           Titulesti           Titulesti          Nicolae Titulescu
+                *82. Urluiasca         Urluiasca           Cungrea            Cungrea
+                *83. Valea Mare Veche  Valea Mare          Valea Mare Noua    Valea Mare
+                *84. Valea Secii       Albesti             Albesti            Poboru
+                *85. Vatasi            Crampoia            Ghioca             Crampoia
+                *86. Viespesti         Sprancenata         Sprancenata        Sprancenata
+                *87. Viisoara          Maruntei            Maruntei           Maruntei
+                *88. Varsesti          Barastii de Cepturi Barastii           Barasti
                                                           de Cepturi
-                89. Voineasa Mica     Voineasa            Voineasa Mare      Voineasa
-                90. Zavoiu            Optasi              Optasi             Optasi-Magura
-                91. Zidari            Izvoarele           Alimanesti         Izvoarele
+                *89. Voineasa Mica     Voineasa            Voineasa Mare      Voineasa
+                *90. Zavoiu            Optasi              Optasi             Optasi-Magura
+                *91. Zidari            Izvoarele           Alimanesti         Izvoarele
 PRAHOVA          *1. Comanacu          Manesti             Manesti            Manesti
                  *2. Danesti           Paulesti            Paulesti           Paulesti
                  *3. Manastirea        Corlatesti          Ghighiu            Barcanesti
@@ -17896,47 +17896,47 @@ SUCEAVA          1. Bradet            Horodnicu           Horodnic de Jos    Hor
                 40. Viisoara          Manolea             Manolea            Forasti
                 41. Vararie           Hartop              Hartop             Preutesti
                 42. Valea Visinului   Radaseni            Radaseni           Radaseni
-TELEORMAN        1. Adamesti          Nanov               Nanov              Nanov
-                 2. Baciu-Posta       Baciu               Baciu              Blejesti
-                 3. Bran              Magura              Magura             Magura
-                 4. Buduiasca         Magura              Magura             Magura
-                 5. Bulaci            Catunu              Poeni              Poeni
-                 6. Briesti           Radoiesti           Cetatea            Radoiesti
-                 7. Chitulesti        Frasinet            Frasinet           Babaita
-                 8. Ceretul           Didesti             Didesti            Didesti
-                 9. Clanita de Jos    Galateni            Galateni           Galateni
-                10. Ciuani            Mereni              Merenii de Jos     Mereni
-                11. Cazaneasca        Necsesti            Gardesti           Necsesti
-                12. Cocosu            Vitanesti           Vitanesti          Purani
-                13. Cerbarul          Garagau             Garagau            Vartoape
-                14. Dobrogostea       Olteni              Olteni             Olteni
-                15. Farcasanca        Gratia              Gratia             Gratia
-                16. Gurgueti          Cosmesti            Cosmesti           Cosmesti
-                17. Groseni           Teleormanu          Teleorman          Marzanesti
-                18. Gavanesti         Vitanesti           Vitanesti          Vitanesti
-                19. Hagiesti          Necsesti            Belciug            Necsesti
-                20. Hagiesti          Catunu              Poeni              Poeni
-                21. Margareta         Ulmeni              Bogdana            Bogdana
-                22. Magureni          Maldaeni            Maldaeni           Maldaeni
-                23. Nichita           Radoiesti           Cetatea            Radoiesti
-                24. Plaviceni         Plopii-Slavitesti   Dudu               Plopii-Slavitesti
-                25. Presani           Vitanesti           Purani             Purani
-                26. Rata              Bacalesti           Bacalesti          Calmatuiu de Sus
-                27. Rateasca          Sfintesti           Sfintesti          Sfintesti
-                28. Rareanca          Frumoasa            Frumoasa           Frumoasa
-                29. Sarbi-Sfintesti   Sfintesti           Sfintesti          Sfintesti
-                30. Sfantu Gheorghe   Galateni            Galateni           Galateni
-                31. Stefanesti        Izvoarele           Izvoarele          Calinesti
-                32. Stirbeti          Cucueti             Cucueti            Scrioastea
-                33. Talpa-Ionesti     Talpa               Talpa-Ogazile      Talpa
-                34. Talpa-Lefesti     Talpa               Talpa-Ograzile     Talpa
-                35. Talpa-Trivalea    Talpa               Talpa-Ograzile     Talpa
-                36. Talpenii          Bratasani           Trivalea-Moşteni   Trivalea-Moşteni
-                37. Trestenicu        Tomulesti           Tomulesti          Toporu
-                38. Tuguetii de Jos   Bratasani           Bratasani          Trivalea-Moşteni
-                39. Valea Alba        Draganesti-Vlasca   Draganesti-Vlasca  Draganesti-Vlasca
-                40. Viorica           Salcia              Salcia             Salcia
-                41. Zlotesti          Tatarastii de Jos   Tatarastii de Jos  Tatarastii de Jos
+TELEORMAN        *1. Adamesti          Nanov               Nanov              Nanov
+                 *2. Baciu-Posta       Baciu               Baciu              Blejesti
+                 *3. Bran              Magura              Magura             Magura
+                 *4. Buduiasca         Magura              Magura             Magura
+                 *5. Bulaci            Catunu              Poeni              Poeni
+                 *6. Briesti           Radoiesti           Cetatea            Radoiesti
+                 *7. Chitulesti        Frasinet            Frasinet           Babaita
+                 *8. Ceretul           Didesti             Didesti            Didesti
+                 *9. Clanita de Jos    Galateni            Galateni           Galateni
+                *10. Ciuani            Mereni              Merenii de Jos     Mereni
+                *11. Cazaneasca        Necsesti            Gardesti           Necsesti
+                *12. Cocosu            Vitanesti           Vitanesti          Purani
+                *13. Cerbarul          Garagau             Garagau            Vartoape
+                *14. Dobrogostea       Olteni              Olteni             Olteni
+                *15. Farcasanca        Gratia              Gratia             Gratia
+                *16. Gurgueti          Cosmesti            Cosmesti           Cosmesti
+                *17. Groseni           Teleormanu          Teleorman          Marzanesti
+                *18. Gavanesti         Vitanesti           Vitanesti          Vitanesti
+                *19. Hagiesti          Necsesti            Belciug            Necsesti
+                *20. Hagiesti          Catunu              Poeni              Poeni
+                *21. Margareta         Ulmeni              Bogdana            Bogdana
+                *22. Magureni          Maldaeni            Maldaeni           Maldaeni
+                *23. Nichita           Radoiesti           Cetatea            Radoiesti
+                *24. Plaviceni         Plopii-Slavitesti   Dudu               Plopii-Slavitesti
+                *25. Presani           Vitanesti           Purani             Purani
+                *26. Rata              Bacalesti           Bacalesti          Calmatuiu de Sus
+                *27. Rateasca          Sfintesti           Sfintesti          Sfintesti
+                *28. Rareanca          Frumoasa            Frumoasa           Frumoasa
+                *29. Sarbi-Sfintesti   Sfintesti           Sfintesti          Sfintesti
+                *30. Sfantu Gheorghe   Galateni            Galateni           Galateni
+                *31. Stefanesti        Izvoarele           Izvoarele          Calinesti
+                *32. Stirbeti          Cucueti             Cucueti            Scrioastea
+                *33. Talpa-Ionesti     Talpa               Talpa-Ogazile      Talpa
+                *34. Talpa-Lefesti     Talpa               Talpa-Ograzile     Talpa
+                *35. Talpa-Trivalea    Talpa               Talpa-Ograzile     Talpa
+                *36. Talpenii          Bratasani           Trivalea-Moşteni   Trivalea-Moşteni
+                *37. Trestenicu        Tomulesti           Tomulesti          Toporu
+                *38. Tuguetii de Jos   Bratasani           Bratasani          Trivalea-Moşteni
+                *39. Valea Alba        Draganesti-Vlasca   Draganesti-Vlasca  Draganesti-Vlasca
+                *40. Viorica           Salcia              Salcia             Salcia
+                *41. Zlotesti          Tatarastii de Jos   Tatarastii de Jos  Tatarastii de Jos
 TIMIS            1. Andrica           Stanciova           Stanciova          Recas
                  2. Armadia           Lugojel             Tapia              Lugoj
                  3. Barcas            Stanciova           Stanciova          Recas
@@ -18025,56 +18025,56 @@ VASLUI           1. Angheluta         Mireni              Hreasca            Cor
                 59. Viisoara          Botesti             Botesti            Botesti
                 55. Valea Canepei     Dranceni            Dranceni           Dranceni
                 56. Valea Canepei     Ivanesti            Ivanesti           Ivanesti
-VILCEA           1. Alexesti          Berbesti            Dealu Alunis       Berbesti
-                 2. Baditoiu          Berbesti            Berbesti           Berbesti
-                 3. Bravita           Raureni             Copacelu           Ramnicu Valcea
-                 4. Balcetei          Balcesti            Balcesti           Balcesti
-                 5. Barcanesti        Balcesti            Balcesti           Balcesti
-                 6. Boghia            Gorunesti           Gorunesti          Balcesti
-                 7. Barangi           Cremenari           Mijlocu            Galicea
-                 8. Blejani           Puesti              Glugesti           Valea Mare
-                 9. Chilia            Muereasca           Andreiesti         Muereasca
-                10. Campeni           Bugiulesti          Bugiulesti         Tetoiu
-                11. Dobrusa           Zlatarei            Dobrusa            Stefanesti
+VILCEA           *1. Alexesti          Berbesti            Dealu Alunis       Berbesti
+                 *2. Baditoiu          Berbesti            Berbesti           Berbesti
+                 *3. Bravita           Raureni             Copacelu           Ramnicu Valcea
+                 *4. Balcetei          Balcesti            Balcesti           Balcesti
+                 *5. Barcanesti        Balcesti            Balcesti           Balcesti
+                 *6. Boghia            Gorunesti           Gorunesti          Balcesti
+                 *7. Barangi           Cremenari           Mijlocu            Galicea
+                 *8. Blejani           Puesti              Glugesti           Valea Mare
+                 *9. Chilia            Muereasca           Andreiesti         Muereasca
+                *10. Campeni           Bugiulesti          Bugiulesti         Tetoiu
+                *11. Dobrusa           Zlatarei            Dobrusa            Stefanesti
                                                           (Stefanesti)
-                12. Ferigile          Costesti            Costesti           Costesti
-                13. Gaiculesti-Grui   Muereasca           Muereasca de Sus   Muereasca
-                14. Ganea             Sinesti             Sinesti            Sinesti
-                15. Galiceni          Cremenari           Mijlocu            Galicea
-                16. Hardabei          Barsoiu             Nitulesti          Stoilesti
-                17. Manastireni       Francesti           Dezrobiti          Francesti
+                *12. Ferigile          Costesti            Costesti           Costesti
+                *13. Gaiculesti-Grui   Muereasca           Muereasca de Sus   Muereasca
+                *14. Ganea             Sinesti             Sinesti            Sinesti
+                *15. Galiceni          Cremenari           Mijlocu            Galicea
+                *16. Hardabei          Barsoiu             Nitulesti          Stoilesti
+                *17. Manastireni       Francesti           Dezrobiti          Francesti
                                       Manastireni
-                18. Muret             Otesani             Otesani            Otesani
-                19. Miulesti          Cremenari           Mijlocu            Galicea
-                20. Mandocesti        Bugiulesti          Bugiulesti         Tetoiu
-                21. Matalesti         Puesti              Glugesti           Valea Mare
-                22. Obeni             Ionesti             Ionestii Govorii   Ionesti
-                23. Orlestii de Jos   Orlesti             Orlestii de Sus    Orlesti
-                24. Oltetu            Balcesti            Otetelisu          Balcesti
-                25. Oculesti          Gorunesti           Gorunesti          Balcesti
-                26. Prodanesti        Blidari             Popesti            Golesti
-                27. Parau             Balcesti            Otetelisu          Balcesti
-                28. Popesti           Gorunesti           Gorunesti          Balcesti
-                29. Palei             Irimesti            Irimesti           Balcesti
-                30. Pieptesti         Cremenari           Mijlocu            Galicea
-                31. Puesti            Puesti              Glugesti           Valea Mare
-                32. Rudaria           Francesti-          Cosani             Francesti
+                *18. Muret             Otesani             Otesani            Otesani
+                *19. Miulesti          Cremenari           Mijlocu            Galicea
+                *20. Mandocesti        Bugiulesti          Bugiulesti         Tetoiu
+                *21. Matalesti         Puesti              Glugesti           Valea Mare
+                *22. Obeni             Ionesti             Ionestii Govorii   Ionesti
+                *23. Orlestii de Jos   Orlesti             Orlestii de Sus    Orlesti
+                *24. Oltetu            Balcesti            Otetelisu          Balcesti
+                *25. Oculesti          Gorunesti           Gorunesti          Balcesti
+                *26. Prodanesti        Blidari             Popesti            Golesti
+                *27. Parau             Balcesti            Otetelisu          Balcesti
+                *28. Popesti           Gorunesti           Gorunesti          Balcesti
+                *29. Palei             Irimesti            Irimesti           Balcesti
+                *30. Pieptesti         Cremenari           Mijlocu            Galicea
+                *31. Puesti            Puesti              Glugesti           Valea Mare
+                *32. Rudaria           Francesti-          Cosani             Francesti
                                       Manastireni
-                33. Ruginosu          Bugiulesti          Bugiulesti         Tetoiu
-                34. Soratu            Berbesti            Targu Gangulesti   Berbesti
-                35. Stupina           Muereasca           Andreiesti         Muereasca
-                36. Sutesti           Sutesti             Borosesti          Sutesti
-                37. Sticlaria         Goranu              Goranu             Goranu
-                38. Susanii de Sus    Usureri             Susanii de Jos     Susani
-                39. Teodoresti        Cremenari           Mijlocu            Galicea
-                40. Tortoesti         Puesti              Draganu            Valea Mare
-                41. Tarcanesti        Puesti              Pielesti           Valea Mare
-                42. Ulicioiu          Balcesti            Balcesti           Balcesti
-                43. Unguriti          Irimesti            Irimesti           Balcesti
-                44. Vasilati          Irimesti            Carlogani          Balcesti
-                45. Valea Sulitei     Brezoi              Calinesti          Brezoi
-                46. Viezuri           Pausesti-Maglasi    Valea Cheii        Pausesti-Maglasi
-                47. Vijoesti          Bugiulesti          Bugiulesti         Tetoiu
+                *33. Ruginosu          Bugiulesti          Bugiulesti         Tetoiu
+                *34. Soratu            Berbesti            Targu Gangulesti   Berbesti
+                *35. Stupina           Muereasca           Andreiesti         Muereasca
+                *36. Sutesti           Sutesti             Borosesti          Sutesti
+                *37. Sticlaria         Goranu              Goranu             Goranu
+                *38. Susanii de Sus    Usureri             Susanii de Jos     Susani
+                *39. Teodoresti        Cremenari           Mijlocu            Galicea
+                *40. Tortoesti         Puesti              Draganu            Valea Mare
+                *41. Tarcanesti        Puesti              Pielesti           Valea Mare
+                *42. Ulicioiu          Balcesti            Balcesti           Balcesti
+                *43. Unguriti          Irimesti            Irimesti           Balcesti
+                *44. Vasilati          Irimesti            Carlogani          Balcesti
+                *45. Valea Sulitei     Brezoi              Calinesti          Brezoi
+                *46. Viezuri           Pausesti-Maglasi    Valea Cheii        Pausesti-Maglasi
+                *47. Vijoesti          Bugiulesti          Bugiulesti         Tetoiu
 VRANCEA          *1. Bancila           Bototesti           Bolotesti          Bolotesti
                  *2. Barasti           Paltin              Ghebari            Paltin
                  *3. Botesti           Unirea              Unirea             Odobesti
@@ -18166,20 +18166,20 @@ ALBA             1. Arada             Arada               Horea              Hor
                  5. Miclesti          Mogos               Mogos              Mogos
                  6. Neagra            Neagra              Poiana Vadului     Poiana Vadului
                  7. Sasa              Bucium              Bucium             Bucium
-ARGES            1. Albota de Sus     Albota              Albota             Albota
-                 2. Berevoesti-       Berevoesti          Berevoesti         Berevoesti
+ARGES            *1. Albota de Sus     Albota              Albota             Albota
+                 *2. Berevoesti-       Berevoesti          Berevoesti         Berevoesti
                     Ungureni
-                 3. Bradu de Jos      Bradu               Bradu              Bradu
-                 4. Cetãţeni-Deal     Cetãţeni            Cetãţeni           Cetãţeni
-                 5. Izvoru de Sus     Izvoru              Izvoru             Izvoru
-                 6. Raca Veche        Raca                Raca               Popesti
-                 7. Recea de Sus      Recea               Recea              Recea
-                 8. Salatrucu de Sus  Salatrucu           Salatrucu          Salatrucu
-                 9. Slobozia de Sus   Slobozia            Slobozia           Slobozia
-                10. Teiu din Deal     Teiu                Teiu               Teiu
-                11. Cioraca           Uda                 Uda                Uda
-                12. Radesti           Valea Danului       Valea Danului      Valea Danului
-                13. Vladestii de Sus  Vladesti            Vladesti           Vladesti
+                 *3. Bradu de Jos      Bradu               Bradu              Bradu
+                 *4. Cetãţeni-Deal     Cetãţeni            Cetãţeni           Cetãţeni
+                 *5. Izvoru de Sus     Izvoru              Izvoru             Izvoru
+                 *6. Raca Veche        Raca                Raca               Popesti
+                 *7. Recea de Sus      Recea               Recea              Recea
+                 *8. Salatrucu de Sus  Salatrucu           Salatrucu          Salatrucu
+                 *9. Slobozia de Sus   Slobozia            Slobozia           Slobozia
+                *10. Teiu din Deal     Teiu                Teiu               Teiu
+                *11. Cioraca           Uda                 Uda                Uda
+                *12. Radesti           Valea Danului       Valea Danului      Valea Danului
+                *13. Vladestii de Sus  Vladesti            Vladesti           Vladesti
 BACAU            1. Baile Slanic      Baile Slanic        Slanic-Moldova     Slanic-Moldova
                  2. Bratila de Mijloc Bratila             Bratila            Helegiu
                  3. Caiuti-Târg       Caiuti              Caiuti             Caiuti
@@ -18401,38 +18401,38 @@ NEAMT            1. Audia             Hangu               Hangu              Han
                     de Sus
                 13. Tibucanii de Sus  Tibucani            Tibucani           Tibucani
                 14. Valeni            Poiana Teiului      Petru Voda         Poiana Teiului
-OLT              1. Alunisu de Sus    Alunisu             Alunisu            Spineni
-                 2. Brebeni-Sarbi     Brebeni             Brebeni            Brebeni
-                 3. Catunu de Sus     Curtisoara          Dobrotinet         Curtisoara
-                 4. Costesti          Vitomiresti         Vitomiresti        Vitomiresti
-                 5. Farcasu de Sus    Farcasele           Farcasele          Farcasele
-                 6. Ghioca            Crampoaia           Crampoaia          Crampoaia
-                 7. Horezu Nou        Curtisoara          Horezu             Dobretu
-                 8. Mihaestii de Sus  Mihaesti            Mihaesti           Mihaesti
-                 9. Mihaestii de Jos  Mihaesti            Busca              Mihaesti
-                10. Stefanesti        Leleasca            Leleasca           Leleasca
-                11. Obarsia Veche     Obarsia             Obarsia            Obarsia
-                12. Oboga de Mijloc   Oboga               Oboga              Oboga
-                13. Perietii          Perieti             Perieti            Perieti
+OLT              *1. Alunisu de Sus    Alunisu             Alunisu            Spineni
+                 *2. Brebeni-Sarbi     Brebeni             Brebeni            Brebeni
+                 *3. Catunu de Sus     Curtisoara          Dobrotinet         Curtisoara
+                 *4. Costesti          Vitomiresti         Vitomiresti        Vitomiresti
+                 *5. Farcasu de Sus    Farcasele           Farcasele          Farcasele
+                 ?6. Ghioca            Crampoaia           Crampoaia          Crampoaia
+                 *7. Horezu Nou        Curtisoara          Horezu             Dobretu
+                 *8. Mihaestii de Sus  Mihaesti            Mihaesti           Mihaesti
+                 *9. Mihaestii de Jos  Mihaesti            Busca              Mihaesti
+                *10. Stefanesti        Leleasca            Leleasca           Leleasca
+                *11. Obarsia Veche     Obarsia             Obarsia            Obarsia
+                *12. Oboga de Mijloc   Oboga               Oboga              Oboga
+                *13. Perietii          Perieti             Perieti            Perieti
                     de Mijloc
-                14. Potcoava-         Potcoava            Potcoava           Potcoava
+                *14. Potcoava-         Potcoava            Potcoava           Potcoava
                     Carstesti
-                15. Profeni           Alunisu             Profa              Spineni
-                16. Runcu Mic         Gradinari           Gradinari          Gradinari
-                17. Rusanestii        Rusanestii de Jos   Rusanesti          Rusanesti
+                *15. Profeni           Alunisu             Profa              Spineni
+                *16. Runcu Mic         Gradinari           Gradinari          Gradinari
+                *17. Rusanestii        Rusanestii de Jos   Rusanesti          Rusanesti
                     de Jos
-                18. Serbanestii       Serbanesti          Serbanesti         Serbanesti
+                *18. Serbanestii       Serbanesti          Serbanesti         Serbanesti
                     de Jos
-                19. Strejestii de Jos Strejestii de Jos   Strejesti          Strejesti
-                20. Suica de Jos      Scornicesti         Suica              Scornicesti
-                21. Titulesti         Titulesti           Nicolae Titulescu  Nicolae Titulescu
-                22. Tonesti-Vatasesti Leleasca            Tonesti            Leleasca
-                23. Tufenii din Vale  Tufenii din Vale    Tufeni             Tufeni
-                24. Valea Mare Noua   Valea Mare          Valea Mare         Valea Mare
-                25. Visina Veche      Visina Veche        Visina             Visina
-                26. Valcelele de Jos  Valcele             Valcele            Valcele
-                27. Valvoiu           Ursi                Ursi               Leleasca
-                28. Voineasa Mare     Voineasa            Voineasa           Voineasa
+                *19. Strejestii de Jos Strejestii de Jos   Strejesti          Strejesti
+                *20. Suica de Jos      Scornicesti         Suica              Scornicesti
+                *21. Titulesti         Titulesti           Nicolae Titulescu  Nicolae Titulescu
+                *22. Tonesti-Vatasesti Leleasca            Tonesti            Leleasca
+                *23. Tufenii din Vale  Tufenii din Vale    Tufeni             Tufeni
+                *24. Valea Mare Noua   Valea Mare          Valea Mare         Valea Mare
+                *25. Visina Veche      Visina Veche        Visina             Visina
+                *26. Valcelele de Jos  Valcele             Valcele            Valcele
+                *27. Valvoiu           Ursi                Ursi               Leleasca
+                *28. Voineasa Mare     Voineasa            Voineasa           Voineasa
 PRAHOVA          ?1. Tesila            Tesila              Valea Doftanei     Valea Doftanei
                  *2. Trestieni         Trestieni           Traisteni          Valea Doftanei
 SATU MARE        1. Calinesti         Calinesti           Calinesti-Oas      Calinesti-Oas
@@ -18448,8 +18448,8 @@ SUCEAVA          1. Arinii            Serbauti            Calinesti          Cal
                  3. Draceni           Draceni             Slatina            Slatina
                  4. Plesesti-Centru   Plesesti            Plesesti           Vulturesti
                  5. Valea Seaca       Valea Seaca         Valea Moldovei     Valea Moldovei
-TELEORMAN        1. Calmatuiul        Calmatuiul          Calmatuiu de Sus   Calmatuiu de Sus
-                 2. Silistea          Silistea            Silistea Noua      Silistea Noua
+TELEORMAN        *1. Calmatuiul        Calmatuiul          Calmatuiu de Sus   Calmatuiu de Sus
+                 *2. Silistea          Silistea            Silistea Noua      Silistea Noua
 TIMIS            1. Satu Mic          Satu Mic            Victor Vlad        Victar Vlad
                                                           Delamarina         Delamarina
 TULCEA           *1. Eschibaba         Eschibaba           Stejaru            Stejaru
@@ -18473,35 +18473,35 @@ VASLUI           1. Baltenii          Dragalina           Badeana            Tut
                 16. Puiesti-Târg      Puiesti             Puiesti            Puiesti
                 17. Saratenii de Jos  Schineni            Schieni            Murgeni
                 18. Urdesti-Târg      Dodesti             Urdesti            Viisoara
-VILCEA           1. Balutoaia         Zavideni            Zavideni           Prundeni
-                 2. Bugiulesti        Bugiulesti          Tetoiu             Tetoiu
-                 3. Butari            Gusoieni            Gusoeni            Gusoeni
-                 4. Dealul Dragutesti Ursi                Ursi               Stoilesti
-                 5. Glugesti          Puesti              Margineni          Valea Mare
-                 6. Halesti           Madulari-Beica      Madulari           Madulari
-                 7. Ionestii Govorii  Marcea              Ionesti            Ionesti
-                 8. Maldarestii       Maldaresti          Maldaresti         Maldaresti
+VILCEA           ?1. Balutoaia         Zavideni            Zavideni           Prundeni
+                 *2. Bugiulesti        Bugiulesti          Tetoiu             Tetoiu
+                 *3. Butari            Gusoieni            Gusoeni            Gusoeni
+                 *4. Dealul Dragutesti Ursi                Ursi               Stoilesti
+                 ?5. Glugesti          Puesti              Margineni          Valea Mare
+                 *6. Halesti           Madulari-Beica      Madulari           Madulari
+                 *7. Ionestii Govorii  Marcea              Ionesti            Ionesti
+                 *8. Maldarestii       Maldaresti          Maldaresti         Maldaresti
                     de Sus
-                 9. Mijlocu           Cremenari           Cremenari          Galicea
-                10. Muereasca de Jos  Muereasca           Muereasca          Muereasca
-                11. Nitulesti         Barsoiu             Barsoiu            Stoilesti
-                12. Orlestii de Sus   Orlesti             Orlesti            Orlesti
-                13. Paduretu          Scundu              Scundu             Scundu
-                14. Pesceana-         Pesceana            Cermegesti         Pesceana
+                 *9. Mijlocu           Cremenari           Cremenari          Galicea
+                *10. Muereasca de Jos  Muereasca           Muereasca          Muereasca
+                ?11. Nitulesti         Barsoiu             Barsoiu            Stoilesti
+                +12. Orlestii de Sus   Orlesti             Orlesti            Orlesti
+                *13. Paduretu          Scundu              Scundu             Scundu
+                *14. Pesceana-         Pesceana            Cermegesti         Pesceana
                     Cermegesti
-                15. Pesceana Cueni    Pesceana            Pesceana           Pesceana
-                16. Pesceana Roesti   Pesceana            Roesti             Pesceana
-                17. Pesceana          Glavile             Glavile            Glavile
-                18. Peretu            Casa Veche Olanu    Olanu              Olanu
-                19. Pielesti          Puesti              Batasani           Valea Mare
-                20. Pietrarii de Jos  Pietrari            Pietrari           Pietrari
-                21. Pietroasa         Sutesti             Sutesti            Sutesti
-                22. Popesti           Stoilesti           Stoilesti          Stoilesti
-                23. Şcoala            Stefanesti          Stefanesti         Stefanesti
-                24. Susanii de Jos    Ramesti-Beica       Susani             Susani
-                25. Ungureni          Babeni-Bistrita     Babeni             Babeni
-                26. Veaca             Ţinã                Livezi             Livezi
-                27. Voicestii         Voicesti            Voicesti           Voicesti
+                *15. Pesceana Cueni    Pesceana            Pesceana           Pesceana
+                *16. Pesceana Roesti   Pesceana            Roesti             Pesceana
+                *17. Pesceana          Glavile             Glavile            Glavile
+                *18. Peretu            Casa Veche Olanu    Olanu              Olanu
+                *19. Pielesti          Puesti              Batasani           Valea Mare
+                *20. Pietrarii de Jos  Pietrari            Pietrari           Pietrari
+                *21. Pietroasa         Sutesti             Sutesti            Sutesti
+                *22. Popesti           Stoilesti           Stoilesti          Stoilesti
+                *23. Şcoala            Stefanesti          Stefanesti         Stefanesti
+                *24. Susanii de Jos    Ramesti-Beica       Susani             Susani
+                *25. Ungureni          Babeni-Bistrita     Babeni             Babeni
+                *26. Veaca             Ţinã                Livezi             Livezi
+                *27. Voicestii         Voicesti            Voicesti           Voicesti
                     de Mijloc
 VRANCEA          *1. Boghestii de Jos  Boghesti            Boghesti           Boghesti
                  *2. Bordestii de Sus  Bordesti            Bordesti           Bordesti
