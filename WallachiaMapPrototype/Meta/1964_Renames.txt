@@ -782,7 +782,7 @@ REGIUNEA ARGES
  	*- com. Rudari	Bailesti	Izvoarele
  	*- com. Risipiti	Calafat	Unirea
  	*- com. Bosoteni	Caracal	Tesluiul
- 	- com. Valea Boului	Filiasi	Stejarul
+ 	+- com. Valea Boului	Filiasi	Stejarul
  	*- com. Valea lui Ciine	Filiasi	Gilortul
  	*- com. Turbati	Gilort	Dumbravenii
  	*- com. Cordesti-Hurezani	Oltelu	Stejarul-Hurezani
