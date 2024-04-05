@@ -85,7 +85,7 @@ function get_highlighted_markers() {
         
         // ignore mentions from "Harta Căilor de Comunicație din Județul ..." because they are unreliable
         for (idx in mentions_inbetween) {
-            if ([40, 41, 54, 63, 64, 65, 94, 120, 121, 122, 123].includes(mentions_inbetween[idx][Mention.Record_Id])) {
+            if ([40, 41, 54, 63, 64, 65, 94, 120, 121, 122, 123, 176, 177].includes(mentions_inbetween[idx][Mention.Record_Id])) {
                 mentions_inbetween.splice(idx, 1);
             }
         }
