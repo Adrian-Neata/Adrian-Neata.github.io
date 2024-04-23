@@ -104,6 +104,11 @@ function addMarkers(latest_mention) {
         circle.setStyle({ color: get_county_color(latest_mention[Mention.County]) });
     }
 
+    // if settlements are not part of Wallachia make the marker gray
+    if (latest_mention[Mention.Place_Type] == Place_Type.Settlement && !(latest_mention[Mention.Country] === "România" || latest_mention[Mention.Country] === "Țara Românească")) {
+        circle.setStyle({ color: "gray" });
+    }
+
     // make marker clickable if place is still active
     if (latest_mention[Mention.Place_Status] === "active" || latest_mention[Mention.Place_Status] === "founded") {
         circle.on('click', function () {
