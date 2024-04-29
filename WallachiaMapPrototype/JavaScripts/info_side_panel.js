@@ -19,6 +19,7 @@ SIDEPANEL_CLOSE_BUTTON.addEventListener("click", closePanel);
 function create_sidepanel_template(placeMentions) {
     var current_year = null;
     var html_content = "";
+
     for (idx in placeMentions) {
         var mention = placeMentions[idx];
         var record_description = RECORDS[mention[Mention.Record_Id]][Record.Description];
@@ -33,7 +34,11 @@ function create_sidepanel_template(placeMentions) {
         }
         if (mention[Mention.County] != null) {
             if (mention[Mention.Year] < 1950 || mention[Mention.Year] >= 1968) {
-                html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Județ:</b> ' + mention[Mention.County] + '</h4>';
+                if (mention[Mention.Country] === "Moldova") {
+                    html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Ținut:</b> ' + mention[Mention.County] + '</h4>';
+                } else {
+                    html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Județ:</b> ' + mention[Mention.County] + '</h4>';
+                }
             } else {
                 html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Raion:</b> ' + mention[Mention.County] + '</h4>';
                 html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Regiune:</b> ' + Rayons_To_Region_1956[mention[Mention.County]] + '</h4>';
