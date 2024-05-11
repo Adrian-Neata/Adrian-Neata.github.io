@@ -68,9 +68,9 @@ function get_text_marker(latest_mention) {
     // show icons if possible
     var textIcon = L.divIcon({
         className: 'text-icon',
-        iconSize: [64, 24],
+        iconSize: [128, 24],
         html: '<p>' + latest_mention[Mention.Name] + '</p>',
-        iconAnchor: [32, 0]
+        iconAnchor: [64, 0]
     });
 
     // show place names

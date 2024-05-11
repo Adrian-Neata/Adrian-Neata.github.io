@@ -81,22 +81,22 @@ for mention in res:
     res_dict[mention[1]][mention[0]] = mention
 
 # all TODO mentions that should happen by 1968 should stop there
-for place_id in res_dict:
-    if 23 in res_dict[place_id]:
-        maxYear = 0
-        for record_id in res_dict[place_id]:
-            if record_id == 23:
-                continue
-            if res_dict[place_id][record_id][12] > maxYear:
-                maxYear = res_dict[place_id][record_id][12]
-        if maxYear < 1931:
-            aux = list(res_dict[place_id][23])
-            aux[12] = 1931
-            res_dict[place_id][23] = tuple(aux)
-        elif maxYear < 1968:
-            aux = list(res_dict[place_id][23])
-            aux[12] = 1968
-            res_dict[place_id][23] = tuple(aux)
+# for place_id in res_dict:
+#     if 23 in res_dict[place_id]:
+#         maxYear = 0
+#         for record_id in res_dict[place_id]:
+#             if record_id == 23:
+#                 continue
+#             if res_dict[place_id][record_id][12] > maxYear:
+#                 maxYear = res_dict[place_id][record_id][12]
+#         if maxYear < 1931:
+#             aux = list(res_dict[place_id][23])
+#             aux[12] = 1931
+#             res_dict[place_id][23] = tuple(aux)
+#         elif maxYear < 1968:
+#             aux = list(res_dict[place_id][23])
+#             aux[12] = 1968
+#             res_dict[place_id][23] = tuple(aux)
             
 f = open("JavaScripts/data/mentions_monasteries.js", 'w')
 f.write('const MENTIONS_MONASTERIES = ' + json.dumps(res_dict))

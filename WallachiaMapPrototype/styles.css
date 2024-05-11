@@ -33,6 +33,7 @@ body {
 
 /* Style for the text overlay */
 .text-icon {
+    text-align: center;
     color: black;
 }
 
