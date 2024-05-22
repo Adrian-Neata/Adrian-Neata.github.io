@@ -54,7 +54,7 @@ function get_county_color(county_name) {
     if (!(county_name in colorByCounty)) {
         if (YEAR_SLIDER_VALUE >= 1968) {
             colorByCounty[county_name] = COUNTY_COLORS_1968_2021[county_name];
-        } else if (YEAR_SLIDER_VALUE > 1850 && YEAR_SLIDER_VALUE < 1950) {
+        } else if (YEAR_SLIDER_VALUE > 1830 && YEAR_SLIDER_VALUE < 1950) {
             colorByCounty[county_name] = COUNTY_COLORS_BEFORE_1950[county_name];
         } else {
             colorByCounty[county_name] = FASHIONABLE_COLORS[Object.keys(colorByCounty).length % FASHIONABLE_COLORS.length];

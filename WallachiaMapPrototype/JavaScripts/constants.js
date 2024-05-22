@@ -378,7 +378,7 @@ const COUNTY_COLORS_1968_2021 = {
   'Argeș': '#32CD32', // Lime Green
   'Dâmbovița': '#9932CC', // Dark Orchid
   'Constanța': '#FF4500', // Orange Red
-  'București': '#32CD32', // Orange Red
+  'București': '#32CD32', // Lime Green
   'Teleorman': '#FF6F61', // Melon
   'Buzău': '#FFA07A', // Light Salmon
   'Dolj': '#FFA07A', // Light Salmon
@@ -413,4 +413,5 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Caraș-Severin': '#FFA07A', // Light Salmon
   'Severin': '#FFA07A', // Light Salmon
   'Tutova': '#20B2AA', // Light Sea Green
+  'Saac': '#FF4500', // Orange Red
 }
