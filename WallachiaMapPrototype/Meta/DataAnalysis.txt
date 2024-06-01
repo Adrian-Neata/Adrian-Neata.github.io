@@ -1,0 +1,6 @@
+- map that shows the places called Olari vs Blidari;
+- map that shows the places called Cacaleti vs Lacusteni;
+- map that shows the places with valc- prefix;
+- map that shows the places and their etymology (latin, slavic, turkish, etc);
+- the course of the Putna river on the border with Moldova;
+- maybe find explanation for why villages close to Urziceni aren't close to the Ialomita river (1830) and how there are only villages South of Ialomita and not North;
