@@ -36,6 +36,8 @@ function create_sidepanel_template(placeMentions) {
             if (mention[Mention.Year] < 1950 || mention[Mention.Year] >= 1968) {
                 if (mention[Mention.Country] === "Moldova") {
                     html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Ținut:</b> ' + mention[Mention.County] + '</h4>';
+                } else if (mention[Mention.Country] === "Imperiul Otoman") {
+                    html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Sangeac:</b> ' + mention[Mention.County] + '</h4>';
                 } else {
                     html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Județ:</b> ' + mention[Mention.County] + '</h4>';
                 }
