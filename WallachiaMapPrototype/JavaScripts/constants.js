@@ -390,6 +390,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Tecuci': '#9370DB', // Medium Purple
   'Putna': '#FF6F61', // Melon
   'Râmnicu Sărat': '#FFD700', // Gold
+  'Slam Râmnic': '#FFD700', // Gold
   'Brăila': '#66B2FF', // Periwinkle
   'Tulcea': '#DAA520', // Goldenrod
   'Constanța': '#C71585', // Medium Violet Red

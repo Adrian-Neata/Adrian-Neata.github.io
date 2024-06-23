@@ -23,6 +23,7 @@ function create_sidepanel_template(placeMentions) {
     for (idx in placeMentions) {
         var mention = placeMentions[idx];
         var record_description = RECORDS[mention[Mention.Record_Id]][Record.Description];
+
         if (mention[Mention.Year] != current_year) {
             current_year = mention[Mention.Year];
             html_content += '<h2 class="yearSubtitle">' + current_year.toString() + '</h2><hr class="separatorLineYear">';
@@ -46,7 +47,13 @@ function create_sidepanel_template(placeMentions) {
                 html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Regiune:</b> ' + Rayons_To_Region_1956[mention[Mention.County]] + '</h4>';
             }
         }
-        html_content += '<h4 class="recordDescription">' + record_description + '</h4></div>';
+
+        if (mention[Mention.Notes] === null) {
+            html_content += '<h4 class="recordDescription">' + '<b>Sursă:</b> ' + record_description + '</h4></div>';
+        } else {
+            html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Sursă:</b> ' + record_description + '</h4>';
+            html_content += '<h4 class="recordDescription">' + '<b>Observații:</b> ' + mention[Mention.Notes] + '</h4></div>';
+        }
     }
     return html_content;
 }
