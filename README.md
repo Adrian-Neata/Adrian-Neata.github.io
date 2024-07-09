@@ -1,0 +1,21 @@
+## Data Folder
+
+- monasteries.js contains a dictionary MENTIONS
+    - key : id of the monastery : a string representing a unique number preceded by an underscore to differentiate it from a settlement id;
+    - value : a list [**monastery_id**, **monastery_name**, **commune_name**, **county_name**, **country_name**, **latitude**, **longitude**]
+- mentions_monasteries.js contains a dictionary MENTIONS_MONASTERIES
+    - key : id of the monastery : a string representing a unique number preceded by an underscore to differentiate it from a settlement id;
+    - value : a dictionary of records :
+        - key : id of record
+        - value : a list [**record_id**, **monastery_id**, **monastery_name**, **commune_name**, **county_name**, **country_name**, **latitude**, **longitude**, **place_status**, **notes**, **reasoning**, **mention_status**, **record_year**, **place_type**]
+- settlements.js contains a dictionary called SETTLEMENTS
+    - key : id of settlement
+    - value : a list [**settlement_id**, **settlement_name**, **commune_name**, **county_name**, **country_name**, **latitude**, **longitude**]
+- mentions_settlements.js contains a dictionary called MENTIONS_SETTLEMENTS
+    - key : id of the settlement : a string representing a unique number;
+    - value : a dictionary of records :
+        - key : id of record
+        - value : a list [**record_id**, **settlement_id**, **settlement_name**, **commune_name**, **county_name**, **country_name**, **latitude**, **longitude**, **place_status**, **notes**, **reasoning**, **mention_status**, **record_year**, **place_type**]
+- records.js contains a dictionary called RECORDS
+    - key : id of the record : a string representing a unique number;
+    - value : a list [**record_id**, **record_description**, **year**]
