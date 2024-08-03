@@ -391,6 +391,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Putna': '#FF6F61', // Melon
   'Râmnicu Sărat': '#FFD700', // Gold
   'Slam Râmnic': '#FFD700', // Gold
+  'Râmnicu': '#FFD700', // Gold
   'Brăila': '#66B2FF', // Periwinkle
   'Tulcea': '#DAA520', // Goldenrod
   'Constanța': '#C71585', // Medium Violet Red
@@ -406,13 +407,16 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Muscel': '#C71585', // Medium Violet Red
   'Olt': '#9370DB', // Medium Purple
   'Dolj': '#66B2FF', // Periwinkle
+  'Jiul de Jos': '#66B2FF', // Periwinkle
   'Vâlcea': '#20B2AA', // Light Sea Green
   'București': '#9932CC', // Dark Orchid
   'Durostor': '#32CD32', // Lime Green
   'Gorj': '#DAA520', // Goldenrod
+  'Jiul de Sus': '#DAA520', // Goldenrod
   'Mehedinți': '#C71585', // Medium Violet Red
   'Caraș-Severin': '#FFA07A', // Light Salmon
   'Severin': '#FFA07A', // Light Salmon
   'Tutova': '#20B2AA', // Light Sea Green
   'Saac': '#FF4500', // Orange Red
+  'Săcuieni': '#FF4500', // Orange Red
 }
