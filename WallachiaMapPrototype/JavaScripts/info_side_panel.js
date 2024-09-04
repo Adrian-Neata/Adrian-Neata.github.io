@@ -52,12 +52,26 @@ function create_sidepanel_template(placeMentions) {
             }
         }
 
-        if (mention[Mention.Notes] === null) {
-            html_content += '<h4 class="recordDescription">' + '<b>Sursă:</b> ' + record_description + '</h4></div>';
-        } else {
+        if (mention[Mention.Notes] === null && mention[Mention.Reasoning] === null) {
+            html_content += '<h4 class="recordDescription">' + '<b>Sursă:</b> ' + record_description + '</h4>';
+        } 
+        
+        if (mention[Mention.Notes] !== null && mention[Mention.Reasoning] === null){
             html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Sursă:</b> ' + record_description + '</h4>';
-            html_content += '<h4 class="recordDescription">' + '<b>Observații:</b> ' + mention[Mention.Notes] + '</h4></div>';
+            html_content += '<h4 class="recordDescription">' + '<b>Descriere:</b> ' + mention[Mention.Notes] + '</h4>';
         }
+
+        if (mention[Mention.Notes] === null && mention[Mention.Reasoning] !== null){
+            html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Sursă:</b> ' + record_description + '</h4>';
+            html_content += '<h4 class="recordDescription">' + '<b>Observații:</b> ' + mention[Mention.Reasoning] + '</h4>';
+        }
+
+        if (mention[Mention.Notes] !== null && mention[Mention.Reasoning] !== null){
+            html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Sursă:</b> ' + record_description + '</h4>';
+            html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Descriere:</b> ' + mention[Mention.Notes] + '</h4>';
+            html_content += '<h4 class="recordDescription">' + '<b>Observații:</b> ' + mention[Mention.Reasoning] + '</h4>';
+        }
+        html_content += '</div>';
     }
     return html_content;
 }
