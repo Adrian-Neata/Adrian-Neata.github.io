@@ -41,7 +41,12 @@ for place_id in res_dict:
                 continue
             if res_dict[place_id][record_id][12] > maxYear:
                 maxYear = res_dict[place_id][record_id][12]
-        if maxYear < 1931:
+        
+        if maxYear < 1859:
+            aux = list(res_dict[place_id][23])
+            aux[12] = 1859
+            res_dict[place_id][23] = tuple(aux)
+        elif maxYear < 1931:
             aux = list(res_dict[place_id][23])
             aux[12] = 1931
             res_dict[place_id][23] = tuple(aux)
