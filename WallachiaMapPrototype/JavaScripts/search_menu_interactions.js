@@ -29,7 +29,7 @@ function sortSearchResults(a, b) {
         return -1;
     }
 
-    if (a['mention'][Mention.Name].length > b['mention'][Mention.Name].length) {
+    if (a['mention'].name.length > b['mention'].name.length) {
         return 1;
     }
 
@@ -75,50 +75,13 @@ function computeQueryScore(query_ngrams, query, name) {
     return match_score
 }
 
-function create_result_template(mention) {
-    var places = SETTLEMENTS;
-    if (is_monastery(mention[Mention.Place_Id])) {
-        places = MONASTERIES;
-    }
-
-    var reference_id = "reference" + mention[Mention.Place_Id];
-    var latest_mention = get_latest_mentions(mention[Mention.Place_Id])[0];
-
-    var html_content = '';
-    html_content += '<div style = "cursor: pointer; margin-bottom: 10%; margin-left: 2%; width: 180px;" class="referenceContainer" id="' + reference_id + '"><h3 class="placeName">' + latest_mention[Mention.Name] + '</h3>';
-    if (mention[Mention.Name] != latest_mention[Mention.Name]) {
-        html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Denumire veche:</b> ' + mention[Mention.Name] + '</h4>';
-    }
-    html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Comună:</b> ' + places[latest_mention[Mention.Place_Id]][Place.Commune] + '</h4>';
-    html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Județ:</b> ' + places[latest_mention[Mention.Place_Id]][Place.County] + '</h4>';
-
-    // show current status
-    switch (latest_mention[Mention.Place_Status]) {
-        case "disbanded":
-            html_content += '<h4 style = "margin: 4%; font-weight: normal;">Localitate dispărută.</h4>';
-            break;
-        case "united":
-            html_content += '<h4 style = "margin: 4%; font-weight: normal;">Localitate comasată.</h4>';
-            break;
-    }
-
-    // exact location not found
-    if (latest_mention[Mention.Latitude] === null) {
-        html_content += '<h4 style = "margin: 4%; padding-bottom: 4%; font-weight: normal;" >Locația exactă nu a putut fi identificată.</h4>';
-    } else {
-        html_content += '<h5 style = "margin: 4%; padding-bottom: 2%; font-weight: normal;" ></h5>';
-    }
-
-    html_content += '</div>';
-    return html_content;
-}
 
 // look for another place in the same commune as place_id with coordinates
 function search_for_neighbouring_place(place) {
     for (p_key in SETTLEMENTS) {
-        if (SETTLEMENTS[p_key][Place.Commune] === place[Place.Commune] &&
-            SETTLEMENTS[p_key][Place.County] === place[Place.County] &&
-            SETTLEMENTS[p_key][Place.Latitude] != null) {
+        if (SETTLEMENTS[p_key].commune === place.commune &&
+            SETTLEMENTS[p_key].county === place.county &&
+            SETTLEMENTS[p_key].latitude != null) {
 
             //console.log(SETTLEMENTS[p_key]);
             //console.log(SETTLEMENTS[place_id]);
@@ -134,29 +97,22 @@ function search_for_neighbouring_place(place) {
 
 function update_clickable_results() {
     const mentionList = document.getElementById("searchResultsList");
-
     // get all reference ids for the results
     var references = [];
     for (idx = 0; idx < mentionList.childNodes.length; idx++) {
-        references.push('reference' + SEARCH_RESULTS[idx]['mention'][Mention.Place_Id]);
+        references.push('reference' + SEARCH_RESULTS[idx]['mention'].place.id);
     }
 
     // give each result a clickable function that pans the map to the place location
     for (idx in references) {
         var reference_id = references[idx];
-
         document.getElementById(reference_id).onclick = function (event) {
             // get place id from reference id
             var place_id = event.currentTarget.id.slice(9);
-            var places = SETTLEMENTS;
-
-            if (is_monastery(place_id)) {
-                places = MONASTERIES;
-            }
 
             // if place has no coordinates search for another place in the same commune with coordinates
-            if (places[place_id][Place.Latitude] === null) {
-                place_id = search_for_neighbouring_place(places[place_id]);
+            if (SETTLEMENTS[place_id].latitude === null) {
+                place_id = search_for_neighbouring_place(SETTLEMENTS[place_id]);
 
                 // could not find an approximate location for place_id
                 if (place_id == null) {
@@ -164,12 +120,12 @@ function update_clickable_results() {
                 }
 
                 // move map view to place coordinates
-                panToCoordinates(SETTLEMENTS[place_id][Place.Latitude], SETTLEMENTS[place_id][Place.Longitude]);
+                panToCoordinates(SETTLEMENTS[place_id].latitude, SETTLEMENTS[place_id].longitude);
                 return;
             }
 
             // move map view to place coordinates
-            panToCoordinates(places[place_id][Place.Latitude], places[place_id][Place.Longitude]);
+            panToCoordinates(SETTLEMENTS[place_id].latitude, SETTLEMENTS[place_id].longitude);
         }
     }
 }
@@ -185,7 +141,7 @@ function showSearchResults(query) {
 
     // generate html templates
     for (idx in results) {
-        html_content += create_result_template(results[idx]['mention']);
+        html_content += results[idx]['mention'].getSearchHtml();
     }
 
     // update results list
@@ -212,34 +168,31 @@ function searchPlaces(query) {
     var query_ngrams = generateNGrams(removeDiacritics(query));
 
     var search_list = [];
-    var mentions_list = [MENTIONS_SETTLEMENTS, MENTIONS_MONASTERIES];
-    for (idx in mentions_list) {
-        for (place_id in mentions_list[idx]) {
+    for (place_id in MENTIONS) {
 
-            // Put all mentions into a list
-            placeMentions = get_place_mentions(place_id);
+        // Put all mentions into a list
+        placeMentions = get_place_mentions(place_id);
 
-            // Sort mentions by decreasing year
-            placeMentions = placeMentions.sort(function (a, b) { return b[Mention.Year] - a[Mention.Year]; });
+        // Sort mentions by decreasing year
+        placeMentions = placeMentions.sort(function (a, b) { return b.record.year - a.record.year; });
 
-            // Find best match among the previous names of the place
-            best_variant = { 'score': null, 'mention': null };
-            for (mention_idx in placeMentions) {
-                place_name = placeMentions[mention_idx][Mention.Name];
-                match_score = computeQueryScore(query_ngrams, query, place_name);
+        // Find best match among the previous names of the place
+        best_variant = { 'score': null, 'mention': null };
+        for (mention_idx in placeMentions) {
+            place_name = placeMentions[mention_idx].name;
+            match_score = computeQueryScore(query_ngrams, query, place_name);
 
-                // Set initial value for best_variant
-                if (best_variant['score'] == null) {
-                    best_variant = { 'score': match_score, 'mention': placeMentions[mention_idx] };
-                }
-
-                // Update best_variant with better match
-                if (match_score > best_variant['score']) {
-                    best_variant = { 'score': match_score, 'mention': placeMentions[mention_idx] }
-                }
+            // Set initial value for best_variant
+            if (best_variant['score'] == null) {
+                best_variant = { 'score': match_score, 'mention': placeMentions[mention_idx] };
             }
-            search_list.push(best_variant);
+
+            // Update best_variant with better match
+            if (match_score > best_variant['score']) {
+                best_variant = { 'score': match_score, 'mention': placeMentions[mention_idx] }
+            }
         }
+        search_list.push(best_variant);
     }
 
     search_list.sort(sortSearchResults);

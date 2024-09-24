@@ -1,0 +1,1 @@
+RECORDS["_1"] = new MedievalDocuments("_1", 1690, "Satele plăeșăști pre județ<e> cum scrie în jos anume, ce au eșit la iuni<e> 20 zile, anul 7198", null, "Hârtie", "Constantin Brâncoveanu", null, "Țara Românească", "Anatefterul. Condica de porunci a vistierului lui C. Brâncoveanu.", "D. C. Giurescu");

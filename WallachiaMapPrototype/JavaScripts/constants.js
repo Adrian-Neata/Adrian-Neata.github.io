@@ -7,39 +7,6 @@ var SIDEPANEL_PLACE = null;
 var MARKERS = {};
 const RADIUS_BY_ZOOM = { 8: 2, 9: 4, 10: 6, 11: 8, 12: 10, 13: 10, 14: 10 };
 
-const Mention = {
-  Record_Id: 0,
-  Place_Id: 1,
-  Name: 2,
-  Commune: 3,
-  County: 4,
-  Country: 5,
-  Latitude: 6,
-  Longitude: 7,
-  Place_Status: 8,
-  Notes: 9,
-  Reasoning: 10,
-  Mention_Status: 11,
-  Year: 12,
-  Place_Type: 13,
-};
-
-const Place = {
-  Id: 0,
-  Name: 1,
-  Commune: 2,
-  County: 3,
-  Country: 4,
-  Latitude: 5,
-  Longitude: 6,
-};
-
-const Record = {
-  Id: 0,
-  Year: 1,
-  Description: 2,
-};
-
 const Place_Type = {
   Settlement: 0,
   Monastery: 1,
@@ -54,35 +21,19 @@ const get_place_mentions = (place_id, min_year, max_year) => {
     max_year = 100000;
   }
   var place_mentions = [];
-  var mentions_dict = null;
-  if (is_monastery(place_id)) {
-    mentions_dict = MENTIONS_MONASTERIES[place_id];
-  } else {
-    mentions_dict = MENTIONS_SETTLEMENTS[place_id];
-  }
 
-  for (record_id in mentions_dict) {
+  for (mention_idx in MENTIONS[place_id]) {
+    mention = MENTIONS[place_id][mention_idx];
     // ignore mentions outside range
-    if (min_year > mentions_dict[record_id][Mention.Year] ||
-      max_year < mentions_dict[record_id][Mention.Year]) {
+    if (min_year > mention.record.year ||
+      max_year < mention.record.year) {
       continue;
     }
 
-    place_mentions.push(mentions_dict[record_id]);
-
+    place_mentions.push(mention);
   }
 
   return place_mentions;
-}
-
-// check if place is monastery
-const is_monastery = (place_id) => {
-  return String(place_id)[0] == "_";
-}
-
-// check if place is settlement
-const is_settlement = (place_id) => {
-  return String(place_id)[0] != "_";
 }
 
 // find latest mention with year >= min_year and <= max_year
@@ -104,10 +55,10 @@ const get_latest_mentions = (place_id, min_year, max_year) => {
   }
 
   // sort mentions latest to earliest
-  place_mentions.sort(function (a, b) { return b[Mention.Year] - a[Mention.Year]; });
+  place_mentions.sort(function (a, b) { return b.record.year - a.record.year; });
   var latest_mentions = [place_mentions[0]];
   var idx = 1;
-  while (idx < place_mentions.length && latest_mentions[0][Mention.Year] == place_mentions[idx][Mention.Year]) {
+  while (idx < place_mentions.length && latest_mentions[0].record.year == place_mentions[idx].record.year) {
     latest_mentions.push(place_mentions[idx]);
     idx+=1;
   }

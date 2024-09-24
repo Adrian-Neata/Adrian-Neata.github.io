@@ -64,20 +64,20 @@ function get_county_color(county_name) {
 }
 
 function get_text_marker(latest_mention) {
-    var coords = [latest_mention[Mention.Latitude], latest_mention[Mention.Longitude]];
+    var coords = [latest_mention.latitude, latest_mention.longitude];
     // show icons if possible
     var textIcon = L.divIcon({
         className: 'text-icon',
         iconSize: [128, 24],
-        html: '<p>' + latest_mention[Mention.Name] + '</p>',
+        html: '<p>' + latest_mention.name + '</p>',
         iconAnchor: [64, 0]
     });
 
     // show place names
     var textMarker = L.marker(coords, { icon: textIcon }).addTo(map);
-    if (latest_mention[Mention.Place_Status] === "active" || latest_mention[Mention.Place_Status] === "founded") {
+    if (latest_mention.place_status === "active" || latest_mention.place_status === "founded") {
         textMarker.on('click', function () {
-            openSidePanel(latest_mention[Mention.Place_Id]);
+            openSidePanel(latest_mention.place.id);
         });
     }
     return textMarker;
@@ -86,31 +86,31 @@ function get_text_marker(latest_mention) {
 function addMarkers(latest_mention) {
 
     // skip because we don't know where to put the marker
-    if (latest_mention[Mention.Latitude] == null) {
+    if (latest_mention.latitude == null) {
         return;
     }
 
-    var place_id = latest_mention[Mention.Place_Id];
-    var coords = [latest_mention[Mention.Latitude], latest_mention[Mention.Longitude]];
+    var place_id = latest_mention.place.id;
+    var coords = [latest_mention.latitude, latest_mention.longitude];
     var circle = L.circleMarker(coords, { radius: RADIUS_BY_ZOOM[map.getZoom()], className: 'custom-marker' }).addTo(map);
 
     // if monastery make circle black otherwise default blue
-    if (latest_mention[Mention.Place_Type] == Place_Type.Monastery) {
+    if (latest_mention.place.type == Place_Type.Monastery) {
         circle.setStyle({ color: 'black' });
     }
 
     // if counties should be colored assign colors for settlements
-    if (latest_mention[Mention.Place_Type] == Place_Type.Settlement && COLOR_COUNTIES_CHECKBOX.checked) {
-        circle.setStyle({ color: get_county_color(latest_mention[Mention.County]) });
+    if (latest_mention.place.type == Place_Type.Settlement && COLOR_COUNTIES_CHECKBOX.checked) {
+        circle.setStyle({ color: get_county_color(latest_mention.county) });
     }
 
     // if settlements are not part of Wallachia make the marker gray
-    if (latest_mention[Mention.Place_Type] == Place_Type.Settlement && !(latest_mention[Mention.Country] === "România" || latest_mention[Mention.Country] === "Țara Românească")) {
+    if (latest_mention.place.type == Place_Type.Settlement && !(latest_mention.country === "România" || latest_mention.country === "Țara Românească")) {
         circle.setStyle({ color: "gray" });
     }
 
     // make marker clickable if place is still active
-    if (latest_mention[Mention.Place_Status] === "active" || latest_mention[Mention.Place_Status] === "founded") {
+    if (latest_mention.place_status === "active" || latest_mention.place_status === "founded") {
         circle.on('click', function () {
             openSidePanel(place_id);
         });
@@ -126,7 +126,7 @@ function addMarkers(latest_mention) {
 
 function check_inactive_place(mentions) {
     for (idx in mentions) {
-        if (mentions[idx][Mention.Place_Status] != "active" && mentions[idx][Mention.Place_Status] != "founded") {
+        if (mentions[idx].place_status != "active" && mentions[idx].place_status != "founded") {
             return true;
         }
     }
@@ -135,7 +135,6 @@ function check_inactive_place(mentions) {
 
 function updateMarkerPosition() {
     colorByCounty = {};
-
     // remove previous markers
     for (place_id in MARKERS) {
         for (idx in MARKERS[place_id]) {
@@ -144,29 +143,25 @@ function updateMarkerPosition() {
     }
     MARKERS = {};
 
-    mentions_list = [MENTIONS_SETTLEMENTS, MENTIONS_MONASTERIES];
-    for (idx in mentions_list) {
-        for (place_id in mentions_list[idx]) {
-            var latest_mentions = get_latest_mentions(place_id, null, YEAR_SLIDER_VALUE);
+    for (place_id in MENTIONS) {
+        var latest_mentions = get_latest_mentions(place_id, null, YEAR_SLIDER_VALUE);
 
-            // place has no mentions before the current year
-            if (latest_mentions.length == 0) {
-                continue;
-            }
-
-            // place is inactive and has already been highlighted
-            if (latest_mentions[0][Mention.Year] <= PREV_YEAR_SLIDER_VALUE && check_inactive_place(latest_mentions)) {
-                continue;
-            }
-
-            // check if place is disbanded or united and thus shouldn't be shown
-            if (check_inactive_place(latest_mentions) && (HIGHLIGHTS_CHECKBOX.checked === false || !YEAR_INCREASED)) {
-                continue;
-            }
-
-            addMarkers(latest_mentions[0]);
+        // place has no mentions before the current year
+        if (latest_mentions.length == 0) {
+            continue;
         }
 
+        // place is inactive and has already been highlighted
+        if (latest_mentions[0].record.year <= PREV_YEAR_SLIDER_VALUE && check_inactive_place(latest_mentions)) {
+            continue;
+        }
+
+        // check if place is disbanded or united and thus shouldn't be shown
+        if (check_inactive_place(latest_mentions) && (HIGHLIGHTS_CHECKBOX.checked === false || !YEAR_INCREASED)) {
+            continue;
+        }
+
+        addMarkers(latest_mentions[0]);
     }
 }
 

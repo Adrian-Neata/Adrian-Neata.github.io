@@ -50,10 +50,10 @@ function get_highlighted_markers() {
     for (place_id in MARKERS) {
         var latest_mentions = get_latest_mentions(place_id, PREV_YEAR_SLIDER_VALUE, YEAR_SLIDER_VALUE);
         for (idx in latest_mentions) {
-            if (latest_mentions[idx][Mention.Place_Status] === "disbanded") {
+            if (latest_mentions[idx].place_status === "disbanded") {
                 highlights[place_id] = "red";
                 break;
-            } else if (latest_mentions[idx][Mention.Place_Status] === "united") {
+            } else if (latest_mentions[idx].place_status === "united") {
                 highlights[place_id] = "purple";
                 break;
             }
@@ -67,16 +67,16 @@ function get_highlighted_markers() {
 
         var earlier_year = PREV_YEAR_SLIDER_VALUE;
         if (earlier_mentions.length != 0) {
-            earlier_year = earlier_mentions[0][Mention.Year];
+            earlier_year = earlier_mentions[0].record.year;
         }
         var mentions_inbetween = get_place_mentions(place_id, earlier_year, YEAR_SLIDER_VALUE);
-        mentions_inbetween.sort(function (a, b) { return a[Mention.Year] - b[Mention.Year]; });
+        mentions_inbetween.sort(function (a, b) { return a.record.year - b.record.year; });
 
         if (earlier_mentions.length === 0) {
             if (mentions_inbetween.length === 1) {
                 // only one mention
                 highlights[place_id] = "green";
-            } else if (mentions_inbetween[0][Mention.Year] === mentions_inbetween[mentions_inbetween.length-1][Mention.Year]) {
+            } else if (mentions_inbetween[0].record.year === mentions_inbetween[mentions_inbetween.length-1].record.year) {
                 // only mentions from the same year
                 highlights[place_id] = "green";
             }
@@ -85,15 +85,15 @@ function get_highlighted_markers() {
         
         // ignore mentions from "Harta Căilor de Comunicație din Județul ..." because they are unreliable
         for (idx in mentions_inbetween) {
-            if ([40, 41, 54, 63, 64, 65, 94, 120, 121, 122, 123, 176, 177].includes(mentions_inbetween[idx][Mention.Record_Id])) {
+            if (["40", "41", "54", "63", "64", "65", "94", "120", "121", "122", "123", "176", "177"].includes(mentions_inbetween[idx].record.id)) {
                 mentions_inbetween.splice(idx, 1);
             }
         }
 
         var min_name_change_score = null;
         for (var i = 0; i < mentions_inbetween.length - 1; i++) {
-            mention_name = removeDiacritics(mentions_inbetween[i][Mention.Name]);
-            next_mention_name = removeDiacritics(mentions_inbetween[i+1][Mention.Name]);
+            mention_name = removeDiacritics(mentions_inbetween[i].name);
+            next_mention_name = removeDiacritics(mentions_inbetween[i+1].name);
             score = compareStrings(mention_name, next_mention_name);
 
             if (!min_name_change_score) {

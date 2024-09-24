@@ -22,56 +22,12 @@ function create_sidepanel_template(placeMentions) {
 
     for (idx in placeMentions) {
         var mention = placeMentions[idx];
-        var record_description = RECORDS[mention[Mention.Record_Id]][Record.Description];
 
-        if (mention[Mention.Year] != current_year) {
-            current_year = mention[Mention.Year];
+        if (mention.record.year != current_year) {
+            current_year = mention.record.year;
             html_content += '<h2 class="yearSubtitle">' + current_year.toString() + '</h2><hr class="separatorLineYear">';
         }
-        html_content += '<div class="referenceContainer"><h3 class="placeName">' + mention[Mention.Name] + '</h3>';
-        if (mention[Mention.Commune] != null) {
-            html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Comună:</b> ' + mention[Mention.Commune] + '</h4>';
-
-        }
-        if (mention[Mention.County] != null) {
-            if (mention[Mention.Year] < 1950 || mention[Mention.Year] >= 1968) {
-                if (mention[Mention.Country] === "Moldova") {
-                    html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Ținut:</b> ' + mention[Mention.County] + '</h4>';
-                } else if (mention[Mention.Country] === "Imperiul Otoman") {
-                    if (mention[Mention.County] === "Silistra") {
-                        html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Sangeac:</b> ' + mention[Mention.County] + '</h4>';
-                    } else {
-                        html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Raia:</b> ' + mention[Mention.County] + '</h4>';
-                    }
-                } else {
-                    html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Județ:</b> ' + mention[Mention.County] + '</h4>';
-                }
-            } else {
-                html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Raion:</b> ' + mention[Mention.County] + '</h4>';
-                html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Regiune:</b> ' + Rayons_To_Region_1956[mention[Mention.County]] + '</h4>';
-            }
-        }
-
-        if (mention[Mention.Notes] === null && mention[Mention.Reasoning] === null) {
-            html_content += '<h4 class="recordDescription">' + '<b>Sursă:</b> ' + record_description + '</h4>';
-        } 
-        
-        if (mention[Mention.Notes] !== null && mention[Mention.Reasoning] === null){
-            html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Sursă:</b> ' + record_description + '</h4>';
-            html_content += '<h4 class="recordDescription">' + '<b>Descriere:</b> ' + mention[Mention.Notes] + '</h4>';
-        }
-
-        if (mention[Mention.Notes] === null && mention[Mention.Reasoning] !== null){
-            html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Sursă:</b> ' + record_description + '</h4>';
-            html_content += '<h4 class="recordDescription">' + '<b>Observații:</b> ' + mention[Mention.Reasoning] + '</h4>';
-        }
-
-        if (mention[Mention.Notes] !== null && mention[Mention.Reasoning] !== null){
-            html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Sursă:</b> ' + record_description + '</h4>';
-            html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Descriere:</b> ' + mention[Mention.Notes] + '</h4>';
-            html_content += '<h4 class="recordDescription">' + '<b>Observații:</b> ' + mention[Mention.Reasoning] + '</h4>';
-        }
-        html_content += '</div>';
+        html_content += mention.getPanelHtml()
     }
     return html_content;
 }
@@ -89,16 +45,16 @@ function openSidePanel(place_id) {
     }
 
     // Sort mentions latest to earliest
-    placeMentions = placeMentions.sort(function (a, b) { return b[Mention.Year] - a[Mention.Year]; });
+    placeMentions = placeMentions.sort(function (a, b) { return b.record.year - a.record.year; });
 
     // If latest mention shows place disappeared then return
-    if (placeMentions[0][Mention.Place_Status] != "active" && placeMentions[0][Mention.Place_Status] != "founded") {
+    if (placeMentions[0].place_status != "active" && placeMentions[0].place_status != "founded") {
         closePanel();
         return;
     }
 
     // Add title the name of the place that is most recent to the selected year
-    document.getElementById("placeName").textContent = placeMentions[0][Mention.Name];
+    document.getElementById("placeName").textContent = placeMentions[0].name;
 
     // Add html code to show mentions
     const mentionList = document.getElementById("referenceList");
