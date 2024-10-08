@@ -6,6 +6,22 @@ s2 = '\\"'
 con = sqlite3.connect("PlacesDataset.db")
 cur = con.cursor()
 
+# add MEDIEVAL_DOCUMENTS_COLLECTIONS table to .json file
+res = cur.execute("SELECT MEDIEVAL_DOCUMENTS_COLLECTIONS.* from MEDIEVAL_DOCUMENTS_COLLECTIONS").fetchall()
+js_code = 'MEDIEVAL_DOCUMENTS_COLLECTIONS={}\n'
+for record in res:
+    record = list(record)
+    for i in range(len(record)):
+        if isinstance(record[i], str):
+            record[i] = record[i].replace(s1, s2)
+    js_code += f'MEDIEVAL_DOCUMENTS_COLLECTIONS["{record[0]}"] = new MedievalDocumentCollection("{record[0]}", "{record[1]}", "{record[2]}", {int(record[3])}, "{record[4]}");\n'
+js_code = js_code.replace('"None"', "null")
+
+f = open("JavaScripts/data/medieval_documents_collections.js", 'w', encoding="utf-8")
+f.write(js_code)
+f.close()
+
+
 # add MEDIEVAL_DOCUMENTS table to .json file
 res = cur.execute("SELECT MEDIEVAL_DOCUMENTS.* from MEDIEVAL_DOCUMENTS").fetchall()
 js_code = ''
@@ -14,7 +30,7 @@ for record in res:
     for i in range(len(record)):
         if isinstance(record[i], str):
             record[i] = record[i].replace(s1, s2)
-    js_code += f'RECORDS["_{record[0]}"] = new MedievalDocuments("_{record[0]}", {record[1]}, "{record[2]}", "{record[3]}", "{record[4]}", "{record[5]}", "{record[6]}", "{record[7]}", "{record[8]}", "{record[9]}");\n'
+    js_code += f'RECORDS["_{record[0]}"] = new MedievalDocuments("_{record[0]}", {record[1]}, "{record[2]}", "{record[3]}", "{record[4]}", "{record[5]}", "{record[6]}", "{record[7]}", "{record[8]}", "{record[9]}", "{record[10]}");\n'
 js_code = js_code.replace('"None"', "null")
 
 f = open("JavaScripts/data/medieval_documents.js", 'w', encoding="utf-8")
@@ -138,7 +154,7 @@ f.close()
 
 
 # add MONASTERIES table to .json file
-res = cur.execute("SELECT DISTINCT MONASTERIES.* FROM MONASTERIES JOIN MENTIONS_MONASTERIES ON MONASTERIES.id = MENTIONS_MONASTERIES.monastery_id WHERE MENTIONS_MONASTERIES.mention_status == 'finished'").fetchall()
+res = cur.execute("SELECT DISTINCT MONASTERIES.* FROM MONASTERIES").fetchall()
 js_code = '';
 for place in res:
     place = list(place)
@@ -171,6 +187,16 @@ for mention in res:
     if mention[1] not in res_dict:
         res_dict[mention[1]] = []
     mention.append(0)
+    res_dict[mention[1]].append(mention)
+
+
+res = cur.execute("SELECT DISTINCT MEDIEVAL_MENTIONS_MONASTERIES.* from MEDIEVAL_MENTIONS_MONASTERIES").fetchall()
+for mention in res:
+    mention = list(mention)
+    mention[1] = "_" + str(mention[1])
+    if mention[1] not in res_dict:
+        res_dict[mention[1]] = []
+    mention.append(1)
     res_dict[mention[1]].append(mention)
 
 # all TODO mentions that should happen by 1968 should stop there
@@ -213,6 +239,7 @@ for place_id in res_dict:
 
 js_code = js_code.replace('"None"', "null")
 
+
 f = open("JavaScripts/data/monasteries_mentions.js", 'w', encoding="utf-8")
 f.write(js_code)
 f.close()
@@ -222,3 +249,4 @@ f.close()
 # for county in res:
 #     res_dict[county[0]] = ''
 # print(res_dict)
+

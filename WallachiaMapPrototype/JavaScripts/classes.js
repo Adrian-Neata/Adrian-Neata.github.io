@@ -1,3 +1,18 @@
+
+class MedievalDocumentCollection {
+    constructor(id, title, author, year, link) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.link = link;
+    }
+
+    toString() {
+        return `MedievalDocumentCollection id: ${this.id}, Title: ${this.title}, Author: ${this.author}, Year: ${this.year}, Link: ${this.link}`;
+    }
+}
+
 class Record {
     constructor(id, year, description, link) {
         this.id = id;
@@ -5,23 +20,31 @@ class Record {
         this.description = description;
         this.link = link;
     }
+
+    toString() {
+        return `Record id: ${this.id}, Year: ${this.year}, Description: ${this.description}, Link: ${this.link}`;
+    }
 }
 
 class MedievalDocuments {
-    constructor(id, year, description, language, material, ruler, place_of_issue, country_of_issue, source, author, link) {
+    constructor(id, year, description, language, material, status, ruler, issuer, place_of_issue, country_of_issue, collection) {
         this.id = id;
         this.year = year;
         this.description = description;
         this.language = language;
         this.material = material;
+        this.status = status;
         this.ruler = ruler;
+        this.issuer = issuer;
         this.place_of_issue = place_of_issue;
         this.country_of_issue = country_of_issue;
-        this.source = source;
-        this.author = author;
-        this.link = link;
+        this.collection = collection;
     }
 
+    toString() {
+        return `MedievalDocuments id: ${this.id}, Year: ${this.year}, Description: ${this.description}, Language: ${this.language}, Material: ${this.material}, Status: ${this.status}, Ruler: ${this.ruler}, Issuer: ${this.issuer}, Place of Issue: ${this.place_of_issue}, Country of Issue: ${this.country_of_issue}, Collection: ${this.collection}`;
+
+    }
 }
 
 class Place {
@@ -35,6 +58,10 @@ class Place {
         this.longitude = longitude;
         this.type = type;
         this.approximate_location = approximate_location;
+    }
+
+    toString() {
+        return `Place id: ${this.id}, Name: ${this.name}, Commune: ${this.commune}, County: ${this.county}, Country: ${this.country}, Latitude: ${this.latitude}, Longitude: ${this.longitude}, Type: ${this.type}, Approximate Location: ${this.approximate_location}`;
     }
 }
   
@@ -94,6 +121,9 @@ class Mention {
         throw new Error("Abstract method getCommune() must be implemented in a subclass");
     }
     
+    toString() {
+        return `Mention Record: ${this.record}, Place: ${this.place}, Name: ${this.name}, County: ${this.county}, Country: ${this.country}, Latitude: ${this.latitude}, Longitude: ${this.longitude}, Place Status: ${this.place_status}, Notes: ${this.notes}, Reasoning: ${this.reasoning}`;
+    }
 }
 
 class ModernMention extends Mention {
@@ -127,7 +157,7 @@ class ModernMention extends Mention {
         }
 
         if (this.notes === null && this.reasoning === null) {
-            html_content += '<h4 class="recordDescription">' + '<b>Sursă:</b> ' + this.record.description + '</h4></div>';
+            html_content += '<h4 class="recordDescription">' + '<b>Sursă:</b> ' + escapeHtml(this.record.description) + '</h4></div>';
             return html_content;
         } 
         
@@ -155,6 +185,10 @@ class ModernMention extends Mention {
 
     getCommune() {
         return this.commune;
+    }
+
+    toString() {
+        return `ModernMention Record: ${this.record}, Place: ${this.place}, Name: ${this.name}, Commune: ${this.commune}, County: ${this.county}, Country: ${this.country}, Latitude: ${this.latitude}, Longitude: ${this.longitude}, Place Status: ${this.place_status}, Notes: ${this.notes}, Reasoning: ${this.reasoning}`;
     }
 }
 
@@ -188,11 +222,11 @@ class MedievalMention extends Mention {
         }
 
         if (this.notes === null && this.reasoning === null) {
-            html_content += '<h4 class="recordDescription">' + '<b>Sursă:</b> ' + this.record.description + '</h4></div>';
+            html_content += '<h4 class="recordDescription">' + '<b>Sursă:</b> ' + escapeHtml(this.record.description) + '</h4></div>';
             return html_content;
         } 
         
-        html_content += fieldHtml + '<b>Sursă:</b> ' + this.record.description + '</h4>';
+        html_content += fieldHtml + '<b>Sursă:</b> ' + escapeHtml(this.record.description) + '</h4>';
 
         if (this.notes !== null && this.reasoning === null){
             html_content += '<h4 class="recordDescription">' + '<b>Descriere:</b> ' + this.notes + '</h4></div>';
@@ -216,5 +250,9 @@ class MedievalMention extends Mention {
 
     getCommune() {
         return null;
+    }
+
+    toString() {
+        return `MedievalMention Record: ${this.record}, Place: ${this.place}, Name: ${this.name}, County: ${this.county}, Country: ${this.country}, Latitude: ${this.latitude}, Longitude: ${this.longitude}, Place Status: ${this.place_status}, Notes: ${this.notes}, Reasoning: ${this.reasoning}`;
     }
 }

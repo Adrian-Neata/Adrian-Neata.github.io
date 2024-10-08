@@ -53,17 +53,25 @@
     <script src="JavaScripts/constants.js"></script>
     <script src="JavaScripts/data/settlements.js"></script>
     <script src="JavaScripts/data/records.js"></script>
+    <script src="JavaScripts/data/medieval_documents_collections.js"></script>
     <script src="JavaScripts/data/settlements_mentions.js"></script>
     <script src="JavaScripts/data/medieval_documents.js"></script>
     <script src="JavaScripts/data/monasteries.js"></script>
     <script src="JavaScripts/data/monasteries_mentions.js"></script>
-    <script>for (place_id in MENTIONS) {
+    <script>
+    
+    for (place_id in MENTIONS) {
         for (mention_idx in MENTIONS[place_id]) {
             mention = MENTIONS[place_id][mention_idx];
             mention.record = RECORDS[mention.record];
             mention.place = SETTLEMENTS[mention.place];
+            if (mention instanceof MedievalDocuments) {
+                mention.collection = MEDIEVAL_DOCUMENTS_COLLECTIONS[mention.collection];
+            }
         }
-    }</script>
+    }
+    
+    </script>
     <script src="JavaScripts/remove_diacritics.js"></script>
     <script src="JavaScripts/year_slider.js"></script>
     <script src="JavaScripts/info_side_panel.js"></script>

@@ -7,6 +7,15 @@ var SIDEPANEL_PLACE = null;
 var MARKERS = {};
 const RADIUS_BY_ZOOM = { 8: 2, 9: 4, 10: 6, 11: 8, 12: 10, 13: 10, 14: 10 };
 
+function escapeHtml(unsafeString) {
+  return unsafeString
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+}
+
 const Place_Type = {
   Settlement: 0,
   Monastery: 1,
@@ -342,6 +351,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Putna': '#FF6F61', // Melon
   'Râmnicu Sărat': '#FFD700', // Gold
   'Slam Râmnic': '#FFD700', // Gold
+  'Slam Râmnic și Brăila': '#FFD700', // Gold
   'Râmnicu': '#FFD700', // Gold
   'Brăila': '#66B2FF', // Periwinkle
   'Tulcea': '#DAA520', // Goldenrod
@@ -356,6 +366,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Romanați': '#32CD32', // Lime Green
   'Argeș': '#FFD700', // Gold
   'Muscel': '#C71585', // Medium Violet Red
+  'Mușcel și Padureț': '#C71585', // Medium Violet Red
   'Olt': '#9370DB', // Medium Purple
   'Dolj': '#66B2FF', // Periwinkle
   'Jiul de Jos': '#66B2FF', // Periwinkle

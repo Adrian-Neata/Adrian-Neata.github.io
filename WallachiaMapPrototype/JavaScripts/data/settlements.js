@@ -7722,7 +7722,6 @@ const SETTLEMENTS = {"1037":  new Place("1037", "Pitești", "Pitești", "Argeș"
 "15731":  new Place("15731", "Ruinele Cucuieți", "Tisău", "Buzău", "România", 45.21182860176343, 26.62667705235489, Place_Type.Settlement, null),
 "15732":  new Place("15732", "Gornetu", "Bozioru", "Buzău", "România", 45.386473109489394, 26.47831338704111, Place_Type.Settlement, null),
 "15733":  new Place("15733", "Fundăturile", "Bozioru", "Buzău", "România", 45.42329647896928, 26.448618359863204, Place_Type.Settlement, null),
-"15734":  new Place("15734", "Posobești", "Bozioru", "Buzău", "România", 45.38235248884285, 26.492721836410325, Place_Type.Settlement, null),
 "15735":  new Place("15735", "Valea Stupinei", "Odăile", "Buzău", "România", 45.42044576197968, 26.539715514595805, Place_Type.Settlement, null),
 "15736":  new Place("15736", "Miorica", "Mânzălești", "Buzău", "România", null, null, Place_Type.Settlement, null),
 "15737":  new Place("15737", "La Peri", "Mânzălești", "Buzău", "România", 45.495850375963, 26.646181402890193, Place_Type.Settlement, null),

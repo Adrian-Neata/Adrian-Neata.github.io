@@ -3,6 +3,7 @@ var SLIDER_CHECKPOINTS = new Set();
 
 for (idx in RECORDS) {
     SLIDER_CHECKPOINTS.add(RECORDS[idx].year);
+    console.log(RECORDS[idx].toString());
 }
 
 SLIDER_CHECKPOINTS = Array.from(SLIDER_CHECKPOINTS);
