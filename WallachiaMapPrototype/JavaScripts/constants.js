@@ -380,5 +380,6 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Severin': '#FFA07A', // Light Salmon
   'Tutova': '#20B2AA', // Light Sea Green
   'Saac': '#FF4500', // Orange Red
+  'Sac': '#FF4500', // Orange Red
   'Săcuieni': '#FF4500', // Orange Red
 }

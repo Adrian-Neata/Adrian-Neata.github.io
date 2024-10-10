@@ -83,8 +83,16 @@ function get_text_marker(latest_mention) {
     return textMarker;
 }
 
-function addMarkers(latest_mention) {
+function addMarkers(latest_mentions) {
 
+    var latest_mention = latest_mentions[0];
+    var county_name = null;
+
+    for (idx in latest_mentions) {
+        if (latest_mentions[idx].county != null) {
+            county_name = latest_mentions[idx].county;
+        }
+    }
     // skip because we don't know where to put the marker
     if (latest_mention.latitude == null) {
         return;
@@ -101,7 +109,7 @@ function addMarkers(latest_mention) {
 
     // if counties should be colored assign colors for settlements
     if (latest_mention.place.type == Place_Type.Settlement && COLOR_COUNTIES_CHECKBOX.checked) {
-        circle.setStyle({ color: get_county_color(latest_mention.county) });
+        circle.setStyle({ color: get_county_color(county_name) });
     }
 
     // if settlements are not part of Wallachia make the marker gray
@@ -161,7 +169,7 @@ function updateMarkerPosition() {
             continue;
         }
 
-        addMarkers(latest_mentions[0]);
+        addMarkers(latest_mentions);
     }
 }
 
