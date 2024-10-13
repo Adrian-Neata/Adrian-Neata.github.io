@@ -75,6 +75,36 @@ const get_latest_mentions = (place_id, min_year, max_year) => {
   return latest_mentions;
 }
 
+// find earliest mention with year >= min_year and <= max_year
+const get_earliest_mentions = (place_id, min_year, max_year) => {
+
+  if (min_year == null) {
+    min_year = 0;
+  }
+  if (max_year == null) {
+    max_year = 100000;
+  }
+
+  // put all mentions into a list
+  var place_mentions = get_place_mentions(place_id, min_year, max_year);
+
+  // no mentions found
+  if (place_mentions.length == 0) {
+    return [];
+  }
+
+  // sort mentions latest to earliest
+  place_mentions.sort(function (a, b) { return a.record.year - b.record.year; });
+  var earliest_mentions = [place_mentions[0]];
+  var idx = 1;
+  while (idx < place_mentions.length && earliest_mentions[0].record.year == place_mentions[idx].record.year) {
+    earliest_mentions.push(place_mentions[idx]);
+    idx+=1;
+  }
+
+  return earliest_mentions;
+}
+
 const levenshteinDistance = (s, t) => {
   if (!s.length) return t.length;
   if (!t.length) return s.length;

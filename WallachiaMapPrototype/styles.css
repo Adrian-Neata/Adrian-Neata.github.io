@@ -179,7 +179,7 @@ hr {
     overflow: auto;
     position: fixed;
     left: 3.5vw;
-    width: 230px;
+    width: 260px;
     height: 80.2vh;
     background-color: rgba(255, 255, 255, 0.8);
     color: #000;
@@ -197,7 +197,7 @@ hr {
     padding: 5px;
     top: 7vh;
     left: 2.5vw;
-    width: 250px;
+    width: 280px;
     height: 86.2vh;
     background-color: rgba(255, 255, 255, 0.8);
     color: #000;
@@ -208,13 +208,13 @@ hr {
 #resultsCloseButton {
     position: relative;
     display: inline-block;
-    margin: 0 0 8px 100px;
+    margin: 0 0 8px 115px;
 }
 
 #searchPanelLabel {
     position: relative;
     display: inline-block;
-    margin: 5px 0 0 10px;
+    margin: 5px 0 0 25px;
 }
 
 #moreResultsButton {

@@ -87,14 +87,31 @@ class Mention {
         
         var reference_id = "reference" + this.place.id;
         var latest_mention = get_latest_mentions(this.place.id)[0];
+        var earliest_mention = get_earliest_mentions(this.place.id)[0];
 
         var html_content = '';
-        html_content += '<div style = "cursor: pointer; margin-bottom: 10%; margin-left: 2%; width: 180px;" class="referenceContainer" id="' + reference_id + '"><h3 class="placeName">' + SETTLEMENTS[this.place.id].name + '</h3>';
+        html_content += '<div style = "cursor: pointer; margin-bottom: 10%; margin-left: 2%; width: 210px;" class="referenceContainer" id="' + reference_id + '"><h3 class="placeName">' + SETTLEMENTS[this.place.id].name + '</h3>';
         if (this.name != latest_mention.name) {
             html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Denumire veche:</b> ' + this.name + '</h4>';
         }
         html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Comună:</b> ' + SETTLEMENTS[this.place.id].commune + '</h4>';
         html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Județ:</b> ' + SETTLEMENTS[this.place.id].county + '</h4>';
+
+        var active_period = "";
+        if (earliest_mention.record.id == 23) {
+            active_period += "??? - ";
+        } else {
+            active_period += earliest_mention.record.year + " - ";
+        }
+        if (latest_mention.record.id == 23) {
+            active_period += "???";
+        } else if (latest_mention.record.id == 3) {
+            active_period += "prezent";
+        } else {
+            active_period += latest_mention.record.year;
+        }
+
+        html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Perioadă:</b> ' + active_period + '</h4>';
 
         // show current status
         switch (latest_mention.place_status) {
