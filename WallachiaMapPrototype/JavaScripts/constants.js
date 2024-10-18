@@ -396,7 +396,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Romanați': '#32CD32', // Lime Green
   'Argeș': '#FFD700', // Gold
   'Muscel': '#C71585', // Medium Violet Red
-  'Mușcel și Padureț': '#C71585', // Medium Violet Red
+  'Mușcel și Pădureț': '#C71585', // Medium Violet Red
   'Olt': '#9370DB', // Medium Purple
   'Dolj': '#66B2FF', // Periwinkle
   'Jiul de Jos': '#66B2FF', // Periwinkle
