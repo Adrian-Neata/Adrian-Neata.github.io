@@ -396,6 +396,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Romanați': '#32CD32', // Lime Green
   'Argeș': '#FFD700', // Gold
   'Muscel': '#C71585', // Medium Violet Red
+  'Mușcel': '#C71585', // Medium Violet Red
   'Mușcel și Pădureț': '#C71585', // Medium Violet Red
   'Olt': '#9370DB', // Medium Purple
   'Dolj': '#66B2FF', // Periwinkle
@@ -404,6 +405,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'București': '#9932CC', // Dark Orchid
   'Durostor': '#32CD32', // Lime Green
   'Gorj': '#DAA520', // Goldenrod
+  'Gor Jil': '#DAA520', // Goldenrod
   'Jiul de Sus': '#DAA520', // Goldenrod
   'Mehedinți': '#C71585', // Medium Violet Red
   'Caraș-Severin': '#FFA07A', // Light Salmon
@@ -412,4 +414,5 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Saac': '#FF4500', // Orange Red
   'Sac': '#FF4500', // Orange Red
   'Săcuieni': '#FF4500', // Orange Red
+  'Săcuiani': '#FF4500', // Orange Red
 }
