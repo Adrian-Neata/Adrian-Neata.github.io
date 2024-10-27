@@ -6640,7 +6640,7 @@ const SETTLEMENTS = {"1037":  new Place("1037", "Pitești", "Pitești", "Argeș"
 "14612":  new Place("14612", "Bădești", "Călinești", "Argeș", "România", 44.83343621651187, 25.011235579148742, Place_Type.Settlement, null),
 "14613":  new Place("14613", "Zăvoiu", "Călinești", "Argeș", "România", null, null, Place_Type.Settlement, null),
 "14614":  new Place("14614", "Vultureștii-de-sus", "Vulturești", "Argeș", "România", 45.0621610496428, 25.089874689548253, Place_Type.Settlement, null),
-"14615":  new Place("14615", "Bătiești", "Vulturești", "Argeș", "România", 45.072551373107565, 25.09375560545939, Place_Type.Settlement, null),
+"14615":  new Place("14615", "Bătiești", "Vulturești", "Argeș", "România", 45.0767885819489, 25.0858272305726, Place_Type.Settlement, null),
 "14616":  new Place("14616", "Gura-Ulubei", "Vulturești", "Argeș", "România", null, null, Place_Type.Settlement, null),
 "14617":  new Place("14617", "Pădurețu", "Coșești", "Argeș", "România", null, null, Place_Type.Settlement, null),
 "14618":  new Place("14618", "Alexandria", "Corbi", "Argeș", "România", 45.291079473127965, 24.803986975317414, Place_Type.Settlement, null),
