@@ -153,6 +153,9 @@ class ModernMention extends Mention {
         var html_content = "";
         var fieldHtml = '<h4 style = "margin: 4%; font-weight: normal;">';
         html_content += '<div class="referenceContainer"><h3 class="placeName">' + this.name + '</h3>';
+        if (this.commune != null) {
+            html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Comună:</b> ' + this.commune + '</h4>';
+        }
 
         if (this.county != null) {
             if (this.record.year < 1950 || this.record.year >= 1968) {

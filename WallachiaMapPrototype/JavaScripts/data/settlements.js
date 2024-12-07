@@ -8076,7 +8076,7 @@ const SETTLEMENTS = {"1037":  new Place("1037", "Pitești", "Pitești", "Argeș"
 "16088":  new Place("16088", "Risipiți", "Pătulele", "Mehedinți", "România", 44.33310751871098, 22.72868624633151, Place_Type.Settlement, "1"),
 "16089":  new Place("16089", "Ascunsa", "Salcia", "Mehedinți", "România", 44.12003602943344, 22.96162566682554, Place_Type.Settlement, "1"),
 "16090":  new Place("16090", "Țăpăluș", "Vârtop", "Dolj", "România", 44.185948375972515, 23.350286183302615, Place_Type.Settlement, "1"),
-"16091":  new Place("16091", "Smârdoștița", "Galicea Mare", "Dolj", "România", 44.11599889156223, 23.31297954423644, Place_Type.Settlement, "1"),
+"16091":  new Place("16091", "Smârdășteț", "Galicea Mare", "Dolj", "România", 44.11599889156223, 23.31297954423644, Place_Type.Settlement, "1"),
 "16092":  new Place("16092", "Țarovăț", "Orșova", "Mehedinți", "România", 44.75513835004078, 22.43990946141942, Place_Type.Settlement, "1"),
 "16093":  new Place("16093", "Tejeac", "Bucovăț", "Dolj", "România", 44.30518511590456, 23.661900901419912, Place_Type.Settlement, "1"),
 "16094":  new Place("16094", "Urâți", "Catane", "Dolj", "România", 43.889321590003405, 23.364589820919647, Place_Type.Settlement, "1"),

@@ -389,6 +389,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Ialomița': '#FFA07A', // Light Salmon
   'Buzău': '#32CD32', // Lime Green
   'Ilfov': '#20B2AA', // Light Sea Green
+  'Elhov': '#20B2AA', // Light Sea Green
   'Prahova': '#9932CC', // Dark Orchid
   'Dâmbovița': '#66B2FF', // Periwinkle
   'Vlașca': '#DAA520', // Goldenrod
@@ -398,8 +399,11 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Muscel': '#C71585', // Medium Violet Red
   'Mușcel': '#C71585', // Medium Violet Red
   'Mușcel și Pădureț': '#C71585', // Medium Violet Red
+  'Muscel și Pădureț': '#C71585', // Medium Violet Red
   'Olt': '#9370DB', // Medium Purple
   'Dolj': '#66B2FF', // Periwinkle
+  'Dol Jil': '#66B2FF', // Periwinkle
+  'Doljâi': '#66B2FF', // Periwinkle
   'Jiul de Jos': '#66B2FF', // Periwinkle
   'Vâlcea': '#20B2AA', // Light Sea Green
   'București': '#9932CC', // Dark Orchid

@@ -21,6 +21,7 @@ f = open("JavaScripts/data/medieval_documents_collections.js", 'w', encoding="ut
 f.write(js_code)
 f.close()
 
+print("Wrote medieval_documents_collections.js")
 
 # add MEDIEVAL_DOCUMENTS table to .json file
 res = cur.execute("SELECT MEDIEVAL_DOCUMENTS.* from MEDIEVAL_DOCUMENTS").fetchall()
@@ -37,6 +38,7 @@ f = open("JavaScripts/data/medieval_documents.js", 'w', encoding="utf-8")
 f.write(js_code)
 f.close()
 
+print("Wrote medieval_documents.js")
 
 # add RECORDS table to .json file
 res = cur.execute("SELECT RECORDS.id, RECORDS.year, RECORDS.description from RECORDS").fetchall()
@@ -53,6 +55,8 @@ js_code = js_code.replace('"None"', "null")
 f = open("JavaScripts/data/records.js", 'w', encoding="utf-8")
 f.write(js_code)
 f.close()
+
+print("Wrote records.js")
 
 # add PLACES table to .json file
 res = cur.execute("SELECT DISTINCT PLACES.* FROM PLACES JOIN MENTIONS ON PLACES.id = MENTIONS.place_id WHERE MENTIONS.mention_status == 'finished'").fetchall()
@@ -77,6 +81,9 @@ js_code = js_code.replace('"None"', "null")
 f = open("JavaScripts/data/settlements.js", 'w', encoding="utf-8")
 f.write(js_code)
 f.close()
+
+print("Wrote settlements.js")
+
 
 # add MENTIONS table to .json file
 res = cur.execute("SELECT DISTINCT MENTIONS.* FROM MENTIONS WHERE MENTIONS.mention_status == 'finished' AND MENTIONS.record_id != '6' AND MENTIONS.record_id < 10000").fetchall()
@@ -152,6 +159,7 @@ f = open("JavaScripts/data/settlements_mentions.js", 'w', encoding="utf-8")
 f.write(js_code)
 f.close()
 
+print("Wrote settlements_mentions.js")
 
 # add MONASTERIES table to .json file
 res = cur.execute("SELECT DISTINCT MONASTERIES.* FROM MONASTERIES").fetchall()
@@ -177,6 +185,7 @@ f = open("JavaScripts/data/monasteries.js", 'w', encoding="utf-8")
 f.write(js_code)
 f.close()
 
+print("Wrote monasteries.js")
 
 # add MENTIONS_MONASTERIES table to .json file
 res = cur.execute("SELECT MENTIONS_MONASTERIES.*, RECORDS.year, 1 from MENTIONS_MONASTERIES, RECORDS where RECORDS.id == MENTIONS_MONASTERIES.record_id AND MENTIONS_MONASTERIES.mention_status == 'finished'").fetchall()
@@ -244,9 +253,11 @@ f = open("JavaScripts/data/monasteries_mentions.js", 'w', encoding="utf-8")
 f.write(js_code)
 f.close()
 
+print("Wrote monasteries_mentions.js")
 # res = cur.execute("SELECT DISTINCT place_county FROM MENTIONS WHERE MENTIONS.mention_status == 'finished'").fetchall()
 # res_dict = {}
 # for county in res:
 #     res_dict[county[0]] = ''
 # print(res_dict)
 
+con.close()
