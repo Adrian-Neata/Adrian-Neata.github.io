@@ -21,6 +21,11 @@ MENTIONS["_1"].push(new MedievalMention("_628", "_1", "Mănăstirea Argeș", nul
 MENTIONS["_1"].push(new MedievalMention("_639", "_1", "Mănăstirea Argiș", null, "Țara Românească", 45.1567241037536, 24.6754243860472, "active", "Egumen Nicolae", null));
 MENTIONS["_1"].push(new MedievalMention("_640", "_1", "Mănăstirea Argiș", null, "Țara Românească", 45.1567241037536, 24.6754243860472, "active", "Egumen Nicolae", null));
 MENTIONS["_1"].push(new MedievalMention("_788", "_1", "Mănăstirea Argeșul", null, "Țara Românească", 45.1567241037536, 24.6754243860472, "active", "Egumen Nicolae", null));
+MENTIONS["_1"].push(new MedievalMention("_858", "_1", "Mănăstirea Argiș", null, "Țara Românească", 45.1567241037536, 24.6754243860472, "active", "Egumen Neculai", null));
+MENTIONS["_1"].push(new MedievalMention("_929", "_1", "Mănăstirea Argeșul", null, "Țara Românească", 45.1567241037536, 24.6754243860472, "active", "Egumen Neculae", null));
+MENTIONS["_1"].push(new MedievalMention("_930", "_1", "Mănăstirea Argeșul", null, "Țara Românească", 45.1567241037536, 24.6754243860472, "active", "Egumen Neculae", null));
+MENTIONS["_1"].push(new MedievalMention("_931", "_1", "Mănăstirea Argeșul", null, "Țara Românească", 45.1567241037536, 24.6754243860472, "active", "Egumen Necolae", null));
+MENTIONS["_1"].push(new MedievalMention("_957", "_1", "Mănăstirea Argiș", null, "Țara Românească", 45.1567241037536, 24.6754243860472, "active", "Egumen Neculai", null));
 MENTIONS["_2"] = [];
 MENTIONS["_2"].push(new ModernMention("1", "_2", "Mănăstirea Bascov", null, "Argeș", "Țara Românească", 44.9887826075694, 24.6584819703889, "active", "Apare ca mănăstire mică de călugărițe.", null));
 MENTIONS["_2"].push(new ModernMention("16", "_2", "Mănăstirea Bascov", null, "Argeș", "Țara Românească", 44.9887826075694, 24.6584819703889, "active", null, null));
@@ -53,6 +58,7 @@ MENTIONS["_6"].push(new ModernMention("192", "_6", "Mănăstirea Vieroși", null
 MENTIONS["_6"].push(new MedievalMention("_34", "_6", "Mănăstirea Vieroși", null, "Țara Românească", 44.9105817366695, 24.9241957079048, "active", "Egumen Nifon", null));
 MENTIONS["_6"].push(new MedievalMention("_665", "_6", "Mănăstirea Vieroșul", null, "Țara Românească", 44.9105817366695, 24.9241957079048, "active", "Egumen Nichifor", null));
 MENTIONS["_6"].push(new MedievalMention("_678", "_6", "Mănăstirea Vieroșul", null, "Țara Românească", 44.9105817366695, 24.9241957079048, "active", "Egumen Nifon", null));
+MENTIONS["_6"].push(new MedievalMention("_894", "_6", "Mănăstirea Vierășul", null, "Țara Românească", 44.9105817366695, 24.9241957079048, "active", "Egumen Nifon", null));
 MENTIONS["_7"] = [];
 MENTIONS["_7"].push(new ModernMention("1", "_7", "Mănăstirea Vintilă Vodă", null, "Buzău", "Țara Românească", 45.4747213311508, 26.7063302222594, "active", "Apare ca mănăstire mică.", null));
 MENTIONS["_7"].push(new ModernMention("16", "_7", "Mănăstirea Vintilă Vodă", null, "Buzău", "Țara Românească", 45.4747213311508, 26.7063302222594, "active", null, null));
@@ -96,6 +102,10 @@ MENTIONS["_12"].push(new MedievalMention("_693", "_12", "Mănăstirea Mărgineni
 MENTIONS["_12"].push(new MedievalMention("_704", "_12", "Mănăstirea Mărgineni", null, "Țara Românească", 44.911724764377, 25.7004045192046, "active", "Egumen Mitrofan", null));
 MENTIONS["_12"].push(new MedievalMention("_705", "_12", "Mănăstirea Mărgineni", null, "Țara Românească", 44.911724764377, 25.7004045192046, "active", "Egumen Mitrofan", null));
 MENTIONS["_12"].push(new MedievalMention("_738", "_12", "Mănăstirea Mărgineni", null, "Țara Românească", 44.911724764377, 25.7004045192046, "active", null, null));
+MENTIONS["_12"].push(new MedievalMention("_837", "_12", "Mănăstirea Mărgineni", null, "Țara Românească", 44.911724764377, 25.7004045192046, "active", null, null));
+MENTIONS["_12"].push(new MedievalMention("_1008", "_12", "Mănăstirea Mărgineni", null, "Țara Românească", 44.911724764377, 25.7004045192046, "active", "Egumen Mitrofan", null));
+MENTIONS["_12"].push(new MedievalMention("_1009", "_12", "Mănăstirea Mărgineni", null, "Țara Românească", 44.911724764377, 25.7004045192046, "active", "Egumen Mitrofan", null));
+MENTIONS["_12"].push(new MedievalMention("_1013", "_12", "Mănăstirea Mărgineni", null, "Țara Românească", 44.911724764377, 25.7004045192046, "active", "Egumen Mitrofan", null));
 MENTIONS["_13"] = [];
 MENTIONS["_13"].push(new ModernMention("1", "_13", "Mănăstirea Deal", null, "Dâmbovița", "Țara Românească", 44.9582241856611, 25.4816758306985, "active", "Apare ca mănăstire mare.", null));
 MENTIONS["_13"].push(new ModernMention("2", "_13", "Mănăstirea Dealu", null, "Dâmbovița", "Țara Românească", 44.9582241856611, 25.4816758306985, "active", null, null));
@@ -106,6 +116,7 @@ MENTIONS["_13"].push(new MedievalMention("_146", "_13", "Mănăstirea Dealu", nu
 MENTIONS["_13"].push(new MedievalMention("_277", "_13", "Mănăstirea Dealul", null, "Țara Românească", 44.9582241856611, 25.4816758306985, "active", "Egumen Ștefan", null));
 MENTIONS["_13"].push(new MedievalMention("_642", "_13", "Mănăstirea Dealul", null, "Țara Românească", 44.9582241856611, 25.4816758306985, "active", "Egumen Ivan", null));
 MENTIONS["_13"].push(new MedievalMention("_825", "_13", "Mănăstirea Dealul", null, "Țara Românească", 44.9582241856611, 25.4816758306985, "active", "Egumen Ioan", null));
+MENTIONS["_13"].push(new MedievalMention("_872", "_13", "Mănăstirea Dealu", null, "Țara Românească", 44.9582241856611, 25.4816758306985, "active", "Egumen Ivan", null));
 MENTIONS["_14"] = [];
 MENTIONS["_14"].push(new ModernMention("1", "_14", "Mănăstirea Cobia", null, "Vlașca", "Țara Românească", 44.7828314302195, 25.3372064804004, "active", "Apare ca mănăstire mică.", null));
 MENTIONS["_14"].push(new ModernMention("2", "_14", "Mănăstirea Cobia", null, "Dâmbovița", "Țara Românească", 44.7828314302195, 25.3372064804004, "active", null, null));
@@ -122,6 +133,7 @@ MENTIONS["_16"].push(new ModernMention("1", "_16", "Mănăstirea Golgota", null,
 MENTIONS["_16"].push(new ModernMention("2", "_16", "Mănăstirea Gorgota", null, "Dâmbovița", "Țara Românească", 44.9826651546942, 25.5061739217681, "active", null, null));
 MENTIONS["_16"].push(new ModernMention("177", "_16", "Mănăstirea Gorgota", null, "Dâmbovița", "Țara Românească", 44.9826651546942, 25.5061739217681, "active", null, null));
 MENTIONS["_16"].push(new ModernMention("16", "_16", "Mănăstirea Gorgota", null, "Dâmbovița", "Țara Românească", 44.9826651546942, 25.5061739217681, "active", null, null));
+MENTIONS["_16"].push(new MedievalMention("_973", "_16", "Mănăstirea Golgota", null, "Țara Românească", 44.9826651546942, 25.5061739217681, "active", "Egumen Hristodor", null));
 MENTIONS["_17"] = [];
 MENTIONS["_17"].push(new ModernMention("1", "_17", "Mănăstirea Sadova", null, "Dolj", "Țara Românească", 43.9057399166794, 23.9247588383648, "active", "Apare ca mănăstire mare.", null));
 MENTIONS["_17"].push(new ModernMention("2", "_17", "Mănăstirea Sadova", null, "Dolj", "Țara Românească", 43.9057399166794, 23.9247588383648, "active", null, null));
@@ -129,6 +141,7 @@ MENTIONS["_17"].push(new ModernMention("16", "_17", "Mănăstirea Sadova", null,
 MENTIONS["_17"].push(new ModernMention("192", "_17", "Mănăstirea Sadova", null, "Dolj", "Țara Românească", 43.9057399166794, 23.9247588383648, "active", null, null));
 MENTIONS["_17"].push(new MedievalMention("_511", "_17", "Mănăstirea Sadova", null, "Țara Românească", 43.9057399166794, 23.9247588383648, "active", "Egumen Pahomie", null));
 MENTIONS["_17"].push(new MedievalMention("_647", "_17", "Mănăstirea Sadova", null, "Țara Românească", 43.9057399166794, 23.9247588383648, "active", "Egumen Pahomie", null));
+MENTIONS["_17"].push(new MedievalMention("_1003", "_17", "Mănăstirea Sadovei", null, "Țara Românească", 43.9057399166794, 23.9247588383648, "active", "Egumen Pahomie", null));
 MENTIONS["_18"] = [];
 MENTIONS["_18"].push(new ModernMention("1", "_18", "Mănăstirea Sitian", null, "Dolj", "Țara Românească", 44.271778368379, 23.8023039035533, "active", "Apare ca mănăstire mică.", null));
 MENTIONS["_18"].push(new ModernMention("2", "_18", "Jitiani", null, "Dolj", "Țara Românească", 44.271778368379, 23.8023039035533, "active", null, null));
@@ -136,6 +149,7 @@ MENTIONS["_18"].push(new ModernMention("192", "_18", "Mănăstirea Jitian", null
 MENTIONS["_18"].push(new MedievalMention("_95", "_18", "Mănăstirea Jitian", null, "Țara Românească", 44.271778368379, 23.8023039035533, "active", "Egumen Ionichie", null));
 MENTIONS["_18"].push(new MedievalMention("_130", "_18", "Mănăstirea Jitian", null, "Țara Românească", 44.271778368379, 23.8023039035533, "active", "Egumen Ionichie", null));
 MENTIONS["_18"].push(new MedievalMention("_299", "_18", "Mănăstirea Jâtianul", null, "Țara Românească", 44.271778368379, 23.8023039035533, "active", "Egumen Ionichie", null));
+MENTIONS["_18"].push(new MedievalMention("_911", "_18", "Mănăstirea Jitian", null, "Țara Românească", 44.271778368379, 23.8023039035533, "active", null, null));
 MENTIONS["_19"] = [];
 MENTIONS["_19"].push(new ModernMention("1", "_19", "Mănăstirea Bucovăț", null, "Dolj", "Țara Românească", 44.3009972639305, 23.7535082272332, "active", "Apare ca mănăstire mică.", null));
 MENTIONS["_19"].push(new MedievalMention("_261", "_19", "Mănăstirea Bucovăț (Coșuna)", null, "Țara Românească", 44.3009972639305, 23.7535082272332, "active", "Egumen Ionichie", null));
@@ -186,6 +200,7 @@ MENTIONS["_24"].push(new MedievalMention("_241", "_24", "Mănăstirea Plumbuita"
 MENTIONS["_24"].push(new MedievalMention("_242", "_24", "Mănăstirea Plumbuita", null, "Țara Românească", 44.4722488923509, 26.1352555206613, "active", "Egumen Nechifor", null));
 MENTIONS["_24"].push(new MedievalMention("_605", "_24", "Mănăstirea Plumbuita", null, "Țara Românească", 44.4722488923509, 26.1352555206613, "active", "Egumen Nechifor", null));
 MENTIONS["_24"].push(new MedievalMention("_798", "_24", "Mănăstirea Plumbuita", null, "Țara Românească", 44.4722488923509, 26.1352555206613, "active", "Egumen Nichifor", null));
+MENTIONS["_24"].push(new MedievalMention("_1075", "_24", "Mănăstirea Plumbuita", null, "Țara Românească", 44.4722488923509, 26.1352555206613, "active", null, null));
 MENTIONS["_25"] = [];
 MENTIONS["_25"].push(new ModernMention("1", "_25", "Mănăstirea Snagov", null, "Ilfov", "Țara Românească", 44.729519470187, 26.1756483435446, "active", "Apare ca mănăstire mare.", null));
 MENTIONS["_25"].push(new ModernMention("2", "_25", "Mănăstirea Snagov", null, "Ilfov", "Țara Românească", 44.729519470187, 26.1756483435446, "active", null, null));
@@ -210,6 +225,8 @@ MENTIONS["_27"].push(new MedievalMention("_561", "_27", "Mănăstirea Căldăru�
 MENTIONS["_27"].push(new MedievalMention("_563", "_27", "Mănăstirea Căldărușani", null, "Țara Românească", 44.6756484914474, 26.266966954353, "active", "Egumen Varlaam", null));
 MENTIONS["_27"].push(new MedievalMention("_618", "_27", "Mănăstirea Căldărușani", null, "Țara Românească", 44.6756484914474, 26.266966954353, "active", null, null));
 MENTIONS["_27"].push(new MedievalMention("_621", "_27", "Mănăstirea Căldăroșani", null, "Țara Românească", 44.6756484914474, 26.266966954353, "active", null, null));
+MENTIONS["_27"].push(new MedievalMention("_847", "_27", "Mănăstirea Căldăroșani", null, "Țara Românească", 44.6756484914474, 26.266966954353, "active", "Egumen Varlam", null));
+MENTIONS["_27"].push(new MedievalMention("_1072", "_27", "Mănăstirea Căldoroșani", null, "Țara Românească", 44.6756484914474, 26.266966954353, "active", "Egumen Varlaam", null));
 MENTIONS["_28"] = [];
 MENTIONS["_28"].push(new ModernMention("1", "_28", "Mănăstirea Cotroceni", null, "Ilfov", "Țara Românească", 44.4340547346727, 26.0619454453194, "active", "Apare ca mănăstire mare.", null));
 MENTIONS["_28"].push(new ModernMention("2", "_28", "Mănăstirea Cotroceni", null, "Ilfov", "Țara Românească", 44.4340547346727, 26.0619454453194, "active", null, null));
@@ -242,6 +259,7 @@ MENTIONS["_33"].push(new MedievalMention("_570", "_33", "Mănăstirea Strehaia",
 MENTIONS["_33"].push(new MedievalMention("_580", "_33", "Mănăstirea Strehaia", null, "Țara Românească", 44.6209038693414, 23.1920128439225, "active", "Egumen Theodosie", null));
 MENTIONS["_33"].push(new MedievalMention("_713", "_33", "Mănăstirea Strehaia", null, "Țara Românească", 44.6209038693414, 23.1920128439225, "active", "Egumen Theodosie", null));
 MENTIONS["_33"].push(new MedievalMention("_714", "_33", "Mănăstirea Strehaia", null, "Țara Românească", 44.6209038693414, 23.1920128439225, "active", "Egumen Theodosie", null));
+MENTIONS["_33"].push(new MedievalMention("_904", "_33", "Mănăstirea Strehaia", null, "Țara Românească", 44.6209038693414, 23.1920128439225, "active", "Egumen Ștefan", null));
 MENTIONS["_34"] = [];
 MENTIONS["_34"].push(new ModernMention("1", "_34", "Mănăstirea Motru", null, "Mehedinți", "Țara Românească", 44.5515658109632, 23.444737613306, "active", "Apare ca mănăstire mică.", null));
 MENTIONS["_34"].push(new ModernMention("16", "_34", "Mănăstirea Motrul", null, "Mehedinți", "Țara Românească", 44.5515658109632, 23.444737613306, "active", null, null));
@@ -261,6 +279,7 @@ MENTIONS["_38"].push(new ModernMention("16", "_38", "Mănăstirea Mislea", null,
 MENTIONS["_38"].push(new ModernMention("192", "_38", "Mănăstirea Mislea", null, "Prahova", "Țara Românească", 45.0920631302768, 25.8246285930072, "active", null, null));
 MENTIONS["_38"].push(new MedievalMention("_324", "_38", "Mănăstirea Mislea", null, "Țara Românească", 45.0920631302768, 25.8246285930072, "active", "Egumen Evghenie", null));
 MENTIONS["_38"].push(new MedievalMention("_538", "_38", "Mănăstirea Mislea", null, "Țara Românească", 45.0920631302768, 25.8246285930072, "active", "Egumen Efghenie", null));
+MENTIONS["_38"].push(new MedievalMention("_852", "_38", "Mănăstirea Mislea", null, "Țara Românească", 45.0920631302768, 25.8246285930072, "active", "Egumen Parthenie", null));
 MENTIONS["_39"] = [];
 MENTIONS["_39"].push(new ModernMention("1", "_39", "Mănăstirea Lespezi", null, "Prahova", "Țara Românească", 45.2710047876162, 25.6184152654023, "active", "Apare ca mănăstire mică.", null));
 MENTIONS["_39"].push(new ModernMention("16", "_39", "Mănăstirea Lespezi", null, "Prahova", "Țara Românească", 45.2710047876162, 25.6184152654023, "active", null, null));
@@ -275,6 +294,7 @@ MENTIONS["_41"].push(new ModernMention("16", "_41", "Mănăstirea Călui", null,
 MENTIONS["_41"].push(new MedievalMention("_35", "_41", "Mănăstirea Căluiu", null, "Țara Românească", 44.4621964788809, 24.0307224971752, "active", "Egumen Nichifor", null));
 MENTIONS["_41"].push(new MedievalMention("_68", "_41", "Mănăstirea Căluiu", null, "Țara Românească", 44.4621964788809, 24.0307224971752, "active", null, null));
 MENTIONS["_41"].push(new MedievalMention("_214", "_41", "Mănăstirea Căluiu", null, "Țara Românească", 44.4621964788809, 24.0307224971752, "active", null, null));
+MENTIONS["_41"].push(new MedievalMention("_969", "_41", "Mănăstirea Căluiul", null, "Țara Românească", 44.4621964788809, 24.0307224971752, "active", null, null));
 MENTIONS["_42"] = [];
 MENTIONS["_42"].push(new ModernMention("1", "_42", "Mănăstirea Hotărani", null, "Romanați", "Țara Românească", 44.1639028263218, 24.4133744815528, "active", "Apare ca mănăstire mică.", null));
 MENTIONS["_42"].push(new ModernMention("16", "_42", "Mănăstirea Hotărani", null, "Romanați", "Țara Românească", 44.1639028263218, 24.4133744815528, "active", null, null));
@@ -302,6 +322,9 @@ MENTIONS["_44"].push(new MedievalMention("_156", "_44", "Mănăstirea Măxineni"
 MENTIONS["_44"].push(new MedievalMention("_660", "_44", "Mănăstirea Măxineni", null, "Țara Românească", 45.43388512307, 27.7285660684423, "active", null, null));
 MENTIONS["_44"].push(new MedievalMention("_715", "_44", "Mănăstirea Măxineni", null, "Țara Românească", 45.43388512307, 27.7285660684423, "active", null, null));
 MENTIONS["_44"].push(new MedievalMention("_766", "_44", "Mănăstirea Măxineni", null, "Țara Românească", 45.43388512307, 27.7285660684423, "active", null, null));
+MENTIONS["_44"].push(new MedievalMention("_838", "_44", "Mănăstirea Măxineni", null, "Țara Românească", 45.43388512307, 27.7285660684423, "active", "Egumen Chiril", null));
+MENTIONS["_44"].push(new MedievalMention("_933", "_44", "Mănăstirea Măxineni", null, "Țara Românească", 45.43388512307, 27.7285660684423, "active", "Egumen Chiril", null));
+MENTIONS["_44"].push(new MedievalMention("_961", "_44", "Mănăstirea Măxineni", null, "Țara Românească", 45.43388512307, 27.7285660684423, "active", "Egumen Chiril", null));
 MENTIONS["_45"] = [];
 MENTIONS["_45"].push(new ModernMention("1", "_45", "Mănăstirea Sărăcineşti", null, "Vâlcea", "Țara Românească", 45.152753899059, 24.2463107127539, "active", "Apare ca mănăstire mică.", null));
 MENTIONS["_45"].push(new ModernMention("16", "_45", "Mănăstirea Sărăcineşti", null, "Vâlcea", "Țara Românească", 45.152753899059, 24.2463107127539, "active", null, null));
@@ -320,6 +343,8 @@ MENTIONS["_46"].push(new MedievalMention("_498", "_46", "Mănăstirea Cozia", nu
 MENTIONS["_46"].push(new MedievalMention("_670", "_46", "Mănăstirea Cozia", null, "Țara Românească", 45.2717081960611, 24.3154281588404, "active", "Egumen Ștefan", null));
 MENTIONS["_46"].push(new MedievalMention("_671", "_46", "Mănăstirea Cozia", null, "Țara Românească", 45.2717081960611, 24.3154281588404, "active", "Egumen Ștefan", null));
 MENTIONS["_46"].push(new MedievalMention("_672", "_46", "Mănăstirea Cozia", null, "Țara Românească", 45.2717081960611, 24.3154281588404, "active", null, null));
+MENTIONS["_46"].push(new MedievalMention("_937", "_46", "Mănăstirea Cozia", null, "Țara Românească", 45.2717081960611, 24.3154281588404, "active", "Egumen Gheorghie", null));
+MENTIONS["_46"].push(new MedievalMention("_1026", "_46", "Mănăstirea Cozia", null, "Țara Românească", 45.2717081960611, 24.3154281588404, "active", null, null));
 MENTIONS["_47"] = [];
 MENTIONS["_47"].push(new ModernMention("1", "_47", "Mănăstirea Arnota", null, "Vâlcea", "Țara Românească", 45.1965763966789, 24.0447371162349, "active", "Apare ca mănăstire mare.", null));
 MENTIONS["_47"].push(new ModernMention("2", "_47", "Mănăstirea Arnota", null, "Vâlcea", "Țara Românească", 45.1965763966789, 24.0447371162349, "active", null, null));
@@ -334,6 +359,7 @@ MENTIONS["_47"].push(new MedievalMention("_667", "_47", "Mănăstirea Arnota", n
 MENTIONS["_47"].push(new MedievalMention("_668", "_47", "Mănăstirea Arnota", "Vâlcea", "Țara Românească", 45.1965763966789, 24.0447371162349, "active", null, null));
 MENTIONS["_47"].push(new MedievalMention("_717", "_47", "Mănăstirea Arnota", null, "Țara Românească", 45.1965763966789, 24.0447371162349, "active", "Egumen Theofil", null));
 MENTIONS["_47"].push(new MedievalMention("_784", "_47", "Mănăstirea Arnota", null, "Țara Românească", 45.1965763966789, 24.0447371162349, "active", null, null));
+MENTIONS["_47"].push(new MedievalMention("_1023", "_47", "Mănăstirea Arnuta", null, "Țara Românească", 45.1965763966789, 24.0447371162349, "active", "Egumen Theofil", null));
 MENTIONS["_48"] = [];
 MENTIONS["_48"].push(new ModernMention("1", "_48", "Mănăstirea Bistrița", null, "Vâlcea", "Țara Românească", 45.1886581404085, 24.0398493602005, "active", "Apare ca mănăstire mare.", null));
 MENTIONS["_48"].push(new ModernMention("2", "_48", "Mănăstirea Bistrița", null, "Vâlcea", "Țara Românească", 45.1886581404085, 24.0398493602005, "active", null, null));
@@ -371,6 +397,7 @@ MENTIONS["_52"].push(new ModernMention("2", "_52", "Mănăstirea Govora", null, 
 MENTIONS["_52"].push(new MedievalMention("_18", "_52", "Mănăstirea Govora", null, "Țara Românească", 45.062966768905, 24.2193729899898, "active", null, null));
 MENTIONS["_52"].push(new MedievalMention("_388", "_52", "Mănăstirea Govora", null, "Țara Românească", 45.062966768905, 24.2193729899898, "active", "Egumen Dionisie", null));
 MENTIONS["_52"].push(new MedievalMention("_472", "_52", "Mănăstirea Govora", null, "Țara Românească", 45.062966768905, 24.2193729899898, "active", "Egumen Misail", null));
+MENTIONS["_52"].push(new MedievalMention("_937", "_52", "Mănăstirea Govora", null, "Țara Românească", 45.062966768905, 24.2193729899898, "active", "Egumen Mihail", null));
 MENTIONS["_53"] = [];
 MENTIONS["_53"].push(new ModernMention("1", "_53", "Mănăstirea Glavacea", null, "Vlașca", "Țara Românească", 44.4720434725395, 25.2561176288505, "active", "Apare ca mănăstire mare.", null));
 MENTIONS["_53"].push(new ModernMention("2", "_53", "Mănăstirea Glavacioc", null, "Argeș", "Țara Românească", 44.4720434725395, 25.2561176288505, "active", null, null));
@@ -381,6 +408,7 @@ MENTIONS["_53"].push(new MedievalMention("_456", "_53", "Mănăstirea Glavaciog"
 MENTIONS["_53"].push(new MedievalMention("_493", "_53", "Mănăstirea Glavacioc", null, "Țara Românească", 44.4720434725395, 25.2561176288505, "active", null, null));
 MENTIONS["_53"].push(new MedievalMention("_573", "_53", "Mănăstirea Glavaciog", null, "Țara Românească", 44.4720434725395, 25.2561176288505, "active", "Egumen Nichifor", null));
 MENTIONS["_53"].push(new MedievalMention("_764", "_53", "Mănăstirea Glăvăciovul", null, "Țara Românească", 44.4720434725395, 25.2561176288505, "active", null, null));
+MENTIONS["_53"].push(new MedievalMention("_1001", "_53", "Mănăstirea Glăvăciog", null, "Țara Românească", 44.4720434725395, 25.2561176288505, "active", "Egumen Nichifor", null));
 MENTIONS["_61"] = [];
 MENTIONS["_61"].push(new ModernMention("2", "_61", "Schitul Bordești", null, "Râmnicu Sărat", "Țara Românească", 45.5494933028328, 27.0365086999065, "active", null, null));
 MENTIONS["_61"].push(new ModernMention("16", "_61", "Schitul Bordești", null, "Slam Râmnic", "Țara Românească", 45.5494933028328, 27.0365086999065, "active", null, null));
@@ -401,6 +429,7 @@ MENTIONS["_59"] = [];
 MENTIONS["_59"].push(new ModernMention("2", "_59", "Schitul Vărzărești", null, "Râmnicu Sărat", "Țara Românească", 45.6083427015692, 27.0288627110559, "active", null, null));
 MENTIONS["_59"].push(new ModernMention("192", "_59", "Schit", null, "Slam Râmnic", "Țara Românească", 45.6083427015692, 27.0288627110559, "active", null, null));
 MENTIONS["_59"].push(new MedievalMention("_531", "_59", "Mănăstirea Urechești", null, "Țara Românească", 45.6083427015692, 27.0288627110559, "active", null, null));
+MENTIONS["_59"].push(new MedievalMention("_897", "_59", "Mănăstirea Urichești", null, "Țara Românească", 45.6083427015692, 27.0288627110559, "active", "Egumen Teodosie", null));
 MENTIONS["_60"] = [];
 MENTIONS["_60"].push(new ModernMention("2", "_60", "Schitul Rogozu", null, "Râmnicu Sărat", "Țara Românească", 45.4991676697025, 27.0260773960622, "active", null, null));
 MENTIONS["_60"].push(new ModernMention("123", "_60", "Schitul Rogozu", null, "Râmnicu Sărat", "România", 45.4991676697025, 27.0260773960622, "active", null, null));
@@ -453,8 +482,12 @@ MENTIONS["_74"].push(new ModernMention("1", "_74", "Mănăstirea Bradu", null, "
 MENTIONS["_74"].push(new ModernMention("192", "_74", "Mănăstirea Bradu", null, "Saac", "Țara Românească", 45.1847953858239, 26.5510038782321, "active", null, null));
 MENTIONS["_74"].push(new MedievalMention("_42", "_74", "Mănăstirea doamnei Neaga", null, "Țara Românească", 45.1847953858239, 26.5510038782321, "active", null, null));
 MENTIONS["_74"].push(new MedievalMention("_648", "_74", "Mănăstirea Bradul", "Sac", "Țara Românească", 45.1847953858239, 26.5510038782321, "active", "Egumen Nectarie", null));
+MENTIONS["_74"].push(new MedievalMention("_881", "_74", "Mănăstirea Bradul", "Sac", "Țara Românească", 45.1847953858239, 26.5510038782321, "active", "Egumen Nectarii", null));
+MENTIONS["_74"].push(new MedievalMention("_883", "_74", "Mănăstirea Bradul", "Sac", "Țara Românească", 45.1847953858239, 26.5510038782321, "active", "Egumen Nectarie", null));
+MENTIONS["_74"].push(new MedievalMention("_958", "_74", "Mănăstirea Brad", "Sac", "Țara Românească", 45.1847953858239, 26.5510038782321, "active", "Egumen Nictarie", null));
 MENTIONS["_75"] = [];
 MENTIONS["_75"].push(new ModernMention("2", "_75", "Mănăstirea Ciolan", null, "Buzău", "Țara Românească", 45.23562199698628, 26.547215031661217, "active", null, null));
+MENTIONS["_75"].push(new MedievalMention("_881", "_75", "Mănăstirea Ciolanul", null, "Țara Românească", 45.2356219969863, 26.5472150316612, "active", "Egumen Averchie", null));
 MENTIONS["_76"] = [];
 MENTIONS["_76"].push(new ModernMention("2", "_76", "Mănăstirea Găvanu", null, "Buzău", "Țara Românească", 45.54586545884107, 26.61182056843833, "active", null, null));
 MENTIONS["_76"].push(new ModernMention("192", "_76", "Mănăstirea Găvanu", null, "Slam Râmnic", "Țara Românească", 45.5458654588411, 26.6118205684383, "active", null, null));
@@ -592,6 +625,8 @@ MENTIONS["_117"].push(new ModernMention("16", "_117", "Schitul Cislău", null, "
 MENTIONS["_117"].push(new ModernMention("23", "_117", "Schitul Cislău", "Cislău", "Buzău", "România", 45.24546600328851, 26.378106765412067, "disbanded", null, null));
 MENTIONS["_118"] = [];
 MENTIONS["_118"].push(new ModernMention("16", "_118", "Mănăstirea Vărbila", null, "Saac", "Țara Românească", 45.046640654913986, 26.19340446316202, "active", null, null));
+MENTIONS["_118"].push(new MedievalMention("_1009", "_118", "Mănăstirea Vărbila", null, "Țara Românească", 45.046640654914, 26.193404463162, "active", "Egumen Theodosie", null));
+MENTIONS["_118"].push(new MedievalMention("_1015", "_118", "Mănăstirea Vărbila", null, "Țara Românească", 45.046640654914, 26.193404463162, "active", "Egumen Theodosie", null));
 MENTIONS["_119"] = [];
 MENTIONS["_119"].push(new ModernMention("16", "_119", "Mănăstirea Apostolache", null, "Saac", "Țara Românească", 45.1301074305645, 26.26010516158784, "active", null, null));
 MENTIONS["_120"] = [];
@@ -613,6 +648,7 @@ MENTIONS["_123"].push(new ModernMention("192", "_123", "Mănăstirea Ghidiliți"
 MENTIONS["_124"] = [];
 MENTIONS["_124"].push(new ModernMention("16", "_124", "Mănăstirea Flămânda", null, "Ialomița", "Țara Românească", 44.66840097933559, 27.824039735111285, "active", "O biserică ruinată.", null));
 MENTIONS["_124"].push(new ModernMention("23", "_124", "Mănăstirea Flămânda", null, "Ialomița", "Țara Românească", 44.66840097933559, 27.824039735111285, "disbanded", null, null));
+MENTIONS["_124"].push(new MedievalMention("_1000", "_124", "Mănăstirea Flămânda", null, "Țara Românească", 44.6684009793356, 27.8240397351113, "active", "Egumen Macarie", null));
 MENTIONS["_125"] = [];
 MENTIONS["_125"].push(new ModernMention("16", "_125", "Mănăstirea Pantelimon", null, "Ilfov", "Țara Românească", 44.44464895226325, 26.205040743839884, "active", null, null));
 MENTIONS["_125"].push(new ModernMention("23", "_125", "Mănăstirea Pantelimon", null, "Ilfov", "Țara Românească", 44.44464895226325, 26.205040743839884, "disbanded", null, null));
@@ -634,6 +670,7 @@ MENTIONS["_130"] = [];
 MENTIONS["_130"].push(new ModernMention("16", "_130", "Mănăstirea Stelea", null, "Dâmbovița", "Țara Românească", 44.9288655245727, 25.462119743584065, "active", null, null));
 MENTIONS["_130"].push(new MedievalMention("_463", "_130", "Mănăstirea Stelea", null, "Țara Românească", 44.9288655245727, 25.4621197435841, "active", "Egumen Ioanichie", null));
 MENTIONS["_130"].push(new MedievalMention("_589", "_130", "Mănăstirea Stelea", null, "Țara Românească", 44.9288655245727, 25.4621197435841, "active", "Egumen Ioanichie", null));
+MENTIONS["_130"].push(new MedievalMention("_872", "_130", "Mănăstirea Stelea", null, "Țara Românească", 44.9288655245727, 25.4621197435841, "active", "Egumen Neofit", null));
 MENTIONS["_131"] = [];
 MENTIONS["_131"].push(new ModernMention("16", "_131", "Mănăstirea Căscioarele", null, "Vlașca", "Țara Românească", 44.50033549001363, 25.63284099756249, "active", null, null));
 MENTIONS["_131"].push(new ModernMention("23", "_131", "Mănăstirea Căscioarele", "Găiseni", "Giurgiu", "România", 44.50033549001363, 25.63284099756249, "disbanded", null, null));
@@ -662,6 +699,11 @@ MENTIONS["_132"].push(new MedievalMention("_734", "_132", "Mănăstirea Dălgopo
 MENTIONS["_132"].push(new MedievalMention("_751", "_132", "Mănăstirea Dălgopole", null, "Țara Românească", 45.2638386568945, 25.0401927189107, "active", "Egumen Varlaam", null));
 MENTIONS["_132"].push(new MedievalMention("_771", "_132", "Mănăstirea Câmpului Lung", null, "Țara Românească", 45.2638386568945, 25.0401927189107, "active", "Egumen Varlaam", null));
 MENTIONS["_132"].push(new MedievalMention("_772", "_132", "Mănăstirea Câmpulung", null, "Țara Românească", 45.2638386568945, 25.0401927189107, "active", "Egumen Varlaam", null));
+MENTIONS["_132"].push(new MedievalMention("_869", "_132", "Mănăstirea Câmpulungu (Dălgopol)", null, "Țara Românească", 45.2638386568945, 25.0401927189107, "active", "Egumen Deonesie", null));
+MENTIONS["_132"].push(new MedievalMention("_890", "_132", "Mănăstirea Dălgopoliu", null, "Țara Românească", 45.2638386568945, 25.0401927189107, "active", "Egumen Dionisie", null));
+MENTIONS["_132"].push(new MedievalMention("_989", "_132", "Mănăstirea Dălgopoliu", null, "Țara Românească", 45.2638386568945, 25.0401927189107, "active", "Egumen Dionisie", null));
+MENTIONS["_132"].push(new MedievalMention("_994", "_132", "Mănăstirea Câmpulung", null, "Țara Românească", 45.2638386568945, 25.0401927189107, "active", "Egumen Dionisie", null));
+MENTIONS["_132"].push(new MedievalMention("_1042", "_132", "Mănăstirea Câmpulungu", null, "Țara Românească", 45.2638386568945, 25.0401927189107, "active", null, null));
 MENTIONS["_133"] = [];
 MENTIONS["_133"].push(new ModernMention("16", "_133", "Mănăstirea Flămânda", null, "Argeș", "Țara Românească", 44.94522019761018, 24.33509962823496, "active", null, null));
 MENTIONS["_133"].push(new ModernMention("23", "_133", "Mănăstirea Flămânda", null, "Argeș", "Țara Românească", 44.94522019761018, 24.33509962823496, "disbanded", null, null));
@@ -673,6 +715,7 @@ MENTIONS["_135"] = [];
 MENTIONS["_135"].push(new ModernMention("16", "_135", "Schitul Deleni", null, "Olt", "Țara Românească", 44.56884609899781, 24.33856931443905, "active", null, null));
 MENTIONS["_135"].push(new ModernMention("23", "_135", "Schitul Deleni", null, "Olt", "Țara Românească", 44.56884609899781, 24.33856931443905, "disbanded", null, null));
 MENTIONS["_135"].push(new MedievalMention("_441", "_135", "Mănăstirea lui Drăgușin", null, "Țara Românească", 44.5688460989978, 24.338569314439, "active", null, null));
+MENTIONS["_135"].push(new MedievalMention("_969", "_135", "Mănăstirea Deleni", "Olt", "Țara Românească", 44.5688460989978, 24.338569314439, "active", "Egumen Gligore", null));
 MENTIONS["_136"] = [];
 MENTIONS["_136"].push(new ModernMention("16", "_136", "Schitul Gâlmee", null, "Olt", "Țara Românească", 44.05947063718238, 24.64106501149528, "active", null, null));
 MENTIONS["_136"].push(new ModernMention("23", "_136", "Schitul Gâlmee", null, "Olt", "Țara Românească", 44.05947063718238, 24.64106501149528, "disbanded", null, null));
@@ -696,6 +739,7 @@ MENTIONS["_142"] = [];
 MENTIONS["_142"].push(new ModernMention("192", "_142", "Mănăstirea Brebu", null, "Prahova", "Țara Românească", 45.18193866083414, 25.767199550908195, "active", null, null));
 MENTIONS["_142"].push(new MedievalMention("_393", "_142", "Mănăstirea Brebu", null, "Țara Românească", 45.1819386608341, 25.7671995509082, "active", "Egumen Vasile", null));
 MENTIONS["_142"].push(new MedievalMention("_523", "_142", "Mănăstirea Brebu", null, "Țara Românească", 45.1819386608341, 25.7671995509082, "active", "Egumen Vasilie", null));
+MENTIONS["_142"].push(new MedievalMention("_852", "_142", "Mănăstirea Brebul", null, "Țara Românească", 45.1819386608341, 25.7671995509082, "active", "Egumen Vasilie", null));
 MENTIONS["_143"] = [];
 MENTIONS["_143"].push(new ModernMention("192", "_143", "Biserică", null, "Ilfov", "Țara Românească", 44.47928659702681, 25.998054121496786, "active", null, null));
 MENTIONS["_143"].push(new ModernMention("23", "_143", "Mănăstirea Chiajna", null, "Ilfov", "Țara Românească", 44.47928659702681, 25.998054121496786, "disbanded", null, null));
@@ -743,6 +787,7 @@ MENTIONS["_150"].push(new MedievalMention("_329", "_150", "Mănăstirea Mihai Vo
 MENTIONS["_150"].push(new MedievalMention("_509", "_150", "Mănăstirea Mihai Vodă", null, "Țara Românească", 44.4321233255595, 26.090609555778, "active", "Egumen Ignatie", null));
 MENTIONS["_150"].push(new MedievalMention("_611", "_150", "Mănăstirea Mihai Vodă", "București", "Țara Românească", 44.4321233255595, 26.090609555778, "active", "Egumen Ghenadie", null));
 MENTIONS["_150"].push(new MedievalMention("_742", "_150", "Mănăstirea Mihai Vodă", null, "Țara Românească", 44.4321233255595, 26.090609555778, "active", "Egumen Ignatie", null));
+MENTIONS["_150"].push(new MedievalMention("_963", "_150", "Mănăstirea Mihai Vodă", null, "Țara Românească", 44.4321233255595, 26.090609555778, "active", "Egumen Ignatie", null));
 MENTIONS["_151"] = [];
 MENTIONS["_151"].push(new MedievalMention("_147", "_151", "Mănăstirea Sfânta Troiță", null, "Țara Românească", 44.4239630331062, 26.107661466657987, "active", "Egumen Serafim", null));
 MENTIONS["_151"].push(new MedievalMention("_246", "_151", "Mănăstirea Sfânta Troiță", null, "Țara Românească", 44.4239630331062, 26.107661466658, "active", "Egumen Serafim", null));
