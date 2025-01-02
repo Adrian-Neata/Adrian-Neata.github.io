@@ -404,6 +404,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Dolj': '#66B2FF', // Periwinkle
   'Dol Jil': '#66B2FF', // Periwinkle
   'Doljâi': '#66B2FF', // Periwinkle
+  'Doljâl': '#66B2FF', // Periwinkle
   'Jiul de Jos': '#66B2FF', // Periwinkle
   'Vâlcea': '#20B2AA', // Light Sea Green
   'București': '#9932CC', // Dark Orchid

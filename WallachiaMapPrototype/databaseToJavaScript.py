@@ -31,7 +31,7 @@ for record in res:
     for i in range(len(record)):
         if isinstance(record[i], str):
             record[i] = record[i].replace(s1, s2)
-    js_code += f'RECORDS["_{record[0]}"] = new MedievalDocuments("_{record[0]}", {record[1]}, "{record[2]}", "{record[3]}", "{record[4]}", "{record[5]}", "{record[6]}", "{record[7]}", "{record[8]}", "{record[9]}", "{record[10]}");\n'
+    js_code += f'RECORDS["_{record[0]}"] = new MedievalDocuments("_{record[0]}", {record[1]}, "{record[2]}", "{record[3]}", "{record[4]}", "{record[5]}", "{record[6]}", "{record[7]}", "{record[8]}", "{record[9]}", "{record[10]}", "{record[11]}");\n'
 js_code = js_code.replace('"None"', "null")
 
 f = open("JavaScripts/data/medieval_documents.js", 'w', encoding="utf-8")
