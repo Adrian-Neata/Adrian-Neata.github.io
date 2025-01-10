@@ -389,7 +389,9 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Ialomița': '#FFA07A', // Light Salmon
   'Buzău': '#32CD32', // Lime Green
   'Ilfov': '#20B2AA', // Light Sea Green
+  'Ilhov': '#20B2AA', // Light Sea Green
   'Elhov': '#20B2AA', // Light Sea Green
+  'Ehov': '#20B2AA', // Light Sea Green
   'Prahova': '#9932CC', // Dark Orchid
   'Dâmbovița': '#66B2FF', // Periwinkle
   'Vlașca': '#DAA520', // Goldenrod
@@ -410,6 +412,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'București': '#9932CC', // Dark Orchid
   'Durostor': '#32CD32', // Lime Green
   'Gorj': '#DAA520', // Goldenrod
+  'Gorji': '#DAA520', // Goldenrod
   'Gor Jil': '#DAA520', // Goldenrod
   'Jiul de Sus': '#DAA520', // Goldenrod
   'Mehedinți': '#C71585', // Medium Violet Red
