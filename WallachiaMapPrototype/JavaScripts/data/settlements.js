@@ -2324,6 +2324,7 @@ const SETTLEMENTS = {"1037":  new Place("1037", "Pitești", "Pitești", "Argeș"
 "5929":  new Place("5929", "Suharu", "Vela", "Dolj", "România", 44.2679045741948, 23.388033184681937, Place_Type.Settlement, null),
 "5930":  new Place("5930", "Verbița", "Verbița", "Dolj", "România", 44.3023008857221, 23.168838875673988, Place_Type.Settlement, null),
 "5931":  new Place("5931", "Verbicioara", "Verbița", "Dolj", "România", 44.28339362274233, 23.185444510500172, Place_Type.Settlement, null),
+"5932":  new Place("5932", "Galați", "Galați", "Galați", "România", 45.43696226409603, 28.035459775227, Place_Type.Settlement, null),
 "6047":  new Place("6047", "Crângeni", "Nămoloasa", "Galați", "România", 45.49382188894721, 27.55692299185619, Place_Type.Settlement, null),
 "6114":  new Place("6114", "Giurgiu", "Giurgiu", "Giurgiu", "România", 43.893628802050664, 25.963500889782047, Place_Type.Settlement, null),
 "6115":  new Place("6115", "Bolintin-Vale", "Bolintin-Vale", "Giurgiu", "România", 44.447450047912696, 25.761151081474956, Place_Type.Settlement, null),

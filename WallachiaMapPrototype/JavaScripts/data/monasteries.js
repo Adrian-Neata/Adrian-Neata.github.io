@@ -168,3 +168,4 @@ SETTLEMENTS["_167"] = new Place("_167", "Mănăstirea Râmnicu Sărat", "Râmnic
 SETTLEMENTS["_168"] = new Place("_168", "Mănăstirea Begul", "Pănătău", "Buzău", "România", 45.33854366526555, 26.39774578198236, Place_Type.Monastery, "1");
 SETTLEMENTS["_169"] = new Place("_169", "Mănăstirea Voroneț", "Râmnicu Sărat", "Suceava", "România", 47.51719980496731, 25.8641627457789, Place_Type.Monastery, null);
 SETTLEMENTS["_170"] = new Place("_170", "Schitul Babele", "Clejani", "Giurgiu", "România", 44.31399980531614, 25.750590817809393, Place_Type.Monastery, "1");
+SETTLEMENTS["_171"] = new Place("_171", "Mănăstirea Banului", "Buzău", "Buzău", "România", 45.14948215786286, 26.825244826010575, Place_Type.Monastery, null);
