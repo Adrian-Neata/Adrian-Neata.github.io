@@ -13,4 +13,4 @@ Historians and Researchers:
 -> Add special table for golden bull.
 -> Make it so that you can select the mentions from a specific ruler or within a timeframe.
 -> Add numbers to every place representing the number of mentions.
-
+-> Add highlight on the map of the top places queried in the search bar.
