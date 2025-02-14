@@ -380,6 +380,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Tecuci': '#9370DB', // Medium Purple
   'Putna': '#FF6F61', // Melon
   'Râmnicu Sărat': '#FFD700', // Gold
+  'Râmnicul Sărat': '#FFD700', // Gold
   'Slam Râmnic': '#FFD700', // Gold
   'Slam Râmnic și Brăila': '#FFD700', // Gold
   'Râmnicu': '#FFD700', // Gold
@@ -398,6 +399,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Teleorman': '#FF6F61', // Melon
   'Romanați': '#32CD32', // Lime Green
   'Argeș': '#FFD700', // Gold
+  'Argiș': '#FFD700', // Gold
   'Muscel': '#C71585', // Medium Violet Red
   'Mușcel': '#C71585', // Medium Violet Red
   'Mușcel și Pădureț': '#C71585', // Medium Violet Red
@@ -407,6 +409,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Dol Jil': '#66B2FF', // Periwinkle
   'Doljâi': '#66B2FF', // Periwinkle
   'Doljâl': '#66B2FF', // Periwinkle
+  'Doljil': '#66B2FF', // Periwinkle
   'Jiul de Jos': '#66B2FF', // Periwinkle
   'Vâlcea': '#20B2AA', // Light Sea Green
   'București': '#9932CC', // Dark Orchid

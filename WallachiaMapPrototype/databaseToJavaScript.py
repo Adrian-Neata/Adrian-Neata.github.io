@@ -104,6 +104,8 @@ for mention in res:
     mention = list(mention)
     mention.append(1)
     res_dict[mention[1]].append(mention)
+for place_id in res_dict:
+    res_dict[place_id].sort(key=lambda x: x[0])
 
 # all TODO mentions that should happen by 1968 should stop there
 # for place_id in res_dict:
