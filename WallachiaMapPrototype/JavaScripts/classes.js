@@ -165,7 +165,7 @@ class ModernMention extends Mention {
                     if (this.county === "Silistra") {
                         html_content += fieldHtml + '<b>Sangeac:</b> ' + escapeHtml(this.county) + '</h4>';
                     } else {
-                        html_content += fieldHtml + '<b>Raia:</b> ' + escapeHtml(this.county) + '</h4>';
+                        html_content += fieldHtml + '<b>Kaza:</b> ' + escapeHtml(this.county) + '</h4>';
                     }
                 } else {
                     html_content += fieldHtml + '<b>Județ:</b> ' + escapeHtml(this.county) + '</h4>';
