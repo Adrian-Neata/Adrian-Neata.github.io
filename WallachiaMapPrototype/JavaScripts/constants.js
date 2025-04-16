@@ -5,7 +5,7 @@ var PREV_YEAR_SLIDER_VALUE = 1718;
 var YEAR_SLIDER_VALUE = 1718;
 var SIDEPANEL_PLACE = null;
 var MARKERS = {};
-const RADIUS_BY_ZOOM = { 8: 2, 9: 4, 10: 6, 11: 8, 12: 10, 13: 10, 14: 10 };
+const RADIUS_BY_ZOOM = { 8: 2, 9: 4, 10: 6, 11: 8, 12: 10, 13: 10, 14: 10, 15: 10, 16: 10};
 
 function escapeHtml(unsafeString) {
   return unsafeString
@@ -388,6 +388,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Tulcea': '#DAA520', // Goldenrod
   'Constanța': '#C71585', // Medium Violet Red
   'Ialomița': '#FFA07A', // Light Salmon
+  'Ialomeța': '#FFA07A', // Light Salmon
   'Buzău': '#32CD32', // Lime Green
   'Ilfov': '#20B2AA', // Light Sea Green
   'Ilhov': '#20B2AA', // Light Sea Green
@@ -395,10 +396,12 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Ehov': '#20B2AA', // Light Sea Green
   'Prahova': '#9932CC', // Dark Orchid
   'Dâmbovița': '#66B2FF', // Periwinkle
+  'Dâmboviță': '#66B2FF', // Periwinkle
   'Vlașca': '#DAA520', // Goldenrod
   'Teleorman': '#FF6F61', // Melon
   'Romanați': '#32CD32', // Lime Green
   'Argeș': '#FFD700', // Gold
+  'Argheș': '#FFD700', // Gold
   'Argiș': '#FFD700', // Gold
   'Muscel': '#C71585', // Medium Violet Red
   'Mușcel': '#C71585', // Medium Violet Red
@@ -417,9 +420,12 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Durostor': '#32CD32', // Lime Green
   'Gorj': '#DAA520', // Goldenrod
   'Gorji': '#DAA520', // Goldenrod
+  'Gorjil': '#DAA520', // Goldenrod
+  'Gorjăl': '#DAA520', // Goldenrod
   'Gor Jil': '#DAA520', // Goldenrod
   'Jiul de Sus': '#DAA520', // Goldenrod
   'Mehedinți': '#C71585', // Medium Violet Red
+  'Mehedenți': '#C71585', // Medium Violet Red
   'Caraș-Severin': '#FFA07A', // Light Salmon
   'Severin': '#FFA07A', // Light Salmon
   'Tutova': '#20B2AA', // Light Sea Green
