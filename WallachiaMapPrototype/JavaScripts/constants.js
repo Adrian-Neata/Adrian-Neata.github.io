@@ -42,6 +42,18 @@ const get_place_mentions = (place_id, min_year, max_year) => {
     place_mentions.push(mention);
   }
 
+  // Sort mentions latest to earliest
+  place_mentions = place_mentions.sort(function (a, b) { 
+      if (b.record.year != a.record.year) {
+          return b.record.year - a.record.year; 
+      }
+      if (!(b instanceof MedievalMention && a instanceof MedievalMention)) {
+          return 0;
+      }
+ 
+      return Number(b.record.id.substring(1)) - Number(a.record.id.substring(1));
+  });
+
   return place_mentions;
 }
 
@@ -383,6 +395,8 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Râmnicul Sărat': '#FFD700', // Gold
   'Slam Râmnic': '#FFD700', // Gold
   'Slam Râmnic și Brăila': '#FFD700', // Gold
+  'Slam Râbnic i Braila': '#FFD700', // Gold
+  'Râmnicul Sărat și Brăila': '#FFD700', // Gold
   'Râmnicu': '#FFD700', // Gold
   'Brăila': '#66B2FF', // Periwinkle
   'Tulcea': '#DAA520', // Goldenrod
@@ -399,10 +413,12 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Dâmboviță': '#66B2FF', // Periwinkle
   'Vlașca': '#DAA520', // Goldenrod
   'Teleorman': '#FF6F61', // Melon
+  'Teliorman': '#FF6F61', // Melon
   'Romanați': '#32CD32', // Lime Green
   'Argeș': '#FFD700', // Gold
   'Argheș': '#FFD700', // Gold
   'Argiș': '#FFD700', // Gold
+  'Arghiș': '#FFD700', // Gold
   'Muscel': '#C71585', // Medium Violet Red
   'Mușcel': '#C71585', // Medium Violet Red
   'Mușcel și Pădureț': '#C71585', // Medium Violet Red
@@ -412,9 +428,11 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Dol Jil': '#66B2FF', // Periwinkle
   'Doljâi': '#66B2FF', // Periwinkle
   'Doljâl': '#66B2FF', // Periwinkle
+  'Doljăl': '#66B2FF', // Periwinkle
   'Doljil': '#66B2FF', // Periwinkle
   'Doljie': '#66B2FF', // Periwinkle
   'Jiul de Jos': '#66B2FF', // Periwinkle
+  'Jâiul de Jos': '#66B2FF', // Periwinkle
   'Vâlcea': '#20B2AA', // Light Sea Green
   'București': '#9932CC', // Dark Orchid
   'Durostor': '#32CD32', // Lime Green

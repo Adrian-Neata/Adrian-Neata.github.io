@@ -86,11 +86,14 @@ function get_text_marker(latest_mention) {
 function addMarkers(latest_mentions) {
 
     var latest_mention = latest_mentions[0];
+    var place_id = latest_mention.place.id;
+    var placeMentions = get_place_mentions(place_id, null, YEAR_SLIDER_VALUE);
     var county_name = null;
 
-    for (idx in latest_mentions) {
-        if (latest_mentions[idx].county != null) {
-            county_name = latest_mentions[idx].county;
+    for (idx in placeMentions) {
+        if (placeMentions[idx].county != null) {
+            county_name = placeMentions[idx].county;
+            break;
         }
     }
     // skip because we don't know where to put the marker
@@ -98,7 +101,6 @@ function addMarkers(latest_mentions) {
         return;
     }
 
-    var place_id = latest_mention.place.id;
     var coords = [latest_mention.latitude, latest_mention.longitude];
     var circle = L.circleMarker(coords, { radius: RADIUS_BY_ZOOM[map.getZoom()], className: 'custom-marker' }).addTo(map);
 

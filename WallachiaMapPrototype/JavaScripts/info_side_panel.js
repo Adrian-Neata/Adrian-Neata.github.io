@@ -44,18 +44,6 @@ function openSidePanel(place_id) {
         return;
     }
 
-    // Sort mentions latest to earliest
-    placeMentions = placeMentions.sort(function (a, b) { 
-        if (b.record.year != a.record.year) {
-            return b.record.year - a.record.year; 
-        }
-        if (!(b instanceof MedievalMention && a instanceof MedievalMention)) {
-            return 0;
-        }
-   
-        return Number(b.record.id.substring(1)) - Number(a.record.id.substring(1));
-    });
-
     // If latest mention shows place disappeared then return
     if (placeMentions[0].place_status != "active" && placeMentions[0].place_status != "founded") {
         closePanel();
