@@ -438,6 +438,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Durostor': '#32CD32', // Lime Green
   'Gorj': '#DAA520', // Goldenrod
   'Gorji': '#DAA520', // Goldenrod
+  'Gorjii': '#DAA520', // Goldenrod
   'Gorjil': '#DAA520', // Goldenrod
   'Gorjăl': '#DAA520', // Goldenrod
   'Gor Jil': '#DAA520', // Goldenrod
@@ -450,5 +451,6 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Saac': '#FF4500', // Orange Red
   'Sac': '#FF4500', // Orange Red
   'Săcuieni': '#FF4500', // Orange Red
+  'Săcui': '#FF4500', // Orange Red
   'Săcuiani': '#FF4500', // Orange Red
 }
