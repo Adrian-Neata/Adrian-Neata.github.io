@@ -403,6 +403,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Constanța': '#C71585', // Medium Violet Red
   'Ialomița': '#FFA07A', // Light Salmon
   'Ialomeța': '#FFA07A', // Light Salmon
+  'Ialomnețe': '#FFA07A', // Light Salmon
   'Buzău': '#32CD32', // Lime Green
   'Ilfov': '#20B2AA', // Light Sea Green
   'Ilhov': '#20B2AA', // Light Sea Green
@@ -422,6 +423,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Muscel': '#C71585', // Medium Violet Red
   'Mușcel': '#C71585', // Medium Violet Red
   'Mușcel și Pădureț': '#C71585', // Medium Violet Red
+  'Mușcel și Padureț': '#C71585', // Medium Violet Red
   'Muscel și Pădureț': '#C71585', // Medium Violet Red
   'Olt': '#9370DB', // Medium Purple
   'Dolj': '#66B2FF', // Periwinkle
@@ -440,9 +442,11 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Gorji': '#DAA520', // Goldenrod
   'Gorjii': '#DAA520', // Goldenrod
   'Gorjil': '#DAA520', // Goldenrod
+  'Gorjiul': '#DAA520', // Goldenrod
   'Gorjăl': '#DAA520', // Goldenrod
   'Gor Jil': '#DAA520', // Goldenrod
   'Jiul de Sus': '#DAA520', // Goldenrod
+  'Jiiul de Sus': '#DAA520', // Goldenrod
   'Mehedinți': '#C71585', // Medium Violet Red
   'Mehedenți': '#C71585', // Medium Violet Red
   'Caraș-Severin': '#FFA07A', // Light Salmon

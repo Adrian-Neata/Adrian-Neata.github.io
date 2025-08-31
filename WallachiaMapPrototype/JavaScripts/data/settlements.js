@@ -7934,7 +7934,7 @@ const SETTLEMENTS = {"1037":  new Place("1037", "Pitești", "Pitești", "Argeș"
 "15943":  new Place("15943", "Pometeștii de jos", "Goiești", "Dolj", "România", 44.50534052191615, 23.734125459802502, Place_Type.Settlement, null),
 "15945":  new Place("15945", "Almăju de jos", "Almăj", "Dolj", "România", 44.42837050853049, 23.70872233280322, Place_Type.Settlement, null),
 "15946":  new Place("15946", "Milești Pădure", "Șimnicu de Sus", "Dolj", "România", 44.457929826859605, 23.8151886633685, Place_Type.Settlement, null),
-"15947":  new Place("15947", "Crețești", "Bucovăț", "Dolj", "România", 44.326235544340726, 23.705869443820912, Place_Type.Settlement, "1"),
+"15947":  new Place("15947", "Crețești", "Bucovăț", "Dolj", "România", 44.3272877976595, 23.709668122363038, Place_Type.Settlement, "1"),
 "15948":  new Place("15948", "Pieleștii de jos", "Pielești", "Dolj", "România", 44.33531334908909, 23.96306800563569, Place_Type.Settlement, null),
 "15949":  new Place("15949", "Bulzeștii de jos", "Bulzești", "Dolj", "România", 44.52214293579832, 23.907937145403427, Place_Type.Settlement, null),
 "15950":  new Place("15950", "Gropșanii de sus", "Vulpeni", "Olt", "România", 44.444172423475706, 23.943171368667983, Place_Type.Settlement, null),

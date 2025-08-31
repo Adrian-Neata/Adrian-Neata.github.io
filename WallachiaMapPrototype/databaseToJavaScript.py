@@ -104,7 +104,7 @@ def addSettlementMentions():
         
 
     # add MENTIONS table to .json file
-    res = cur.execute("SELECT DISTINCT MEDIEVAL_MENTIONS.* from MEDIEVAL_MENTIONS").fetchall()
+    res = cur.execute("SELECT DISTINCT MEDIEVAL_MENTIONS.* from MEDIEVAL_MENTIONS where record_id > 0").fetchall()
     for mention in res:
         if mention[1] not in res_dict:
             res_dict[mention[1]] = []
