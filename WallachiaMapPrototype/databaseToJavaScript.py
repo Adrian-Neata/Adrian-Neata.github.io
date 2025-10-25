@@ -255,7 +255,7 @@ def addMentionsMonasteries():
             if mention[-1] == 0:
                 js_code += f'MENTIONS["{place_id}"].push(new ModernMention("{mention[0]}", "{mention[1]}", "{mention[2]}", "{mention[3]}", "{mention[4]}", "{mention[5]}", {mention[6]}, {mention[7]}, "{mention[8]}", "{mention[9]}", "{mention[10]}"));\n'
             else:
-                js_code += f'MENTIONS["{place_id}"].push(new MedievalMention("_{mention[0]}", "{mention[1]}", "{mention[2]}", "{mention[4]}", "{mention[5]}", {mention[6]}, {mention[7]}, "{mention[8]}", "{mention[9]}", "{mention[10]}"));\n'
+                js_code += f'MENTIONS["{place_id}"].push(new MedievalMentionMonastery("_{mention[0]}", "{mention[1]}", "{mention[2]}", "{mention[4]}", "{mention[5]}", {mention[6]}, {mention[7]}, "{mention[8]}", "{mention[9]}", "{mention[10]}", "{mention[11]}"));\n'
 
     js_code = js_code.replace('"None"', "null")
 

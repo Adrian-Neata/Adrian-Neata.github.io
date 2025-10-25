@@ -79,6 +79,31 @@ class Mention {
         this.reasoning = reasoning;
     }
     
+    addField(label, value, last = false) {
+        if (!value) return "";
+        const fieldHtml = '<h4 style="margin: 4%; font-weight: normal;">';
+        return last
+            ? `<h4 class="recordDescription"><b>${label}:</b> ${escapeHtml(value)}</h4></div>`
+            : `${fieldHtml}<b>${label}:</b> ${escapeHtml(value)}</h4>`;
+    }
+
+    addCountyField(year, county, country) {
+        var html = '';
+        if (year < 1950 || year >= 1968) {
+            if (country === "Moldova") {
+                html += this.addField("Ținut", county);
+            } else if (this.country === "Imperiul Otoman") {
+                html += this.addField(county === "Silistra" ? "Sangeac" : "Raia", county);
+            } else {
+                html += this.addField("Județ", county);
+            }
+        } else {
+            html += this.addField("Raion", county);
+            html += this.addField("Regiune", Rayons_To_Region_1956[county]);
+        }
+        return html;
+    }
+
     getPanelHtml() {
         throw new Error("Abstract method getPanelHtml() must be implemented in a subclass");
     }
@@ -150,58 +175,32 @@ class ModernMention extends Mention {
     }
 
     getPanelHtml() {
-        var html_content = "";
-        var fieldHtml = '<h4 style = "margin: 4%; font-weight: normal;">';
-        html_content += '<div class="referenceContainer"><h3 class="placeName">' + escapeHtml(this.name) + '</h3>';
-        if (this.commune != null) {
-            html_content += '<h4 style = "margin: 4%; font-weight: normal;">' + '<b>Comună:</b> ' + escapeHtml(this.commune) + '</h4>';
+        let html = `<div class="referenceContainer"><h3 class="placeName">${escapeHtml(this.name)}</h3>`;
+
+        // Commune
+        html += this.addField("Comună", this.commune);
+
+        // County / Region
+        if (this.county) {
+            html += this.addCountyField(this.record.year, this.county, this.country);
         }
 
-        if (this.county != null) {
-            if (this.record.year < 1950 || this.record.year >= 1968) {
-                if (this.country === "Moldova") {
-                    html_content += fieldHtml + '<b>Ținut:</b> ' + escapeHtml(this.county) + '</h4>';
-                } else if (this.country === "Imperiul Otoman") {
-                    if (this.county === "Silistra") {
-                        html_content += fieldHtml + '<b>Sangeac:</b> ' + escapeHtml(this.county) + '</h4>';
-                    } else {
-                        html_content += fieldHtml + '<b>Kaza:</b> ' + escapeHtml(this.county) + '</h4>';
-                    }
-                } else {
-                    html_content += fieldHtml + '<b>Județ:</b> ' + escapeHtml(this.county) + '</h4>';
-                }
-            } else {
-                html_content += fieldHtml + '<b>Raion:</b> ' + escapeHtml(this.county) + '</h4>';
-                html_content += fieldHtml + '<b>Regiune:</b> ' + escapeHtml(Rayons_To_Region_1956[this.county]) + '</h4>';
-            }
-        }
+        // Collect remaining fields in order
+        const fields = [
+            { label: "Sursă", value: this.record.description },
+            { label: "Descriere", value: this.notes },
+            { label: "Observații", value: this.reasoning }
+        ].filter(f => f.value != null);
 
-        if (this.notes === null && this.reasoning === null) {
-            html_content += '<h4 class="recordDescription">' + '<b>Sursă:</b> ' + escapeHtml(this.record.description) + '</h4></div>';
-            return html_content;
-        } 
-        
-        html_content += fieldHtml + '<b>Sursă:</b> ' + escapeHtml(this.record.description) + '</h4>';
+        // Append them, marking the last one correctly
+        fields.forEach((f, i) => {
+            const last = i === fields.length - 1;
+            html += this.addField(f.label, f.value, last);
+        });
 
-        if (this.notes !== null && this.reasoning === null){
-            html_content += '<h4 class="recordDescription">' + '<b>Descriere:</b> ' + escapeHtml(this.notes) + '</h4></div>';
-            return html_content;
-        }
-
-        if (this.notes === null && this.reasoning !== null){
-            html_content += '<h4 class="recordDescription">' + '<b>Observații:</b> ' + escapeHtml(this.reasoning) + '</h4></div>';
-            return html_content;
-        }
-
-        if (this.notes !== null && this.reasoning !== null){
-            html_content += fieldHtml + '<b>Descriere:</b> ' + escapeHtml(this.notes) + '</h4>';
-            html_content += '<h4 class="recordDescription">' + '<b>Observații:</b> ' + escapeHtml(this.reasoning) + '</h4></div>';
-            return html_content;
-
-        }
-
-        return html_content;
+        return html;
     }
+
 
     getCommune() {
         return this.commune;
@@ -218,61 +217,33 @@ class MedievalMention extends Mention {
     }
 
     getPanelHtml() {
-        var html_content = "";
-        var fieldHtml = '<h4 style = "margin: 4%; font-weight: normal;">';
-        html_content += '<div class="referenceContainer"><h3 class="placeName">' + escapeHtml(this.name) + '</h3>';
+        let html = `<div class="referenceContainer"><h3 class="placeName">${escapeHtml(this.name)}</h3>`;
 
-        if (this.record.date != null) {
-            if (this.record.date.includes(";")) {
-                html_content += fieldHtml + '<b>Dată:</b> ' + escapeHtml(this.record.date.split(";")[1]) + '</h4>';
-            } else {
-                html_content += fieldHtml + '<b>Dată:</b> ' + escapeHtml(this.record.date) + '</h4>';
-            }
-        }
-        if (this.county != null) {
-            if (this.record.year < 1950 || this.record.year >= 1968) {
-                if (this.country === "Moldova") {
-                    html_content += fieldHtml + '<b>Ținut:</b> ' + escapeHtml(this.county) + '</h4>';
-                } else if (this.country === "Imperiul Otoman") {
-                    if (this.county === "Silistra") {
-                        html_content += fieldHtml + '<b>Sangeac:</b> ' + escapeHtml(this.county) + '</h4>';
-                    } else {
-                        html_content += fieldHtml + '<b>Raia:</b> ' + escapeHtml(this.county) + '</h4>';
-                    }
-                } else {
-                    html_content += fieldHtml + '<b>Județ:</b> ' + escapeHtml(this.county) + '</h4>';
-                }
-            } else {
-                html_content += fieldHtml + '<b>Raion:</b> ' + escapeHtml(this.county) + '</h4>';
-                html_content += fieldHtml + '<b>Regiune:</b> ' + escapeHtml(Rayons_To_Region_1956[this.county]) + '</h4>';
-            }
+        // Date
+        if (this.record.date) {
+            const dateVal = this.record.date.includes(";") ? this.record.date.split(";")[1] : this.record.date;
+            html += this.addField("Dată", dateVal);
         }
 
-        if (this.notes === null && this.reasoning === null) {
-            html_content += '<h4 class="recordDescription">' + '<b>Sursă:</b> ' + escapeHtml(this.record.description) + '</h4></div>';
-            return html_content;
-        } 
-        
-        html_content += fieldHtml + '<b>Sursă:</b> ' + escapeHtml(this.record.description) + '</h4>';
-
-        if (this.notes !== null && this.reasoning === null){
-            html_content += '<h4 class="recordDescription">' + '<b>Descriere:</b> ' + escapeHtml(this.notes) + '</h4></div>';
-            return html_content;
+        // County / Region
+        if (this.county) {
+            html += this.addCountyField(this.record.year, this.county, this.country);
         }
 
-        if (this.notes === null && this.reasoning !== null){
-            html_content += '<h4 class="recordDescription">' + '<b>Observații:</b> ' + escapeHtml(this.reasoning) + '</h4></div>';
-            return html_content;
-        }
+        // Collect remaining fields in order
+        const fields = [
+            { label: "Sursă", value: this.record.description },
+            { label: "Descriere", value: this.notes },
+            { label: "Observații", value: this.reasoning }
+        ].filter(f => f.value != null);
 
-        if (this.notes !== null && this.reasoning !== null){
-            html_content += fieldHtml + '<b>Descriere:</b> ' + escapeHtml(this.notes) + '</h4>';
-            html_content += '<h4 class="recordDescription">' + '<b>Observații:</b> ' + escapeHtml(this.reasoning) + '</h4></div>';
-            return html_content;
+        // Append them, making the last one use recordDescription
+        fields.forEach((f, i) => {
+            const last = i === fields.length - 1;
+            html += this.addField(f.label, f.value, last);
+        });
 
-        }
-
-        return html_content;
+        return html;
     }
 
     getCommune() {
@@ -281,5 +252,51 @@ class MedievalMention extends Mention {
 
     toString() {
         return `MedievalMention Record: ${this.record}, Place: ${this.place}, Name: ${this.name}, County: ${this.county}, Country: ${this.country}, Latitude: ${this.latitude}, Longitude: ${this.longitude}, Place Status: ${this.place_status}, Notes: ${this.notes}, Reasoning: ${this.reasoning}`;
+    }
+}
+
+class MedievalMentionMonastery extends MedievalMention {
+    constructor(record, place, name, county, country, latitude, longitude, place_status, hierarch, notes, reasoning) {
+        super(record, place, name, county, country, latitude, longitude, place_status, notes, reasoning);
+        this.hierarch = hierarch;
+    }
+
+    getPanelHtml() {
+        let html = `<div class="referenceContainer"><h3 class="placeName">${escapeHtml(this.name)}</h3>`;
+
+        // Date
+        if (this.record.date) {
+            const dateVal = this.record.date.includes(";") ? this.record.date.split(";")[1] : this.record.date;
+            html += this.addField("Dată", dateVal);
+        }
+
+        // County / Region
+        if (this.county) {
+            html += this.addCountyField(this.record.year, this.county, this.country);
+        }
+
+        // Build ordered fields for the end
+        const fields = [
+            { label: "Sursă", value: this.record.description },
+            { label: "Cap bisericesc", value: this.hierarch },
+            { label: "Descriere", value: this.notes },
+            { label: "Observații", value: this.reasoning }
+        ].filter(f => f.value != null);
+
+        // Append fields with correct "last" formatting
+        fields.forEach((f, i) => {
+            const last = i === fields.length - 1;
+            html += this.addField(f.label, f.value, last);
+        });
+
+        return html;
+    }
+
+    getCommune() {
+        return null;
+    }
+
+    toString() {
+        return `MedievalMention Record: ${this.record}, Place: ${this.place}, Name: ${this.name}, County: ${this.county}, Country: ${this.country}, Latitude: ${this.latitude}, Longitude: ${this.longitude}, Place Status: ${this.place_status}, Hierarch: ${this.hierarch}, Notes: ${this.notes}, Reasoning: ${this.reasoning}`;
     }
 }

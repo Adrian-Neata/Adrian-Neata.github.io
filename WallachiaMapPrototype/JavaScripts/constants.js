@@ -416,6 +416,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Teleorman': '#FF6F61', // Melon
   'Teliorman': '#FF6F61', // Melon
   'Romanați': '#32CD32', // Lime Green
+  'Rumanați': '#32CD32', // Lime Green
   'Argeș': '#FFD700', // Gold
   'Argheș': '#FFD700', // Gold
   'Argiș': '#FFD700', // Gold
@@ -431,8 +432,10 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Doljâi': '#66B2FF', // Periwinkle
   'Doljâl': '#66B2FF', // Periwinkle
   'Doljăl': '#66B2FF', // Periwinkle
+  'Doljăi': '#66B2FF', // Periwinkle
   'Doljil': '#66B2FF', // Periwinkle
   'Doljie': '#66B2FF', // Periwinkle
+  'Doljiu': '#66B2FF', // Periwinkle
   'Jiul de Jos': '#66B2FF', // Periwinkle
   'Jâiul de Jos': '#66B2FF', // Periwinkle
   'Vâlcea': '#20B2AA', // Light Sea Green
