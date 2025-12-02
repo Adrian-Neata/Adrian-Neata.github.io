@@ -451,6 +451,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Jiul de Sus': '#DAA520', // Goldenrod
   'Jiiul de Sus': '#DAA520', // Goldenrod
   'Mehedinți': '#C71585', // Medium Violet Red
+  'Mihedinți': '#C71585', // Medium Violet Red
   'Mehedenți': '#C71585', // Medium Violet Red
   'Caraș-Severin': '#FFA07A', // Light Salmon
   'Severin': '#FFA07A', // Light Salmon

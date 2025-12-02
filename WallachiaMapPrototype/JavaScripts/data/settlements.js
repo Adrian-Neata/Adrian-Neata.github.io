@@ -8012,6 +8012,7 @@ const SETTLEMENTS = {"1037":  new Place("1037", "Pitești", "Pitești", "Argeș"
 "16024":  new Place("16024", "Berlești", "Mărculești", "Ialomița", "România", 44.5956395710692, 27.5389972700529, Place_Type.Settlement, null),
 "16025":  new Place("16025", "Pisculești", "Mărculești", "Ialomița", "România", 44.586958959736656, 27.510037019883328, Place_Type.Settlement, null),
 "16026":  new Place("16026", "Mucuroaia", "Frecăței", "Brăila", "România", 44.95745466700101, 28.137052826577023, Place_Type.Settlement, null),
+"16227":  new Place("16227", "Tătărăi", "Perieți", "Ialomița", "România", 44.57520120150214, 27.19239287246936, Place_Type.Settlement, null),
 "16027":  new Place("16027", "Slujitori", "Valea Măcrișului", "Ialomița", "România", 44.71446766465783, 26.84724440742476, Place_Type.Settlement, null),
 "16028":  new Place("16028", "Uluiți", "Bărcănești", "Ialomița", "România", 44.67006792296972, 26.664733125031763, Place_Type.Settlement, null),
 "16029":  new Place("16029", "Meteleu", "Scutelnici", "Buzău", "România", 44.843550335997975, 26.9010846146484, Place_Type.Settlement, null),
@@ -8211,4 +8212,5 @@ const SETTLEMENTS = {"1037":  new Place("1037", "Pitești", "Pitești", "Argeș"
 "16224":  new Place("16224", "Focșani Moldoveni", "Focșani", "Vrancea", "România", 45.702135204128304, 27.18475968132497, Place_Type.Settlement, null),
 "16225":  new Place("16225", "Lupești", "București", "București", "România", 44.43249109041496, 26.07071181127584, Place_Type.Settlement, "1"),
 "16226":  new Place("16226", "Mănești", "Buftea", "Ilfov", "România", 44.54840588762407, 25.944789958747865, Place_Type.Settlement, "1"),
+"16228":  new Place("16228", "Bălteni", "Ionești", "Gorj", "România", 44.61512109827099, 23.454993893170567, Place_Type.Settlement, "1"),
 }
