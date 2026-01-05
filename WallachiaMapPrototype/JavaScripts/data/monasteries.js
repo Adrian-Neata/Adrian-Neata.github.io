@@ -182,3 +182,5 @@ SETTLEMENTS["_181"] = new Place("_181", "Schitul Drăgănești", "Vedea", "Teleo
 SETTLEMENTS["_182"] = new Place("_182", "Patriarhia Română", "București", "București", "România", 44.4245649343765, 26.097781080070007, Place_Type.Monastery, null);
 SETTLEMENTS["_183"] = new Place("_183", "Mănăstirea Târnov", "București", "București", "România", 44.42947348388014, 26.09419026898855, Place_Type.Monastery, null);
 SETTLEMENTS["_184"] = new Place("_184", "Mănăstirea Sfântul Ioan", "București", "București", "România", 44.432240288151526, 26.096634735595412, Place_Type.Monastery, null);
+SETTLEMENTS["_185"] = new Place("_185", "Mănăstirea lui Ghiorma banul", "București", "București", "România", 44.432069361471825, 26.099240212478296, Place_Type.Monastery, null);
+SETTLEMENTS["_186"] = new Place("_186", "Mănăstirea Aninoasa", "Cislău", "Buzău", "România", 45.19760723729583, 26.369584112704434, Place_Type.Monastery, null);

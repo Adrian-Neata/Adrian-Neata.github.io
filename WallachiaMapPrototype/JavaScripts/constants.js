@@ -397,6 +397,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Slam Râmnic și Brăila': '#FFD700', // Gold
   'Slam Râbnic i Braila': '#FFD700', // Gold
   'Râmnicul Sărat și Brăila': '#FFD700', // Gold
+  'Râmnicu Sărat': '#FFD700', // Gold
   'Râmnicu': '#FFD700', // Gold
   'Brăila': '#66B2FF', // Periwinkle
   'Tulcea': '#DAA520', // Goldenrod
@@ -410,12 +411,15 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Elhov': '#20B2AA', // Light Sea Green
   'Ehov': '#20B2AA', // Light Sea Green
   'Prahova': '#9932CC', // Dark Orchid
+  'Praova': '#9932CC', // Dark Orchid
   'Dâmbovița': '#66B2FF', // Periwinkle
   'Dâmboviță': '#66B2FF', // Periwinkle
   'Vlașca': '#DAA520', // Goldenrod
   'Teleorman': '#FF6F61', // Melon
   'Teliorman': '#FF6F61', // Melon
   'Romanați': '#32CD32', // Lime Green
+  'Romonați': '#32CD32', // Lime Green
+  'Romănați': '#32CD32', // Lime Green
   'Rumanați': '#32CD32', // Lime Green
   'Argeș': '#FFD700', // Gold
   'Argheș': '#FFD700', // Gold
