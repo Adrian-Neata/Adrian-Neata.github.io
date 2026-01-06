@@ -409,6 +409,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Ilfov': '#20B2AA', // Light Sea Green
   'Ilhov': '#20B2AA', // Light Sea Green
   'Elhov': '#20B2AA', // Light Sea Green
+  'Elfov': '#20B2AA', // Light Sea Green
   'Ehov': '#20B2AA', // Light Sea Green
   'Prahova': '#9932CC', // Dark Orchid
   'Praova': '#9932CC', // Dark Orchid
