@@ -399,6 +399,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Râmnicul Sărat și Brăila': '#FFD700', // Gold
   'Râmnicu Sărat': '#FFD700', // Gold
   'Râmnicu': '#FFD700', // Gold
+  'Râmnic': '#FFD700', // Gold
   'Brăila': '#66B2FF', // Periwinkle
   'Tulcea': '#DAA520', // Goldenrod
   'Constanța': '#C71585', // Medium Violet Red
@@ -415,6 +416,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Praova': '#9932CC', // Dark Orchid
   'Dâmbovița': '#66B2FF', // Periwinkle
   'Dâmboviță': '#66B2FF', // Periwinkle
+  'Dânbuvițe': '#66B2FF', // Periwinkle
   'Vlașca': '#DAA520', // Goldenrod
   'Teleorman': '#FF6F61', // Melon
   'Teliorman': '#FF6F61', // Melon
@@ -433,6 +435,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Muscel și Pădureț': '#C71585', // Medium Violet Red
   'Olt': '#9370DB', // Medium Purple
   'Dolj': '#66B2FF', // Periwinkle
+  'Dolji': '#66B2FF', // Periwinkle
   'Dol Jil': '#66B2FF', // Periwinkle
   'Doljâi': '#66B2FF', // Periwinkle
   'Doljâl': '#66B2FF', // Periwinkle
@@ -441,6 +444,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Doljil': '#66B2FF', // Periwinkle
   'Doljie': '#66B2FF', // Periwinkle
   'Doljiu': '#66B2FF', // Periwinkle
+  'Doljiiu': '#66B2FF', // Periwinkle
   'Jiul de Jos': '#66B2FF', // Periwinkle
   'Jâiul de Jos': '#66B2FF', // Periwinkle
   'Vâlcea': '#20B2AA', // Light Sea Green
@@ -455,6 +459,7 @@ const COUNTY_COLORS_BEFORE_1950 = {
   'Gor Jil': '#DAA520', // Goldenrod
   'Jiul de Sus': '#DAA520', // Goldenrod
   'Jiiul de Sus': '#DAA520', // Goldenrod
+  'Jâul de Sus': '#DAA520', // Goldenrod
   'Mehedinți': '#C71585', // Medium Violet Red
   'Mihedinți': '#C71585', // Medium Violet Red
   'Mehedenți': '#C71585', // Medium Violet Red
